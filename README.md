@@ -895,14 +895,20 @@ The following are being developed as extensible adapters or subsequent pipeline 
 * [x] Release manifests
 * [x] Test foundation
 
-### Phase 2 — Real policy sources
+### Phase 2 — Real policy sources and source health
 
-* [ ] ICANN source adapter
-* [ ] IGF / UN source adapter
-* [ ] IETF source adapter
-* [ ] ITU source adapter
-* [ ] UN / UN DESA adapter
-* [ ] Internet Society adapter
+Adapters must emit the same canonical provenance-aware records, plus source coverage metadata and source-health monitoring. No adapter may bypass ETL capture policy.
+
+* [x] Generic web adapter framework (`generic-web-adapter`)
+* [x] Source-health records + aggregate health index
+* [x] Registry-linked family/publisher/adapter enrichment on ingest
+* [x] Discovery seeds for ICANN, IGF, IETF, ITU, UN, UN DESA, UNESCO, OECD, ISOC
+* [ ] ICANN-specific adapter refinements
+* [ ] IGF / UN source adapter refinements
+* [ ] IETF source adapter refinements
+* [ ] ITU source adapter refinements
+* [ ] UN / UN DESA adapter refinements
+* [ ] Internet Society adapter refinements
 * [ ] RIR source adapters
 * [ ] Government-source framework
 * [ ] Academic/public-interest source framework
@@ -927,7 +933,7 @@ The following are being developed as extensible adapters or subsequent pipeline 
 * [ ] temporal position tracking
 * [ ] disagreement modelling
 
-### Phase 5 — Corpus production
+### Phase 5 — Corpus + Benchmark
 
 * [ ] automated HF dataset releases
 * [ ] expert annotation

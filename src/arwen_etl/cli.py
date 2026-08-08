@@ -7,8 +7,6 @@ import os
 from pathlib import Path
 from uuid import uuid4
 
-import httpx
-
 from . import __version__
 from .capture import CaptureError, capture_url, write_artifact
 from .config import load_pipeline_config, load_sources_config
@@ -17,11 +15,7 @@ from .deduplication import (
     is_duplicate_by_sha256,
     register_document,
 )
-from .discovery import (
-    discover_links_from_html,
-    source_id_from_url,
-    validate_public_url,
-)
+from .discovery import source_id_from_url, validate_public_url
 from .extraction import extract, extract_metadata
 from .models import SourceRecord
 from .normalization import normalize_text
@@ -32,6 +26,7 @@ from .registry import load_registry
 from .release import build_release_manifest, validate_manifest
 from .review import enqueue_review
 from .segmentation import segment_text
+from .sources import build_source_adapter, source_matches_domain, write_source_health_index
 from .storage import write_json
 
 
@@ -41,6 +36,14 @@ def _pipeline_config() -> dict:
 
 def _load_registry() -> dict:
     return load_registry()
+
+
+def _source_for_url(url: str):
+    registry = load_registry()
+    for source in registry.sources:
+        if source_matches_domain(url, source.domains):
+            return source
+    return None
 
 
 def ingest_url(url: str) -> dict:
@@ -93,6 +96,7 @@ def ingest_url(url: str) -> dict:
     extracted = extract(artifact.data, artifact.content_type)
     metadata = extract_metadata(artifact.data, artifact.content_type, extracted)
     normalized = normalize_text(extracted.text)
+    source_def = _source_for_url(url)
 
     document_id = str(uuid4())
     segments = segment_text(
@@ -102,10 +106,20 @@ def ingest_url(url: str) -> dict:
         overlap_chars=config["processing"]["segment_overlap_chars"],
     )
 
+    published_at = metadata.get("published_at")
+    if isinstance(published_at, str):
+        published_at = None
+
     source = SourceRecord(
         source_id=source_id_from_url(url),
         source_url=url,
         final_url=artifact.final_url,
+        source_family=source_def.family if source_def else None,
+        source_adapter="generic-web-adapter" if source_def else None,
+        source_status="reachable" if source_def else None,
+        publisher=source_def.name if source_def else None,
+        title=metadata.get("title"),
+        published_at=published_at,
         content_type=artifact.content_type,
         media_type=extracted.media_type,
         artifact_sha256=artifact.sha256,
@@ -204,6 +218,8 @@ def main() -> None:
     discover_parser = sub.add_parser("discover")
     discover_parser.add_argument("source_id", nargs="?", help="Optional source id to discover")
 
+    sub.add_parser("pipeline")
+
     ingest_file_parser = sub.add_parser("ingest-file")
     ingest_file_parser.add_argument("path")
 
@@ -251,38 +267,35 @@ def main() -> None:
             targets = [s for s in targets if s.id == args.source_id]
 
         output: dict = {}
+        bundles = []
         for s in targets:
-            root = f"https://{s.domains[0]}"
-            try:
-                resp = httpx.get(root, timeout=10.0)
-                resp.raise_for_status()
-            except Exception as exc:
-                print(f"Failed to fetch {root}: {exc}")
-                continue
-
-            discovered = discover_links_from_html(root, resp.text)
+            result = build_source_adapter(s).discover()
+            bundles.append(result)
             out_path = Path("data") / "discovered" / f"{s.id}.json"
-            write_json(out_path, [d.__dict__ for d in discovered])
-            output[s.id] = len(discovered)
+            health_path = Path("data") / "source-health" / f"{s.id}.json"
+            write_json(out_path, [d.__dict__ for d in result.discovered_urls])
+            write_json(health_path, result.health.model_dump(mode="json"))
+            output[s.id] = {
+                "discovered": len(result.discovered_urls),
+                "source_status": result.health.source_status,
+                "http_status": result.health.http_status,
+            }
 
+        index_path = Path("data") / "source-health" / "index.json"
+        write_source_health_index(index_path, bundles)
+        output["_health_index"] = str(index_path)
         print(json.dumps(output, indent=2))
     elif args.command == "pipeline":
         # simple pipeline: discover -> ingest for enabled registry entries
         registry = load_registry()
         targets = [s for s in registry.sources if s.enabled]
         output = {}
+        bundles = []
         for s in targets:
-            root = f"https://{s.domains[0]}"
-            try:
-                resp = httpx.get(root, timeout=10.0)
-                resp.raise_for_status()
-            except Exception as exc:
-                output[s.id] = {"error": str(exc)}
-                continue
-
-            discovered = discover_links_from_html(root, resp.text)
+            discovery = build_source_adapter(s).discover()
+            bundles.append(discovery)
             count = 0
-            for d in discovered:
+            for d in discovery.discovered_urls:
                 res = ingest_url(d.url)
                 count += 1
                 # if extraction low quality, enqueue for review
@@ -298,8 +311,15 @@ def main() -> None:
                     except Exception:
                         pass
 
-            output[s.id] = {"discovered": len(discovered), "ingested": count}
+            output[s.id] = {
+                "discovered": len(discovery.discovered_urls),
+                "ingested": count,
+                "source_status": discovery.health.source_status,
+            }
 
+        index_path = Path("data") / "source-health" / "index.json"
+        write_source_health_index(index_path, bundles)
+        output["_health_index"] = str(index_path)
         print(json.dumps(output, indent=2))
     elif args.command == "publish":
         # publish a release dir: first validate, then publish

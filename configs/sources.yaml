@@ -6,6 +6,12 @@ sources:
       - icann.org
       - www.icann.org
     enabled: true
+    discovery:
+      seed_urls:
+        - https://www.icann.org/
+        - https://www.icann.org/resources
+      sitemap_urls:
+        - https://www.icann.org/sitemap.xml
 
   - id: igf
     name: Internet Governance Forum
@@ -14,6 +20,10 @@ sources:
       - intgovforum.org
       - www.intgovforum.org
     enabled: true
+    discovery:
+      seed_urls:
+        - https://www.intgovforum.org/
+        - https://www.intgovforum.org/en
 
   - id: ietf
     name: Internet Engineering Task Force
@@ -23,6 +33,12 @@ sources:
       - www.ietf.org
       - datatracker.ietf.org
     enabled: true
+    discovery:
+      seed_urls:
+        - https://www.ietf.org/
+        - https://datatracker.ietf.org/
+      feed_urls:
+        - https://www.ietf.org/blog/rss/
 
   - id: itu
     name: International Telecommunication Union
@@ -31,6 +47,9 @@ sources:
       - itu.int
       - www.itu.int
     enabled: true
+    discovery:
+      seed_urls:
+        - https://www.itu.int/
 
   - id: un
     name: United Nations
@@ -39,6 +58,9 @@ sources:
       - un.org
       - www.un.org
     enabled: true
+    discovery:
+      seed_urls:
+        - https://www.un.org/
 
   - id: un_desa
     name: United Nations Department of Economic and Social Affairs
@@ -47,6 +69,9 @@ sources:
       - un.org
       - desa.un.org
     enabled: true
+    discovery:
+      seed_urls:
+        - https://www.un.org/desa
 
   - id: unesco
     name: UNESCO
@@ -55,6 +80,9 @@ sources:
       - unesco.org
       - www.unesco.org
     enabled: true
+    discovery:
+      seed_urls:
+        - https://www.unesco.org/
 
   - id: oecd
     name: OECD
@@ -63,6 +91,9 @@ sources:
       - oecd.org
       - www.oecd.org
     enabled: true
+    discovery:
+      seed_urls:
+        - https://www.oecd.org/
 
   - id: isoc
     name: Internet Society
@@ -71,3 +102,6 @@ sources:
       - internetsociety.org
       - www.internetsociety.org
     enabled: true
+    discovery:
+      seed_urls:
+        - https://www.internetsociety.org/

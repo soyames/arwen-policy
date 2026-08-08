@@ -17,6 +17,8 @@ class SourceRecord(BaseModel):
     source_url: str
     final_url: str | None = None
     source_family: str | None = None
+    source_adapter: str | None = None
+    source_status: str | None = None
     title: str | None = None
     publisher: str | None = None
     content_type: str | None = None

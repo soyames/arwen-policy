@@ -1,13 +1,18 @@
-# Arwen Policy ETL
+---
+pretty_name: Arwen Policy Corpus
+license: apache-2.0
+language:
+  - en
+task_categories:
+  - text-classification
+---
 
-**A reproducible, provenance-preserving, multimodal data-engineering pipeline for building the Arwen Policy Corpus.**
+# Arwen Policy Corpus
 
-**Code repository:** `soyames/arwen-policy`
-**Canonical dataset:** `soyames/arwen-policy-corpus` on Hugging Face
+**Canonical dataset:** `soyames/arwen-policy-corpus` on Hugging Face  
+**Pipeline repository:** `soyames/arwen-policy` on GitHub
 
-Arwen Policy ETL is the **data-engineering layer of the Arwen Policy project**.
-
-It discovers publicly accessible policy and Internet-governance sources, captures source artifacts and provenance, extracts and normalizes multimodal content, identifies candidate stakeholders, positions, arguments and evidence, applies quality controls, and produces versioned releases for the Arwen Policy Corpus.
+This repository is the published corpus for the Arwen Policy project. It is produced by the ETL pipeline and is intended to preserve provenance, release metadata, schemas, and corpus-facing documentation in a stable layout.
 
 The ETL system and the corpus are intentionally separate:
 
@@ -17,6 +22,28 @@ The ETL system and the corpus are intentionally separate:
 The canonical corpus is published on Hugging Face:
 
 https://huggingface.co/datasets/soyames/arwen-policy-corpus
+
+## Current release contents
+
+| Path | Purpose |
+| --- | --- |
+| `README.md` | Dataset card |
+| `LICENSE` | Corpus license |
+| `CITATION.cff` | Citation metadata |
+| `RELEASE_METADATA.json` | Release metadata |
+| `RELEASE_VERSION` | Release version marker |
+| `docs/` | Corpus documentation |
+| `schemas/` | Canonical JSON schemas |
+| `benchmark/README.md` | Benchmark notes |
+| `training/README.md` | Training notes |
+| `data/README.md` | Split and layout notes |
+| `data/review/queue.json` | Review queue |
+| `data/published/test-repo/file.txt` | Published example artifact |
+| `data/train/.gitkeep` | Empty train split placeholder |
+| `data/validation/.gitkeep` | Empty validation split placeholder |
+| `data/test/.gitkeep` | Empty test split placeholder |
+
+The split directories are intentionally present even when empty so the dataset layout stays stable for the Hub viewer and downstream tooling.
 
 ---
 
@@ -895,14 +922,20 @@ The following are being developed as extensible adapters or subsequent pipeline 
 * [x] Release manifests
 * [x] Test foundation
 
-### Phase 2 — Real policy sources
+### Phase 2 — Real policy sources and source health
 
-* [ ] ICANN source adapter
-* [ ] IGF / UN source adapter
-* [ ] IETF source adapter
-* [ ] ITU source adapter
-* [ ] UN / UN DESA adapter
-* [ ] Internet Society adapter
+Adapters must emit the same canonical provenance-aware records, plus source coverage metadata and source-health monitoring. No adapter may bypass ETL capture policy.
+
+* [x] Generic web adapter framework (`generic-web-adapter`)
+* [x] Source-health records + aggregate health index
+* [x] Registry-linked family/publisher/adapter enrichment on ingest
+* [x] Discovery seeds for ICANN, IGF, IETF, ITU, UN, UN DESA, UNESCO, OECD, ISOC
+* [ ] ICANN-specific adapter refinements
+* [ ] IGF / UN source adapter refinements
+* [ ] IETF source adapter refinements
+* [ ] ITU source adapter refinements
+* [ ] UN / UN DESA adapter refinements
+* [ ] Internet Society adapter refinements
 * [ ] RIR source adapters
 * [ ] Government-source framework
 * [ ] Academic/public-interest source framework

@@ -85,6 +85,18 @@
     },
     "extraction_status": {
       "type": "string"
+    },
+    "source_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_adapter": {
+      "type": [
+        "string",
+        "null"
+      ]
     }
   }
 }
