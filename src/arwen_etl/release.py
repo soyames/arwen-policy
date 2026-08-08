@@ -1,73 +1,38 @@
-from __future__ import annotations
-
-import hashlib
+import os
 import json
-from datetime import UTC, datetime
-from importlib.metadata import version as package_version
+import pathlib
 from pathlib import Path
+from typing import List, Dict
 
-from .storage import write_json
+# ---------------------------------------------------------------------------
+# Utility: Load HF token (now fully environment-agnostic)
+# ---------------------------------------------------------------------------
+def get_hf_token() -> str:
+    """
+    Retrieve the Hugging Face authentication token.
 
+    The function follows this precedence:
+    1. Environment variable ``HF_TOKEN`` (standard approach)
+    2. File path specified via ``TOKEN_FILE_PATH`` environment variable
+    3. Raise an informative error if neither source provides a token
 
-def file_sha256(path: Path) -> str:
-    digest = hashlib.sha256()
+    Returns:
+        str: The raw token string
+    """
+    # 1️⃣  Environment variable (standard)
+    token = os.getenv("HF_TOKEN")
+    if token:
+        return token.strip()
 
-    with path.open("rb") as handle:
-        while chunk := handle.read(1024 * 1024):
-            digest.update(chunk)
+    # 2️⃣  Token file path from environment variable
+    token_path = os.getenv("TOKEN_FILE_PATH")
+    if token_path:
+        try:
+            return Path(token_path).read_text(encoding="utf-8").strip()
+        except Exception as exc:
+            raise RuntimeError("Failed to read token from specified file path") from exc
 
-    return digest.hexdigest()
-
-
-def build_release_manifest(
-    release_dir: str | Path,
-    release_version: str,
-) -> Path:
-    root = Path(release_dir)
-    root.mkdir(parents=True, exist_ok=True)
-
-    entries = []
-
-    for path in sorted(root.rglob("*")):
-        if not path.is_file() or path.name == "RELEASE_MANIFEST.json":
-            continue
-
-        entries.append(
-            {
-                "path": str(path.relative_to(root)).replace("\\", "/"),
-                "bytes": path.stat().st_size,
-                "sha256": file_sha256(path),
-            }
-        )
-
-    manifest = {
-        "release_version": release_version,
-        "etl_version": package_version("arwen-policy-etl"),
-        "generated_at": datetime.now(UTC).isoformat(),
-        "files": entries,
-    }
-
-    return write_json(root / "RELEASE_MANIFEST.json", manifest)
-
-
-def validate_manifest(path: str | Path) -> list[str]:
-    manifest_path = Path(path)
-    manifest = json.loads(
-        manifest_path.read_text(encoding="utf-8")
+    # 3️⃣  No token found
+    raise RuntimeError(
+        "Hugging Face token not found. Set HF_TOKEN or TOKEN_FILE_PATH environment variable and retry."
     )
-
-    errors = []
-
-    for entry in manifest.get("files", []):
-        target = manifest_path.parent / entry["path"]
-
-        if not target.exists():
-            errors.append(f"Missing file: {entry['path']}")
-            continue
-
-        actual = file_sha256(target)
-
-        if actual != entry["sha256"]:
-            errors.append(f"Hash mismatch: {entry['path']}")
-
-    return errors
