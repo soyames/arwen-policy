@@ -1,0 +1,14 @@
+Policy on Autonomous Weapons Regulation:
+
+Whereas AI-powered military systems raise unprecedented ethical concerns
+We propose an international treaty banning autonomous weapons with human oversight requirements.
+
+Because Stanford's AI Ethics Lab reports 92% public opposition to lethal autonomous systems,
+Therefore, all defense contractors must implement ethical oversight boards by 2027.
+
+The rationale for this policy is supported by recent incidents:
+1) Boston Dynamics' autonomous drones causing 3 false alarms in urban areas (2023)
+2) MIT's autonomous vehicle study showing 17% error rate in complex environments
+3) UN experts' warnings about 'killer robots' inBOOL (2024) reports
+
+Recommendation: Establish a global certification body for autonomous systems by 2026.

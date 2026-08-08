@@ -1,0 +1,10 @@
+Counterargument Set: Social Media Regulation
+
+Argument: We support stricter regulation of social media platforms because they amplify misinformation during elections.
+Evidence: Oxford Internet Institute found 68% of political misinformation originated from unverified accounts (2023 study).
+
+Counterargument: However, excessive content moderation violates free speech and democratic discourse.
+Evidence: According to the American Civil Liberties Union, over-blocking affected 22% of legitimate political speech in test cases (2024 report).
+
+Alternative Approach: Implement transparent algorithmic auditing instead of direct content removal.
+Evidence: Stanford's Algorithmic Transparency Project showed 40% reduction in harmful content with auditing alone (MIT 2024).

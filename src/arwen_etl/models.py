@@ -59,5 +59,7 @@ class Candidate(BaseModel):
     extraction_method: str
     human_verified: bool = False
     confidence: float | None = Field(default=None, ge=0, le=1)
+    evidence_linked: bool = False
+    evidence_confidence: float | None = None
     evidence_required: bool = True
     attributes: dict[str, Any] = Field(default_factory=dict)

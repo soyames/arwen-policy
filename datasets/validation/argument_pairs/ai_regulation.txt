@@ -1,0 +1,7 @@
+Argument Set 1:
+
+Argument: We support comprehensive AI regulation because unregulated AI systems pose existential risks including autonomous weapons and algorithmic bias in critical infrastructure.
+
+Counterargument: However, excessive regulation may stifle innovation and economic competitiveness. The EU AI Act caused 30% reduction in AI startup funding (source: OECD 2023 report).
+
+Evidence: According to Stanford HAI 2024 index, countries with balanced regulation saw 2.3x higher AI research output while maintaining safety standards.

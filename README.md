@@ -915,8 +915,8 @@ Adapters must emit the same canonical provenance-aware records, plus source cove
 
 ### Phase 3 — Multimodal ingestion
 
-* [ ] OCR pipeline
-* [ ] ASR pipeline
+* [x] OCR pipeline (implemented)
+* [x] ASR pipeline (implemented)
 * [ ] speaker diarization
 * [ ] timestamped video processing
 * [ ] multilingual extraction
@@ -924,18 +924,18 @@ Adapters must emit the same canonical provenance-aware records, plus source cove
 
 ### Phase 4 — Policy intelligence
 
-* [ ] stakeholder extraction
+* [x] stakeholder extraction (integrated with position analysis)
 * [ ] organization resolution
-* [ ] position extraction
-* [ ] argument extraction
-* [ ] counterargument detection
-* [ ] evidence linking
+* [ ] position extraction (rule-based patterns defined)
+* [x] argument extraction
+* [x] counterargument detection
+* [x] evidence linking
 * [ ] temporal position tracking
 * [ ] disagreement modelling
 
 ### Phase 5 — Corpus + Benchmark
 
-* [ ] automated HF dataset releases
+* [ ] automated HF dataset releases (release.py script under development)
 * [ ] expert annotation
 * [ ] benchmark suite
 * [ ] corpus quality reports

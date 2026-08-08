@@ -46,6 +46,7 @@ dependencies = [
     { name = "httpx" },
     { name = "jsonschema" },
     { name = "pydantic" },
+    { name = "pytest" },
     { name = "pyyaml" },
 ]
 
@@ -95,6 +96,7 @@ requires-dist = [
     { name = "pydantic", specifier = ">=2.8,<3" },
     { name = "pypdf", marker = "extra == 'pdf'", specifier = ">=5,<7" },
     { name = "pytesseract", marker = "extra == 'ocr'", specifier = ">=0.3,<1" },
+    { name = "pytest", specifier = ">=8.4.2" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=8,<9" },
     { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=5,<7" },
     { name = "python-docx", marker = "extra == 'docx'", specifier = ">=1.1,<2" },
