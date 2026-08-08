@@ -1,0 +1,30 @@
+version: 1
+project:
+  name: arwen-policy
+  corpus: soyames/arwen-policy-corpus
+  architecture: multistakeholder-deliberation
+
+retrieval:
+  backend: in_memory_bm25_baseline
+  top_k: 8
+  diversify_by_stakeholder: true
+  require_provenance: true
+
+deliberation:
+  preserve_disagreement: true
+  disclose_missing_stakeholders: true
+  infer_official_positions: false
+  manufacture_consensus: false
+
+benchmark:
+  enabled: true
+  require_gold_provenance: true
+
+training:
+  require_human_review: true
+  preserve_source_provenance: true
+
+release:
+  dataset_repo: soyames/arwen-policy-corpus
+  training_repo: soyames/arwen-policy-training
+  benchmark_repo: soyames/arwen-policy-benchmark

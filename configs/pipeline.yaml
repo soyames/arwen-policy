@@ -1,4 +1,4 @@
-version: 1
+version: 2
 
 capture:
   timeout_seconds: 30
@@ -21,3 +21,11 @@ quality:
 
 release:
   output_dir: data/releases
+
+arwen:
+  corpus_repo: soyames/arwen-policy-corpus
+  system_config: configs/arwen.yaml
+  stakeholder_config: configs/stakeholders.yaml
+  retrieval_backend: in_memory_bm25_baseline
+  require_provenance: true
+  preserve_disagreement: true

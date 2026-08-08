@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Arwen Provenance Event",
+  "type": "object",
+  "required": [
+    "event_id",
+    "event_type",
+    "entity_id",
+    "agent",
+    "timestamp"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": "string"
+    },
+    "entity_id": {
+      "type": "string"
+    },
+    "agent": {
+      "type": "string"
+    },
+    "input_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "attributes": {
+      "type": "object"
+    },
+    "timestamp": {
+      "type": "string"
+    }
+  }
+}

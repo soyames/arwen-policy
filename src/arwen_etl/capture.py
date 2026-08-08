@@ -16,7 +16,7 @@ DEFAULT_MAX_BYTES = 50 * 1024 * 1024
 DEFAULT_MAX_DOWNLOAD_MB = DEFAULT_MAX_BYTES / (1024 * 1024)
 DEFAULT_TIMEOUT_SECONDS = 30.0
 
-USER_AGENT = "ArwenPolicyETL/0.1 (+https://github.com/soyames/arwen-policy-etl)"
+USER_AGENT = "ArwenPolicyETL/0.1 (+https://github.com/soyames/arwen-policy)"
 
 
 @dataclass(frozen=True)

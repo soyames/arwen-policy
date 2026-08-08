@@ -1,5 +1,4 @@
 import subprocess
-from pathlib import Path
 
 from arwen_etl.publish import publish_release_git_lfs
 
@@ -41,7 +40,14 @@ def test_publish_git_lfs_push_retries(tmp_path, monkeypatch):
     monkeypatch.setattr("arwen_etl.publish.subprocess.run", fake_run)
 
     # call helper with low threshold to mark big.bin for LFS
-    result = publish_release_git_lfs(release, repo_url="https://example.com/repo.git", push=True, lfs_threshold_bytes=1024, push_attempts=4, push_backoff=0.01)
+    result = publish_release_git_lfs(
+        release,
+        repo_url="https://example.com/repo.git",
+        push=True,
+        lfs_threshold_bytes=1024,
+        push_attempts=4,
+        push_backoff=0.01,
+    )
 
     assert result.get("pushed") is True
     assert result.get("cleaned") is True
