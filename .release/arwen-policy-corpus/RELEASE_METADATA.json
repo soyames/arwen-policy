@@ -1,0 +1,10 @@
+﻿{
+    "version":  "0.0.0-test",
+    "workflow_run_id":  "",
+    "project":  "Arwen Policy",
+    "git_commit":  "",
+    "dataset":  "soyames/arwen-policy-corpus",
+    "workflow":  "local",
+    "git_repository":  "https://github.com/soyames/arwen-policy",
+    "git_ref":  ""
+}

@@ -1,0 +1,24 @@
+version: 1
+stakeholder_groups:
+  - id: government
+    label: Government and public authorities
+  - id: private_sector
+    label: Private sector and industry
+  - id: civil_society
+    label: Civil society and non-profit organizations
+  - id: technical_community
+    label: Technical community
+  - id: academia
+    label: Academia and research
+  - id: users
+    label: Users and affected communities
+  - id: intergovernmental
+    label: Intergovernmental organizations
+  - id: media
+    label: Media and public-interest journalism
+
+rules:
+  - Never infer representation from silence.
+  - Never treat one individual's statement as an organization's official position without evidence.
+  - Preserve minority and dissenting positions.
+  - Record missing stakeholder evidence explicitly.

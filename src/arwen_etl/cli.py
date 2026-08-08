@@ -317,7 +317,7 @@ def main() -> None:
             raise SystemExit(1)
 
         token = os.environ.get("HF_TOKEN")
-        repo_id = os.environ.get("HF_REPO", f"arwen-policy-etl/{version}")
+        repo_id = os.environ.get("HF_REPO", "soyames/arwen-policy-corpus")
 
         if args.git_lfs:
             # use git-lfs path

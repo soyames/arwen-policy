@@ -31,7 +31,7 @@ class SourcePolicy:
     as provenance.
     """
 
-    USER_AGENT = "ArwenPolicyETL/0.1 (+https://github.com/soyames/arwen-policy-etl)"
+    USER_AGENT = "ArwenPolicyETL/0.1 (+https://github.com/soyames/arwen-policy)"
 
     def __init__(
         self,

@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Arwen Source Record",
+  "type": "object",
+  "required": [
+    "source_id",
+    "source_url",
+    "artifact_sha256",
+    "byte_size",
+    "retrieved_at"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "final_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "source_family": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "publisher": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "content_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "media_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "retrieved_at": {
+      "type": "string"
+    },
+    "published_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "artifact_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "byte_size": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "license": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "access_conditions": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "extraction_status": {
+      "type": "string"
+    }
+  }
+}
