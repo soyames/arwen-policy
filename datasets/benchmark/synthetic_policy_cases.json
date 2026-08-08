@@ -1,0 +1,26 @@
+## Synthetic Benchmark Data Examples
+
+### Test Case: Ethical AI Policy Framework
+**Document ID**: POL-ETH-2027-001
+**Source Type**: Policy Draft (Simulation)
+**Sections**:
+1. **Premise**: "AI systems must be subject to independent ethical audits before deployment."
+2. **Arguments**:
+   - *Pro*: Establishes accountability for unintended harms (78% of surveyed ethicists support)
+   - *Con*: Creates regulatory bottlenecks (estimated 18-24 month implementation delay)
+3. **Evidence**:
+   - Meta-analysis showing 42% reduction in bias incidents in audited systems
+   - Case study of EU AI Act's permitting delays for medical AI tools
+4. **Stakeholder Conflicts**:
+   - Tech industry lobbyists (opposition)
+   - Healthcare AI developers (conditional support)
+   - Consumer protection groups (strong support)
+
+### Test Case: Climate Policy Tensions
+**Document ID**: POL-CLIM-2030-045
+**Source Type**: Intergovernmental Report Draft
+**Key Conflicts**:
+- **Position A**: "Mandatory 50% emissions cuts by 2030" (supported by 72% of civil society groups)
+- **Position B**: "Market-driven transition with voluntary targets" (preferred by 63% of energy sector stakeholders)
+- **Counterargument**: "Unilateral mandates risk economic instability" (supported by 58% of finance ministries)
+- **Evidence Link**: Cites IPCC modeling showing 0.3°C difference by 2100 between approaches
