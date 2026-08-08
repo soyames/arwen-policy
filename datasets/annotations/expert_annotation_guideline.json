@@ -1,0 +1,13 @@
+{
+  "annotation_guideline": "Annotators should label stakeholder positions, arguments, counterarguments, and evidence segments in policy documents. Each annotation must include:\n- stakeholder_type: one of [government, intergovernmental, private_sector, civil_society, academia, technical_community, user, media, standards, regional, marginalized]\n- stakeholder_name: string identifier\n- position_type: one of [support, oppose, propose, question, uncertainty]\n- argument_text: extracted text supporting the position\n- evidence_text: extracted text providing evidence\n- evidence_confidence: 0.0-1.0 float\n- verification_status: [draft, reviewed, verified]\n- temporal_context: date or period string",
+  "example_annotation": {
+    "stakeholder_type": "government",
+    "stakeholder_name": "US Department of Energy",
+    "position_type": "support",
+    "argument_text": "Clean energy deployment is critical for economic growth and climate mitigation.",
+    "evidence_text": "DOE 2023 report shows renewable energy supports 1.5 million jobs nationwide.",
+    "evidence_confidence": 0.92,
+    "verification_status": "draft",
+    "temporal_context": "2023"
+  }
+}
