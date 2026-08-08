@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Arwen Extracted Document",
+  "type": "object",
+  "required": [
+    "document_id",
+    "source_id",
+    "artifact_sha256",
+    "extraction_method",
+    "text",
+    "segments"
+  ],
+  "properties": {
+    "document_id": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "final_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "artifact_sha256": {
+      "type": "string"
+    },
+    "byte_size": {
+      "type": "integer"
+    },
+    "content_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "extraction_method": {
+      "type": "string"
+    },
+    "extraction_warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "text": {
+      "type": "string"
+    },
+    "segments": {
+      "type": "array"
+    }
+  }
+}

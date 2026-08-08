@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+title: "Arwen Policy ETL"
+message: "If you use Arwen Policy ETL, please cite this software."
+type: software
+
+authors:
+  - family-names: "Amessinou Sossou"
+    given-names: "Yao Amevi"
+
+repository-code: "https://github.com/soyames/arwen-policy-etl"
+url: "https://github.com/soyames/arwen-policy-etl"
+
+license: "Apache-2.0"
+version: "0.1.0"
+date-released: "2026-08-08"
+
+keywords:
+  - internet governance
+  - digital policy
+  - AI governance
+  - artificial intelligence
+  - data engineering
+  - provenance
+  - multistakeholder
+  - policy analysis
+  - corpus construction
+  - ETL
+
+abstract: >
+  Arwen Policy ETL is a reproducible, provenance-preserving,
+  multimodal data-engineering pipeline for constructing the
+  Arwen Policy Corpus for research on multistakeholder AI
+  deliberation in digital policy and Internet governance.
+
+references:
+  - type: dataset
+    title: "Arwen Policy Corpus"
+    url: "https://huggingface.co/datasets/soyames/arwen-policy-corpus"

@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Tests / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Tool caches
+.ruff_cache/
+.mypy_cache/
+
+# Environment / secrets
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local ETL artifacts
+data/raw/*
+data/extracted/*
+data/normalized/*
+data/candidates/*
+data/releases/*
+
+# Keep documentation placeholders
+!data/raw/README.md
+!data/extracted/README.md
+!data/normalized/README.md
+!data/candidates/README.md
+!data/releases/README.md
+
+# Build artifacts
+dist/
+build/
+*.egg-info/

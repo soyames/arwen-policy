@@ -1,0 +1,73 @@
+sources:
+  - id: icann
+    name: ICANN
+    family: internet_governance
+    domains:
+      - icann.org
+      - www.icann.org
+    enabled: true
+
+  - id: igf
+    name: Internet Governance Forum
+    family: internet_governance
+    domains:
+      - intgovforum.org
+      - www.intgovforum.org
+    enabled: true
+
+  - id: ietf
+    name: Internet Engineering Task Force
+    family: technical_community
+    domains:
+      - ietf.org
+      - www.ietf.org
+      - datatracker.ietf.org
+    enabled: true
+
+  - id: itu
+    name: International Telecommunication Union
+    family: intergovernmental
+    domains:
+      - itu.int
+      - www.itu.int
+    enabled: true
+
+  - id: un
+    name: United Nations
+    family: intergovernmental
+    domains:
+      - un.org
+      - www.un.org
+    enabled: true
+
+  - id: un_desa
+    name: United Nations Department of Economic and Social Affairs
+    family: intergovernmental
+    domains:
+      - un.org
+      - desa.un.org
+    enabled: true
+
+  - id: unesco
+    name: UNESCO
+    family: intergovernmental
+    domains:
+      - unesco.org
+      - www.unesco.org
+    enabled: true
+
+  - id: oecd
+    name: OECD
+    family: intergovernmental
+    domains:
+      - oecd.org
+      - www.oecd.org
+    enabled: true
+
+  - id: isoc
+    name: Internet Society
+    family: civil_society
+    domains:
+      - internetsociety.org
+      - www.internetsociety.org
+    enabled: true

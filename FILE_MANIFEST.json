@@ -1,0 +1,287 @@
+{
+  "project": "arwen-policy-etl",
+  "version": "0.1.0",
+  "generated_for": "GitHub source release",
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 154
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 485
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 564
+    },
+    {
+      "path": ".venv/.gitignore",
+      "bytes": 1
+    },
+    {
+      "path": ".venv/.lock",
+      "bytes": 0
+    },
+    {
+      "path": ".venv/CACHEDIR.TAG",
+      "bytes": 43
+    },
+    {
+      "path": ".venv/bin/activate",
+      "bytes": 4124
+    },
+    {
+      "path": ".venv/bin/activate.bat",
+      "bytes": 2688
+    },
+    {
+      "path": ".venv/bin/activate.csh",
+      "bytes": 2654
+    },
+    {
+      "path": ".venv/bin/activate.fish",
+      "bytes": 4226
+    },
+    {
+      "path": ".venv/bin/activate.nu",
+      "bytes": 3796
+    },
+    {
+      "path": ".venv/bin/activate.ps1",
+      "bytes": 2794
+    },
+    {
+      "path": ".venv/bin/activate_this.py",
+      "bytes": 2399
+    },
+    {
+      "path": ".venv/bin/deactivate.bat",
+      "bytes": 1730
+    },
+    {
+      "path": ".venv/bin/pydoc.bat",
+      "bytes": 1217
+    },
+    {
+      "path": ".venv/bin/python",
+      "bytes": 6828688
+    },
+    {
+      "path": ".venv/bin/python3",
+      "bytes": 6828688
+    },
+    {
+      "path": ".venv/bin/python3.13",
+      "bytes": 6828688
+    },
+    {
+      "path": ".venv/lib/python3.13/site-packages/_virtualenv.pth",
+      "bytes": 18
+    },
+    {
+      "path": ".venv/lib/python3.13/site-packages/_virtualenv.py",
+      "bytes": 4342
+    },
+    {
+      "path": ".venv/pyvenv.cfg",
+      "bytes": 138
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 428
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 952
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 669
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 692
+    },
+    {
+      "path": "README.md",
+      "bytes": 5989
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 608
+    },
+    {
+      "path": "configs/pipeline.yaml",
+      "bytes": 428
+    },
+    {
+      "path": "configs/sources.yaml",
+      "bytes": 1384
+    },
+    {
+      "path": "data/candidates/README.md",
+      "bytes": 177
+    },
+    {
+      "path": "data/extracted/README.md",
+      "bytes": 176
+    },
+    {
+      "path": "data/normalized/README.md",
+      "bytes": 177
+    },
+    {
+      "path": "data/raw/README.md",
+      "bytes": 170
+    },
+    {
+      "path": "data/registry/README.md",
+      "bytes": 175
+    },
+    {
+      "path": "data/releases/README.md",
+      "bytes": 175
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 444
+    },
+    {
+      "path": "docs/multimodal.md",
+      "bytes": 400
+    },
+    {
+      "path": "docs/provenance.md",
+      "bytes": 341
+    },
+    {
+      "path": "docs/quality.md",
+      "bytes": 338
+    },
+    {
+      "path": "docs/source_onboarding.md",
+      "bytes": 432
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 1367
+    },
+    {
+      "path": "schemas/extracted_document.schema.json",
+      "bytes": 1004
+    },
+    {
+      "path": "schemas/provenance_event.schema.json",
+      "bytes": 634
+    },
+    {
+      "path": "schemas/source_record.schema.json",
+      "bytes": 1429
+    },
+    {
+      "path": "scripts/build_manifest.py",
+      "bytes": 258
+    },
+    {
+      "path": "scripts/ingest_source.py",
+      "bytes": 205
+    },
+    {
+      "path": "scripts/validate_release.py",
+      "bytes": 332
+    },
+    {
+      "path": "src/arwen_etl/__init__.py",
+      "bytes": 22
+    },
+    {
+      "path": "src/arwen_etl/candidates.py",
+      "bytes": 1624
+    },
+    {
+      "path": "src/arwen_etl/capture.py",
+      "bytes": 2703
+    },
+    {
+      "path": "src/arwen_etl/cli.py",
+      "bytes": 5687
+    },
+    {
+      "path": "src/arwen_etl/config.py",
+      "bytes": 556
+    },
+    {
+      "path": "src/arwen_etl/deduplication.py",
+      "bytes": 433
+    },
+    {
+      "path": "src/arwen_etl/discovery.py",
+      "bytes": 504
+    },
+    {
+      "path": "src/arwen_etl/extraction.py",
+      "bytes": 3010
+    },
+    {
+      "path": "src/arwen_etl/hashing.py",
+      "bytes": 378
+    },
+    {
+      "path": "src/arwen_etl/models.py",
+      "bytes": 1533
+    },
+    {
+      "path": "src/arwen_etl/normalization.py",
+      "bytes": 281
+    },
+    {
+      "path": "src/arwen_etl/provenance.py",
+      "bytes": 599
+    },
+    {
+      "path": "src/arwen_etl/quality.py",
+      "bytes": 713
+    },
+    {
+      "path": "src/arwen_etl/release.py",
+      "bytes": 1790
+    },
+    {
+      "path": "src/arwen_etl/segmentation.py",
+      "bytes": 1386
+    },
+    {
+      "path": "src/arwen_etl/sources/__init__.py",
+      "bytes": 80
+    },
+    {
+      "path": "src/arwen_etl/sources/generic.py",
+      "bytes": 251
+    },
+    {
+      "path": "src/arwen_etl/storage.py",
+      "bytes": 483
+    },
+    {
+      "path": "tests/fixtures/sample.html",
+      "bytes": 188
+    },
+    {
+      "path": "tests/test_hashing.py",
+      "bytes": 188
+    },
+    {
+      "path": "tests/test_normalization.py",
+      "bytes": 135
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "bytes": 571
+    },
+    {
+      "path": "tests/test_provenance.py",
+      "bytes": 239
+    }
+  ]
+}

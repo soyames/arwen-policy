@@ -1,0 +1,23 @@
+version: 1
+
+capture:
+  timeout_seconds: 30
+  max_download_mb: 100
+  max_redirects: 5
+  user_agent: "ArwenPolicyETL/0.1 (+research)"
+  respect_robots: true
+  allowed_schemes:
+    - https
+
+processing:
+  default_language: und
+  segment_target_chars: 1800
+  segment_overlap_chars: 200
+  enable_candidate_extraction: true
+
+quality:
+  minimum_extraction_chars: 20
+  minimum_provenance_score: 0.8
+
+release:
+  output_dir: data/releases
