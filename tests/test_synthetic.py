@@ -11,4 +11,4 @@ def test_synthetic_policy_cases_content():
     assert "## Synthetic Benchmark Data Examples" in content
     assert "### Test Case: Ethical AI Policy Framework" in content
     assert "### Test Case: Climate Policy Tensions" in content
-    assert '"Document ID":' in content  # though it's not JSON, we expect the pattern
+    assert "**Document ID**:" in content  # Markdown bold syntax
