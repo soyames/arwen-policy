@@ -68,7 +68,15 @@ dev = [
 arwen-etl = "arwen_etl.cli:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/arwen_etl"]
+packages = [
+  "src/arwen_etl",
+  "src/arwen_retrieval",
+  "src/arwen_deliberation",
+  "src/arwen_engine",
+  "src/arwen_benchmark",
+  "src/arwen_training",
+  "src/arwen_paper",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -30,9 +30,10 @@ from arwen_deliberation.council import DeliberationCouncil
 from arwen_deliberation.models import Perspective, PolicyQuestion
 from arwen_engine.models import PolicyRequest
 from arwen_engine.pipeline import ArwenPolicyEngine
+from arwen_etl.deliberation import Argument, DeliberationResult as ETLDeliberationResult
 from arwen_etl.engine.qwen_provider import QwenProvider
 from arwen_etl.recommendation import RecommendationGenerator
-from arwen_retrieval.models import CorpusRecord
+from arwen_retrieval.models import CorpusRecord, RetrievalQuery
 from arwen_retrieval.retriever import InMemoryRetriever
 from arwen_retrieval.service import RetrievalService
 
@@ -148,27 +149,7 @@ def run_pipeline(
         top_k=top_k,
     )
 
-    # ── 2. create perspectives from retrieved evidence ─────────────────
-    perspectives: list[Perspective] = []
-    evidence_results = _retrieval_service.search(
-        _retrieval_service.retriever.retrieve(
-            __import__("arwen_retrieval.models", fromlist=["RetrievalQuery"]).RetrievalQuery(
-                text=question,
-                top_k=top_k,
-                stakeholder_groups=tuple(stakeholder_groups) if stakeholder_groups else (),
-            )
-        )
-        if False  # populated by engine.analyze → we let the engine handle it
-        else _retrieval_service.retriever.retrieve(
-            __import__("arwen_retrieval.models", fromlist=["RetrievalQuery"]).RetrievalQuery(
-                text=question,
-                top_k=top_k,
-                stakeholder_groups=tuple(stakeholder_groups) if stakeholder_groups else (),
-            )
-        )
-    )
-
-    # Build perspectives from the evidence retrieved by the engine.
+    # ── 2. retrieve evidence and analyse ──────────────────────────────
     answer = _engine.analyze(request, [])
 
     evidence_texts: list[str] = []
@@ -184,15 +165,11 @@ def run_pipeline(
     backend = provider_result.get("provenance", {}).get("backend", "unknown")
 
     # ── 4. recommendation (heuristic) ─────────────────────────────────
-    # Build a simple deliberation result for the recommendation generator.
-    from arwen_etl.deliberation import DeliberationResult as ETLDR
-    from arwen_etl.deliberation import Argument as ETLArg
-
-    deliberation_result = ETLDR(
+    deliberation_result = ETLDeliberationResult(
         claim=question,
         arguments=[
-            ETLArg(text="Based on retrieved evidence", stance="pro", confidence=0.7),
-            ETLArg(text="Alternative views exist", stance="contra", confidence=0.5),
+            Argument(text="Based on retrieved evidence", stance="pro", confidence=0.7),
+            Argument(text="Alternative views exist", stance="contra", confidence=0.5),
         ],
         consensus_score=0.65,
         method="engine",
