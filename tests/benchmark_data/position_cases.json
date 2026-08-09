@@ -1,0 +1,262 @@
+[
+  {
+    "case_id": "position_case_000",
+    "text": "IETF should adopt the new transport protocol as it improves performance.",
+    "expected_positions": [
+      {
+        "position": "support",
+        "subject": "ICANN",
+        "confidence_min": 0.8
+      },
+      {
+        "position": "require",
+        "subject": "IGF",
+        "confidence_min": 0.85
+      },
+      {
+        "position": "recommend",
+        "subject": "IETF",
+        "confidence_min": 0.75
+      },
+      {
+        "position": "consider",
+        "subject": "UNESCO",
+        "confidence_min": 0.7
+      }
+    ]
+  },
+  {
+    "case_id": "position_case_001",
+    "text": "ICANN should support the new gTLD program because it promotes competition.",
+    "expected_positions": [
+      {
+        "position": "support",
+        "subject": "ICANN",
+        "confidence_min": 0.8
+      },
+      {
+        "position": "require",
+        "subject": "IGF",
+        "confidence_min": 0.85
+      },
+      {
+        "position": "recommend",
+        "subject": "IETF",
+        "confidence_min": 0.75
+      },
+      {
+        "position": "consider",
+        "subject": "UNESCO",
+        "confidence_min": 0.7
+      }
+    ]
+  },
+  {
+    "case_id": "position_case_002",
+    "text": "UNESCO may consider expanding its digital literacy programs worldwide.",
+    "expected_positions": [
+      {
+        "position": "support",
+        "subject": "ICANN",
+        "confidence_min": 0.8
+      },
+      {
+        "position": "require",
+        "subject": "IGF",
+        "confidence_min": 0.85
+      },
+      {
+        "position": "recommend",
+        "subject": "IETF",
+        "confidence_min": 0.75
+      },
+      {
+        "position": "consider",
+        "subject": "UNESCO",
+        "confidence_min": 0.7
+      }
+    ]
+  },
+  {
+    "case_id": "position_case_003",
+    "text": "ICANN should support the new gTLD program because it promotes competition.",
+    "expected_positions": [
+      {
+        "position": "support",
+        "subject": "ICANN",
+        "confidence_min": 0.8
+      },
+      {
+        "position": "require",
+        "subject": "IGF",
+        "confidence_min": 0.85
+      },
+      {
+        "position": "recommend",
+        "subject": "IETF",
+        "confidence_min": 0.75
+      },
+      {
+        "position": "consider",
+        "subject": "UNESCO",
+        "confidence_min": 0.7
+      }
+    ]
+  },
+  {
+    "case_id": "position_case_004",
+    "text": "UNESCO may consider expanding its digital literacy programs worldwide.",
+    "expected_positions": [
+      {
+        "position": "support",
+        "subject": "ICANN",
+        "confidence_min": 0.8
+      },
+      {
+        "position": "require",
+        "subject": "IGF",
+        "confidence_min": 0.85
+      },
+      {
+        "position": "recommend",
+        "subject": "IETF",
+        "confidence_min": 0.75
+      },
+      {
+        "position": "consider",
+        "subject": "UNESCO",
+        "confidence_min": 0.7
+      }
+    ]
+  },
+  {
+    "case_id": "position_case_005",
+    "text": "ICANN should support the new gTLD program because it promotes competition.",
+    "expected_positions": [
+      {
+        "position": "support",
+        "subject": "ICANN",
+        "confidence_min": 0.8
+      },
+      {
+        "position": "require",
+        "subject": "IGF",
+        "confidence_min": 0.85
+      },
+      {
+        "position": "recommend",
+        "subject": "IETF",
+        "confidence_min": 0.75
+      },
+      {
+        "position": "consider",
+        "subject": "UNESCO",
+        "confidence_min": 0.7
+      }
+    ]
+  },
+  {
+    "case_id": "position_case_006",
+    "text": "IETF should adopt the new transport protocol as it improves performance.",
+    "expected_positions": [
+      {
+        "position": "support",
+        "subject": "ICANN",
+        "confidence_min": 0.8
+      },
+      {
+        "position": "require",
+        "subject": "IGF",
+        "confidence_min": 0.85
+      },
+      {
+        "position": "recommend",
+        "subject": "IETF",
+        "confidence_min": 0.75
+      },
+      {
+        "position": "consider",
+        "subject": "UNESCO",
+        "confidence_min": 0.7
+      }
+    ]
+  },
+  {
+    "case_id": "position_case_007",
+    "text": "IETF should adopt the new transport protocol as it improves performance.",
+    "expected_positions": [
+      {
+        "position": "support",
+        "subject": "ICANN",
+        "confidence_min": 0.8
+      },
+      {
+        "position": "require",
+        "subject": "IGF",
+        "confidence_min": 0.85
+      },
+      {
+        "position": "recommend",
+        "subject": "IETF",
+        "confidence_min": 0.75
+      },
+      {
+        "position": "consider",
+        "subject": "UNESCO",
+        "confidence_min": 0.7
+      }
+    ]
+  },
+  {
+    "case_id": "position_case_008",
+    "text": "The IGF must ensure multi-stakeholder participation in all sessions.",
+    "expected_positions": [
+      {
+        "position": "support",
+        "subject": "ICANN",
+        "confidence_min": 0.8
+      },
+      {
+        "position": "require",
+        "subject": "IGF",
+        "confidence_min": 0.85
+      },
+      {
+        "position": "recommend",
+        "subject": "IETF",
+        "confidence_min": 0.75
+      },
+      {
+        "position": "consider",
+        "subject": "UNESCO",
+        "confidence_min": 0.7
+      }
+    ]
+  },
+  {
+    "case_id": "position_case_009",
+    "text": "ICANN should support the new gTLD program because it promotes competition.",
+    "expected_positions": [
+      {
+        "position": "support",
+        "subject": "ICANN",
+        "confidence_min": 0.8
+      },
+      {
+        "position": "require",
+        "subject": "IGF",
+        "confidence_min": 0.85
+      },
+      {
+        "position": "recommend",
+        "subject": "IETF",
+        "confidence_min": 0.75
+      },
+      {
+        "position": "consider",
+        "subject": "UNESCO",
+        "confidence_min": 0.7
+      }
+    ]
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "case_id": "evidence_case_000",
+    "claim": "IETF develops open standards",
+    "evidence_candidates": [
+      "ICANN Board minutes from 2023",
+      "IGF annual report 2023",
+      "IETF meeting proceedings",
+      "OECD digital policy framework"
+    ],
+    "expected_relevant": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "case_id": "evidence_case_001",
+    "claim": "ICANN supports multi-stakeholder governance",
+    "evidence_candidates": [
+      "ICANN Board minutes from 2023",
+      "IGF annual report 2023",
+      "IETF meeting proceedings",
+      "OECD digital policy framework"
+    ],
+    "expected_relevant": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "case_id": "evidence_case_002",
+    "claim": "IGF promotes inclusive participation",
+    "evidence_candidates": [
+      "ICANN's bylaws require multi-stakeholder model",
+      "IGF charter mandates inclusive participation",
+      "IETF RFC process is open to all",
+      "UN resolution on digital cooperation"
+    ],
+    "expected_relevant": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "case_id": "evidence_case_003",
+    "claim": "IETF develops open standards",
+    "evidence_candidates": [
+      "ICANN Board minutes from 2023",
+      "IGF annual report 2023",
+      "IETF meeting proceedings",
+      "OECD digital policy framework"
+    ],
+    "expected_relevant": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "case_id": "evidence_case_004",
+    "claim": "IETF develops open standards",
+    "evidence_candidates": [
+      "ICANN's bylaws require multi-stakeholder model",
+      "IGF charter mandates inclusive participation",
+      "IETF RFC process is open to all",
+      "UN resolution on digital cooperation"
+    ],
+    "expected_relevant": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "case_id": "evidence_case_005",
+    "claim": "IETF develops open standards",
+    "evidence_candidates": [
+      "ICANN's bylaws require multi-stakeholder model",
+      "IGF charter mandates inclusive participation",
+      "IETF RFC process is open to all",
+      "UN resolution on digital cooperation"
+    ],
+    "expected_relevant": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "case_id": "evidence_case_006",
+    "claim": "IETF develops open standards",
+    "evidence_candidates": [
+      "ICANN's bylaws require multi-stakeholder model",
+      "IGF charter mandates inclusive participation",
+      "IETF RFC process is open to all",
+      "UN resolution on digital cooperation"
+    ],
+    "expected_relevant": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "case_id": "evidence_case_007",
+    "claim": "ICANN supports multi-stakeholder governance",
+    "evidence_candidates": [
+      "ICANN Board minutes from 2023",
+      "IGF annual report 2023",
+      "IETF meeting proceedings",
+      "OECD digital policy framework"
+    ],
+    "expected_relevant": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "case_id": "evidence_case_008",
+    "claim": "IGF promotes inclusive participation",
+    "evidence_candidates": [
+      "ICANN Board minutes from 2023",
+      "IGF annual report 2023",
+      "IETF meeting proceedings",
+      "OECD digital policy framework"
+    ],
+    "expected_relevant": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "case_id": "evidence_case_009",
+    "claim": "IETF develops open standards",
+    "evidence_candidates": [
+      "ICANN's bylaws require multi-stakeholder model",
+      "IGF charter mandates inclusive participation",
+      "IETF RFC process is open to all",
+      "UN resolution on digital cooperation"
+    ],
+    "expected_relevant": [
+      0,
+      1,
+      2
+    ]
+  }
+]

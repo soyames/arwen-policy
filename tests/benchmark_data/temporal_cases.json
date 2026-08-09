@@ -1,0 +1,162 @@
+[
+  {
+    "case_id": "temporal_case_000",
+    "text": "First, IETF developed TCP. Then it developed QUIC as a modern replacement.",
+    "expected_events": [
+      {
+        "text": "ICANN opposed",
+        "temporal_marker": "before",
+        "reference_to": "ICANN supports"
+      },
+      {
+        "text": "ICANN supports",
+        "temporal_marker": "subsequently",
+        "reference_to": "ICANN opposed"
+      }
+    ]
+  },
+  {
+    "case_id": "temporal_case_001",
+    "text": "Initially, IGF focused only on access issues. Later, it expanded to include security and governance.",
+    "expected_events": [
+      {
+        "text": "ICANN opposed",
+        "temporal_marker": "before",
+        "reference_to": "ICANN supports"
+      },
+      {
+        "text": "ICANN supports",
+        "temporal_marker": "subsequently",
+        "reference_to": "ICANN opposed"
+      }
+    ]
+  },
+  {
+    "case_id": "temporal_case_002",
+    "text": "Before 2020, ICANN opposed the proposal. Subsequently, ICANN changed its position and now supports it.",
+    "expected_events": [
+      {
+        "text": "ICANN opposed",
+        "temporal_marker": "before",
+        "reference_to": "ICANN supports"
+      },
+      {
+        "text": "ICANN supports",
+        "temporal_marker": "subsequently",
+        "reference_to": "ICANN opposed"
+      }
+    ]
+  },
+  {
+    "case_id": "temporal_case_003",
+    "text": "Before 2020, ICANN opposed the proposal. Subsequently, ICANN changed its position and now supports it.",
+    "expected_events": [
+      {
+        "text": "ICANN opposed",
+        "temporal_marker": "before",
+        "reference_to": "ICANN supports"
+      },
+      {
+        "text": "ICANN supports",
+        "temporal_marker": "subsequently",
+        "reference_to": "ICANN opposed"
+      }
+    ]
+  },
+  {
+    "case_id": "temporal_case_004",
+    "text": "Before 2020, ICANN opposed the proposal. Subsequently, ICANN changed its position and now supports it.",
+    "expected_events": [
+      {
+        "text": "ICANN opposed",
+        "temporal_marker": "before",
+        "reference_to": "ICANN supports"
+      },
+      {
+        "text": "ICANN supports",
+        "temporal_marker": "subsequently",
+        "reference_to": "ICANN opposed"
+      }
+    ]
+  },
+  {
+    "case_id": "temporal_case_005",
+    "text": "Initially, IGF focused only on access issues. Later, it expanded to include security and governance.",
+    "expected_events": [
+      {
+        "text": "ICANN opposed",
+        "temporal_marker": "before",
+        "reference_to": "ICANN supports"
+      },
+      {
+        "text": "ICANN supports",
+        "temporal_marker": "subsequently",
+        "reference_to": "ICANN opposed"
+      }
+    ]
+  },
+  {
+    "case_id": "temporal_case_006",
+    "text": "Initially, IGF focused only on access issues. Later, it expanded to include security and governance.",
+    "expected_events": [
+      {
+        "text": "ICANN opposed",
+        "temporal_marker": "before",
+        "reference_to": "ICANN supports"
+      },
+      {
+        "text": "ICANN supports",
+        "temporal_marker": "subsequently",
+        "reference_to": "ICANN opposed"
+      }
+    ]
+  },
+  {
+    "case_id": "temporal_case_007",
+    "text": "Initially, IGF focused only on access issues. Later, it expanded to include security and governance.",
+    "expected_events": [
+      {
+        "text": "ICANN opposed",
+        "temporal_marker": "before",
+        "reference_to": "ICANN supports"
+      },
+      {
+        "text": "ICANN supports",
+        "temporal_marker": "subsequently",
+        "reference_to": "ICANN opposed"
+      }
+    ]
+  },
+  {
+    "case_id": "temporal_case_008",
+    "text": "Before 2020, ICANN opposed the proposal. Subsequently, ICANN changed its position and now supports it.",
+    "expected_events": [
+      {
+        "text": "ICANN opposed",
+        "temporal_marker": "before",
+        "reference_to": "ICANN supports"
+      },
+      {
+        "text": "ICANN supports",
+        "temporal_marker": "subsequently",
+        "reference_to": "ICANN opposed"
+      }
+    ]
+  },
+  {
+    "case_id": "temporal_case_009",
+    "text": "Before 2020, ICANN opposed the proposal. Subsequently, ICANN changed its position and now supports it.",
+    "expected_events": [
+      {
+        "text": "ICANN opposed",
+        "temporal_marker": "before",
+        "reference_to": "ICANN supports"
+      },
+      {
+        "text": "ICANN supports",
+        "temporal_marker": "subsequently",
+        "reference_to": "ICANN opposed"
+      }
+    ]
+  }
+]

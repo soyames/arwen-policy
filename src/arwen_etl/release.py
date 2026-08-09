@@ -8,8 +8,9 @@ import time
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from pathlib import Path
-from typing import List, Dict, Any, Tuple
-from .storage import write_json
+from typing import List, Dict, Any, Tuple, Optional
+from .storage import write_json, read_json
+from .dataset_generator import DatasetGenerator
 
 # ---------------------------------------------------------------------------
 # Utility: Load HF token (now fully environment-agnostic)
@@ -108,6 +109,23 @@ def _verify_manifest(manifest_path: Path) -> List[str]:
         except Exception as e:
             errors.append(f"Record validation failed for {entry['path']}: {e}")
     return errors
+
+
+def generate_dataset(version: str = "0.1.0", data_dir: str = "data") -> Path:
+    """
+    Generate a Hugging Face dataset from the processed corpus.
+
+    Args:
+        version: Dataset version string
+        data_dir: Directory containing processed data
+
+    Returns:
+        Path to the generated dataset directory
+    """
+    generator = DatasetGenerator(data_dir=data_dir)
+    dataset = generator.build_dataset(version=version)
+    dataset_path = generator.save_dataset(dataset)
+    return dataset_path
 
 
 # ---------------------------------------------------------------------------

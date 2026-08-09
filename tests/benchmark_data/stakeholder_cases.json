@@ -1,0 +1,262 @@
+[
+  {
+    "case_id": "stakeholder_case_000",
+    "text": "IETF Working Group chairs discussed draft standards for HTTP/3.",
+    "expected_stakeholders": [
+      {
+        "name": "ICANN",
+        "type": "organization",
+        "role": "regulator"
+      },
+      {
+        "name": "IGF",
+        "type": "organization",
+        "role": "forum"
+      },
+      {
+        "name": "IETF",
+        "type": "organization",
+        "role": "standards_body"
+      },
+      {
+        "name": "UN DESA",
+        "type": "organization",
+        "role": "intergovernmental"
+      }
+    ]
+  },
+  {
+    "case_id": "stakeholder_case_001",
+    "text": "The Internet Governance Forum (IGF) held its annual meeting in Kyoto.",
+    "expected_stakeholders": [
+      {
+        "name": "ICANN",
+        "type": "organization",
+        "role": "regulator"
+      },
+      {
+        "name": "IGF",
+        "type": "organization",
+        "role": "forum"
+      },
+      {
+        "name": "IETF",
+        "type": "organization",
+        "role": "standards_body"
+      },
+      {
+        "name": "UN DESA",
+        "type": "organization",
+        "role": "intergovernmental"
+      }
+    ]
+  },
+  {
+    "case_id": "stakeholder_case_002",
+    "text": "The Internet Governance Forum (IGF) held its annual meeting in Kyoto.",
+    "expected_stakeholders": [
+      {
+        "name": "ICANN",
+        "type": "organization",
+        "role": "regulator"
+      },
+      {
+        "name": "IGF",
+        "type": "organization",
+        "role": "forum"
+      },
+      {
+        "name": "IETF",
+        "type": "organization",
+        "role": "standards_body"
+      },
+      {
+        "name": "UN DESA",
+        "type": "organization",
+        "role": "intergovernmental"
+      }
+    ]
+  },
+  {
+    "case_id": "stakeholder_case_003",
+    "text": "IETF Working Group chairs discussed draft standards for HTTP/3.",
+    "expected_stakeholders": [
+      {
+        "name": "ICANN",
+        "type": "organization",
+        "role": "regulator"
+      },
+      {
+        "name": "IGF",
+        "type": "organization",
+        "role": "forum"
+      },
+      {
+        "name": "IETF",
+        "type": "organization",
+        "role": "standards_body"
+      },
+      {
+        "name": "UN DESA",
+        "type": "organization",
+        "role": "intergovernmental"
+      }
+    ]
+  },
+  {
+    "case_id": "stakeholder_case_004",
+    "text": "ICANN, the Internet Corporation for Assigned Names and Numbers, announced new policies.",
+    "expected_stakeholders": [
+      {
+        "name": "ICANN",
+        "type": "organization",
+        "role": "regulator"
+      },
+      {
+        "name": "IGF",
+        "type": "organization",
+        "role": "forum"
+      },
+      {
+        "name": "IETF",
+        "type": "organization",
+        "role": "standards_body"
+      },
+      {
+        "name": "UN DESA",
+        "type": "organization",
+        "role": "intergovernmental"
+      }
+    ]
+  },
+  {
+    "case_id": "stakeholder_case_005",
+    "text": "ICANN, the Internet Corporation for Assigned Names and Numbers, announced new policies.",
+    "expected_stakeholders": [
+      {
+        "name": "ICANN",
+        "type": "organization",
+        "role": "regulator"
+      },
+      {
+        "name": "IGF",
+        "type": "organization",
+        "role": "forum"
+      },
+      {
+        "name": "IETF",
+        "type": "organization",
+        "role": "standards_body"
+      },
+      {
+        "name": "UN DESA",
+        "type": "organization",
+        "role": "intergovernmental"
+      }
+    ]
+  },
+  {
+    "case_id": "stakeholder_case_006",
+    "text": "The United Nations Department of Economic and Social Affairs (UN DESA) published a report.",
+    "expected_stakeholders": [
+      {
+        "name": "ICANN",
+        "type": "organization",
+        "role": "regulator"
+      },
+      {
+        "name": "IGF",
+        "type": "organization",
+        "role": "forum"
+      },
+      {
+        "name": "IETF",
+        "type": "organization",
+        "role": "standards_body"
+      },
+      {
+        "name": "UN DESA",
+        "type": "organization",
+        "role": "intergovernmental"
+      }
+    ]
+  },
+  {
+    "case_id": "stakeholder_case_007",
+    "text": "ICANN, the Internet Corporation for Assigned Names and Numbers, announced new policies.",
+    "expected_stakeholders": [
+      {
+        "name": "ICANN",
+        "type": "organization",
+        "role": "regulator"
+      },
+      {
+        "name": "IGF",
+        "type": "organization",
+        "role": "forum"
+      },
+      {
+        "name": "IETF",
+        "type": "organization",
+        "role": "standards_body"
+      },
+      {
+        "name": "UN DESA",
+        "type": "organization",
+        "role": "intergovernmental"
+      }
+    ]
+  },
+  {
+    "case_id": "stakeholder_case_008",
+    "text": "IETF Working Group chairs discussed draft standards for HTTP/3.",
+    "expected_stakeholders": [
+      {
+        "name": "ICANN",
+        "type": "organization",
+        "role": "regulator"
+      },
+      {
+        "name": "IGF",
+        "type": "organization",
+        "role": "forum"
+      },
+      {
+        "name": "IETF",
+        "type": "organization",
+        "role": "standards_body"
+      },
+      {
+        "name": "UN DESA",
+        "type": "organization",
+        "role": "intergovernmental"
+      }
+    ]
+  },
+  {
+    "case_id": "stakeholder_case_009",
+    "text": "IETF Working Group chairs discussed draft standards for HTTP/3.",
+    "expected_stakeholders": [
+      {
+        "name": "ICANN",
+        "type": "organization",
+        "role": "regulator"
+      },
+      {
+        "name": "IGF",
+        "type": "organization",
+        "role": "forum"
+      },
+      {
+        "name": "IETF",
+        "type": "organization",
+        "role": "standards_body"
+      },
+      {
+        "name": "UN DESA",
+        "type": "organization",
+        "role": "intergovernmental"
+      }
+    ]
+  }
+]

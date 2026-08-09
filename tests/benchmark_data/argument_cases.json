@@ -1,0 +1,182 @@
+[
+  {
+    "case_id": "argument_case_000",
+    "text": "ICANN should support the new gTLD program because it promotes competition and innovation.",
+    "expected_arguments": [
+      {
+        "claim": "ICANN should support gTLD",
+        "justification": "promotes competition"
+      },
+      {
+        "claim": "IGF must ensure participation",
+        "justification": "diverse voices improve outcomes"
+      },
+      {
+        "claim": "IETF should adopt QUIC",
+        "justification": "better performance than TCP"
+      }
+    ]
+  },
+  {
+    "case_id": "argument_case_001",
+    "text": "IETF should adopt QUIC since it provides better performance than TCP.",
+    "expected_arguments": [
+      {
+        "claim": "ICANN should support gTLD",
+        "justification": "promotes competition"
+      },
+      {
+        "claim": "IGF must ensure participation",
+        "justification": "diverse voices improve outcomes"
+      },
+      {
+        "claim": "IETF should adopt QUIC",
+        "justification": "better performance than TCP"
+      }
+    ]
+  },
+  {
+    "case_id": "argument_case_002",
+    "text": "ICANN should support the new gTLD program because it promotes competition and innovation.",
+    "expected_arguments": [
+      {
+        "claim": "ICANN should support gTLD",
+        "justification": "promotes competition"
+      },
+      {
+        "claim": "IGF must ensure participation",
+        "justification": "diverse voices improve outcomes"
+      },
+      {
+        "claim": "IETF should adopt QUIC",
+        "justification": "better performance than TCP"
+      }
+    ]
+  },
+  {
+    "case_id": "argument_case_003",
+    "text": "Although some oppose the changes, the IGF must ensure participation because diverse voices improve outcomes.",
+    "expected_arguments": [
+      {
+        "claim": "ICANN should support gTLD",
+        "justification": "promotes competition"
+      },
+      {
+        "claim": "IGF must ensure participation",
+        "justification": "diverse voices improve outcomes"
+      },
+      {
+        "claim": "IETF should adopt QUIC",
+        "justification": "better performance than TCP"
+      }
+    ]
+  },
+  {
+    "case_id": "argument_case_004",
+    "text": "ICANN should support the new gTLD program because it promotes competition and innovation.",
+    "expected_arguments": [
+      {
+        "claim": "ICANN should support gTLD",
+        "justification": "promotes competition"
+      },
+      {
+        "claim": "IGF must ensure participation",
+        "justification": "diverse voices improve outcomes"
+      },
+      {
+        "claim": "IETF should adopt QUIC",
+        "justification": "better performance than TCP"
+      }
+    ]
+  },
+  {
+    "case_id": "argument_case_005",
+    "text": "ICANN should support the new gTLD program because it promotes competition and innovation.",
+    "expected_arguments": [
+      {
+        "claim": "ICANN should support gTLD",
+        "justification": "promotes competition"
+      },
+      {
+        "claim": "IGF must ensure participation",
+        "justification": "diverse voices improve outcomes"
+      },
+      {
+        "claim": "IETF should adopt QUIC",
+        "justification": "better performance than TCP"
+      }
+    ]
+  },
+  {
+    "case_id": "argument_case_006",
+    "text": "ICANN should support the new gTLD program because it promotes competition and innovation.",
+    "expected_arguments": [
+      {
+        "claim": "ICANN should support gTLD",
+        "justification": "promotes competition"
+      },
+      {
+        "claim": "IGF must ensure participation",
+        "justification": "diverse voices improve outcomes"
+      },
+      {
+        "claim": "IETF should adopt QUIC",
+        "justification": "better performance than TCP"
+      }
+    ]
+  },
+  {
+    "case_id": "argument_case_007",
+    "text": "Although some oppose the changes, the IGF must ensure participation because diverse voices improve outcomes.",
+    "expected_arguments": [
+      {
+        "claim": "ICANN should support gTLD",
+        "justification": "promotes competition"
+      },
+      {
+        "claim": "IGF must ensure participation",
+        "justification": "diverse voices improve outcomes"
+      },
+      {
+        "claim": "IETF should adopt QUIC",
+        "justification": "better performance than TCP"
+      }
+    ]
+  },
+  {
+    "case_id": "argument_case_008",
+    "text": "Although some oppose the changes, the IGF must ensure participation because diverse voices improve outcomes.",
+    "expected_arguments": [
+      {
+        "claim": "ICANN should support gTLD",
+        "justification": "promotes competition"
+      },
+      {
+        "claim": "IGF must ensure participation",
+        "justification": "diverse voices improve outcomes"
+      },
+      {
+        "claim": "IETF should adopt QUIC",
+        "justification": "better performance than TCP"
+      }
+    ]
+  },
+  {
+    "case_id": "argument_case_009",
+    "text": "Although some oppose the changes, the IGF must ensure participation because diverse voices improve outcomes.",
+    "expected_arguments": [
+      {
+        "claim": "ICANN should support gTLD",
+        "justification": "promotes competition"
+      },
+      {
+        "claim": "IGF must ensure participation",
+        "justification": "diverse voices improve outcomes"
+      },
+      {
+        "claim": "IETF should adopt QUIC",
+        "justification": "better performance than TCP"
+      }
+    ]
+  }
+]

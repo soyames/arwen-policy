@@ -1,0 +1,72 @@
+[
+  {
+    "case_id": "ocr_case_000",
+    "image_path": "test_data/ocr/sample_000.png",
+    "expected_text": "ICANN Policy Update: The Board adopted the new gTLD agreement on June 15, 2023.",
+    "expected_language": "eng",
+    "expected_confidence_min": 0.75
+  },
+  {
+    "case_id": "ocr_case_001",
+    "image_path": "test_data/ocr/sample_001.png",
+    "expected_text": "ICANN Policy Update: The Board adopted the new gTLD agreement on June 15, 2023.",
+    "expected_language": "eng",
+    "expected_confidence_min": 0.75
+  },
+  {
+    "case_id": "ocr_case_002",
+    "image_path": "test_data/ocr/sample_002.png",
+    "expected_text": "IETF RFC 9000: QUIC - A UDP-Based Multiplexed and Secure Transport.",
+    "expected_language": "eng",
+    "expected_confidence_min": 0.75
+  },
+  {
+    "case_id": "ocr_case_003",
+    "image_path": "test_data/ocr/sample_003.png",
+    "expected_text": "IGF 2023 Session Transcript: Multi-stakeholder approaches to Internet governance.",
+    "expected_language": "eng",
+    "expected_confidence_min": 0.75
+  },
+  {
+    "case_id": "ocr_case_004",
+    "image_path": "test_data/ocr/sample_004.png",
+    "expected_text": "IGF 2023 Session Transcript: Multi-stakeholder approaches to Internet governance.",
+    "expected_language": "eng",
+    "expected_confidence_min": 0.75
+  },
+  {
+    "case_id": "ocr_case_005",
+    "image_path": "test_data/ocr/sample_005.png",
+    "expected_text": "IGF 2023 Session Transcript: Multi-stakeholder approaches to Internet governance.",
+    "expected_language": "eng",
+    "expected_confidence_min": 0.75
+  },
+  {
+    "case_id": "ocr_case_006",
+    "image_path": "test_data/ocr/sample_006.png",
+    "expected_text": "ICANN Policy Update: The Board adopted the new gTLD agreement on June 15, 2023.",
+    "expected_language": "eng",
+    "expected_confidence_min": 0.75
+  },
+  {
+    "case_id": "ocr_case_007",
+    "image_path": "test_data/ocr/sample_007.png",
+    "expected_text": "UN Resolution A/RES/76/183: The role of the UN in promoting digital cooperation.",
+    "expected_language": "eng",
+    "expected_confidence_min": 0.75
+  },
+  {
+    "case_id": "ocr_case_008",
+    "image_path": "test_data/ocr/sample_008.png",
+    "expected_text": "ICANN Policy Update: The Board adopted the new gTLD agreement on June 15, 2023.",
+    "expected_language": "eng",
+    "expected_confidence_min": 0.75
+  },
+  {
+    "case_id": "ocr_case_009",
+    "image_path": "test_data/ocr/sample_009.png",
+    "expected_text": "UN Resolution A/RES/76/183: The role of the UN in promoting digital cooperation.",
+    "expected_language": "eng",
+    "expected_confidence_min": 0.75
+  }
+]

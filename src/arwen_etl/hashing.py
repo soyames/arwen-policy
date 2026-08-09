@@ -1,5 +1,11 @@
+from __future__ import annotations
+
 from hashlib import sha256
 from pathlib import Path
+
+
+def compute_hash(data: bytes) -> str:
+    return sha256(data).hexdigest()
 
 
 def sha256_bytes(data: bytes) -> str:

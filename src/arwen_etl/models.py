@@ -63,3 +63,27 @@ class Candidate(BaseModel):
     evidence_confidence: float | None = None
     evidence_required: bool = True
     attributes: dict[str, Any] = Field(default_factory=dict)
+
+
+class ExtractedDocument(BaseModel):
+    """Normalized document after extraction and processing."""
+    model_config = ConfigDict(extra="forbid")
+
+    document_id: str
+    source_id: str
+    canonical_url: str | None = None
+    retrieved_at: datetime | None = None
+    http_status: int | None = None
+    content_type: str | None = None
+    content_hash: str | None = None
+    extraction_status: str = "not_extracted"
+    text: str = ""
+    title: str | None = None
+    language: str = "und"
+    jurisdiction: str | None = None
+    policy_topics: list[str] = Field(default_factory=list)
+    license: str | None = None
+    access_conditions: str | None = None
+    discovery_urls: list[str] = Field(default_factory=list)
+    metadata: dict[str, Any] = Field(default_factory=dict)
+    provenance_events: list[Any] = Field(default_factory=list)

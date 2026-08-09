@@ -1,0 +1,72 @@
+[
+  {
+    "case_id": "asr_case_000",
+    "audio_path": "test_data/asr/sample_000.wav",
+    "expected_transcript": "UNESCO promotes education, science, and culture worldwide.",
+    "expected_language": "eng",
+    "expected_speakers": 1
+  },
+  {
+    "case_id": "asr_case_001",
+    "audio_path": "test_data/asr/sample_001.wav",
+    "expected_transcript": "The Internet Governance Forum brings together stakeholders from around the world.",
+    "expected_language": "eng",
+    "expected_speakers": 1
+  },
+  {
+    "case_id": "asr_case_002",
+    "audio_path": "test_data/asr/sample_002.wav",
+    "expected_transcript": "ICANN manages the domain name system and IP address allocation.",
+    "expected_language": "eng",
+    "expected_speakers": 1
+  },
+  {
+    "case_id": "asr_case_003",
+    "audio_path": "test_data/asr/sample_003.wav",
+    "expected_transcript": "The Internet Governance Forum brings together stakeholders from around the world.",
+    "expected_language": "eng",
+    "expected_speakers": 3
+  },
+  {
+    "case_id": "asr_case_004",
+    "audio_path": "test_data/asr/sample_004.wav",
+    "expected_transcript": "ICANN manages the domain name system and IP address allocation.",
+    "expected_language": "eng",
+    "expected_speakers": 3
+  },
+  {
+    "case_id": "asr_case_005",
+    "audio_path": "test_data/asr/sample_005.wav",
+    "expected_transcript": "UNESCO promotes education, science, and culture worldwide.",
+    "expected_language": "eng",
+    "expected_speakers": 1
+  },
+  {
+    "case_id": "asr_case_006",
+    "audio_path": "test_data/asr/sample_006.wav",
+    "expected_transcript": "UNESCO promotes education, science, and culture worldwide.",
+    "expected_language": "eng",
+    "expected_speakers": 3
+  },
+  {
+    "case_id": "asr_case_007",
+    "audio_path": "test_data/asr/sample_007.wav",
+    "expected_transcript": "The IETF develops Internet standards through a consensus process.",
+    "expected_language": "eng",
+    "expected_speakers": 1
+  },
+  {
+    "case_id": "asr_case_008",
+    "audio_path": "test_data/asr/sample_008.wav",
+    "expected_transcript": "ICANN manages the domain name system and IP address allocation.",
+    "expected_language": "eng",
+    "expected_speakers": 3
+  },
+  {
+    "case_id": "asr_case_009",
+    "audio_path": "test_data/asr/sample_009.wav",
+    "expected_transcript": "UNESCO promotes education, science, and culture worldwide.",
+    "expected_language": "eng",
+    "expected_speakers": 2
+  }
+]
