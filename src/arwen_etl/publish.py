@@ -49,7 +49,7 @@ def publish_release(release_dir: str | Path, repo_id: str, token: str | None = N
             if not f.is_file():
                 continue
 
-            path_in_repo = str(f.relative_to(root))
+            path_in_repo = str(f.relative_to(root)).replace("\\", "/")
             try:
                 # prefer streaming fileobj when available
                 with f.open("rb") as fh:

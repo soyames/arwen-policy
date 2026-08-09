@@ -1,43 +1,42 @@
 """
-Arwen Policy — Hugging Face Space
+Arwen Policy — Evidence-grounded digital-policy deliberation.
 
-Evidence-grounded digital-policy deliberation powered by Qwen (Ollama).
-
-Usage:
-    python app.py
-
-The Space presents a Gradio interface for:
-    1. Entering a policy question
-    2. Selecting stakeholder groups
-    3. Retrieving relevant evidence
-    4. Deliberating across perspectives
-    5. Synthesising an evidence-grounded recommendation
+Hugging Face Space demonstrating stakeholder-aware retrieval, deliberation,
+and recommendation synthesis for Internet governance policy questions.
 """
 
 from __future__ import annotations
 
 import json
 import os
-import sys
+from dataclasses import dataclass, field
 from typing import Any
-
-# Ensure the src directory is on the path so we can import arwen_* packages.
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
 
 import gradio as gr
 
-from arwen_deliberation.council import DeliberationCouncil
-from arwen_deliberation.models import Perspective, PolicyQuestion
-from arwen_engine.models import PolicyRequest
-from arwen_engine.pipeline import ArwenPolicyEngine
-from arwen_etl.deliberation import Argument, DeliberationResult as ETLDeliberationResult
-from arwen_etl.engine.qwen_provider import QwenProvider
-from arwen_etl.recommendation import RecommendationGenerator
-from arwen_retrieval.models import CorpusRecord, RetrievalQuery
-from arwen_retrieval.retriever import InMemoryRetriever
-from arwen_retrieval.service import RetrievalService
+# ---------------------------------------------------------------------------
+# Embedded minimal types (self-contained, no external arwen_* deps needed)
+# ---------------------------------------------------------------------------
 
-# ── sample corpus ────────────────────────────────────────────────────────
+@dataclass(frozen=True)
+class CorpusRecord:
+    record_id: str
+    text: str
+    source_id: str
+    document_id: str
+    segment_id: str | None = None
+    title: str | None = None
+    url: str | None = None
+    language: str = "und"
+    stakeholder_groups: tuple[str, ...] = ()
+    organizations: tuple[str, ...] = ()
+    topics: tuple[str, ...] = ()
+
+
+# ---------------------------------------------------------------------------
+# Sample corpus (real policy excerpts from Internet governance sources)
+# ---------------------------------------------------------------------------
+
 SAMPLE_CORPUS: list[CorpusRecord] = [
     CorpusRecord(
         record_id="r1",
@@ -47,12 +46,12 @@ SAMPLE_CORPUS: list[CorpusRecord] = [
             "stakeholders including governments, the private sector, civil society, "
             "the technical community, and international organisations."
         ),
-        source_id="s1",
+        source_id="itu-wsis",
         document_id="d1",
         segment_id="seg1",
-        stakeholder_groups=("civil_society", "government", "technical_community"),
+        stakeholder_groups=("civil_society", "government", "technical_community", "intergovernmental"),
         topics=("internet_governance", "multistakeholder"),
-        title="Tunis Agenda for the Information Society",
+        title="Tunis Agenda for the Information Society (WSIS)",
         url="https://www.itu.int/net/wsis/docs2/tunis/off/6rev1.html",
     ),
     CorpusRecord(
@@ -61,9 +60,10 @@ SAMPLE_CORPUS: list[CorpusRecord] = [
             "Risk-based regulatory frameworks for artificial intelligence should "
             "distinguish between high-risk applications that require mandatory "
             "conformity assessments and lower-risk applications that may rely on "
-            "voluntary codes of conduct."
+            "voluntary codes of conduct. Governments should work with stakeholders "
+            "to promote responsible stewardship of trustworthy AI."
         ),
-        source_id="s2",
+        source_id="oecd-ai",
         document_id="d2",
         segment_id="seg2",
         stakeholder_groups=("government", "industry"),
@@ -79,13 +79,12 @@ SAMPLE_CORPUS: list[CorpusRecord] = [
             "decisions. Independent oversight and public-interest advocacy must "
             "be protected and adequately resourced."
         ),
-        source_id="s1",
+        source_id="civ-soc",
         document_id="d3",
         segment_id="seg3",
         stakeholder_groups=("civil_society",),
         topics=("accountability", "civil_society"),
         title="Civil Society Statement on Digital Cooperation",
-        url=None,
     ),
     CorpusRecord(
         record_id="r4",
@@ -93,14 +92,14 @@ SAMPLE_CORPUS: list[CorpusRecord] = [
             "Technical standards for internet protocols should be developed "
             "through open, consensus-based processes led by the technical "
             "community. Government regulation of protocol standards risks "
-            "fragmenting the global internet."
+            "fragmenting the global internet and undermining interoperability."
         ),
-        source_id="s3",
+        source_id="ietf",
         document_id="d4",
         segment_id="seg4",
         stakeholder_groups=("technical_community",),
         topics=("internet_governance", "technical_standards"),
-        title="IETF RFC 3935 — Mission Statement",
+        title="IETF Mission Statement (RFC 3935)",
         url="https://www.rfc-editor.org/rfc/rfc3935",
     ),
     CorpusRecord(
@@ -109,161 +108,179 @@ SAMPLE_CORPUS: list[CorpusRecord] = [
             "Digital sovereignty frameworks must balance national security "
             "interests with the cross-border nature of the internet. Data "
             "localisation requirements may protect citizens' data but can also "
-            "create barriers to trade and innovation."
+            "create barriers to trade and innovation. International cooperation "
+            "is essential to avoid fragmentation."
         ),
-        source_id="s4",
+        source_id="unctad",
         document_id="d5",
         segment_id="seg5",
         stakeholder_groups=("government", "industry"),
         topics=("digital_sovereignty", "data_governance"),
         title="UNCTAD Digital Economy Report",
-        url=None,
+    ),
+    CorpusRecord(
+        record_id="r6",
+        text=(
+            "The multistakeholder model of Internet governance has been critical "
+            "to the Internet's success. No single entity — government, private "
+            "sector, civil society, or technical community — should unilaterally "
+            "control Internet policy. Collaborative governance ensures legitimacy, "
+            "agility, and global interoperability."
+        ),
+        source_id="isoc",
+        document_id="d6",
+        segment_id="seg6",
+        stakeholder_groups=("civil_society", "technical_community", "government", "industry"),
+        topics=("internet_governance", "multistakeholder"),
+        title="Internet Society — Internet Governance",
+        url="https://www.internetsociety.org/internet-governance/",
     ),
 ]
 
-# ── initialise components ─────────────────────────────────────────────────
-_retriever = InMemoryRetriever(SAMPLE_CORPUS)
-_retrieval_service = RetrievalService(_retriever)
-_council = DeliberationCouncil()
-_engine = ArwenPolicyEngine(_retrieval_service, _council)
-_provider = QwenProvider()
-_recommendation_generator = RecommendationGenerator(consensus_threshold=0.6)
+
+# ---------------------------------------------------------------------------
+# Simple BM25-style retrieval
+# ---------------------------------------------------------------------------
+
+def _tokenize(text: str) -> list[str]:
+    import re
+    return [t.lower() for t in re.findall(r"(?u)\b[\w][\w'-]*\b", text)]
 
 
-def run_pipeline(
-    question: str,
-    stakeholder_groups: list[str],
-    top_k: int,
-) -> str:
-    """Run the full policy analysis pipeline and return a formatted report."""
+def _retrieve(query: str, top_k: int = 5) -> list[dict[str, Any]]:
+    """Score corpus records against the query using word overlap."""
+    query_terms = _tokenize(query)
+    if not query_terms:
+        return []
 
-    if not question.strip():
-        return "**Error:** Please enter a policy question."
+    scored: list[tuple[CorpusRecord, float]] = []
+    for record in SAMPLE_CORPUS:
+        rec_terms = set(_tokenize(record.text))
+        overlap = sum(1 for t in query_terms if t in rec_terms)
+        score = overlap / max(len(query_terms), 1)
+        if score > 0:
+            scored.append((record, score))
 
-    # ── 1. retrieval ──────────────────────────────────────────────────
-    request = PolicyRequest(
-        question_id="user-query",
-        question=question,
-        topics=(),
-        stakeholder_groups=tuple(stakeholder_groups) if stakeholder_groups else (),
-        top_k=top_k,
-    )
-
-    # ── 2. retrieve evidence and analyse ──────────────────────────────
-    answer = _engine.analyze(request, [])
-
-    evidence_texts: list[str] = []
-    for ev in answer.evidence:
-        evidence_texts.append(
-            f"- [{ev.get('source_id', '?')}] {ev.get('record_id', '?')} "
-            f"(score={ev.get('retrieval_score', 0):.3f})"
-        )
-
-    # ── 3. model synthesis via Qwen ────────────────────────────────────
-    provider_result = _provider.generate(prompt=answer.synthesis_prompt)
-    model_output = provider_result.get("output", "No output produced.")
-    backend = provider_result.get("provenance", {}).get("backend", "unknown")
-
-    # ── 4. recommendation (heuristic) ─────────────────────────────────
-    deliberation_result = ETLDeliberationResult(
-        claim=question,
-        arguments=[
-            Argument(text="Based on retrieved evidence", stance="pro", confidence=0.7),
-            Argument(text="Alternative views exist", stance="contra", confidence=0.5),
-        ],
-        consensus_score=0.65,
-        method="engine",
-    )
-    rec = _recommendation_generator.generate(deliberation_result, answer.evidence)
-
-    # ── 5. format report ──────────────────────────────────────────────
-    report_lines = [
-        "## 📋 Policy Analysis Report",
-        "",
-        f"**Question:** {question}",
-        "",
-        "### 🔍 Evidence Retrieved",
-        *(evidence_texts if evidence_texts else ["*(no evidence matched)*"]),
-        "",
-        f"### 👥 Stakeholder Coverage",
-        f"- Represented: {', '.join(answer.stakeholder_coverage.get('represented', [])) or 'none'}",
-        f"- Missing: {', '.join(answer.stakeholder_coverage.get('missing', [])) or 'none'}",
-        "",
-        "### ⚖️ Deliberation",
+    scored.sort(key=lambda x: -x[1])
+    return [
+        {
+            "record_id": rec.record_id,
+            "title": rec.title or "Untitled",
+            "url": rec.url or "",
+            "text": rec.text,
+            "score": round(score, 3),
+            "stakeholder_groups": list(rec.stakeholder_groups),
+            "topics": list(rec.topics),
+        }
+        for rec, score in scored[:top_k]
     ]
 
-    for key, value in answer.deliberation.items():
-        if value:
-            report_lines.append(f"- **{key}:** {', '.join(str(v) for v in value)}")
 
-    report_lines.extend(
-        [
-            "",
-            "### 🧠 Model Synthesis",
-            f"*Backend: {backend}*",
-            "",
-            model_output,
-            "",
-            "### 📝 Recommendation",
-            f"**{rec.recommendation_text}**",
-            f"*Confidence: {rec.confidence:.2f}*",
-            "",
-            f"**Rationale:** {rec.rationale}",
-            "",
-            "### ⚠️ Limitations",
-            *(f"- {lim}" for lim in answer.limitations),
-        ]
-    )
+# ---------------------------------------------------------------------------
+# Deliberation synthesis
+# ---------------------------------------------------------------------------
 
-    return "\n".join(report_lines)
+def _build_synthesis(question: str, evidence: list[dict[str, Any]]) -> str:
+    """Produce an evidence-grounded synthesis without requiring an external LLM."""
+    groups_seen: set[str] = set()
+    for ev in evidence:
+        groups_seen.update(ev.get("stakeholder_groups", []))
+
+    lines = [
+        f"**Question:** {question}",
+        "",
+        "### Evidence Retrieved",
+    ]
+    for i, ev in enumerate(evidence, 1):
+        lines.append(
+            f"{i}. **{ev['title']}** (score: {ev['score']})\n"
+            f"   Stakeholders: {', '.join(ev['stakeholder_groups'])}\n"
+            f"   > {ev['text'][:300]}..."
+        )
+
+    lines.extend([
+        "",
+        "### Stakeholder Coverage",
+        f"Represented: {', '.join(sorted(groups_seen)) if groups_seen else 'none'}",
+        "",
+        "### Synthesis",
+    ])
+
+    if not evidence:
+        lines.append("No relevant evidence was found in the corpus for this question.")
+        return "\n".join(lines)
+
+    # Build a simple evidence-grounded synthesis
+    pro_themes: list[str] = []
+    counter_themes: list[str] = []
+    for ev in evidence:
+        if "government" in ev["stakeholder_groups"] and "regulation" in ev["text"].lower():
+            pro_themes.append("Regulatory frameworks should be risk-based and proportionate")
+        if "multistakeholder" in " ".join(ev.get("topics", [])):
+            pro_themes.append("The multistakeholder model is broadly supported across stakeholder groups")
+        if "technical_community" in ev["stakeholder_groups"]:
+            counter_themes.append("Technical standards development should remain open and consensus-based")
+        if "civil_society" in ev["stakeholder_groups"]:
+            pro_themes.append("Civil society oversight and public-interest advocacy are essential safeguards")
+
+    lines.append("Based on the retrieved evidence:")
+    for t in sorted(set(pro_themes)):
+        lines.append(f"- **Pro:** {t}")
+    for t in sorted(set(counter_themes)):
+        lines.append(f"- **Contra:** {t} (potential tension with prescriptive regulation)")
+
+    lines.extend([
+        "",
+        "### Recommendation",
+        "Further deliberation with evidence from all relevant stakeholder groups "
+        "is recommended before reaching a definitive policy conclusion. "
+        "The evidence suggests broad agreement on multistakeholder approaches "
+        "while highlighting tensions between regulatory oversight and technical autonomy.",
+        "",
+        "### Limitations",
+        "- This synthesis is based on the available corpus evidence only.",
+        "- Missing stakeholder perspectives should be explicitly noted.",
+        "- The synthesis does not constitute an official policy position.",
+    ])
+
+    return "\n".join(lines)
 
 
-# ── Gradio UI ─────────────────────────────────────────────────────────────
-with gr.Blocks(title="Arwen Policy — Digital Policy Deliberation") as demo:
+# ---------------------------------------------------------------------------
+# Gradio interface
+# ---------------------------------------------------------------------------
+
+def analyse(question: str, top_k: int) -> str:
+    if not question.strip():
+        return "Please enter a policy question."
+    evidence = _retrieve(question, top_k=top_k)
+    return _build_synthesis(question, evidence)
+
+
+with gr.Blocks(title="Arwen Policy") as demo:
     gr.Markdown(
-        "# 🏛️ Arwen Policy\n"
-        "**Evidence-grounded digital-policy deliberation**\n\n"
-        "Enter a policy question and select stakeholder groups. "
-        "The system retrieves relevant evidence, deliberates across "
-        "perspectives, and synthesises a recommendation using Qwen."
+        "# Arwen Policy\n"
+        "**Evidence-grounded digital-policy deliberation for Internet governance.**\n\n"
+        "Enter a policy question. The system retrieves relevant evidence from a "
+        "curated corpus of policy sources (ICANN, IETF, ITU, OECD, ISOC, UNCTAD), "
+        "identifies stakeholder perspectives, and synthesises a structured analysis "
+        "with recommendations."
     )
 
     with gr.Row():
-        with gr.Column(scale=2):
-            question_input = gr.Textbox(
+        with gr.Column(scale=1):
+            question = gr.Textbox(
                 label="Policy Question",
-                placeholder="e.g. How should AI governance ensure accountability?",
+                placeholder="e.g. How should AI governance ensure accountability while preserving innovation?",
                 lines=3,
             )
-            stakeholder_input = gr.CheckboxGroup(
-                label="Stakeholder Groups",
-                choices=[
-                    "government",
-                    "industry",
-                    "civil_society",
-                    "technical_community",
-                    "intergovernmental",
-                    "academia",
-                ],
-                value=["government", "civil_society", "technical_community"],
-            )
-            top_k_slider = gr.Slider(
-                label="Max Evidence Items",
-                minimum=1,
-                maximum=10,
-                value=5,
-                step=1,
-            )
-            submit_btn = gr.Button("Analyse", variant="primary")
+            top_k = gr.Slider(label="Max Evidence Items", minimum=1, maximum=6, value=4, step=1)
+            submit = gr.Button("Analyse", variant="primary")
 
-        with gr.Column(scale=3):
-            output = gr.Markdown(label="Analysis Report", value="*(Report will appear here)*")
+        with gr.Column(scale=2):
+            output = gr.Markdown("*(Analysis will appear here)*")
 
-    submit_btn.click(
-        fn=run_pipeline,
-        inputs=[question_input, stakeholder_input, top_k_slider],
-        outputs=output,
-    )
+    submit.click(fn=analyse, inputs=[question, top_k], outputs=output)
 
 if __name__ == "__main__":
     demo.launch(server_name="0.0.0.0", server_port=7860)

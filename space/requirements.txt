@@ -1,3 +1,1 @@
 gradio>=5.0
-ollama>=0.4
-arwen-policy-etl @ git+https://github.com/soyames/arwen-policy.git
