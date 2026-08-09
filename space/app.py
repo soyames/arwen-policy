@@ -1,5 +1,5 @@
 """
-Arwen Policy — Evidence-grounded digital-policy deliberation.
+Arwen Policy -- Evidence-grounded digital-policy deliberation.
 
 Hugging Face Space demonstrating stakeholder-aware retrieval, deliberation,
 and recommendation synthesis for Internet governance policy questions.
@@ -122,8 +122,8 @@ SAMPLE_CORPUS: list[CorpusRecord] = [
         record_id="r6",
         text=(
             "The multistakeholder model of Internet governance has been critical "
-            "to the Internet's success. No single entity — government, private "
-            "sector, civil society, or technical community — should unilaterally "
+            "to the Internet's success. No single entity -- government, private "
+            "sector, civil society, or technical community -- should unilaterally "
             "control Internet policy. Collaborative governance ensures legitimacy, "
             "agility, and global interoperability."
         ),
@@ -132,7 +132,7 @@ SAMPLE_CORPUS: list[CorpusRecord] = [
         segment_id="seg6",
         stakeholder_groups=("civil_society", "technical_community", "government", "industry"),
         topics=("internet_governance", "multistakeholder"),
-        title="Internet Society — Internet Governance",
+        title="Internet Society -- Internet Governance",
         url="https://www.internetsociety.org/internet-governance/",
     ),
 ]
