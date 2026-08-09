@@ -61,7 +61,7 @@ class PolicyExtractor:
         for tok in doc:
             if tok.pos_ == "AUX":
                 aux_map = {'must': 'requirement', 'should': 'recommendation',
-                          'shall': 'requirement', 'can', 'may': 'permission'}
+                          'shall': 'requirement', 'can': 'permission', 'may': 'permission'}
                 if aux_map.get(tok.text.lower()) and tok.dep_ in {'ROOT', 'REFERENT'}:
                     policy_factors[tok.i] = aux_map[tok.text.lower()]
 

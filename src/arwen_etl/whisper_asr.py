@@ -1,12 +1,22 @@
 from __future__ import annotations
 
-import whisper
-import soundfile as sf
-import numpy as np
-import torch
 import os
 from pathlib import Path
-from typing import Dict, List, Any, Optional
+from typing import Any, Dict, List, Optional
+
+try:
+    import numpy as np
+    import soundfile as sf
+    import torch
+    import whisper
+
+    _ASR_AVAILABLE = True
+except ImportError:
+    np = None  # type: ignore[assignment]
+    sf = None  # type: ignore[assignment]
+    torch = None  # type: ignore[assignment]
+    whisper = None  # type: ignore[assignment]
+    _ASR_AVAILABLE = False
 
 
 class WhisperASRProcessor:
@@ -133,5 +143,7 @@ def create_asr_processor(model_size: str = "base", device: Optional[str] = None)
     return WhisperASRProcessor(model_size=model_size, device=device)
 
 
-# Public API - default processor
-asr_processor = create_asr_processor()
+# Public API - default processor (lazy, only if dependencies available)
+asr_processor: Optional[WhisperASRProcessor] = None
+if _ASR_AVAILABLE:
+    asr_processor = create_asr_processor()

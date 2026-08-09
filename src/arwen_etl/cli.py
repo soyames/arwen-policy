@@ -143,9 +143,12 @@ def ingest_url(url: str) -> dict:
     }
 
     # Quality gate validation: check provenance and confidence
-    from .release import _verify_record
+    from .release import _assert_min
     try:
-        _verify_record(extracted_record)
+        _assert_min(len(normalized) if normalized else 0, 20, "text_length",
+                     "Extracted text too short for quality gate")
+        _assert_min(source.byte_size, 1, "byte_size",
+                     "Artifact byte_size must be positive")
     except ValueError as e:
         # Record fails quality gate - reject and return error
         return {

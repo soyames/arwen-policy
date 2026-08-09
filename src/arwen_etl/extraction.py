@@ -192,7 +192,7 @@ def extract_pdf(data: bytes) -> ExtractedContent:
 
     return ExtractedContent(
         text="\n\n".join(pages),
-        method="pypdf" if pages[0] else "pdf_without_text",
+        method="pypdf" if pages and pages[0] else "pdf_without_text",
         media_type="application/pdf",
         warnings=[],
     )

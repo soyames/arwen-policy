@@ -1,13 +1,28 @@
 from __future__ import annotations
 
-from transformers import MarianMTModel, MarianTokenizer
 from typing import Dict, Optional
-import torch
+
+try:
+    import torch
+    from transformers import MarianMTModel, MarianTokenizer
+
+    _TRANSLATION_AVAILABLE = True
+except ImportError:
+    torch = None  # type: ignore[assignment]
+    MarianMTModel = None  # type: ignore[assignment]
+    MarianTokenizer = None  # type: ignore[assignment]
+    _TRANSLATION_AVAILABLE = False
+
 
 class Translator:
-    """Translation fallback using MarianMT models"""
+    """Translation fallback using MarianMT models."""
 
     def __init__(self, device: str = "cuda"):
+        if not _TRANSLATION_AVAILABLE:
+            raise RuntimeError(
+                "Translation dependencies not installed. "
+                "Install with: pip install torch transformers"
+            )
         self.device = device if torch.cuda.is_available() else "cpu"
         self.models: Dict[str, MarianMTModel] = {}
         self.tokenizers: Dict[str, MarianTokenizer] = {}
@@ -60,8 +75,11 @@ class Translator:
 
 # Factory function
 def create_translator(device: str = "cuda") -> Translator:
-    """Create translator with appropriate device"""
+    """Create translator with appropriate device."""
     return Translator(device=device)
 
-# Public API
-translator = create_translator()
+
+# Public API — lazy, only if translation dependencies are available.
+translator: Optional[Translator] = None
+if _TRANSLATION_AVAILABLE:
+    translator = create_translator()

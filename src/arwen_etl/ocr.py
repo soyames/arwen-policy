@@ -1,19 +1,35 @@
 from __future__ import annotations
 
-import cv2
-import numpy as np
-from PIL import Image
-from pdf2image import convert_from_path
-import pytesseract
 import os
 from pathlib import Path
-from typing import List, Dict, Any
+from typing import Any, Dict, List, Optional
+
+try:
+    import cv2
+    import numpy as np
+    from PIL import Image
+    from pdf2image import convert_from_path
+    import pytesseract
+
+    _OCR_AVAILABLE = True
+except ImportError:
+    cv2 = None  # type: ignore[assignment]
+    np = None  # type: ignore[assignment]
+    Image = None  # type: ignore[assignment]
+    convert_from_path = None  # type: ignore[assignment]
+    pytesseract = None  # type: ignore[assignment]
+    _OCR_AVAILABLE = False
 
 
 class OCRProcessor:
     """Tesseract OCR with preprocessing"""
 
     def __init__(self, lang: str = 'eng'):
+        if not _OCR_AVAILABLE:
+            raise RuntimeError(
+                "OCR dependencies not installed. Install with: pip install opencv-python "
+                "numpy Pillow pdf2image pytesseract"
+            )
         self.lang = lang
         self.tesseract_config = '--oem 3 --psm 6'
         # Build Tesseract path based on system
@@ -72,5 +88,7 @@ class OCRProcessor:
         return min(1.0, edge_pixels / total_pixels * 0.8 + 0.2)
 
 
-# Public API
-ocr_processor = OCRProcessor()
+# Public API — instantiate only when OCR dependencies are available.
+ocr_processor: Optional[OCRProcessor] = None
+if _OCR_AVAILABLE:
+    ocr_processor = OCRProcessor()

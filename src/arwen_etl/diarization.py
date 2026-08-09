@@ -1,11 +1,20 @@
 from __future__ import annotations
 
-import torch
-import torchaudio
-from pyannote.audio import Pipeline
-from typing import Dict, List, Any, Optional
 import os
 from pathlib import Path
+from typing import Any, Dict, List, Optional
+
+try:
+    import torch
+    import torchaudio
+    from pyannote.audio import Pipeline as _PyannotePipeline
+
+    _DIARIZATION_AVAILABLE = True
+except ImportError:
+    torch = None  # type: ignore[assignment]
+    torchaudio = None  # type: ignore[assignment]
+    _PyannotePipeline = None  # type: ignore[assignment]
+    _DIARIZATION_AVAILABLE = False
 
 
 class SpeakerDiarizer:
@@ -15,9 +24,14 @@ class SpeakerDiarizer:
                  model_name: str = "pyannote/speaker-diarization-3.1",
                  use_auth_token: Optional[str] = None,
                  device: str = "cuda"):
-        """Initialize diarization pipeline"""
+        """Initialize diarization pipeline."""
+        if not _DIARIZATION_AVAILABLE:
+            raise RuntimeError(
+                "Diarization dependencies not installed. "
+                "Install with: pip install torch pyannote.audio"
+            )
         self.device = device if torch.cuda.is_available() else "cpu"
-        self.pipeline = Pipeline.from_pretrained(
+        self.pipeline = _PyannotePipeline.from_pretrained(
             model_name,
             use_auth_token=use_auth_token
         ).to(torch.device(self.device))
@@ -80,9 +94,11 @@ class SpeakerDiarizer:
 
 # Factory function
 def create_diarizer(device: str = "cuda") -> SpeakerDiarizer:
-    """Create diarizer with appropriate device"""
+    """Create diarizer with appropriate device."""
     return SpeakerDiarizer(device=device)
 
 
-# Public API
-speaker_diarizer = create_diarizer()
+# Public API — lazy, only if diarization dependencies are available.
+speaker_diarizer: Optional[SpeakerDiarizer] = None
+if _DIARIZATION_AVAILABLE:
+    speaker_diarizer = create_diarizer()

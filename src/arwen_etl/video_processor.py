@@ -1,15 +1,22 @@
 from __future__ import annotations
 
-import cv2
-import subprocess
 import json
 import os
+import subprocess
 from pathlib import Path
-from typing import Dict, List, Any, Optional, Tuple
-import numpy as np
-from PIL import Image
+from typing import Any, Dict, List, Optional, Tuple
 
-from .ocr import ocr_processor
+try:
+    import cv2
+    import numpy as np
+    from PIL import Image
+
+    _VIDEO_AVAILABLE = True
+except ImportError:
+    cv2 = None  # type: ignore[assignment]
+    np = None  # type: ignore[assignment]
+    Image = None  # type: ignore[assignment]
+    _VIDEO_AVAILABLE = False
 
 
 class FFmpegVideoProcessor:
@@ -297,6 +304,11 @@ def create_video_processor(
     frame_height: int = 720,
 ) -> FFmpegVideoProcessor:
     """Create video processor with sensible defaults."""
+    if not _VIDEO_AVAILABLE:
+        raise RuntimeError(
+            "Video processing dependencies not installed. "
+            "Install with: pip install opencv-python numpy Pillow"
+        )
     return FFmpegVideoProcessor(
         output_dir=output_dir,
         fps=fps,
@@ -305,5 +317,7 @@ def create_video_processor(
     )
 
 
-# Public API
-video_processor = create_video_processor()
+# Public API — lazy, only if video deps are available.
+video_processor: Optional[FFmpegVideoProcessor] = None
+if _VIDEO_AVAILABLE:
+    video_processor = create_video_processor()

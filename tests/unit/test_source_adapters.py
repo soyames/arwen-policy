@@ -17,9 +17,9 @@ from arwen_etl.sources.health import build_source_health_index
 def _fake_artifact() -> SimpleNamespace:
     html = (
         b"<html lang='en'><head>"
-        b"<title>ICANN Draft</title>"
+        b"<title>ICANN Draft Policy on Internet Governance and Domain Name System Oversight</title>"
         b"<meta property='article:published_time' content='2026-01-02T03:04:05Z' />"
-        b"</head><body><a href='/policy'>Policy</a></body></html>"
+        b"</head><body><a href='/policy'>Policy</a><p>This document outlines the multistakeholder approach.</p></body></html>"
     )
     return SimpleNamespace(
         source_id="abc123",
@@ -62,7 +62,7 @@ def test_generic_source_adapter_discovers_links_and_records_health(monkeypatch):
     result = GenericSourceAdapter(source).discover()
 
     assert result.health.source_status == "reachable"
-    assert result.health.title == "ICANN Draft"
+    assert result.health.title == "ICANN Draft Policy on Internet Governance and Domain Name System Oversight"
     assert result.health.document_identifier == "abc123"
     assert result.health.published_at is not None
     assert any(item.url == "https://example.org/policy" for item in result.discovered_urls)

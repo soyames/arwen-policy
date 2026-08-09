@@ -45,3 +45,7 @@ data/releases/*
 dist/
 build/
 *.egg-info/
+
+QwenArwen.Modelfile
+tree
+.claude

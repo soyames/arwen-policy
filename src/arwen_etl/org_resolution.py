@@ -1,15 +1,27 @@
 from __future__ import annotations
 
-from typing import Dict, List, Set, Optional, Tuple
-import spacy
+from typing import Any, Dict, List, Set, Optional, Tuple
 import re
-from collections import defaultdict
+from collections import Counter, defaultdict
+
+try:
+    import spacy
+    _SPACY_AVAILABLE = True
+except ImportError:
+    spacy = None  # type: ignore[assignment]
+    _SPACY_AVAILABLE = False
 
 class OrganizationResolver:
     """Resolve organization entities and link to known knowledge base"""
 
     def __init__(self):
-        self.nlp = spacy.load("en_core_web_sm")
+        if _SPACY_AVAILABLE:
+            try:
+                self.nlp = spacy.load("en_core_web_sm")  # type: ignore[union-attr]
+            except Exception:
+                self.nlp = None
+        else:
+            self.nlp = None
         self.org_cache: Dict[str, Dict] = {}
         self.known_organizations = self._load_known_orgs()
 
@@ -33,8 +45,10 @@ class OrganizationResolver:
             "AFRINIC": {"type": "regional_internet_registry", "aliases": ["African Network Information Centre"]},
         }
 
-    def resolve_organization(self, text: str) -> Dict[str, any]:
-        """Resolve organization mentions to canonical entities"""
+    def resolve_organization(self, text: str) -> Dict[str, Any]:
+        """Resolve organization mentions to canonical entities."""
+        if not self.nlp:
+            return {}
         doc = self.nlp(text)
         resolved = {}
 
@@ -100,7 +114,7 @@ class OrganizationResolver:
 
         return {k: dict(v) for k, v in network.items()}
 
-    def link_stakeholders_to_organizations(self, stakeholders: Dict[str, Set[str]], org_resolution: Dict[str, any]) -> Dict[str, Dict]:
+    def link_stakeholders_to_organizations(self, stakeholders: Dict[str, Set[str]], org_resolution: Dict[str, Any]) -> Dict[str, Dict]:
         """Link stakeholder roles to resolved organizations"""
         linked = {}
 
@@ -120,5 +134,5 @@ class OrganizationResolver:
 
         return linked
 
-# Public API
+# Public API — instantiate safely; NLP components are optional.
 org_resolver = OrganizationResolver()

@@ -1,28 +1,55 @@
 from __future__ import annotations
 
-import langdetect
-from fasttext import load_model
-from typing import Dict, List, Any, Optional
 import os
 from pathlib import Path
+from typing import Any, Dict, List, Optional
+
+try:
+    import langdetect
+
+    _LANGDETECT_AVAILABLE = True
+except ImportError:
+    langdetect = None  # type: ignore[assignment]
+    _LANGDETECT_AVAILABLE = False
+
+try:
+    from fasttext import load_model as _fasttext_load_model
+
+    _FASTTEXT_AVAILABLE = True
+except ImportError:
+    _fasttext_load_model = None  # type: ignore[assignment]
+    _FASTTEXT_AVAILABLE = False
+
 
 class LanguageDetector:
-    """Multilingual language detection system"""
+    """Multilingual language detection system."""
 
     def __init__(self, fasttext_model_path: str = "resources/fasttext.bin"):
-        """Initialize language detection models"""
+        """Initialize language detection models."""
         self.lang_detect = langdetect
-        self.fasttext_model = load_model(fasttext_model_path)
+        self._fasttext_model = None
+        if _FASTTEXT_AVAILABLE and _fasttext_load_model:
+            try:
+                self._fasttext_model = _fasttext_load_model(fasttext_model_path)
+            except Exception:
+                self._fasttext_model = None
 
     def detect(self, text: str) -> str:
-        """Detect language with fallback"""
-        try:
-            # Use fasttext for better accuracy on short texts
-            detected = self.fasttext_model.predict(text.strip())[0][0]
-            return detected.replace('_', '-')  # Convert fasttext format to BCP 47
-        except:
-            # Fallback to langdetect if fasttext fails
-            return self.lang_detect.detect(text)
+        """Detect language with fallback."""
+        # Try fasttext for better accuracy on short texts
+        if self._fasttext_model is not None:
+            try:
+                detected = self._fasttext_model.predict(text.strip())[0][0]
+                return detected.replace("__label__", "").replace("_", "-")
+            except Exception:
+                pass
+        # Fallback to langdetect if fasttext fails or unavailable
+        if self.lang_detect is not None:
+            try:
+                return self.lang_detect.detect(text)
+            except Exception:
+                pass
+        return "und"
 
     def is_supported(self, lang: str) -> bool:
         """Check if language is supported by current OCR/ASR configs"""
@@ -52,5 +79,7 @@ class LanguageDetector:
         }
         return whisper_models.get(lang, 'base')  # Base model for unsupported languages
 
-# Public API
-language_detector = LanguageDetector()
+# Public API — lazy instantiation.
+language_detector: Optional[LanguageDetector] = None
+if _LANGDETECT_AVAILABLE or _FASTTEXT_AVAILABLE:
+    language_detector = LanguageDetector()

@@ -31,7 +31,7 @@ class DatasetGenerator:
         """Load all source records from the extracted data."""
         records = []
         for record_file in self.extracted_dir.glob("*.json"):
-            record = SourceRecord.parse_raw(record_file.read_text())
+            record = SourceRecord.model_validate_json(record_file.read_text())
             records.append(record)
         return records
 
@@ -39,7 +39,7 @@ class DatasetGenerator:
         """Load all extracted documents."""
         documents = []
         for doc_file in self.normalized_dir.glob("*.json"):
-            doc = ExtractedDocument.parse_raw(doc_file.read_text())
+            doc = ExtractedDocument.model_validate_json(doc_file.read_text())
             documents.append(doc)
         return documents
 
@@ -60,7 +60,7 @@ class DatasetGenerator:
             entry = {
                 "id": doc.document_id,
                 "source_id": doc.source_id,
-                "source_name": source_record.source_name,
+                "source_name": source_record.publisher,
                 "source_family": source_record.source_family,
                 "source_url": source_record.source_url,
                 "canonical_url": doc.canonical_url,
@@ -102,7 +102,7 @@ class DatasetGenerator:
             "citation": "@article{arwen2026policy, title={Arwen Policy Corpus}, author={Arwen Policy Team}, journal={Journal of Digital Policy}, year={2026}}",
             "size_in_bytes": self._calculate_dataset_size(dataset_entries),
             "num_examples": len(dataset_entries),
-            "last_updated": datetime.utcnow().isoformat(),
+            "last_updated": datetime.now(datetime.UTC).isoformat(),
             "sources_processed": len(set([e["source_id"] for e in dataset_entries]))
         }
 
