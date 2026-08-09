@@ -11,15 +11,23 @@ from .models import PolicyAnswer, PolicyRequest
 
 
 class ArwenPolicyEngine:
-    """Coordinate retrieval and deliberation without pretending to be a trained LLM."""
+    """Coordinate retrieval, deliberation, and optional model synthesis.
+
+    When a *model_provider* is supplied, ``analyze()`` will call the provider
+    to synthesise the final answer from the deliberation result and retrieved
+    evidence.  Without a provider the engine still produces a structured
+    ``PolicyAnswer`` with a ``synthesis_prompt`` ready for external consumption.
+    """
 
     def __init__(
         self,
         retrieval: RetrievalService,
         council: DeliberationCouncil | None = None,
+        model_provider: object | None = None,
     ) -> None:
         self.retrieval = retrieval
         self.council = council or DeliberationCouncil()
+        self.model_provider = model_provider
 
     def analyze(
         self,
@@ -53,10 +61,28 @@ class ArwenPolicyEngine:
         if not evidence:
             limitations.append("No retrieval evidence matched the question.")
 
+        prompt = build_synthesis_prompt(request, deliberation, evidence)
+        synthesis: str | None = None
+        model_provenance: dict[str, object] | None = None
+
+        if self.model_provider is not None and hasattr(self.model_provider, "generate"):
+            try:
+                result = self.model_provider.generate(prompt=prompt, context=list(evidence))
+                synthesis = result.get("output") if isinstance(result, dict) else str(result)
+                model_provenance = (
+                    result.get("provenance") if isinstance(result, dict) else None
+                )
+            except Exception:
+                synthesis = None
+
+        status = "ready_for_model_synthesis" if not perspective_errors else "needs_review"
+        if synthesis:
+            status = "model_synthesis_complete"
+
         return PolicyAnswer(
             question_id=request.question_id,
             question=request.question,
-            status="ready_for_model_synthesis" if not perspective_errors else "needs_review",
+            status=status,
             evidence=tuple(_evidence_dict(item) for item in evidence),
             stakeholder_coverage={
                 "represented": list(deliberation.represented_groups),
@@ -67,8 +93,10 @@ class ArwenPolicyEngine:
                 "disagreements": list(deliberation.disagreements),
                 "evidence_record_ids": list(deliberation.evidence_record_ids),
             },
-            synthesis_prompt=build_synthesis_prompt(request, deliberation, evidence),
+            synthesis_prompt=prompt,
             limitations=tuple(dict.fromkeys(limitations)),
+            synthesis=synthesis,
+            model_provenance=model_provenance,
         )
 
 

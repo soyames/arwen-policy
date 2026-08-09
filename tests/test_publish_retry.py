@@ -8,7 +8,7 @@ class FakeApi:
     def create_repo(self, repo_id, token=None, repo_type=None):
         return None
 
-    def upload_file(self, path_or_fileobj, path_in_repo, repo_id, token=None):
+    def upload_file(self, path_or_fileobj, path_in_repo, repo_id, token=None, repo_type=None):
         # simulate failing twice then succeeding
         self.calls += 1
         if self.calls < 3:

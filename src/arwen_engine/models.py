@@ -24,3 +24,5 @@ class PolicyAnswer:
     deliberation: dict[str, Any]
     synthesis_prompt: str
     limitations: tuple[str, ...]
+    synthesis: str | None = None
+    model_provenance: dict[str, object] | None = None
