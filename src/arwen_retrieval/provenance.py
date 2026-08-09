@@ -11,6 +11,8 @@ class EvidenceReference:
     segment_id: str | None
     url: str | None
     retrieval_score: float
+    stakeholder_groups: tuple[str, ...] = ()
+    text_snippet: str = ""
 
     def as_dict(self) -> dict[str, object]:
         return {
@@ -20,4 +22,6 @@ class EvidenceReference:
             "segment_id": self.segment_id,
             "url": self.url,
             "retrieval_score": self.retrieval_score,
+            "stakeholder_groups": list(self.stakeholder_groups),
+            "text_snippet": self.text_snippet,
         }

@@ -23,6 +23,8 @@ class RetrievalService:
                 segment_id=item.record.segment_id,
                 url=item.record.url,
                 retrieval_score=item.score,
+                stakeholder_groups=item.record.stakeholder_groups,
+                text_snippet=item.record.text[:300] if item.record.text else "",
             )
             for item in self.search(query)
         ]

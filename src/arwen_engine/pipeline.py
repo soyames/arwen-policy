@@ -42,6 +42,11 @@ class ArwenPolicyEngine:
         )
         evidence = self.retrieval.evidence(retrieval_query)
         perspectives = perspectives or []
+
+        # Auto-generate perspectives from evidence when none are supplied.
+        if not perspectives and evidence:
+            perspectives = _perspectives_from_evidence(evidence)
+
         perspective_errors = [
             error
             for perspective in perspectives
@@ -102,6 +107,46 @@ class ArwenPolicyEngine:
 
 def _evidence_dict(reference: EvidenceReference) -> dict[str, object]:
     return reference.as_dict()
+
+
+def _perspectives_from_evidence(
+    evidence: list[EvidenceReference],
+) -> list[Perspective]:
+    """Generate perspectives from evidence records' stakeholder metadata.
+
+    Each unique stakeholder group found in the evidence produces one
+    Perspective whose position text is drawn from the evidence records
+    associated with that group.
+    """
+    from collections import defaultdict
+
+    grouped: dict[str, list[EvidenceReference]] = defaultdict(list)
+    for ref in evidence:
+        for group in getattr(ref, "stakeholder_groups", ()) or ():
+            grouped[group].append(ref)
+
+    perspectives: list[Perspective] = []
+    for group, refs in sorted(grouped.items()):
+        position_text = "; ".join(
+            getattr(r, "text_snippet", "") or ""
+            for r in refs[:3]
+        )[:500]
+        if not position_text:
+            position_text = f"Evidence from {len(refs)} record(s) associated with {group}"
+
+        perspectives.append(
+            Perspective(
+                stakeholder_group=group,
+                position=position_text,
+                evidence_record_ids=tuple(
+                    r.record_id for r in refs if hasattr(r, "record_id")
+                ),
+                confidence=min(0.8, 0.4 + 0.1 * len(refs)),
+                attribution=f"Auto-generated from {len(refs)} evidence record(s)",
+                is_official_position=False,
+            )
+        )
+    return perspectives
 
 
 def build_synthesis_prompt(request: PolicyRequest, deliberation, evidence) -> str:

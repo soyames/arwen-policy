@@ -99,36 +99,6 @@ def _load_corpus() -> list[CorpusRecord]:
 
 _corpus_records = _load_corpus()
 
-# Fall back to sample data when no real corpus exists.
-if not _corpus_records:
-    _corpus_records = [
-        CorpusRecord(
-            record_id="sample-1",
-            text=(
-                "Internet governance requires transparent, inclusive, and accountable "
-                "policy-development processes that enable the full participation of all "
-                "stakeholders including governments, the private sector, civil society, "
-                "the technical community, and international organisations."
-            ),
-            source_id="itu-wsis",
-            document_id="d1",
-            title="Tunis Agenda for the Information Society",
-            url="https://www.itu.int/net/wsis/docs2/tunis/off/6rev1.html",
-        ),
-        CorpusRecord(
-            record_id="sample-2",
-            text=(
-                "Risk-based regulatory frameworks for artificial intelligence should "
-                "distinguish between high-risk applications that require mandatory "
-                "conformity assessments and lower-risk applications that may rely on "
-                "voluntary codes of conduct."
-            ),
-            source_id="oecd-ai",
-            document_id="d2",
-            title="OECD AI Principles",
-            url="https://oecd.ai/en/ai-principles",
-        ),
-    ]
 
 # ---------------------------------------------------------------------------
 # Build engine
@@ -158,59 +128,117 @@ def analyse(question: str, top_k: int) -> str:
     )
     answer = _engine.analyze(request)
 
+    # -- Header -----------------------------------------------------------
     lines = [
-        "## Arwen Policy Analysis",
+        "## Policy Analysis",
         "",
-        f"**Question:** {question}",
-        f"**Status:** {answer.status}",
-        f"**Model backend:** {_model_backend}",
+        f"> **{question}**",
         "",
-        "### Evidence Retrieved",
     ]
 
-    for i, ev in enumerate(answer.evidence, 1):
-        rid = ev.get("record_id", "?")
-        score = ev.get("retrieval_score", 0)
-        lines.append(f"{i}. `{rid}` (score: {score:.3f})")
+    # -- Evidence ---------------------------------------------------------
+    lines.append("### Evidence")
+    lines.append("")
+    if not answer.evidence:
+        lines.append("*No relevant evidence found in the corpus.*")
+    else:
+        for i, ev in enumerate(answer.evidence, 1):
+            rid = ev.get("record_id", "?")
+            score = ev.get("retrieval_score", 0)
+            url = ev.get("url", "")
+            doc_id = ev.get("document_id", "?")
+            source_id = ev.get("source_id", "?")
 
-    lines.extend([
-        "",
-        "### Stakeholder Coverage",
-        f"Represented: {', '.join(answer.stakeholder_coverage.get('represented', [])) or 'none'}",
-        f"Missing: {', '.join(answer.stakeholder_coverage.get('missing', [])) or 'none'}",
-        "",
-        "### Deliberation",
-    ])
+            source_link = f" [source]({url})" if url else ""
+            lines.append(
+                f"**{i}.** `{doc_id[:12]}...` "
+                f"(relevance: {score:.3f}, source: `{source_id[:12]}...`)"
+                f"{source_link}"
+            )
+    lines.append("")
 
-    for k, v in answer.deliberation.items():
-        if v:
-            lines.append(f"- **{k}:** {', '.join(str(x) for x in v)}")
+    # -- Stakeholders -----------------------------------------------------
+    coverage = answer.stakeholder_coverage
+    represented = coverage.get("represented", [])
+    missing = coverage.get("missing", [])
 
+    lines.append("### Stakeholders")
+    lines.append("")
+    if represented:
+        for group in represented:
+            lines.append(f"- **{group}** — represented in evidence")
+    else:
+        lines.append("- *No stakeholder groups identified in evidence*")
+    if missing:
+        for group in missing:
+            lines.append(f"- **{group}** — *no evidence found*")
+    lines.append("")
+
+    # -- Deliberation -----------------------------------------------------
+    deliberation = answer.deliberation
+    agreements = deliberation.get("agreements", [])
+    disagreements = deliberation.get("disagreements", [])
+
+    if agreements or disagreements:
+        lines.append("### Positions")
+        lines.append("")
+        if agreements:
+            lines.append("**Agreements:**")
+            for a in agreements:
+                lines.append(f"- {a}")
+        if disagreements:
+            lines.append("**Disagreements:**")
+            for d in disagreements:
+                lines.append(f"- {d}")
+        lines.append("")
+
+    # -- Analysis ---------------------------------------------------------
+    lines.append("### Analysis")
     lines.append("")
     if answer.synthesis:
-        lines.extend([
-            "### Model Synthesis",
-            "",
-            answer.synthesis,
-        ])
+        # Clean up JSON wrapping if the model returned structured JSON
+        synth = answer.synthesis
+        if synth.strip().startswith("{"):
+            try:
+                parsed = json.loads(synth)
+                analysis_text = parsed.get("analysis", "")
+                pro = parsed.get("pro_argument", "")
+                contra = parsed.get("contra_argument", "")
+                if pro:
+                    lines.append(f"**Pro:** {pro}")
+                    lines.append("")
+                if contra:
+                    lines.append(f"**Contra:** {contra}")
+                    lines.append("")
+                if analysis_text:
+                    lines.append(analysis_text)
+                else:
+                    lines.append(synth)
+            except json.JSONDecodeError:
+                lines.append(synth)
+        else:
+            lines.append(synth)
+    elif _model_backend != "unavailable":
+        lines.append("*(Model synthesis pending — provider did not return output)*")
     else:
-        lines.extend([
-            "### Synthesis Prompt",
-            "*(No model available; prompt ready for external synthesis)*",
-            "",
-            "```",
-            answer.synthesis_prompt[:500],
-            "...",
-            "```",
-        ])
+        lines.append("*(No model available for synthesis)*")
+    lines.append("")
 
-    lines.extend([
-        "",
-        "### Limitations",
-        *(f"- {lim}" for lim in answer.limitations),
-        "",
-        f"*Corpus: {len(_corpus_records)} records indexed.*",
-    ])
+    # -- Limitations ------------------------------------------------------
+    if answer.limitations:
+        lines.append("### Limitations")
+        lines.append("")
+        for lim in answer.limitations:
+            lines.append(f"- {lim}")
+        lines.append("")
+
+    # -- Footer -----------------------------------------------------------
+    lines.append(
+        "---\n"
+        f"*Corpus: {len(_corpus_records)} records. "
+        f"Model: {_model_backend}. "
+        f"Status: {answer.status}.*"
+    )
 
     return "\n".join(lines)
 
