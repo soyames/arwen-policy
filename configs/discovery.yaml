@@ -1,0 +1,11 @@
+discovery:
+  seeds:
+    - "https://www.icann.org/sitemap.xml"
+    - "https://www.icann.org/resources/pages/policy-2012-02-25-en"
+    - "https://www.ietf.org/sitemap.xml"
+    - "https://www.ietf.org/resources/rfcs/rfc1984.txt"
+  seeds_per_source: 10
+  max_pages: 20
+  user_agent: "ArwenPolicy/1.0 (policy-discovery)"
+  request_timeout_seconds: 30
+  proxies: {}
