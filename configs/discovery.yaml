@@ -1,9 +1,12 @@
 discovery:
   seeds:
-    - "https://www.icann.org/sitemap.xml"
-    - "https://www.icann.org/resources/pages/policy-2012-02-25-en"
-    - "https://www.ietf.org/sitemap.xml"
-    - "https://www.ietf.org/resources/rfcs/rfc1984.txt"
+    - "https://www.intgovforum.org/sitemap.xml"
+    - "https://www.intgovforum.org/en/content/igf-2023-session-transcripts"
+    - "https://www.intgovforum.org/en/content/dynamic-coalitions"
+    - "https://www.un.org/sitemap.xml"
+    - "https://www.un.org/development/desa/publications/"
+    - "https://www.un.org/resources/sitemap.xml"
+    - "https://www.itu.int/sitemap.xml"
   seeds_per_source: 10
   max_pages: 20
   user_agent: "ArwenPolicy/1.0 (policy-discovery)"

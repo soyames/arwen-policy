@@ -150,3 +150,41 @@ def discover_from_urls(urls: Iterable[str]) -> list[DiscoveredURL]:
 def source_matches_domain(url: str, domains: list[str]) -> bool:
     host = (urlparse(url).hostname or "").lower()
     return any(host == domain.lower() or host.endswith("." + domain.lower()) for domain in domains)
+
+
+# ---------------------------------------------------------------------------
+# Stakeholder‑aware filtering
+# ---------------------------------------------------------------------------
+
+STAKEHOLDER_PATTERNS: dict[str, list[str]] = {
+    "government": ["gov", "agency", "regulation", "legislation"],
+    "industry": ["corp", "inc", "company", "business", "commercial"],
+    "civil_society": ["org", "ngo", "civil", "society", "advocacy"],
+    "technical_community": ["ietf", "rfc", "standard", "wg", "working-group"],
+    "academia": ["edu", "university", "research", "institute", "academic"],
+    "intergovernmental": ["un", "unesco", "itu", "oecd", "unicef", "undp"],
+    "regional_internet_registry": ["arin", "ripe", "apnic", "lacnic", "afrinic"],
+}
+
+
+def _url_matches_stakeholder(url: str, stakeholder: str) -> bool:
+    """Return True if the URL's host or path contains any pattern for the stakeholder."""
+    host = (urlparse(url).hostname or "").lower()
+    path = (urlparse(url).path or "").lower()
+    text = f"{host}{path}"
+    patterns = STAKEHOLDER_PATTERNS.get(stakeholder, [])
+    return any(pattern in text for pattern in patterns)
+
+
+def filter_discovered_urls_by_stakeholder(
+    discovered: list[DiscoveredURL],
+    stakeholder_groups: set[str],
+) -> list[DiscoveredURL]:
+    """Return only DiscoveredURLs whose URL matches any pattern for the given stakeholder groups."""
+    if not stakeholder_groups:
+        return discovered
+    filtered: list[DiscoveredURL] = []
+    for du in discovered:
+        if any(_url_matches_stakeholder(du.url, group) for group in stakeholder_groups):
+            filtered.append(du)
+    return filtered

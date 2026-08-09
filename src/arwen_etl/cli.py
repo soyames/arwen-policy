@@ -142,6 +142,18 @@ def ingest_url(url: str) -> dict:
         "segments": [segment.model_dump(mode="json") for segment in segments],
     }
 
+    # Quality gate validation: check provenance and confidence
+    from .release import _verify_record
+    try:
+        _verify_record(extracted_record)
+    except ValueError as e:
+        # Record fails quality gate - reject and return error
+        return {
+            "error": True,
+            "reason": "QUALITY_GATE_FAILURE",
+            "details": str(e),
+        }
+
     # deduplication: near-duplicate detection on normalized text
     near = find_near_duplicate(normalized, threshold=0.9)
     if near:
@@ -299,7 +311,7 @@ def main() -> None:
                 res = ingest_url(d.url)
                 count += 1
                 # if extraction low quality, enqueue for review
-                if not res.get("error"):
+                if not res.get("error") and res.get("confidence", 0.0) >= 0.5:
                     doc = res.get("document_id")
                     # read extracted text to assess quality
                     extracted_path = Path(res.get("extracted_record"))
