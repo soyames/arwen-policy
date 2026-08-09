@@ -57,6 +57,7 @@ def publish_release(release_dir: str | Path, repo_id: str, token: str | None = N
                         path_or_fileobj=fh,
                         path_in_repo=path_in_repo,
                         repo_id=repo_id,
+                        repo_type="dataset",
                         token=token,
                     )
             except Exception:
@@ -65,6 +66,7 @@ def publish_release(release_dir: str | Path, repo_id: str, token: str | None = N
                     path_or_fileobj=str(f),
                     path_in_repo=path_in_repo,
                     repo_id=repo_id,
+                    repo_type="dataset",
                     token=token,
                 )
 
