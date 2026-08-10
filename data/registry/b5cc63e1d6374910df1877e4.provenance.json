@@ -1,0 +1,24 @@
+{
+  "event_id": "bb8a00f6-2fce-4b9a-9963-34148987cda8",
+  "event_type": "capture_and_extract",
+  "entity_id": "0b011cea-f032-44a6-a6c3-faf0a05381b6",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "7f16af66126ecca78ff2b92ddbe3663066f169f0e7f6dfdce529758266b489e1"
+  ],
+  "attributes": {
+    "requested_url": "https://ccnso.icann.org/",
+    "final_url": "https://www.icann.org/en/ccnso",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Country Code Names Support Organization (ccNSO)",
+      "language": "en",
+      "summary": "The Country Code Names Supporting Organization (ccNSO) is a part of the ICANN multistakeholder community. The ccNSO was created in 2003 for and by country code top-level domain (ccTLD) managers to serve as a platform for ccTLDs to meet and discuss issues of concern to ccTLDs from a global perspective.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:30:53.530776+00:00"
+}

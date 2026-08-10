@@ -1,0 +1,24 @@
+{
+  "event_id": "9f653c43-1f7d-476d-a84f-5055231463cb",
+  "event_type": "capture_and_extract",
+  "entity_id": "b0c95e26-967d-406f-8e71-948a2c26f9df",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "52f1ed0f7491e4ce1689ff0aa2d04ef4c049ad8d1ed8bdba9901dfa97cd3db8a"
+  ],
+  "attributes": {
+    "requested_url": "https://www.itu.int/net/wsis/",
+    "final_url": "https://www.itu.int/net/wsis/",
+    "capture_status": 200,
+    "etag": "\"5a8d50185189dc1:0\"",
+    "last_modified": "Mon, 19 Jan 2026 14:37:10 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "World Summit on the Information Society",
+      "language": null,
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:44:10.967439+00:00"
+}

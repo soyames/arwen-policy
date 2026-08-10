@@ -1,0 +1,24 @@
+{
+  "event_id": "ff6e08b8-2328-40e9-861f-64945ef28c5d",
+  "event_type": "capture_and_extract",
+  "entity_id": "3f0e2a34-e953-4c2a-b9f1-4af428d0c234",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "849fb103e151f4ea440ba6a65643d765f4ac2458d47d10f15260e2fdabb2f81e"
+  ],
+  "attributes": {
+    "requested_url": "https://icann.org/en/board-activities-and-meetings",
+    "final_url": "https://www.icann.org/en/board-activities-and-meetings",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "2026 Board Activities and Meetings",
+      "language": "en",
+      "summary": "Stay informed with the latest actions and decisions made by the ICANN Board from recent activities and meetings.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:30:07.537897+00:00"
+}

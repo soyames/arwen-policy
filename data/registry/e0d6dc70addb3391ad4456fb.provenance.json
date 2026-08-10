@@ -1,0 +1,24 @@
+{
+  "event_id": "86102af7-f24e-42f6-8cc9-90d050ce306d",
+  "event_type": "capture_and_extract",
+  "entity_id": "ad825a35-1078-47ef-832f-467492b45284",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "8f9d364eec71fe5eab2f23f1d319c1f49afbcee38fee2c34f539f36fca85bb4a"
+  ],
+  "attributes": {
+    "requested_url": "https://account.icann.org/registeraccount?redirect_uri=https://www.icann.org/oauth&client_id=0oa9o9k9rp8VUcyJL2p7&nonce=6f5398ba-8a62-4370-99a8-e00d981b692d&state=https://www.icann.org/",
+    "final_url": "https://account.icann.org/registeraccount?redirect_uri=https://www.icann.org/oauth&client_id=0oa9o9k9rp8VUcyJL2p7&nonce=6f5398ba-8a62-4370-99a8-e00d981b692d&state=https://www.icann.org/",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Create an ICANN Account",
+      "language": "en",
+      "summary": "Create an ICANN Account",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:28:36.909726+00:00"
+}

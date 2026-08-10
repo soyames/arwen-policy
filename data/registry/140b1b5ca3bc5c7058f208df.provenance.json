@@ -1,0 +1,24 @@
+{
+  "event_id": "dea3e2dc-ed8d-4a25-8324-f53c3046fd55",
+  "event_type": "capture_and_extract",
+  "entity_id": "9c4f8d4c-cbbf-4cd0-85a0-5b80f7e077f3",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "40099937c4e047a0bc144580aaae3e343406a8443e40148eec66993cd15d0659"
+  ],
+  "attributes": {
+    "requested_url": "https://intgovforum.org/en/content/hosting-the-igf",
+    "final_url": "https://intgovforum.org/en/content/hosting-the-igf",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Host the IGF | Internet Governance Forum",
+      "language": "en",
+      "summary": "Jump to IGF Donors",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:47:36.555374+00:00"
+}

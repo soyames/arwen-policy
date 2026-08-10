@@ -1,0 +1,1010 @@
+[
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "1f1053370679930ad17ec8a6",
+    "url": "https://milacnic.lacnic.net/lacnic/login",
+    "normalized_url": "https://milacnic.lacnic.net/lacnic/login"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "46df9e54e7f56def5450bc75",
+    "url": "https://www.lacnic.net/929/3/lacnic/lacnic---registro-de-enderecos-ip-da-lac",
+    "normalized_url": "https://www.lacnic.net/929/3/lacnic/lacnic---registro-de-enderecos-ip-da-lac"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "b4bd89b7277570585d91db1f",
+    "url": "https://www.lacnic.net/921/2/lacnic/lacnic---ip-address-registry-for-lac",
+    "normalized_url": "https://www.lacnic.net/921/2/lacnic/lacnic---ip-address-registry-for-lac"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "62d62de3f53003a56bf376bc",
+    "url": "https://www.lacnic.net/",
+    "normalized_url": "https://www.lacnic.net/"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "01154e223a1fd50e0eefacf1",
+    "url": "https://www.lacnic.net/7418/1/lacnic/acerca-de",
+    "normalized_url": "https://www.lacnic.net/7418/1/lacnic/acerca-de"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "b92b05aa0446233761f946af",
+    "url": "https://www.lacnic.net/7326/1/lacnic/conoce-todo-acerca-de-lacnic",
+    "normalized_url": "https://www.lacnic.net/7326/1/lacnic/conoce-todo-acerca-de-lacnic"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "61a753ca1139dcd952147cec",
+    "url": "https://www.lacnic.net/966/1/lacnic/acerca-de-lacnic",
+    "normalized_url": "https://www.lacnic.net/966/1/lacnic/acerca-de-lacnic"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "b7a44609ce8cd8a3809dc26e",
+    "url": "https://www.lacnic.net/34/1/lacnic/anuncios",
+    "normalized_url": "https://www.lacnic.net/34/1/lacnic/anuncios"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "a9199d68743e0213a666fffc",
+    "url": "https://www.lacnic.net/16/1/lacnic/estatuto",
+    "normalized_url": "https://www.lacnic.net/16/1/lacnic/estatuto"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "7768640f15eb73097a29f435",
+    "url": "https://www.lacnic.net/17/1/lacnic/presupuesto",
+    "normalized_url": "https://www.lacnic.net/17/1/lacnic/presupuesto"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "2a69cfc0fde47820244c3105",
+    "url": "https://www.lacnic.net/615/1/lacnic/transparencia",
+    "normalized_url": "https://www.lacnic.net/615/1/lacnic/transparencia"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "5435059c2da8e10631e2e9c1",
+    "url": "https://www.lacnic.net/4038/1/lacnic/codigo-de-conducta-de-la-comunidad-de-lacnic",
+    "normalized_url": "https://www.lacnic.net/4038/1/lacnic/codigo-de-conducta-de-la-comunidad-de-lacnic"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "5ea9df6f30739317b20cf8d0",
+    "url": "https://www.lacnic.net/1981/1/lacnic/codigo-de-etica-de-lacnic",
+    "normalized_url": "https://www.lacnic.net/1981/1/lacnic/codigo-de-etica-de-lacnic"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "b568167f6ed6cf9a0071aa2e",
+    "url": "https://www.lacnic.net/491/1/lacnic/casa-de-internet",
+    "normalized_url": "https://www.lacnic.net/491/1/lacnic/casa-de-internet"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "fb4f06ecfc6859d851386c37",
+    "url": "https://www.lacnic.net/7327/1/lacnic/integrantes-de-lacnic",
+    "normalized_url": "https://www.lacnic.net/7327/1/lacnic/integrantes-de-lacnic"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "ea20e1560f1116ef26a6526f",
+    "url": "https://www.lacnic.net/1219/1/lacnic/directorio",
+    "normalized_url": "https://www.lacnic.net/1219/1/lacnic/directorio"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "56f0d39e99331e6add708619",
+    "url": "https://www.lacnic.net/1187/1/lacnic/comision-electoral",
+    "normalized_url": "https://www.lacnic.net/1187/1/lacnic/comision-electoral"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "36f52463e401ce5b4b517f5c",
+    "url": "https://www.lacnic.net/1202/1/lacnic/comision-fiscal",
+    "normalized_url": "https://www.lacnic.net/1202/1/lacnic/comision-fiscal"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "f2a134c69ed0bcd3466a408b",
+    "url": "https://www.lacnic.net/2358/1/lacnic/comite-de-etica",
+    "normalized_url": "https://www.lacnic.net/2358/1/lacnic/comite-de-etica"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "60ccb231dcd95f40fa103032",
+    "url": "https://www.lacnic.net/1313/1/lacnic/staff",
+    "normalized_url": "https://www.lacnic.net/1313/1/lacnic/staff"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "6f038c138c18af8f5fe2f4ee",
+    "url": "https://www.lacnic.net/7419/1/lacnic/ip-y-asn",
+    "normalized_url": "https://www.lacnic.net/7419/1/lacnic/ip-y-asn"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "6af92d7077719a8adddb74ae",
+    "url": "https://www.lacnic.net/7328/1/lacnic/solicita-ipyasn",
+    "normalized_url": "https://www.lacnic.net/7328/1/lacnic/solicita-ipyasn"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "7ea50fe68ce75e08b5d9bf09",
+    "url": "https://www.lacnic.net/978/1/lacnic/solicitar-ip-y-asn",
+    "normalized_url": "https://www.lacnic.net/978/1/lacnic/solicitar-ip-y-asn"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "b5fc0dcc0b02d3a53e993f65",
+    "url": "https://www.lacnic.net/6334/1/lacnic/lista-de-espera-para-recibir-direcciones-ipv4",
+    "normalized_url": "https://www.lacnic.net/6334/1/lacnic/lista-de-espera-para-recibir-direcciones-ipv4"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "74b577acccc6a9313622a115",
+    "url": "https://www.lacnic.net/5530/1/lacnic/despliega-ipv6",
+    "normalized_url": "https://www.lacnic.net/5530/1/lacnic/despliega-ipv6"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "360382dc15b11954b8367147",
+    "url": "https://www.lacnic.net/981/1/lacnic/transferencias-de-direcciones-ip",
+    "normalized_url": "https://www.lacnic.net/981/1/lacnic/transferencias-de-direcciones-ip"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "3dabfa264ae9485087583ebb",
+    "url": "https://www.lacnic.net/982/1/lacnic/revocacion-de-ip-y-asn",
+    "normalized_url": "https://www.lacnic.net/982/1/lacnic/revocacion-de-ip-y-asn"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "8f1ab1819c2fe8928afb6fc4",
+    "url": "https://www.lacnic.net/983/1/lacnic/devolucion-de-ip-y-asn",
+    "normalized_url": "https://www.lacnic.net/983/1/lacnic/devolucion-de-ip-y-asn"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "1d725b31e5c6f63820ad8699",
+    "url": "https://www.lacnic.net/984/1/lacnic/gestion-de-recursos-legados",
+    "normalized_url": "https://www.lacnic.net/984/1/lacnic/gestion-de-recursos-legados"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "e064847f9561499a3635f0b3",
+    "url": "https://www.lacnic.net/999/1/lacnic/estadisticas-de-asignacion-de-lacnic",
+    "normalized_url": "https://www.lacnic.net/999/1/lacnic/estadisticas-de-asignacion-de-lacnic"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "043fc550db3b7b721b320c8a",
+    "url": "https://www.lacnic.net/7329/1/lacnic/administra-ipyasn",
+    "normalized_url": "https://www.lacnic.net/7329/1/lacnic/administra-ipyasn"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "d8be0bb4a0b7adcb67f42961",
+    "url": "https://www.lacnic.net/1114/1/lacnic/milacnic-ingresar-a-mi-cuenta",
+    "normalized_url": "https://www.lacnic.net/1114/1/lacnic/milacnic-ingresar-a-mi-cuenta"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "97f14aeb298857b559552fd8",
+    "url": "https://www.lacnic.net/1002/1/lacnic/whois",
+    "normalized_url": "https://www.lacnic.net/1002/1/lacnic/whois"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "c37b0ff35ba03935c397152b",
+    "url": "https://www.lacnic.net/979/1/lacnic/resolucion-reversa-del-dns",
+    "normalized_url": "https://www.lacnic.net/979/1/lacnic/resolucion-reversa-del-dns"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "fb5938bd3f32d45f4382d7b4",
+    "url": "https://www.lacnic.net/502/1/lacnic/certificacion-de-recursos-rpki",
+    "normalized_url": "https://www.lacnic.net/502/1/lacnic/certificacion-de-recursos-rpki"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "560250297b5a9432211b7c5d",
+    "url": "https://www.lacnic.net/5920/1/lacnic/internet-routing-registry-irr",
+    "normalized_url": "https://www.lacnic.net/5920/1/lacnic/internet-routing-registry-irr"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "5f2dea82e9d0e3fb353da70c",
+    "url": "https://www.lacnic.net/3105/1/lacnic/geolocalizacion-de-ip",
+    "normalized_url": "https://www.lacnic.net/3105/1/lacnic/geolocalizacion-de-ip"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "eb976b99d2da972070546a37",
+    "url": "https://www.lacnic.net/6261/1/lacnic/automatizacion-e-integracion-de-la-gestion-ip",
+    "normalized_url": "https://www.lacnic.net/6261/1/lacnic/automatizacion-e-integracion-de-la-gestion-ip"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "147a033233c592b62a81e63d",
+    "url": "https://www.lacnic.net/2471/1/lacnic/acceso-a-bulk-whois",
+    "normalized_url": "https://www.lacnic.net/2471/1/lacnic/acceso-a-bulk-whois"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "a9a3350c45aec34b93341f7a",
+    "url": "https://www.lacnic.net/7365/1/lacnic/lacnic-tools",
+    "normalized_url": "https://www.lacnic.net/7365/1/lacnic/lacnic-tools"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "77e8cfad1ef571592b0b45f1",
+    "url": "https://www.lacnic.net/985/1/lacnic/sistema-automatizado-para-la-administracion-de-recursos-de-internet-sara",
+    "normalized_url": "https://www.lacnic.net/985/1/lacnic/sistema-automatizado-para-la-administracion-de-recursos-de-internet-sara"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "be7a6f9aabf76215e8578f76",
+    "url": "https://www.lacnic.net/7420/1/lacnic/membresia",
+    "normalized_url": "https://www.lacnic.net/7420/1/lacnic/membresia"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "747f5872649871c685db3c67",
+    "url": "https://www.lacnic.net/7330/1/lacnic/membresia-y-facturacion",
+    "normalized_url": "https://www.lacnic.net/7330/1/lacnic/membresia-y-facturacion"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "80a4350eb463dbf38ebdf53c",
+    "url": "https://www.lacnic.net/970/1/lacnic/membresia",
+    "normalized_url": "https://www.lacnic.net/970/1/lacnic/membresia"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "a54033a08a5369ff21b9d835",
+    "url": "https://www.lacnic.net/2397/1/lacnic/categorias-y-cuotas-de-asociados",
+    "normalized_url": "https://www.lacnic.net/2397/1/lacnic/categorias-y-cuotas-de-asociados"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "dc509040a3d5d30c0bb4929c",
+    "url": "https://www.lacnic.net/5208/1/lacnic/formas-de-pago",
+    "normalized_url": "https://www.lacnic.net/5208/1/lacnic/formas-de-pago"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "3868cf00ecff558b9a32b151",
+    "url": "https://www.lacnic.net/1415/1/lacnic/elecciones",
+    "normalized_url": "https://www.lacnic.net/1415/1/lacnic/elecciones"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "fd3893b1f9b863efbb71377b",
+    "url": "https://www.lacnic.net/974/1/lacnic/asamblea",
+    "normalized_url": "https://www.lacnic.net/974/1/lacnic/asamblea"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "30052b304b18b8fdfa6aad09",
+    "url": "https://www.lacnic.net/2841/1/lacnic/tabla-de-votos",
+    "normalized_url": "https://www.lacnic.net/2841/1/lacnic/tabla-de-votos"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "607ed2e52338190be9e56179",
+    "url": "https://www.lacnic.net/7421/1/lacnic/capacitaciones",
+    "normalized_url": "https://www.lacnic.net/7421/1/lacnic/capacitaciones"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "117074c7463148f2440b0cbd",
+    "url": "https://www.lacnic.net/7331/1/lacnic/campus-lacnic",
+    "normalized_url": "https://www.lacnic.net/7331/1/lacnic/campus-lacnic"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "e91a6f2a44d23cf9671d93d1",
+    "url": "https://www.lacnic.net/7041/1/lacnic/proximas-capacitaciones",
+    "normalized_url": "https://www.lacnic.net/7041/1/lacnic/proximas-capacitaciones"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "732e9f31874e0997d7d7fa05",
+    "url": "https://www.lacnic.net/1319/1/lacnic/campus",
+    "normalized_url": "https://www.lacnic.net/1319/1/lacnic/campus"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "2beaa7954f136eebf5cc92a1",
+    "url": "https://www.lacnic.net/7378/1/lacnic/cursos",
+    "normalized_url": "https://www.lacnic.net/7378/1/lacnic/cursos"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "6a276bb088834281985e408b",
+    "url": "https://www.lacnic.net/7379/1/lacnic/docentes",
+    "normalized_url": "https://www.lacnic.net/7379/1/lacnic/docentes"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "1cd11b08ad459a1a751676a8",
+    "url": "https://www.lacnic.net/7380/1/lacnic/ingresar-al-campus",
+    "normalized_url": "https://www.lacnic.net/7380/1/lacnic/ingresar-al-campus"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "b0a3723739837a50391ee71c",
+    "url": "https://www.lacnic.net/7381/1/lacnic/especializaciones",
+    "normalized_url": "https://www.lacnic.net/7381/1/lacnic/especializaciones"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "5699a11ead4f207d039bd4f0",
+    "url": "https://www.lacnic.net/7332/1/lacnic/fortalece-tus-habilidades-tecnicas",
+    "normalized_url": "https://www.lacnic.net/7332/1/lacnic/fortalece-tus-habilidades-tecnicas"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "2089e4f8926a3cface997697",
+    "url": "https://www.lacnic.net/2465/1/lacnic/webinars",
+    "normalized_url": "https://www.lacnic.net/2465/1/lacnic/webinars"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "f2218d1015a3df389e7fd109",
+    "url": "https://www.lacnic.net/7382/1/lacnic/podcast",
+    "normalized_url": "https://www.lacnic.net/7382/1/lacnic/podcast"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "382539f65a4c36ec44505ba6",
+    "url": "https://www.lacnic.net/6684/1/lacnic/tutoriales-y-guias",
+    "normalized_url": "https://www.lacnic.net/6684/1/lacnic/tutoriales-y-guias"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "7f8b1954828a11e45a988487",
+    "url": "https://www.lacnic.net/7383/1/lacnic/novedades",
+    "normalized_url": "https://www.lacnic.net/7383/1/lacnic/novedades"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "780379124f5b1074c51d44a3",
+    "url": "https://www.lacnic.net/7422/1/lacnic/participar",
+    "normalized_url": "https://www.lacnic.net/7422/1/lacnic/participar"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "758c575303d1c5ad58f43efe",
+    "url": "https://www.lacnic.net/7334/1/lacnic/eventos-de-lacnic",
+    "normalized_url": "https://www.lacnic.net/7334/1/lacnic/eventos-de-lacnic"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "ce78e950a0b72a018ad052b7",
+    "url": "https://www.lacnic.net/1949/1/lacnic/eventos",
+    "normalized_url": "https://www.lacnic.net/1949/1/lacnic/eventos"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "010422cec9a0f399c2e57e75",
+    "url": "https://www.lacnic.net/8114/1/lacnic/que-es-un-evento-de-lacnic",
+    "normalized_url": "https://www.lacnic.net/8114/1/lacnic/que-es-un-evento-de-lacnic"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "618363d81761f9fe7124161f",
+    "url": "https://www.lacnic.net/989/1/lacnic/hospedar-un-evento",
+    "normalized_url": "https://www.lacnic.net/989/1/lacnic/hospedar-un-evento"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "72d3fe7b22e7fcafb61775c0",
+    "url": "https://www.lacnic.net/7384/1/lacnic/novedades",
+    "normalized_url": "https://www.lacnic.net/7384/1/lacnic/novedades"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "e2225a31cb5181a8d101279e",
+    "url": "https://www.lacnic.net/7423/1/lacnic/como-patrocinar",
+    "normalized_url": "https://www.lacnic.net/7423/1/lacnic/como-patrocinar"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "08de3227248d4ddd387f8232",
+    "url": "https://www.lacnic.net/7333/1/lacnic/espacios-abiertos-a-la-comunidad",
+    "normalized_url": "https://www.lacnic.net/7333/1/lacnic/espacios-abiertos-a-la-comunidad"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "91236a55c18158505fae336d",
+    "url": "https://www.lacnic.net/995/1/lacnic/desarrollo-de-politicas",
+    "normalized_url": "https://www.lacnic.net/995/1/lacnic/desarrollo-de-politicas"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "722b87f41a58d67c3864e077",
+    "url": "https://www.lacnic.net/2362/1/lacnic/foro-tecnico-de-lacnic",
+    "normalized_url": "https://www.lacnic.net/2362/1/lacnic/foro-tecnico-de-lacnic"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "3c6b0d2e40a6ab2e0b4e332c",
+    "url": "https://www.lacnic.net/1220/1/lacnic/premio-trayectoria",
+    "normalized_url": "https://www.lacnic.net/1220/1/lacnic/premio-trayectoria"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "9f2bc3f65b66608b0c8fe254",
+    "url": "https://www.lacnic.net/997/1/lacnic/listas-de-discusion",
+    "normalized_url": "https://www.lacnic.net/997/1/lacnic/listas-de-discusion"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "2a46c659900f7f12a3acb122",
+    "url": "https://www.lacnic.net/7654/1/lacnic/consulta-publica-sobre-el-documento-de-gobernanza-de-los-rir-icp-2",
+    "normalized_url": "https://www.lacnic.net/7654/1/lacnic/consulta-publica-sobre-el-documento-de-gobernanza-de-los-rir-icp-2"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "479cc4df1ce62e46010db58a",
+    "url": "https://www.lacnic.net/7424/1/lacnic/oportunidades",
+    "normalized_url": "https://www.lacnic.net/7424/1/lacnic/oportunidades"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "6a8fe7b489396e36f606a29f",
+    "url": "https://www.lacnic.net/7335/1/lacnic/descubre-nuestras-oportunidades-de-apoyo",
+    "normalized_url": "https://www.lacnic.net/7335/1/lacnic/descubre-nuestras-oportunidades-de-apoyo"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "8914109bd8dfa1cd988cfff8",
+    "url": "https://www.lacnic.net/6141/1/lacnic/calendario-de-iniciativas",
+    "normalized_url": "https://www.lacnic.net/6141/1/lacnic/calendario-de-iniciativas"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "f1a24ddebfbe625c962467c4",
+    "url": "https://www.lacnic.net/7092/1/lacnic/embajadores-i+d",
+    "normalized_url": "https://www.lacnic.net/7092/1/lacnic/embajadores-i+d"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "a09f9458982be302a53ae6d2",
+    "url": "https://www.lacnic.net/1200/1/lacnic/frida",
+    "normalized_url": "https://www.lacnic.net/1200/1/lacnic/frida"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "9d07c2e8c6e0d4bafe9b14d2",
+    "url": "https://www.lacnic.net/991/1/lacnic/programa-de-becas",
+    "normalized_url": "https://www.lacnic.net/991/1/lacnic/programa-de-becas"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "f5c1c2851188e4a19d5265b6",
+    "url": "https://www.lacnic.net/7101/1/lacnic/gobernanza-de-internet",
+    "normalized_url": "https://www.lacnic.net/7101/1/lacnic/gobernanza-de-internet"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "6d925aa4d167872996609db7",
+    "url": "https://www.lacnic.net/6754/1/lacnic/investigacion-aplicada",
+    "normalized_url": "https://www.lacnic.net/6754/1/lacnic/investigacion-aplicada"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "1d4ef43ad47f0f50bac5784e",
+    "url": "https://www.lacnic.net/993/1/lacnic/+raices",
+    "normalized_url": "https://www.lacnic.net/993/1/lacnic/+raices"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "bfda6fa442e59d72121ae1c7",
+    "url": "https://www.lacnic.net/7882/1/lacnic/iniciativas-anteriores",
+    "normalized_url": "https://www.lacnic.net/7882/1/lacnic/iniciativas-anteriores"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "4b932b1de1f52d7347f4165d",
+    "url": "https://www.lacnic.net/4882/1/lacnic/mentoreo-de-it-women",
+    "normalized_url": "https://www.lacnic.net/4882/1/lacnic/mentoreo-de-it-women"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "e47030ad6eccb2254a511d27",
+    "url": "https://www.lacnic.net/7157/1/lacnic/lideres",
+    "normalized_url": "https://www.lacnic.net/7157/1/lacnic/lideres"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "fb7722e127178df9dd3cecea",
+    "url": "https://www.lacnic.net/7425/1/lacnic/i+d",
+    "normalized_url": "https://www.lacnic.net/7425/1/lacnic/i+d"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "19d29ede48b2f9f87d71b521",
+    "url": "https://www.lacnic.net/7336/1/lacnic/mediciones-e-informes-tecnicos",
+    "normalized_url": "https://www.lacnic.net/7336/1/lacnic/mediciones-e-informes-tecnicos"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "dad39d42720ff3abde55b4b8",
+    "url": "https://www.lacnic.net/6328/1/lacnic/mediciones-de-internet",
+    "normalized_url": "https://www.lacnic.net/6328/1/lacnic/mediciones-de-internet"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "d1470bb93e9923cbab28cf7f",
+    "url": "https://www.lacnic.net/5689/1/lacnic/ip_asn-para-investigacion",
+    "normalized_url": "https://www.lacnic.net/5689/1/lacnic/ip_asn-para-investigacion"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "fae5ed0f22a1dacf68f95a63",
+    "url": "https://www.lacnic.net/6923/1/lacnic/herramientas-de-medicion",
+    "normalized_url": "https://www.lacnic.net/6923/1/lacnic/herramientas-de-medicion"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "3ab0a6dc291ffef07ebc9e93",
+    "url": "https://www.lacnic.net/6098/1/lacnic/informes-tecnicos-de-interconexion",
+    "normalized_url": "https://www.lacnic.net/6098/1/lacnic/informes-tecnicos-de-interconexion"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "ba827e2efd55ead2bad6acfc",
+    "url": "https://www.lacnic.net/7387/1/lacnic/informes-tecnicos-de-ipv6",
+    "normalized_url": "https://www.lacnic.net/7387/1/lacnic/informes-tecnicos-de-ipv6"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "3916474564e1a09570a634a5",
+    "url": "https://www.lacnic.net/7389/1/lacnic/informes-tecnicos-de-ciberseguridad",
+    "normalized_url": "https://www.lacnic.net/7389/1/lacnic/informes-tecnicos-de-ciberseguridad"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "1c8c944670ac95e177d2ea5c",
+    "url": "https://www.lacnic.net/7954/1/lacnic/factores-tecnicos-del-exito-de-internet",
+    "normalized_url": "https://www.lacnic.net/7954/1/lacnic/factores-tecnicos-del-exito-de-internet"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "63e51351a0e68987f3f1759f",
+    "url": "https://www.lacnic.net/7450/1/lacnic/ciberseguridad",
+    "normalized_url": "https://www.lacnic.net/7450/1/lacnic/ciberseguridad"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "fbb9e787b9de1fd9e76ffb72",
+    "url": "https://www.lacnic.net/7338/1/lacnic/ciberseguridad",
+    "normalized_url": "https://www.lacnic.net/7338/1/lacnic/ciberseguridad"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "2c7b65d1d207b3c8739cc9b5",
+    "url": "https://www.lacnic.net/5297/1/lacnic/lacnic-csirt",
+    "normalized_url": "https://www.lacnic.net/5297/1/lacnic/lacnic-csirt"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "fa4438a6c0a25237d597b2ba",
+    "url": "https://www.lacnic.net/4660/1/lacnic/informacion-para-leas",
+    "normalized_url": "https://www.lacnic.net/4660/1/lacnic/informacion-para-leas"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "8ae12a9fae4b9a8b491b7525",
+    "url": "https://www.lacnic.net/6347/1/lacnic/csirt-estadisticas",
+    "normalized_url": "https://www.lacnic.net/6347/1/lacnic/csirt-estadisticas"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "5f0ebb3c8ec2d680a0b97d4c",
+    "url": "https://www.lacnic.net/7390/1/lacnic/novedades",
+    "normalized_url": "https://www.lacnic.net/7390/1/lacnic/novedades"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "701956aab046f5bcf1ecd005",
+    "url": "https://www.lacnic.net/7309/1/lacnic/blog",
+    "normalized_url": "https://www.lacnic.net/7309/1/lacnic/blog"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "60c50d8757c6391ac83219ee",
+    "url": "https://www.lacnic.net/solicitar-ip",
+    "normalized_url": "https://www.lacnic.net/solicitar-ip"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "12a95eb0fcdf0698b673ad09",
+    "url": "https://query.milacnic.lacnic.net/home",
+    "normalized_url": "https://query.milacnic.lacnic.net/home"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "e67acf42b94ace538ee50d6f",
+    "url": "https://tools.labs.lacnic.net/tools/home",
+    "normalized_url": "https://tools.labs.lacnic.net/tools/home"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "b43712655dacbaa0292d0a9d",
+    "url": "https://imasd.lacnic.net/",
+    "normalized_url": "https://imasd.lacnic.net/"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "c5677d30de8e9deb61433702",
+    "url": "https://www.lacnic.net/1949/1/lacnic/nuestros-eventos",
+    "normalized_url": "https://www.lacnic.net/1949/1/lacnic/nuestros-eventos"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "c708ca5312340e2284088f4a",
+    "url": "https://www.lacnic.net/18/1/lacnic/reporte-anual",
+    "normalized_url": "https://www.lacnic.net/18/1/lacnic/reporte-anual"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "390b4b0cc82fce71c1f888f0",
+    "url": "https://www.lacnic.net/490/1/lacnic/empleo",
+    "normalized_url": "https://www.lacnic.net/490/1/lacnic/empleo"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "79d7bcc78c4400b50960d4eb",
+    "url": "https://www.lacnic.net/3907/1/lacnic/sugerencias",
+    "normalized_url": "https://www.lacnic.net/3907/1/lacnic/sugerencias"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "1f2f1476805d0c383cdf603a",
+    "url": "https://www.lacnic.net/492/1/lacnic/contacto",
+    "normalized_url": "https://www.lacnic.net/492/1/lacnic/contacto"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "7bf2de924c9b1a017f071461",
+    "url": "https://www.lacnic.net/1126/1/lacnic/faq",
+    "normalized_url": "https://www.lacnic.net/1126/1/lacnic/faq"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "235ee1a3b16fff1d23d927ea",
+    "url": "https://www.lacnic.net/5296/1/lacnic/nro-news",
+    "normalized_url": "https://www.lacnic.net/5296/1/lacnic/nro-news"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "64b2aab7aa4bc2a961c96c70",
+    "url": "https://www.lacnic.net/2409/1/lacnic/comite-de-revision",
+    "normalized_url": "https://www.lacnic.net/2409/1/lacnic/comite-de-revision"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "c74c66e357b1b4942bf2da20",
+    "url": "https://www.lacnic.net/998/1/lacnic/aso-nro",
+    "normalized_url": "https://www.lacnic.net/998/1/lacnic/aso-nro"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "2e4c6951bd22b0cff61e876c",
+    "url": "https://www.lacnic.net/5298/1/lacnic/reportar-incidente",
+    "normalized_url": "https://www.lacnic.net/5298/1/lacnic/reportar-incidente"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "6cc0990f9e1f3db0caf48ec5",
+    "url": "https://www.lacnic.net/2923/1/lacnic/politica-de-privacidad",
+    "normalized_url": "https://www.lacnic.net/2923/1/lacnic/politica-de-privacidad"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "21b87f01cfbcb95a91b5e608",
+    "url": "https://www.lacnic.net/5299/1/lacnic/archivo",
+    "normalized_url": "https://www.lacnic.net/5299/1/lacnic/archivo"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "611d7f35ce2b958e2bda4e84",
+    "url": "https://twitter.com/lacnic",
+    "normalized_url": "https://twitter.com/lacnic"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "ae79f9a0e8157392a3b19d33",
+    "url": "https://facebook.com/lacnic",
+    "normalized_url": "https://facebook.com/lacnic"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "85463cf3e486345a4664596e",
+    "url": "https://www.instagram.com/lacnic/?hl=es-la",
+    "normalized_url": "https://www.instagram.com/lacnic/?hl=es-la"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "06bd57d59880f1911008652c",
+    "url": "https://uy.linkedin.com/company/lacnic",
+    "normalized_url": "https://uy.linkedin.com/company/lacnic"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "cdac3076e17fca09c105b654",
+    "url": "https://www.youtube.com/user/lacnicstaff",
+    "normalized_url": "https://www.youtube.com/user/lacnicstaff"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "eac3be706af59f5b41c4f3c8",
+    "url": "https://www.lacnic.net/podcast",
+    "normalized_url": "https://www.lacnic.net/podcast"
+  },
+  {
+    "discovery_source": "https://www.lacnic.net/",
+    "discovered_at": "2026-08-10T06:30:47.201411+00:00",
+    "parent_url": "https://www.lacnic.net/",
+    "source_id": "da7b647619fa9a322b72dbc5",
+    "url": "https://www.greatplacetowork.com.uy/empresas-certificadas/lacnic",
+    "normalized_url": "https://www.greatplacetowork.com.uy/empresas-certificadas/lacnic"
+  }
+]

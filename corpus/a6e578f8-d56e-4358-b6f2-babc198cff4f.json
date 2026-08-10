@@ -1,0 +1,37 @@
+{
+  "document_id": "a6e578f8-d56e-4358-b6f2-babc198cff4f",
+  "source_id": "eece47486d0db9f96dacd12e",
+  "source_url": "https://www.iana.org/",
+  "final_url": "https://www.iana.org/",
+  "artifact_sha256": "3bafa1612b7778ce3ca2f983bacaf9db01a21bb8ae82bd2dc09920141b81fc04",
+  "byte_size": 6253,
+  "content_type": "text/html",
+  "metadata": {
+    "title": "Internet Assigned Numbers Authority",
+    "language": null,
+    "summary": null,
+    "published_at": null
+  },
+  "extraction_method": "html_bs4",
+  "extraction_warnings": [],
+  "text": "Internet Assigned Numbers Authority\nInternet Assigned Numbers Authority\nThe global coordination of the DNS Root, IP addressing,\nand other Internet protocol resources is performed as the\nInternet Assigned Numbers Authority (IANA) functions.\nLearn more.\nDomain Names\nManagement of the DNS Root Zone (assignments of ccTLDs and gTLDs) along with other functions such as the .int and .arpa zones.\nRoot Zone Management\nDatabase of Top Level Domains\n.int Registry\n.arpa Registry\nIDN Practices Repository\nNumber Resources\nCoordination of the global IP and AS number spaces, such as allocations made to Regional Internet Registries.\nIP Addresses & AS Numbers\nNetwork abuse information\nProtocol Assignments\nThe central repository for protocol name and number registries used in many Internet protocols.\nProtocol Registries\nApply for an assignment\nTime Zone Database\nDomain Names\nRoot Zone Registry\n.INT Registry\n.ARPA Registry\nIDN Repository\nNumber Resources\nNumber Registries\nRIR Allocation Data\nAbuse Information\nProtocols\nProtocol Registries\nTime Zone Database\nAbout Us\nNews\nPerformance\nThe Organization\nArchive\nContact Us\nThe IANA functions coordinate the Internet’s globally unique identifiers, and\nare provided by\nPublic Technical Identifiers\n, an affiliate of\nICANN\n.\nPrivacy Policy\nTerms of Service",
+  "segments": [
+    {
+      "segment_id": "06ffb368-259d-427f-ac24-4e5cbe70ddf4",
+      "document_id": "a6e578f8-d56e-4358-b6f2-babc198cff4f",
+      "ordinal": 0,
+      "text": "Internet Assigned Numbers Authority\nInternet Assigned Numbers Authority\nThe global coordination of the DNS Root, IP addressing,\nand other Internet protocol resources is performed as the\nInternet Assigned Numbers Authority (IANA) functions.\nLearn more.\nDomain Names\nManagement of the DNS Root Zone (assignments of ccTLDs and gTLDs) along with other functions such as the .int and .arpa zones.\nRoot Zone Management\nDatabase of Top Level Domains\n.int Registry\n.arpa Registry\nIDN Practices Repository\nNumber Resources\nCoordination of the global IP and AS number spaces, such as allocations made to Regional Internet Registries.\nIP Addresses & AS Numbers\nNetwork abuse information\nProtocol Assignments\nThe central repository for protocol name and number registries used in many Internet protocols.\nProtocol Registries\nApply for an assignment\nTime Zone Database\nDomain Names\nRoot Zone Registry\n.INT Registry\n.ARPA Registry\nIDN Repository\nNumber Resources\nNumber Registries\nRIR Allocation Data\nAbuse Information\nProtocols\nProtocol Registries\nTime Zone Database\nAbout Us\nNews\nPerformance\nThe Organization\nArchive\nContact Us\nThe IANA functions coordinate the Internet’s globally unique identifiers, and\nare provided by\nPublic Technical Identifiers\n, an affiliate of\nICANN\n.\nPrivacy Policy\nTerms of Service",
+      "char_start": 0,
+      "char_end": 1296,
+      "page_start": null,
+      "page_end": null,
+      "timestamp_start": null,
+      "timestamp_end": null,
+      "language": "und",
+      "attributes": {
+        "reading_time_minutes": 1,
+        "word_count": 187
+      }
+    }
+  ]
+}

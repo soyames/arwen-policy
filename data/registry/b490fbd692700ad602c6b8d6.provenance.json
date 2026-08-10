@@ -1,0 +1,24 @@
+{
+  "event_id": "f198e6be-6ce1-4ec2-8a42-68ad85f695cc",
+  "event_type": "capture_and_extract",
+  "entity_id": "3c7b73d3-5275-4c10-8620-7a7bba7e8f41",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "cfb0fa0122d01cd629d406ae16561c650410b7ce31b74f498466667769347e0d"
+  ],
+  "attributes": {
+    "requested_url": "https://www.internetsociety.org/issues/",
+    "final_url": "https://www.internetsociety.org/our-work/",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Our Work - Internet Society",
+      "language": "en-US",
+      "summary": "How the Internet Society works to close the digital divide and rebuild trust in the global Internet. For everyone.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:35:54.343360+00:00"
+}

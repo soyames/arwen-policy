@@ -1,0 +1,24 @@
+{
+  "event_id": "8855aad5-6499-445d-843e-a99424a99d2a",
+  "event_type": "capture_and_extract",
+  "entity_id": "71676794-3923-47f6-b2f1-3b3d5c7de112",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "1239ed07920bf5d4fa738341b0b8401d8eb5839afe04246dd0c9d1b182dd1add"
+  ],
+  "attributes": {
+    "requested_url": "https://www.icann.org/history",
+    "final_url": "https://www.icann.org/history",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "ICANN History Project - ICANN",
+      "language": "en",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:28:50.061388+00:00"
+}

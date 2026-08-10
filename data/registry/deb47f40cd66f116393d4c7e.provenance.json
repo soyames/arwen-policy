@@ -1,0 +1,24 @@
+{
+  "event_id": "3a698b63-4feb-446e-9a0c-4f9acb5ddbf0",
+  "event_type": "capture_and_extract",
+  "entity_id": "6b2d794c-0d49-40fb-aa83-95d33bf8cb99",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "375140d562dd1096a71da79c4a8abf2490d20ec047d89e740fe446ed86b6ef68"
+  ],
+  "attributes": {
+    "requested_url": "https://intgovforum.org/en/content/overview-of-policy-networks",
+    "final_url": "https://intgovforum.org/en/content/overview-of-policy-networks",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Overview of Policy Networks | Internet Governance Forum (IGF)",
+      "language": "en",
+      "summary": "While the IGF 2026 policy networks are under implementation, during 2015-2025, the following policy networks were implemented. Please click on each to learn more.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:47:56.485325+00:00"
+}

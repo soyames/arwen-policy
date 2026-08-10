@@ -1,0 +1,1626 @@
+[
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "dab3b39a431ca3f162f65721",
+    "url": "https://www.ietf.org/",
+    "normalized_url": "https://www.ietf.org/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "4fddf3c8b97356239b27df61",
+    "url": "https://www.ietf.org/about/",
+    "normalized_url": "https://www.ietf.org/about/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "d6056283cef4f307960c4ec1",
+    "url": "https://www.ietf.org/about/introduction/",
+    "normalized_url": "https://www.ietf.org/about/introduction/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "1136691762e69a80eea2c631",
+    "url": "https://www.ietf.org/about/introduction/#participants",
+    "normalized_url": "https://www.ietf.org/about/introduction/#participants"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "9ad2fb843824384aa1ec0cd5",
+    "url": "https://www.ietf.org/about/introduction/#mission",
+    "normalized_url": "https://www.ietf.org/about/introduction/#mission"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "d06fe72d16adbbd5aa5db019",
+    "url": "https://www.ietf.org/about/introduction/#principles",
+    "normalized_url": "https://www.ietf.org/about/introduction/#principles"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "b11381739fcc87410c87ed23",
+    "url": "https://www.ietf.org/about/introduction/#work",
+    "normalized_url": "https://www.ietf.org/about/introduction/#work"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "d015b792aab0317bd6480a96",
+    "url": "https://www.ietf.org/about/groups/iesg/",
+    "normalized_url": "https://www.ietf.org/about/groups/iesg/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "b7fba403e4de2e7b1e40718b",
+    "url": "https://www.ietf.org/about/groups/iab/",
+    "normalized_url": "https://www.ietf.org/about/groups/iab/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "dcaafd4154e94dd23baec81e",
+    "url": "https://www.ietf.org/about/groups/irtf/",
+    "normalized_url": "https://www.ietf.org/about/groups/irtf/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "0bf4a6a5df4ee319ace3fa5d",
+    "url": "https://www.ietf.org/about/liaisons/",
+    "normalized_url": "https://www.ietf.org/about/liaisons/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "ecf36adf34e47f2895c251bf",
+    "url": "https://www.ietf.org/about/groups/nomcom/",
+    "normalized_url": "https://www.ietf.org/about/groups/nomcom/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "01309b166165e9eb56a83dfa",
+    "url": "https://www.ietf.org/about/groups/trust/",
+    "normalized_url": "https://www.ietf.org/about/groups/trust/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "2cc16309f4940aedf304b2f6",
+    "url": "https://www.rfc-editor.org/about/rfc-editor/",
+    "normalized_url": "https://www.rfc-editor.org/about/rfc-editor/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "e3b3596e92eb1ce7b2637097",
+    "url": "https://www.rfc-editor.org/authors/rfc-independent-submissions/",
+    "normalized_url": "https://www.rfc-editor.org/authors/rfc-independent-submissions/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "3c9bda5bf2d34517ed9ab428",
+    "url": "https://www.ietf.org/administration/legal-request-procedures/",
+    "normalized_url": "https://www.ietf.org/administration/legal-request-procedures/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "7969282a48ebdfc4d2e13d6e",
+    "url": "https://www.ietf.org/administration/legal-requests/",
+    "normalized_url": "https://www.ietf.org/administration/legal-requests/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "07d468a685818bc2f145a9ba",
+    "url": "https://www.ietf.org/administration/overview/",
+    "normalized_url": "https://www.ietf.org/administration/overview/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "06e210183e6201b6b2b16545",
+    "url": "https://www.ietf.org/administration/announcements/",
+    "normalized_url": "https://www.ietf.org/administration/announcements/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "2c7d0cfeb4500077c4c1e451",
+    "url": "https://www.ietf.org/administration/reports/",
+    "normalized_url": "https://www.ietf.org/administration/reports/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "2304c9779268834a521ab8bf",
+    "url": "https://www.ietf.org/administration/llc-board/",
+    "normalized_url": "https://www.ietf.org/administration/llc-board/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "74e0de7e1c90e3be616ad8d3",
+    "url": "https://www.ietf.org/administration/llc-staff/",
+    "normalized_url": "https://www.ietf.org/administration/llc-staff/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "50764437800f9af2c0836539",
+    "url": "https://www.ietf.org/administration/financial-statements/",
+    "normalized_url": "https://www.ietf.org/administration/financial-statements/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "6bfccae76a4d152349e1122e",
+    "url": "https://www.ietf.org/administration/rfps-and-contracts/",
+    "normalized_url": "https://www.ietf.org/administration/rfps-and-contracts/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "46cc2b1d103e728bc66f92ed",
+    "url": "https://www.ietf.org/administration/policies-procedures/",
+    "normalized_url": "https://www.ietf.org/administration/policies-procedures/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "903ce03e79b3af29841cb179",
+    "url": "https://www.ietf.org/transparency/",
+    "normalized_url": "https://www.ietf.org/transparency/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "cb518fadb35325be059496bf",
+    "url": "https://www.ietf.org/technologies/",
+    "normalized_url": "https://www.ietf.org/technologies/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "f12dd187855eb9b9dd793a22",
+    "url": "https://www.ietf.org/technologies/netmgmt/",
+    "normalized_url": "https://www.ietf.org/technologies/netmgmt/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "12d15f6ca6b83dea5d8b968d",
+    "url": "https://www.ietf.org/technologies/iot/",
+    "normalized_url": "https://www.ietf.org/technologies/iot/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "ffe79bff84ddee70f6e95c14",
+    "url": "https://www.ietf.org/technologies/transport/",
+    "normalized_url": "https://www.ietf.org/technologies/transport/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "bb252e7f39a76c520e1a80b9",
+    "url": "https://www.ietf.org/technologies/security/",
+    "normalized_url": "https://www.ietf.org/technologies/security/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "55814c9b934cb0a3f6f0e346",
+    "url": "https://www.ietf.org/technologies/dns/",
+    "normalized_url": "https://www.ietf.org/technologies/dns/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "65e0273924f14ec11a7724ec",
+    "url": "https://www.ietf.org/technologies/areas/",
+    "normalized_url": "https://www.ietf.org/technologies/areas/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "6e8bf5e869bcf8c4297db443",
+    "url": "https://www.ietf.org/technologies/keywords/",
+    "normalized_url": "https://www.ietf.org/technologies/keywords/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "9fbd362345d1cc3db6ae5992",
+    "url": "https://www.ietf.org/blog/agentic-ai-standards/",
+    "normalized_url": "https://www.ietf.org/blog/agentic-ai-standards/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "6fc9aaca83c83f6812aef3f7",
+    "url": "https://www.ietf.org/blog/ai-pref-update/",
+    "normalized_url": "https://www.ietf.org/blog/ai-pref-update/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "d0c2910cd3714d8be65ccc47",
+    "url": "https://www.ietf.org/blog/sidrops-and-avoidable-route-hijacks/",
+    "normalized_url": "https://www.ietf.org/blog/sidrops-and-avoidable-route-hijacks/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "acaeda777277e0bc22ea00f7",
+    "url": "https://www.ietf.org/blog/rcs-adopts-mls/",
+    "normalized_url": "https://www.ietf.org/blog/rcs-adopts-mls/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "c09c811a685ceec31edaa017",
+    "url": "https://www.ietf.org/blog/green-wg/",
+    "normalized_url": "https://www.ietf.org/blog/green-wg/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "812985cbbda941d7888e7135",
+    "url": "https://www.ietf.org/meeting/",
+    "normalized_url": "https://www.ietf.org/meeting/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "73e40825dcf7ead465fc55ac",
+    "url": "https://www.ietf.org/meeting/126/",
+    "normalized_url": "https://www.ietf.org/meeting/126/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "1924c7c3d72930fdbf0cca12",
+    "url": "https://www.ietf.org/meeting/127/",
+    "normalized_url": "https://www.ietf.org/meeting/127/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "e6506b8ee90a0bdd2b7a5399",
+    "url": "https://www.ietf.org/meeting/128/",
+    "normalized_url": "https://www.ietf.org/meeting/128/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "a6aac09aba6445050c584938",
+    "url": "https://www.ietf.org/meeting/129/",
+    "normalized_url": "https://www.ietf.org/meeting/129/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "78130d4f03b5a039d77cc07b",
+    "url": "https://www.ietf.org/meeting/upcoming/",
+    "normalized_url": "https://www.ietf.org/meeting/upcoming/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "77f733585d53b58e972d366c",
+    "url": "https://www.ietf.org/meeting/past/",
+    "normalized_url": "https://www.ietf.org/meeting/past/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "16b5fdbdf0a9d8158e43b870",
+    "url": "https://www.ietf.org/meeting/interim/",
+    "normalized_url": "https://www.ietf.org/meeting/interim/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "86cbfeabf2f6b8a31297afae",
+    "url": "https://www.ietf.org/meeting/hackathons/",
+    "normalized_url": "https://www.ietf.org/meeting/hackathons/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.341980+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "d8e166d40bb1f05bd0f0d700",
+    "url": "https://www.ietf.org/meeting/code-sprint/",
+    "normalized_url": "https://www.ietf.org/meeting/code-sprint/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "7be0f8e178e6e09e862cc724",
+    "url": "https://www.ietf.org/meeting/preparation/",
+    "normalized_url": "https://www.ietf.org/meeting/preparation/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "44942e13cfe68728b45445b6",
+    "url": "https://www.ietf.org/meeting/guide-ietf-meetings/",
+    "normalized_url": "https://www.ietf.org/meeting/guide-ietf-meetings/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "52b9c70a811a94a0979688df",
+    "url": "https://www.ietf.org/meeting/terms-and-conditions/",
+    "normalized_url": "https://www.ietf.org/meeting/terms-and-conditions/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "096099a295237de11ab981b0",
+    "url": "https://www.ietf.org/meeting/new-participants/",
+    "normalized_url": "https://www.ietf.org/meeting/new-participants/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "0eed84afbc380e42e3b1de6d",
+    "url": "https://www.ietf.org/participate/guides/",
+    "normalized_url": "https://www.ietf.org/participate/guides/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "a87a5e8583c7b77a851f2daa",
+    "url": "https://www.ietf.org/meeting/technology/",
+    "normalized_url": "https://www.ietf.org/meeting/technology/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "1fbea1a3ac57f250593bae72",
+    "url": "https://www.ietf.org/meeting/technology/meetecho-guide-participant/",
+    "normalized_url": "https://www.ietf.org/meeting/technology/meetecho-guide-participant/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "db2929bb2b26b676e22ed4f5",
+    "url": "https://www.ietf.org/meeting/visas/",
+    "normalized_url": "https://www.ietf.org/meeting/visas/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "e2fcbd57e539c668ecf40438",
+    "url": "https://www.ietf.org/meeting/registration-fee-waivers/",
+    "normalized_url": "https://www.ietf.org/meeting/registration-fee-waivers/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "ec922ea854a95eb9c32d1b40",
+    "url": "https://www.ietf.org/meeting/childcare/",
+    "normalized_url": "https://www.ietf.org/meeting/childcare/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "6f116ccef48d75c49776ef16",
+    "url": "https://www.ietf.org/meeting/planning/",
+    "normalized_url": "https://www.ietf.org/meeting/planning/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "1c2acba1469785e4708bdf2c",
+    "url": "https://www.ietf.org/support-us/sponsorship/",
+    "normalized_url": "https://www.ietf.org/support-us/sponsorship/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "b8480433641e23c79c345caf",
+    "url": "https://www.ietf.org/meeting/side-meetings/",
+    "normalized_url": "https://www.ietf.org/meeting/side-meetings/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "d19a09cb54bf40911959fa83",
+    "url": "https://www.ietf.org/process/",
+    "normalized_url": "https://www.ietf.org/process/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "c31a9008dc4577ccde648d5d",
+    "url": "https://www.ietf.org/process/process/",
+    "normalized_url": "https://www.ietf.org/process/process/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "4b36f6a9199421ff9815df19",
+    "url": "https://www.ietf.org/process/informal/",
+    "normalized_url": "https://www.ietf.org/process/informal/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "ddd1f2b0bfa8baca24a95f46",
+    "url": "https://www.ietf.org/process/new-work/",
+    "normalized_url": "https://www.ietf.org/process/new-work/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "10495c28754d99476a45e158",
+    "url": "https://www.ietf.org/process/ipr/",
+    "normalized_url": "https://www.ietf.org/process/ipr/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "44bb119e01c4d3a271e64b67",
+    "url": "https://www.ietf.org/process/wgs/",
+    "normalized_url": "https://www.ietf.org/process/wgs/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "c429bff283616f355881f339",
+    "url": "https://www.ietf.org/process/bofs/",
+    "normalized_url": "https://www.ietf.org/process/bofs/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "76522a544ffac7e340015338",
+    "url": "https://www.ietf.org/process/iana/",
+    "normalized_url": "https://www.ietf.org/process/iana/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "4d45afbc2446ca6b91adf045",
+    "url": "https://www.ietf.org/process/rfcs/",
+    "normalized_url": "https://www.ietf.org/process/rfcs/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "cfcd71ec8c8f8ecf13218882",
+    "url": "https://www.ietf.org/about/groups/rfc-editor/",
+    "normalized_url": "https://www.ietf.org/about/groups/rfc-editor/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "8cbc54d6341d35a50dd17792",
+    "url": "https://www.ietf.org/process/rfcs/#availability-and-use",
+    "normalized_url": "https://www.ietf.org/process/rfcs/#availability-and-use"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "550fe815b2ea0144292e9416",
+    "url": "https://www.ietf.org/process/rfcs/#formats",
+    "normalized_url": "https://www.ietf.org/process/rfcs/#formats"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "5f48b49b1453a8a8905be8f6",
+    "url": "https://www.ietf.org/process/rfcs/#statuses",
+    "normalized_url": "https://www.ietf.org/process/rfcs/#statuses"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "ab6a6236834b1d1fea698af3",
+    "url": "https://www.ietf.org/process/rfcs/#streams",
+    "normalized_url": "https://www.ietf.org/process/rfcs/#streams"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "396384989c3b786168a9366a",
+    "url": "https://www.ietf.org/process/rfcs/#errata",
+    "normalized_url": "https://www.ietf.org/process/rfcs/#errata"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "21ce1c96992e0566a08c57a8",
+    "url": "https://www.ietf.org/process/rfcs/vulnerabilities/",
+    "normalized_url": "https://www.ietf.org/process/rfcs/vulnerabilities/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "4b257f23b2ce227eea334653",
+    "url": "https://www.ietf.org/participate/",
+    "normalized_url": "https://www.ietf.org/participate/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "d4d7ab0517fd032f55a50548",
+    "url": "https://www.ietf.org/participate/get-started/",
+    "normalized_url": "https://www.ietf.org/participate/get-started/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "d55b7236ab97ef16dee17513",
+    "url": "https://www.ietf.org/participate/ids/",
+    "normalized_url": "https://www.ietf.org/participate/ids/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "e7f8660c8bbb6ae8081a4b32",
+    "url": "https://www.ietf.org/participate/ietf-systers/",
+    "normalized_url": "https://www.ietf.org/participate/ietf-systers/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "ea2654a2ac02758e62b7aa1b",
+    "url": "https://datatracker.ietf.org",
+    "normalized_url": "https://datatracker.ietf.org"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "929d3caad6dbfa3b2ecb3a68",
+    "url": "https://www.ietf.org/participate/lists/",
+    "normalized_url": "https://www.ietf.org/participate/lists/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "065444861e12e31e2b67018b",
+    "url": "https://www.ietf.org/participate/tools/",
+    "normalized_url": "https://www.ietf.org/participate/tools/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "543b548347acbbc04182bcd4",
+    "url": "https://www.ietf.org/about/open-records/",
+    "normalized_url": "https://www.ietf.org/about/open-records/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "585516ae7a8e99de0e62f87c",
+    "url": "https://chairs.ietf.org",
+    "normalized_url": "https://chairs.ietf.org"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "92dd3e1775002d58d57841c1",
+    "url": "https://authors.ietf.org",
+    "normalized_url": "https://authors.ietf.org"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "39a6a1d13dc3034fbac4b710",
+    "url": "https://draftforge.ietf.org",
+    "normalized_url": "https://draftforge.ietf.org"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "2b51da2c3afa856cb392ce30",
+    "url": "https://www.ietf.org/participate/roles/",
+    "normalized_url": "https://www.ietf.org/participate/roles/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "16b897d6cb68b4c8a43b31c7",
+    "url": "https://www.ietf.org/about/note-well/",
+    "normalized_url": "https://www.ietf.org/about/note-well/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "288c0264f87aea7242b601d7",
+    "url": "https://datatracker.ietf.org/doc/statement-iesg-ietf-anti-harassment-policy-20131103/",
+    "normalized_url": "https://datatracker.ietf.org/doc/statement-iesg-ietf-anti-harassment-policy-20131103/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "e3d3fe567067bfd52d9cb537",
+    "url": "https://www.rfc-editor.org/info/bcp9",
+    "normalized_url": "https://www.rfc-editor.org/info/bcp9"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "0b78593f4a8e0d4328721318",
+    "url": "https://www.rfc-editor.org/info/bcp25",
+    "normalized_url": "https://www.rfc-editor.org/info/bcp25"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "e0df81830dcb4eff04299983",
+    "url": "https://www.rfc-editor.org/rfc/rfc7154.html",
+    "normalized_url": "https://www.rfc-editor.org/rfc/rfc7154.html"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "245a5eaa94f86e87c6cb3e84",
+    "url": "https://www.rfc-editor.org/rfc/rfc5378.html",
+    "normalized_url": "https://www.rfc-editor.org/rfc/rfc5378.html"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "93065ba08a834e304c3cbbc3",
+    "url": "https://www.rfc-editor.org/rfc/rfc8179.html",
+    "normalized_url": "https://www.rfc-editor.org/rfc/rfc8179.html"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "6181b577abc762eca1045495",
+    "url": "https://www.ietf.org/privacy-statement/",
+    "normalized_url": "https://www.ietf.org/privacy-statement/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "f2b8d770eb162a1dc73a8d76",
+    "url": "https://www.ietf.org/support-us/",
+    "normalized_url": "https://www.ietf.org/support-us/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "a6f530b239107d7f5fd03454",
+    "url": "https://www.ietf.org/support-us/why-support/",
+    "normalized_url": "https://www.ietf.org/support-us/why-support/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "3cfc7bdfb6417e49a1a35a68",
+    "url": "https://www.ietf.org/support-us/donors/",
+    "normalized_url": "https://www.ietf.org/support-us/donors/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "78b9c5e1d6b3eefb44f1926c",
+    "url": "https://www.ietf.org/support-us/donate-ietf/",
+    "normalized_url": "https://www.ietf.org/support-us/donate-ietf/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.342982+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "515645ed3b467eae1cbd5dc0",
+    "url": "https://www.ietf.org/support-us/endowment/",
+    "normalized_url": "https://www.ietf.org/support-us/endowment/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "44fa12578dcb4ced6486f05a",
+    "url": "https://www.ietf.org/support-us/donate/",
+    "normalized_url": "https://www.ietf.org/support-us/donate/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "082d8fda6bed545594515160",
+    "url": "https://www.ietf.org/support-us/technical-foundations/",
+    "normalized_url": "https://www.ietf.org/support-us/technical-foundations/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "c6210330d805e1d9099c44a5",
+    "url": "https://www.ietf.org/runningcode/",
+    "normalized_url": "https://www.ietf.org/runningcode/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "f5710cb3a4682da26e23c037",
+    "url": "https://www.ietf.org/sustainability/",
+    "normalized_url": "https://www.ietf.org/sustainability/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "5487f937cdf07063d1dce2e6",
+    "url": "https://www.ietf.org/diversity/",
+    "normalized_url": "https://www.ietf.org/diversity/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "e9776d2c07782ea587de3285",
+    "url": "https://www.ietf.org/open-internet/",
+    "normalized_url": "https://www.ietf.org/open-internet/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "77beaecc04fb67804d9a1670",
+    "url": "https://www.ietf.org/blog/",
+    "normalized_url": "https://www.ietf.org/blog/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "842f5b64fb965846cf6d3d85",
+    "url": "https://www.ietf.org/search",
+    "normalized_url": "https://www.ietf.org/search"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "f5884029b146ca93749649cb",
+    "url": "https://www.ietf.org/live/",
+    "normalized_url": "https://www.ietf.org/live/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "fdbaa10824a77f7cfafcf387",
+    "url": "https://www.ietf.org/blog/meet-our-new-ietf-noc-lead/",
+    "normalized_url": "https://www.ietf.org/blog/meet-our-new-ietf-noc-lead/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "14dbbc1d74f411d852f9a58b",
+    "url": "https://www.ietf.org/blog/llc-secretariat-and-staff-update/",
+    "normalized_url": "https://www.ietf.org/blog/llc-secretariat-and-staff-update/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "ddc704796f4523d275d2e5c0",
+    "url": "https://datatracker.ietf.org/doc/rfc6778/",
+    "normalized_url": "https://datatracker.ietf.org/doc/rfc6778/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "e835181d623c6c91d31b28cb",
+    "url": "https://www.ietf.org/administration/",
+    "normalized_url": "https://www.ietf.org/administration/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "dfe427b77c0fb90d3adf1766",
+    "url": "https://www.ietf.org/policies/",
+    "normalized_url": "https://www.ietf.org/policies/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "7210d321d07b1e3d7256a69d",
+    "url": "https://www.ietf.org/contact/",
+    "normalized_url": "https://www.ietf.org/contact/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "ca9b30a180287acaa9629c8b",
+    "url": "https://status.ietf.org",
+    "normalized_url": "https://status.ietf.org"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "0ecd415cacd517e8abafe370",
+    "url": "https://www.linkedin.com/company/internet-engineering-task-force/",
+    "normalized_url": "https://www.linkedin.com/company/internet-engineering-task-force/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "4e78f7ae7fd21a8af578a56d",
+    "url": "https://www.facebook.com/ietf",
+    "normalized_url": "https://www.facebook.com/ietf"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "aaff51c78c93c65b2e1ab35b",
+    "url": "https://bsky.app/profile/ietf.org",
+    "normalized_url": "https://bsky.app/profile/ietf.org"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "74a4fc3d2b1e9c76cdfaecb2",
+    "url": "https://www.youtube.com/ietf",
+    "normalized_url": "https://www.youtube.com/ietf"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "f82e85af779689d7808d6837",
+    "url": "https://github.com/ietf/",
+    "normalized_url": "https://github.com/ietf/"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "a04a8ac5c25cc97e999e325b",
+    "url": "https://www.rfc-editor.org",
+    "normalized_url": "https://www.rfc-editor.org"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "7b61dde75ed059f178b55871",
+    "url": "https://www.iana.org",
+    "normalized_url": "https://www.iana.org"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "510d83b0f6d6f04a72d9fe26",
+    "url": "https://www.iab.org",
+    "normalized_url": "https://www.iab.org"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "9b77c30c2c8ed6dbec1e0de0",
+    "url": "https://www.irtf.org",
+    "normalized_url": "https://www.irtf.org"
+  },
+  {
+    "discovery_source": "https://www.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:01.343981+00:00",
+    "parent_url": "https://www.ietf.org/",
+    "source_id": "6dd0f78a9cadac7089c958f3",
+    "url": "https://trustee.ietf.org",
+    "normalized_url": "https://trustee.ietf.org"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.927323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "9a54fa5f0887a02ce1078a04",
+    "url": "https://datatracker.ietf.org/",
+    "normalized_url": "https://datatracker.ietf.org/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.927323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "c279d7b27e44a8c676a5539e",
+    "url": "https://datatracker.ietf.org/wg/#ART",
+    "normalized_url": "https://datatracker.ietf.org/wg/#ART"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.927323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "d70c64e18c8c3b59eb112513",
+    "url": "https://datatracker.ietf.org/wg/#GEN",
+    "normalized_url": "https://datatracker.ietf.org/wg/#GEN"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.927323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "a52fe6684b6f05a98b3feaed",
+    "url": "https://datatracker.ietf.org/wg/#INT",
+    "normalized_url": "https://datatracker.ietf.org/wg/#INT"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.927323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "3dfdc0928a8394643068b935",
+    "url": "https://datatracker.ietf.org/wg/#OPS",
+    "normalized_url": "https://datatracker.ietf.org/wg/#OPS"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.927323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "c1ef6bebee01fcff50c7514b",
+    "url": "https://datatracker.ietf.org/wg/#RTG",
+    "normalized_url": "https://datatracker.ietf.org/wg/#RTG"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.927323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "a9b76278cfd22505286535b7",
+    "url": "https://datatracker.ietf.org/wg/#SEC",
+    "normalized_url": "https://datatracker.ietf.org/wg/#SEC"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.927323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "41f6f2da4a22487a25567e69",
+    "url": "https://datatracker.ietf.org/wg/#WIT",
+    "normalized_url": "https://datatracker.ietf.org/wg/#WIT"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.927323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "eeaaee2fc3709e57f7cecee0",
+    "url": "https://datatracker.ietf.org/group/iesg/about/",
+    "normalized_url": "https://datatracker.ietf.org/group/iesg/about/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.927323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "caf313952aaf50c36b489a58",
+    "url": "https://datatracker.ietf.org/program/",
+    "normalized_url": "https://datatracker.ietf.org/program/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "8bb1a762134840452a5a59d8",
+    "url": "https://datatracker.ietf.org/rg/",
+    "normalized_url": "https://datatracker.ietf.org/rg/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "681095dc8b9b8e5058010d60",
+    "url": "https://datatracker.ietf.org/adm/",
+    "normalized_url": "https://datatracker.ietf.org/adm/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "56bd7e16ac0a3ae2619dfb2f",
+    "url": "https://datatracker.ietf.org/rfcedtyp/",
+    "normalized_url": "https://datatracker.ietf.org/rfcedtyp/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "14e41fbed24bba7dd89b8cad",
+    "url": "https://datatracker.ietf.org/group/",
+    "normalized_url": "https://datatracker.ietf.org/group/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "f9ca8b9e876c27026b481933",
+    "url": "https://datatracker.ietf.org/ag/",
+    "normalized_url": "https://datatracker.ietf.org/ag/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "06dfdda78da59807b64ac095",
+    "url": "https://datatracker.ietf.org/area/",
+    "normalized_url": "https://datatracker.ietf.org/area/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "3cedcb6e1d1f6364bf0dc632",
+    "url": "https://datatracker.ietf.org/dir/",
+    "normalized_url": "https://datatracker.ietf.org/dir/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "c7bf838e17e4bb5eee940237",
+    "url": "https://datatracker.ietf.org/iabworkshop/",
+    "normalized_url": "https://datatracker.ietf.org/iabworkshop/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "e71f48c2eae8c06d9925d85d",
+    "url": "https://datatracker.ietf.org/rag/",
+    "normalized_url": "https://datatracker.ietf.org/rag/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "a16606530048815d8a9b1cb3",
+    "url": "https://datatracker.ietf.org/team/",
+    "normalized_url": "https://datatracker.ietf.org/team/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "791dca89a2ecebd9cdfc3471",
+    "url": "https://datatracker.ietf.org/group/chartering/",
+    "normalized_url": "https://datatracker.ietf.org/group/chartering/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "09af46e7b9e40272f6507fe4",
+    "url": "https://datatracker.ietf.org/wg/bofs/",
+    "normalized_url": "https://datatracker.ietf.org/wg/bofs/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "447c0c1de929c5e75265e931",
+    "url": "https://datatracker.ietf.org/doc/bof-requests",
+    "normalized_url": "https://datatracker.ietf.org/doc/bof-requests"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "3a667fe506f5244a411dfbdc",
+    "url": "https://datatracker.ietf.org/group/concluded/",
+    "normalized_url": "https://datatracker.ietf.org/group/concluded/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "3a0d9f0e29caaa66b0be77c0",
+    "url": "https://datatracker.ietf.org/list/nonwg",
+    "normalized_url": "https://datatracker.ietf.org/list/nonwg"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "61370248931a9dd7ee9cd0e2",
+    "url": "https://datatracker.ietf.org/doc/search",
+    "normalized_url": "https://datatracker.ietf.org/doc/search"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "59ae7d19739f51b3d82c1800",
+    "url": "https://datatracker.ietf.org/doc/recent",
+    "normalized_url": "https://datatracker.ietf.org/doc/recent"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "15c42446a12412f9f4c044f8",
+    "url": "https://datatracker.ietf.org/submit/",
+    "normalized_url": "https://datatracker.ietf.org/submit/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "0c33ac6a91ba8b017a6bdc39",
+    "url": "https://datatracker.ietf.org/stream/iab/",
+    "normalized_url": "https://datatracker.ietf.org/stream/iab/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "2f10ea2132245434102c1829",
+    "url": "https://datatracker.ietf.org/stream/irtf/",
+    "normalized_url": "https://datatracker.ietf.org/stream/irtf/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "605a31b13003b0a80c30f753",
+    "url": "https://datatracker.ietf.org/stream/ise/",
+    "normalized_url": "https://datatracker.ietf.org/stream/ise/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "e88a079c9c3b44b80d4b67af",
+    "url": "https://datatracker.ietf.org/stream/editorial/",
+    "normalized_url": "https://datatracker.ietf.org/stream/editorial/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "fe52da595ef78c25c8119fec",
+    "url": "https://datatracker.ietf.org/doc/std",
+    "normalized_url": "https://datatracker.ietf.org/doc/std"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "7201064dc6888dfe7cb928ff",
+    "url": "https://datatracker.ietf.org/doc/bcp",
+    "normalized_url": "https://datatracker.ietf.org/doc/bcp"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "39751b6522c06ea5dcd55d28",
+    "url": "https://datatracker.ietf.org/doc/fyi",
+    "normalized_url": "https://datatracker.ietf.org/doc/fyi"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "ea831cd541f05877e683676e",
+    "url": "https://datatracker.ietf.org/meeting/agenda",
+    "normalized_url": "https://datatracker.ietf.org/meeting/agenda"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "acfd7631bb5a99bf5e7eb96a",
+    "url": "https://datatracker.ietf.org/meeting/materials",
+    "normalized_url": "https://datatracker.ietf.org/meeting/materials"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "13456683897632e47bf0dc6b",
+    "url": "https://datatracker.ietf.org/meeting/floor-plan",
+    "normalized_url": "https://datatracker.ietf.org/meeting/floor-plan"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "c738e8a551fc36c0c1ad3a43",
+    "url": "https://www.ietf.org/how/meetings/register/",
+    "normalized_url": "https://www.ietf.org/how/meetings/register/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "a49d9b27c7ce839b354e8ed0",
+    "url": "https://datatracker.ietf.org/meeting/important-dates/",
+    "normalized_url": "https://datatracker.ietf.org/meeting/important-dates/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "573ccf31163004f02b0fabe5",
+    "url": "https://datatracker.ietf.org/meeting/session/request/",
+    "normalized_url": "https://datatracker.ietf.org/meeting/session/request/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "e37275a65852c55ecf796059",
+    "url": "https://datatracker.ietf.org/meeting/requests",
+    "normalized_url": "https://datatracker.ietf.org/meeting/requests"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "1cc134119a7b27bbc92ca28c",
+    "url": "https://datatracker.ietf.org/meeting/upcoming",
+    "normalized_url": "https://datatracker.ietf.org/meeting/upcoming"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "3b1ba7020923810bed81dbac",
+    "url": "https://datatracker.ietf.org/meeting/past",
+    "normalized_url": "https://datatracker.ietf.org/meeting/past"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "4dcb1adfc5464a4b5c661ddc",
+    "url": "https://www.ietf.org/how/meetings/past/",
+    "normalized_url": "https://www.ietf.org/how/meetings/past/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "e328bc93e3d607c9b16ff2e8",
+    "url": "https://datatracker.ietf.org/ipr/",
+    "normalized_url": "https://datatracker.ietf.org/ipr/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "6dea62dfbaef81c5d4fa33e3",
+    "url": "https://datatracker.ietf.org/liaison/",
+    "normalized_url": "https://datatracker.ietf.org/liaison/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "eafc6aeb6e8c996871868345",
+    "url": "https://datatracker.ietf.org/iesg/agenda/",
+    "normalized_url": "https://datatracker.ietf.org/iesg/agenda/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "a72a280014151d571b863e60",
+    "url": "https://datatracker.ietf.org/nomcom/",
+    "normalized_url": "https://datatracker.ietf.org/nomcom/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "07353cdf476706a068e111ee",
+    "url": "https://datatracker.ietf.org/doc/downref",
+    "normalized_url": "https://datatracker.ietf.org/doc/downref"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "f26e22e2e5389beba1d2d249",
+    "url": "https://datatracker.ietf.org/stats/document/",
+    "normalized_url": "https://datatracker.ietf.org/stats/document/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "5f01215da6dd5f8e90c92f39",
+    "url": "https://datatracker.ietf.org/stats/meeting/",
+    "normalized_url": "https://datatracker.ietf.org/stats/meeting/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "a5130091fc9020ebb83a9f89",
+    "url": "https://datatracker.ietf.org/api/",
+    "normalized_url": "https://datatracker.ietf.org/api/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "449166dd845fdcbbe9b16dc2",
+    "url": "https://datatracker.ietf.org/release/",
+    "normalized_url": "https://datatracker.ietf.org/release/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "a547195df1da9a533484ab21",
+    "url": "https://github.com/ietf-tools/datatracker/issues/new/choose",
+    "normalized_url": "https://github.com/ietf-tools/datatracker/issues/new/choose"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "7eabcd9bce73a781cf8056ed",
+    "url": "https://datatracker.ietf.org/accounts/login/?next=/",
+    "normalized_url": "https://datatracker.ietf.org/accounts/login/?next=/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "6eac3a186c94c1882ed777c9",
+    "url": "https://datatracker.ietf.org/accounts/reset/",
+    "normalized_url": "https://datatracker.ietf.org/accounts/reset/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "e21532f1159e847784a73777",
+    "url": "https://datatracker.ietf.org/accounts/settings/",
+    "normalized_url": "https://datatracker.ietf.org/accounts/settings/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "c735b235470c8cb9f31c0ac5",
+    "url": "https://datatracker.ietf.org/accounts/create/",
+    "normalized_url": "https://datatracker.ietf.org/accounts/create/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "dbd9f876f019b83acaec6986",
+    "url": "https://mailman3.ietf.org/mailman3/lists/",
+    "normalized_url": "https://mailman3.ietf.org/mailman3/lists/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "0606dc2dea8f8b54281c6be3",
+    "url": "https://mailman3.irtf.org/mailman3/lists/",
+    "normalized_url": "https://mailman3.irtf.org/mailman3/lists/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.928323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "f0452ff624bf6ca3af54c996",
+    "url": "https://mailman3.iab.org/mailman3/lists/",
+    "normalized_url": "https://mailman3.iab.org/mailman3/lists/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.929323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "f78e2d53b1b0552fc54a7a88",
+    "url": "https://mailman3.rfc-editor.org/mailman3/lists/",
+    "normalized_url": "https://mailman3.rfc-editor.org/mailman3/lists/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.929323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "09e5b8c823057b5a12f8bc94",
+    "url": "https://mailarchive.ietf.org/arch/",
+    "normalized_url": "https://mailarchive.ietf.org/arch/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.929323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "c423e558c2e6c26de3c7b1a0",
+    "url": "https://www.ietf.org/iesg/",
+    "normalized_url": "https://www.ietf.org/iesg/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.929323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "b6458cb705365a5cd0229bd2",
+    "url": "https://www.iab.org/",
+    "normalized_url": "https://www.iab.org/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.929323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "38b065b8e896c4ae9c11aaa9",
+    "url": "https://www.irtf.org/",
+    "normalized_url": "https://www.irtf.org/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.929323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "ae2eee7610aa07241ac9b8a6",
+    "url": "https://www.ietf.org/llc/",
+    "normalized_url": "https://www.ietf.org/llc/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.929323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "3c51adf611942c1ea97e76f6",
+    "url": "https://trustee.ietf.org/",
+    "normalized_url": "https://trustee.ietf.org/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.929323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "56bf964244c09aee85da299f",
+    "url": "https://www.rfc-editor.org/",
+    "normalized_url": "https://www.rfc-editor.org/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.929323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "eece47486d0db9f96dacd12e",
+    "url": "https://www.iana.org/",
+    "normalized_url": "https://www.iana.org/"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.929323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "c86bed59cf8a19b7fcd4e73d",
+    "url": "https://datatracker.ietf.org/release/about",
+    "normalized_url": "https://datatracker.ietf.org/release/about"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.929323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "ff2507b581574bdda573e17f",
+    "url": "https://github.com/ietf-tools/datatracker/releases/tag/12.70.0",
+    "normalized_url": "https://github.com/ietf-tools/datatracker/releases/tag/12.70.0"
+  },
+  {
+    "discovery_source": "https://datatracker.ietf.org/",
+    "discovered_at": "2026-08-10T06:28:02.929323+00:00",
+    "parent_url": "https://datatracker.ietf.org/",
+    "source_id": "fa3c45781009edb17b286db3",
+    "url": "mailto:tools-help@ietf.org",
+    "normalized_url": "mailto:tools-help@ietf.org"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "event_id": "7e49ac4b-e256-4f21-9b62-d4042144805b",
+  "event_type": "capture_and_extract",
+  "entity_id": "6d2a8441-124d-4d0b-8b86-69e618de32e5",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "4d05c6e28b5fc72cea6fe401d1c498d5d7bc2173db7f0a55e6485d1e800ec956"
+  ],
+  "attributes": {
+    "requested_url": "https://www.internetsociety.org/internet-governance/",
+    "final_url": "https://www.internetsociety.org/our-work/internet-governance/",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Internet Governance - Internet Society",
+      "language": "en-US",
+      "summary": "We advocate for a multistakeholder approach, which means that all interested actors can participate in inclusive, consensus-driven processes.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:35:48.914874+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "7ab0653adb62b5673c269254",
+  "source_url": "https://www.arin.net/",
+  "final_url": "https://www.arin.net/",
+  "source_family": "technical_community",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "American Registry for Internet Numbers",
+  "publisher": "ARIN",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:29:57.728807Z",
+  "published_at": null,
+  "artifact_sha256": "9b3455676a4915ed4c1d98e9a4acc598eec6bdcfba17bc43c30bb6e2835fe8f6",
+  "byte_size": 29572,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

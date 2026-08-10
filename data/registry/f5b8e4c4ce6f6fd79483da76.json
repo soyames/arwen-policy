@@ -1,0 +1,19 @@
+{
+  "source_id": "f5b8e4c4ce6f6fd79483da76",
+  "source_url": "https://www.itu.int/net/wsis/review/index.html",
+  "final_url": "https://www.itu.int/net/wsis/review/index.html",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "WSIS+20",
+  "publisher": "World Summit on the Information Society",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:45:10.114095Z",
+  "published_at": null,
+  "artifact_sha256": "f81f40c66aa97b458b8dc2484ba5971680cdadfad69e19fa4c19ef2620580b1a",
+  "byte_size": 388,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

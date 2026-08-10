@@ -1,0 +1,19 @@
+{
+  "source_id": "acd02ffecd04f9515f8bb932",
+  "source_url": "https://www.icann.org/en/public-comment/upcoming-proceedings?sort-param=upcoming-date&sort-direction=asc&page=1",
+  "final_url": "https://www.icann.org/en/public-comment/upcoming-proceedings?sort-param=upcoming-date&sort-direction=asc&page=1",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "Public Comment Upcoming Proceedings",
+  "publisher": "ICANN",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:29:41.292317Z",
+  "published_at": null,
+  "artifact_sha256": "763c9fe671ac456f90dc64732241ea0451d38887c23504b16185d78a69280fa0",
+  "byte_size": 270547,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

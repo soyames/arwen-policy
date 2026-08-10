@@ -1,0 +1,24 @@
+{
+  "event_id": "f2d6ae85-d2b5-449d-8178-9b2bcc71463c",
+  "event_type": "capture_and_extract",
+  "entity_id": "551adf0c-33dd-4734-bb66-59549cfc5a8d",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "1783eb5b7c7c668bad82a903d4834fc58278651122886505d775a442924eb213"
+  ],
+  "attributes": {
+    "requested_url": "https://www.oecd.org/en/publications.html",
+    "final_url": "https://www.oecd.org/en/publications.html",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Publications | OECD",
+      "language": "en",
+      "summary": "Insights and context to inform policies and global dialogue",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T07:02:31.769238+00:00"
+}

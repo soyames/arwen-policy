@@ -1,0 +1,24 @@
+{
+  "event_id": "db089ed6-8734-41f7-b88b-3a7bbd867714",
+  "event_type": "capture_and_extract",
+  "entity_id": "24bd3d65-1b2f-44fa-8ce2-2f6911dee44e",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "860bf05c43ce90078ee3637f57bd157638bb745c5308183471fe243080b00f87"
+  ],
+  "attributes": {
+    "requested_url": "https://www.icann.org/presidents-corner",
+    "final_url": "https://www.icann.org/en/ceo-corner",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "CEO Corner",
+      "language": "en",
+      "summary": "Gain insight into the work ICANN does and stay up to date on the organization’s latest achievements from this collection of reports, blogs, and annual goals by ICANN's President and CEO.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:32:33.730777+00:00"
+}

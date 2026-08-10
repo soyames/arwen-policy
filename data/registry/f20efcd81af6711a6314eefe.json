@@ -1,0 +1,19 @@
+{
+  "source_id": "f20efcd81af6711a6314eefe",
+  "source_url": "https://arxiv.org/abs/2501.12345",
+  "final_url": "https://arxiv.org/abs/2501.12345",
+  "source_family": "academia",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "[2501.12345] The doubly librating Plutinos",
+  "publisher": "arXiv CS-CY",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:32:05.580425Z",
+  "published_at": null,
+  "artifact_sha256": "3c869647ddc0c16bfcc580e02bb314a42462f5c3f78d2647fc549e0e4a4075a3",
+  "byte_size": 41573,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

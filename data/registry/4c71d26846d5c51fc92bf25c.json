@@ -1,0 +1,19 @@
+{
+  "source_id": "4c71d26846d5c51fc92bf25c",
+  "source_url": "https://www.icann.org/complaints-office",
+  "final_url": "https://www.icann.org/complaints-office",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "ICANN Complaints Office - ICANN",
+  "publisher": "ICANN",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:30:34.398233Z",
+  "published_at": null,
+  "artifact_sha256": "d3969c7b3b1d12d482678d21dc8b6971a47645e1510a0aaf6beca443a6768ab9",
+  "byte_size": 79177,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

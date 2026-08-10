@@ -1,0 +1,19 @@
+{
+  "source_id": "eb7b0a17794b9d45b5be2f40",
+  "source_url": "https://www.icann.org/en/careers",
+  "final_url": "https://www.icann.org/en/careers",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "Careers at ICANN",
+  "publisher": "ICANN",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:30:31.797819Z",
+  "published_at": null,
+  "artifact_sha256": "938ac9ba20ac7211d9aba4584c16b825263bd522620f9f7aa652f518ed695f60",
+  "byte_size": 330034,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "b490fbd692700ad602c6b8d6",
+  "source_url": "https://www.internetsociety.org/issues/",
+  "final_url": "https://www.internetsociety.org/our-work/",
+  "source_family": "civil_society",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "Our Work - Internet Society",
+  "publisher": "Internet Society",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:35:54.100612Z",
+  "published_at": null,
+  "artifact_sha256": "cfb0fa0122d01cd629d406ae16561c650410b7ce31b74f498466667769347e0d",
+  "byte_size": 280622,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

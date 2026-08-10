@@ -1,0 +1,33 @@
+{
+  "source_id": "un",
+  "source_name": "United Nations",
+  "source_family": "intergovernmental",
+  "adapter": "generic-web-adapter",
+  "source_url": "https://un.org/",
+  "canonical_url": "https://www.un.org/",
+  "retrieved_at": "2026-08-10T06:28:07.795408Z",
+  "http_status": 200,
+  "content_type": "text/html",
+  "robots_allowed": true,
+  "source_status": "reachable",
+  "content_hash": "79831ef93e9837158a9bb4e964fe8961647d5aabf0c3a957ada5d5bed2f3f350",
+  "extraction_status": "extracted",
+  "document_identifier": "976d31fadb331ab8695d5b05",
+  "title": "Welcome to the United Nations",
+  "publisher": "United Nations",
+  "published_at": null,
+  "language": null,
+  "jurisdiction": null,
+  "policy_topics": [],
+  "license": null,
+  "access_conditions": null,
+  "discovery_urls": [
+    "https://www.un.org/ar/",
+    "https://www.un.org/zh/",
+    "https://www.un.org/en/",
+    "https://www.un.org/fr/",
+    "https://www.un.org/ru/",
+    "https://www.un.org/es/"
+  ],
+  "error": null
+}

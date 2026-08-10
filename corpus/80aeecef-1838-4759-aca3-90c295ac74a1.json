@@ -1,0 +1,37 @@
+{
+  "document_id": "80aeecef-1838-4759-aca3-90c295ac74a1",
+  "source_id": "436a7881dec4dae5c2826cf7",
+  "source_url": "https://www.arin.net/policy/",
+  "final_url": "https://www.arin.net/policy/",
+  "artifact_sha256": "71cab5fe9c3e5c3552ff859bf321fe4cb2e97f73429045a51231f52917ba8c61",
+  "byte_size": 315,
+  "content_type": "text/html",
+  "metadata": {
+    "title": "https://www.arin.net/participate/policy/",
+    "language": "en-us",
+    "summary": null,
+    "published_at": null
+  },
+  "extraction_method": "html_bs4",
+  "extraction_warnings": [],
+  "text": "https://www.arin.net/participate/policy/",
+  "segments": [
+    {
+      "segment_id": "09103aaa-10b5-4afb-a8ed-f901e63de8dc",
+      "document_id": "80aeecef-1838-4759-aca3-90c295ac74a1",
+      "ordinal": 0,
+      "text": "https://www.arin.net/participate/policy/",
+      "char_start": 0,
+      "char_end": 40,
+      "page_start": null,
+      "page_end": null,
+      "timestamp_start": null,
+      "timestamp_end": null,
+      "language": "und",
+      "attributes": {
+        "reading_time_minutes": 1,
+        "word_count": 1
+      }
+    }
+  ]
+}

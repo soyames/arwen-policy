@@ -1,0 +1,24 @@
+{
+  "event_id": "1b969bf8-4532-4b2f-a548-73f0f911e7bf",
+  "event_type": "capture_and_extract",
+  "entity_id": "c3f1c90f-84e5-468c-8da3-3216daeafd6d",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "b36d47597032a5eeb4454be894d567f3e1f8349ea555e27f8399fd84b56bfd09"
+  ],
+  "attributes": {
+    "requested_url": "https://www.apnic.net/community/participate/",
+    "final_url": "https://www.apnic.net/community/participate/",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": "Mon, 10 Aug 2026 06:34:04 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Participate – APNIC",
+      "language": "en-AU",
+      "summary": "A global, open, stable, and secure Internet that serves the entire Asia Pacific community",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:34:03.516888+00:00"
+}

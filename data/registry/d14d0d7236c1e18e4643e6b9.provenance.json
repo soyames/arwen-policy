@@ -1,0 +1,24 @@
+{
+  "event_id": "24346ab1-11f5-4b34-b39f-68982c1ac020",
+  "event_type": "capture_and_extract",
+  "entity_id": "29952683-89c9-48ee-93a4-f395f43d3573",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "bfbadb35ea0de52a1c70d8d5db693e04ebbec619a60cc5dd696c544968f1f4e1"
+  ],
+  "attributes": {
+    "requested_url": "https://intgovforum.org/en/content/igf-2026-first-open-consultations-and-mag-meeting-0",
+    "final_url": "https://intgovforum.org/en/content/igf-2026-first-open-consultations-and-mag-meeting-0",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "IGF 2026 First Open Consultations and MAG Meeting | Internet Governance Forum (IGF)",
+      "language": "en",
+      "summary": "/* Scope everything to the paragraph column */ .paragraph__column ul.nav.nav-tabs, .paragraph__column ul.nav.nav-tabs li { list-style: none; margin: 0; padding: 0; background: none; } /* Remove any injected icons */ .paragraph__column ul.nav.nav-tabs li::before, .paragraph__column ul.nav.nav-tabs li::after { content: none; display: none; } /* Layout */ .paragraph__column ul.nav.nav-tabs { display: flex; gap: 10px; border-bottom: none; } /* Tab links as colored boxes */ .paragraph__column ul.nav.nav-tabs > li > a { display: block; padding: 10p",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:47:42.948065+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "event_id": "03a2e7b4-c8ec-4d41-9d67-ad88f79185b9",
+  "event_type": "capture_and_extract",
+  "entity_id": "c1a7a764-2fd0-4d17-ab8e-fc75c8b374a7",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "4c28da52a9898f496a5ada1e0fb6abcec84124ec9381f054cee77c58f2478f4b"
+  ],
+  "attributes": {
+    "requested_url": "https://arxiv.org/abs/2408.12345",
+    "final_url": "https://arxiv.org/abs/2408.12345",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": "Mon, 15 Jun 2026 00:42:43 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "[2408.12345] Linearly Multiplexed Photon Number Resolving Single-photon Detectors Array",
+      "language": "en",
+      "summary": "Abstract page for arXiv paper 2408.12345: Linearly Multiplexed Photon Number Resolving Single-photon Detectors Array",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:32:10.641198+00:00"
+}

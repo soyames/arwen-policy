@@ -1,0 +1,19 @@
+{
+  "source_id": "22f1d18bcb2a9b4427819c15",
+  "source_url": "https://intgovforum.org/en/content/igf-brochures-select-publication",
+  "final_url": "https://intgovforum.org/en/content/igf-brochures-select-publication",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "IGF Brochures and Select Publications | Internet Governance Forum",
+  "publisher": "Internet Governance Forum",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:47:26.774363Z",
+  "published_at": null,
+  "artifact_sha256": "f1f76dfbd066c64b31bd0373d905149ac7171c44a0dcffdc561276f081aaf0ee",
+  "byte_size": 105882,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

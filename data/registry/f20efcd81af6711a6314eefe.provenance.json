@@ -1,0 +1,24 @@
+{
+  "event_id": "5ccf3680-f07a-4ebd-8ed2-d5099bb835c4",
+  "event_type": "capture_and_extract",
+  "entity_id": "9ae50221-5cd2-4bd3-ab2f-659044a9977e",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "3c869647ddc0c16bfcc580e02bb314a42462f5c3f78d2647fc549e0e4a4075a3"
+  ],
+  "attributes": {
+    "requested_url": "https://arxiv.org/abs/2501.12345",
+    "final_url": "https://arxiv.org/abs/2501.12345",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": "Wed, 22 Jan 2025 03:24:45 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "[2501.12345] The doubly librating Plutinos",
+      "language": "en",
+      "summary": "Abstract page for arXiv paper 2501.12345: The doubly librating Plutinos",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:32:05.771382+00:00"
+}

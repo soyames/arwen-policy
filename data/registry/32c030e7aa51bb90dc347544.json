@@ -1,0 +1,19 @@
+{
+  "source_id": "32c030e7aa51bb90dc347544",
+  "source_url": "https://www.itu.int/en/history/Pages/ITUsHistory.aspx",
+  "final_url": "https://www.itu.int/en/history/Pages/ITUsHistory.aspx",
+  "source_family": "intergovernmental",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "Overview of ITU's History (1)",
+  "publisher": "International Telecommunication Union",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:33:39.215319Z",
+  "published_at": null,
+  "artifact_sha256": "5046d60009a60df6a3249ee10a8206d3f62943ec68b9edd688ec899f3f14708a",
+  "byte_size": 78556,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

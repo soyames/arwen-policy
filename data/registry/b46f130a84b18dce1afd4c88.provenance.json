@@ -1,0 +1,24 @@
+{
+  "event_id": "554bef0a-88fa-47d5-8f62-486b4d5c7622",
+  "event_type": "capture_and_extract",
+  "entity_id": "1ed0ccbe-9827-4087-a92f-47b1d8303e4b",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "32cbc9da389c9fb00d3326aeb5eed6f9623e834cd3f50736e2f40c6036b7cf1d"
+  ],
+  "attributes": {
+    "requested_url": "https://opendata.icann.org/",
+    "final_url": "https://opendata.icann.org/pages/home-page/",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Home Page — ICANN Open Data",
+      "language": "en-US",
+      "summary": "ICANN's Open Data Portal",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:31:40.030343+00:00"
+}

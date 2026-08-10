@@ -1,0 +1,19 @@
+{
+  "source_id": "c7b20a2de323c6e8220290db",
+  "source_url": "https://www.icann.org/presidents-corner",
+  "final_url": "https://www.icann.org/en/ceo-corner",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "CEO Corner",
+  "publisher": "ICANN",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:32:33.555278Z",
+  "published_at": null,
+  "artifact_sha256": "860bf05c43ce90078ee3637f57bd157638bb745c5308183471fe243080b00f87",
+  "byte_size": 332280,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

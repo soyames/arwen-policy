@@ -1,0 +1,24 @@
+{
+  "event_id": "d9a90467-24c2-4f70-88ee-c6bac069fd73",
+  "event_type": "capture_and_extract",
+  "entity_id": "dd262f01-e877-4e17-ba73-a9f58afd0112",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "5c2014eaff7cdb2e6fcee41df0608dc4c396ed7f5d016cc7e99da15cbaad086e"
+  ],
+  "attributes": {
+    "requested_url": "https://www.ietf.org/standards/",
+    "final_url": "https://www.ietf.org/process/",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": "Mon, 10 Aug 2026 06:32:35 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "IETF  | Process",
+      "language": "en",
+      "summary": "The IETF is the premier Internet standards organization. It follows open and well-documented processes for setting these standards. Once published, those standards are made freely available.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:32:34.083375+00:00"
+}

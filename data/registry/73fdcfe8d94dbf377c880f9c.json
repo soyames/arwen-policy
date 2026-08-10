@@ -1,0 +1,19 @@
+{
+  "source_id": "73fdcfe8d94dbf377c880f9c",
+  "source_url": "https://www.apnic.net/about-apnic/",
+  "final_url": "https://www.apnic.net/about-apnic/",
+  "source_family": "technical_community",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "About APNIC – APNIC",
+  "publisher": "APNIC",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:31:27.043814Z",
+  "published_at": null,
+  "artifact_sha256": "5cc925d4da853c86d05ddb257a8615d8b3bc47bf059fed5a95103daa62151998",
+  "byte_size": 77461,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

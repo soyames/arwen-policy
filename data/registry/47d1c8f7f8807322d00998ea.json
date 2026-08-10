@@ -1,0 +1,19 @@
+{
+  "source_id": "47d1c8f7f8807322d00998ea",
+  "source_url": "https://www.unesco.org/en/communication-information",
+  "final_url": "https://www.unesco.org/en/communication-information",
+  "source_family": "intergovernmental",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "Communication & Information | UNESCO",
+  "publisher": "UNESCO",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:36:43.177922Z",
+  "published_at": null,
+  "artifact_sha256": "2f7cbd0d72b24b0cbed6d6a3613b8ee2568b2e99b2f6dcfe72fc2958a26d216b",
+  "byte_size": 321668,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

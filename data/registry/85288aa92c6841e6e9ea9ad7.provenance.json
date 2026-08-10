@@ -1,0 +1,24 @@
+{
+  "event_id": "17c7594a-c900-4009-870e-22f7094481af",
+  "event_type": "capture_and_extract",
+  "entity_id": "ebb2688e-f4f8-4b68-9e2c-a36452ef3755",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "f21a576d1ab508f040323bfbba44672cb8368ad71bbb18ffeb952e908ef2772f"
+  ],
+  "attributes": {
+    "requested_url": "https://www.arin.net/about/",
+    "final_url": "https://www.arin.net/about/",
+    "capture_status": 200,
+    "etag": "W/\"6a785e47-5ee4\"",
+    "last_modified": "Sun, 09 Aug 2026 11:02:31 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "About - American Registry for Internet Numbers",
+      "language": "en-us",
+      "summary": "Established in December 1997, the American Registry for Internet Numbers (ARIN) is a nonprofit, member-based organization that supports the operation and growth of the Internet.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:31:23.134859+00:00"
+}

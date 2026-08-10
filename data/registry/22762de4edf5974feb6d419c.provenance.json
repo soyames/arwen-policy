@@ -1,0 +1,24 @@
+{
+  "event_id": "f90985b6-08fc-4dfe-843f-f68b0e1d48ec",
+  "event_type": "capture_and_extract",
+  "entity_id": "7810a064-2a14-48c6-9445-946dcebb3996",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "91c7d06d676aa064d40643d5bebdf19071f29f5c2c3bbb8ecdc1debb5c9de879"
+  ],
+  "attributes": {
+    "requested_url": "https://www.itu.int/en/about/Pages/default.aspx",
+    "final_url": "https://www.itu.int/en/about/Pages/default.aspx",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "About ITU",
+      "language": "en-US",
+      "summary": "About International Telecommunication Union (ITU)",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:35:26.694726+00:00"
+}

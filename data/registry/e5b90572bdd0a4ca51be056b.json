@@ -1,0 +1,19 @@
+{
+  "source_id": "e5b90572bdd0a4ca51be056b",
+  "source_url": "https://www.ripe.net/analyse/",
+  "final_url": "https://www.ripe.net/analyse/",
+  "source_family": "technical_community",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "Analyse — RIPE Network Coordination Centre",
+  "publisher": "RIPE NCC",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:32:15.098090Z",
+  "published_at": null,
+  "artifact_sha256": "9a82b16ef42b290c31b8afabce06dbd6fdbdebfca2ac565a6b7b1e9526f0da5b",
+  "byte_size": 126825,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

@@ -1,0 +1,2890 @@
+[
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "041c7363a74e7a5f806792e0",
+    "url": "https://www.ripe.net/",
+    "normalized_url": "https://www.ripe.net/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "77630f4597a3f9450a66ec13",
+    "url": "https://www.ripe.net/manage-ips-and-asns/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "1d4f0d6b3363a677e9755533",
+    "url": "https://www.ripe.net/manage-ips-and-asns/ipv4/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/ipv4/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "34a6f3211486f800972a3c12",
+    "url": "https://www.ripe.net/manage-ips-and-asns/ipv4/how-to-get-ipv4-addresses/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/ipv4/how-to-get-ipv4-addresses/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "47376c5d6baaabccd44410ab",
+    "url": "https://www.ripe.net/manage-ips-and-asns/ipv4/ipv4-run-out/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/ipv4/ipv4-run-out/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "68ace63c597de0ab86adeed7",
+    "url": "https://www.ripe.net/manage-ips-and-asns/ipv4/how-waiting-list-works/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/ipv4/how-waiting-list-works/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e5a942ff10dd3f8367b8541b",
+    "url": "https://www.ripe.net/manage-ips-and-asns/ipv4/ipv4-transfer-request/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/ipv4/ipv4-transfer-request/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "5bab9e669194789a0b52e91f",
+    "url": "https://www.ripe.net/manage-ips-and-asns/ipv4/ipv4-waiting-list/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/ipv4/ipv4-waiting-list/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "d5af0c672723338da09f93c2",
+    "url": "https://www.ripe.net/manage-ips-and-asns/ipv6/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/ipv6/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "757c104fcfd2abf2599ce886",
+    "url": "https://www.ripe.net/manage-ips-and-asns/ipv6/request-ipv6/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/ipv6/request-ipv6/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "a38d447555b4a17881594ba4",
+    "url": "https://www.ripe.net/manage-ips-and-asns/ipv6/ipv6-info-centre/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/ipv6/ipv6-info-centre/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "75c450a5fde49fbe52087c7d",
+    "url": "https://www.ripe.net/manage-ips-and-asns/as-numbers/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/as-numbers/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "9ef374ed56c3eb1a2ea985cb",
+    "url": "https://www.ripe.net/manage-ips-and-asns/as-numbers/reassigning-as-numbers/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/as-numbers/reassigning-as-numbers/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "1411c5262ac30ca7aaec8fcd",
+    "url": "https://www.ripe.net/manage-ips-and-asns/db/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/db/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "c8dd2721fc589890b7501a48",
+    "url": "https://www.ripe.net/manage-ips-and-asns/db/whois/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/db/whois/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "afc9de19cf530409727d36ba",
+    "url": "https://www.ripe.net/manage-ips-and-asns/db/webupdates/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/db/webupdates/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "79e466c865be626906fcaa29",
+    "url": "https://www.ripe.net/manage-ips-and-asns/db/support/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/db/support/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "c82778802ffbf7111d770aa3",
+    "url": "https://www.ripe.net/manage-ips-and-asns/lir-portal/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/lir-portal/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "5fb8e9c7109fa0206eb9c9c2",
+    "url": "https://www.ripe.net/manage-ips-and-asns/dns/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/dns/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "37c17365f1c702b831d64eae",
+    "url": "https://www.ripe.net/manage-ips-and-asns/dns/reverse-dns/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/dns/reverse-dns/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "66daf75b7731d7c4712edfa6",
+    "url": "https://www.ripe.net/manage-ips-and-asns/dns/dnssec/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/dns/dnssec/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "442dba7ca927fb20bd44eff5",
+    "url": "https://www.ripe.net/manage-ips-and-asns/resource-transfers-and-mergers/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/resource-transfers-and-mergers/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "49015c7a7450a04abfc25849",
+    "url": "https://www.ripe.net/manage-ips-and-asns/resource-transfers-and-mergers/inter-rir-transfers/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/resource-transfers-and-mergers/inter-rir-transfers/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "3244d1f189e4b509757c3a94",
+    "url": "https://www.ripe.net/manage-ips-and-asns/resource-transfers-and-mergers/mergers-and-acquisitions/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/resource-transfers-and-mergers/mergers-and-acquisitions/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "a8e94fd9825bd7ff9d2dffea",
+    "url": "https://www.ripe.net/manage-ips-and-asns/legacy-resources/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/legacy-resources/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e9f283ccc7b5f6f1cd2f7698",
+    "url": "https://www.ripe.net/manage-ips-and-asns/legacy-resources/legacy-internet-resources-documentation/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/legacy-resources/legacy-internet-resources-documentation/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "f38eb530e1defdeab1fed26f",
+    "url": "https://www.ripe.net/manage-ips-and-asns/resource-management/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/resource-management/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "0c9e7e98e316939efc4237fb",
+    "url": "https://www.ripe.net/manage-ips-and-asns/resource-management/rpki/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/resource-management/rpki/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "d0a00a69087ea0b79b58c178",
+    "url": "https://www.ripe.net/manage-ips-and-asns/resource-management/policy-implementation-status/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/resource-management/policy-implementation-status/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "404014a2102d808b4a694fc3",
+    "url": "https://www.ripe.net/manage-ips-and-asns/resource-management/assisted-registry-check/",
+    "normalized_url": "https://www.ripe.net/manage-ips-and-asns/resource-management/assisted-registry-check/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.838733+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e5b90572bdd0a4ca51be056b",
+    "url": "https://www.ripe.net/analyse/",
+    "normalized_url": "https://www.ripe.net/analyse/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "7f6c6db5d9f2803481ab4c2c",
+    "url": "https://www.ripe.net/analyse/statistics/",
+    "normalized_url": "https://www.ripe.net/analyse/statistics/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "7b90bf192c3d3a5e219f1e8f",
+    "url": "https://www.ripe.net/analyse/internet-measurements/",
+    "normalized_url": "https://www.ripe.net/analyse/internet-measurements/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "28f7b1b29027a68f671ccf11",
+    "url": "https://www.ripe.net/analyse/internet-measurements/ripe-atlas/",
+    "normalized_url": "https://www.ripe.net/analyse/internet-measurements/ripe-atlas/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "a72e27162e0d1733b180fb02",
+    "url": "https://www.ripe.net/analyse/internet-measurements/ripestat/",
+    "normalized_url": "https://www.ripe.net/analyse/internet-measurements/ripestat/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "f61019b79866ed6efad24412",
+    "url": "https://www.ripe.net/analyse/internet-measurements/routing-information-service-ris/",
+    "normalized_url": "https://www.ripe.net/analyse/internet-measurements/routing-information-service-ris/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "80958b0618ddb758578c0b64",
+    "url": "https://www.ripe.net/analyse/internet-measurements/ripe-ipmap/",
+    "normalized_url": "https://www.ripe.net/analyse/internet-measurements/ripe-ipmap/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "da8df74003a68ab883404d75",
+    "url": "https://www.ripe.net/analyse/internet-measurements/internet-traffic-maps/",
+    "normalized_url": "https://www.ripe.net/analyse/internet-measurements/internet-traffic-maps/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e1bb6ede146461675e61be65",
+    "url": "https://www.ripe.net/analyse/internet-measurements/about-ripe-atlas/",
+    "normalized_url": "https://www.ripe.net/analyse/internet-measurements/about-ripe-atlas/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "516eb0e686afe7d70a0a142b",
+    "url": "https://www.ripe.net/analyse/internet-measurements/ixp-country-jedi/",
+    "normalized_url": "https://www.ripe.net/analyse/internet-measurements/ixp-country-jedi/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "f6bf18b5250bc6ceb3e392e4",
+    "url": "https://www.ripe.net/analyse/dns/",
+    "normalized_url": "https://www.ripe.net/analyse/dns/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e5607174c22c2ec944dca6cb",
+    "url": "https://www.ripe.net/analyse/dns/k-root/",
+    "normalized_url": "https://www.ripe.net/analyse/dns/k-root/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "30d81c294550a0f5ee83e386",
+    "url": "https://www.ripe.net/analyse/dns/authdns/",
+    "normalized_url": "https://www.ripe.net/analyse/dns/authdns/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "71b90c016c38d02e7736480b",
+    "url": "https://www.ripe.net/analyse/dns/reverse-delegation-dns-zonecheck/",
+    "normalized_url": "https://www.ripe.net/analyse/dns/reverse-delegation-dns-zonecheck/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "b56cab266f35a0c31d1d82c1",
+    "url": "https://www.ripe.net/analyse/dns/dnsmon/",
+    "normalized_url": "https://www.ripe.net/analyse/dns/dnsmon/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "6f135a5adf16cfb518845041",
+    "url": "https://www.ripe.net/analyse/raw-data-sets/",
+    "normalized_url": "https://www.ripe.net/analyse/raw-data-sets/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "56ad23ea6855aec9a9e174ed",
+    "url": "https://www.ripe.net/analyse/raw-data-sets/ripe-atlas-raw-data-format/",
+    "normalized_url": "https://www.ripe.net/analyse/raw-data-sets/ripe-atlas-raw-data-format/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "0a37ad9676edf693a993a025",
+    "url": "https://www.ripe.net/analyse/raw-data-sets/ripe-atlas-raw-data/",
+    "normalized_url": "https://www.ripe.net/analyse/raw-data-sets/ripe-atlas-raw-data/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "10daf0e63ff2bbdced328ae4",
+    "url": "https://www.ripe.net/analyse/raw-data-sets/ris-raw-dataset/",
+    "normalized_url": "https://www.ripe.net/analyse/raw-data-sets/ris-raw-dataset/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "776c49944a015a235889659e",
+    "url": "https://www.ripe.net/analyse/raw-data-sets/terms-conditions/",
+    "normalized_url": "https://www.ripe.net/analyse/raw-data-sets/terms-conditions/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "04fabe383fc1151bab42bde3",
+    "url": "https://www.ripe.net/analyse/archived-projects/",
+    "normalized_url": "https://www.ripe.net/analyse/archived-projects/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "9b2ed05c2abafc62dc3d2fe3",
+    "url": "https://www.ripe.net/analyse/archived-projects/ris-tools-web-interfaces/",
+    "normalized_url": "https://www.ripe.net/analyse/archived-projects/ris-tools-web-interfaces/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "9bee123847885d4860cf6066",
+    "url": "https://www.ripe.net/analyse/archived-projects/ttm/",
+    "normalized_url": "https://www.ripe.net/analyse/archived-projects/ttm/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e41a1a124be98ce59c2a602e",
+    "url": "https://www.ripe.net/analyse/archived-projects/rrcc/",
+    "normalized_url": "https://www.ripe.net/analyse/archived-projects/rrcc/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "de7ad5b8ee1ac14cccb1593e",
+    "url": "https://www.ripe.net/analyse/archived-projects/disi/",
+    "normalized_url": "https://www.ripe.net/analyse/archived-projects/disi/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "b1f11b991182fdb38d233281",
+    "url": "https://www.ripe.net/analyse/archived-projects/irrtoolset/",
+    "normalized_url": "https://www.ripe.net/analyse/archived-projects/irrtoolset/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "4f79cb233952ee5a549a80cf",
+    "url": "https://www.ripe.net/analyse/archived-projects/rpsl/",
+    "normalized_url": "https://www.ripe.net/analyse/archived-projects/rpsl/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "21f8eeaa6e9c482cd03643ba",
+    "url": "https://www.ripe.net/analyse/archived-projects/dbconstat/",
+    "normalized_url": "https://www.ripe.net/analyse/archived-projects/dbconstat/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "ec2c219ad9e200296705ff11",
+    "url": "https://www.ripe.net/analyse/data-and-measurements-sponsorship/",
+    "normalized_url": "https://www.ripe.net/analyse/data-and-measurements-sponsorship/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "366ed7e34f39a676b398d40d",
+    "url": "https://www.ripe.net/community/",
+    "normalized_url": "https://www.ripe.net/community/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "0075058fd7a85f67694f318b",
+    "url": "https://www.ripe.net/community/wg/",
+    "normalized_url": "https://www.ripe.net/community/wg/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "bac2146fb8969789409e5725",
+    "url": "https://www.ripe.net/community/wg/wg-chairs/",
+    "normalized_url": "https://www.ripe.net/community/wg/wg-chairs/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "c13c926ff17d14d90f4b5af2",
+    "url": "https://www.ripe.net/community/wg/active-wg/",
+    "normalized_url": "https://www.ripe.net/community/wg/active-wg/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "a958d6e9de0c44de792965d3",
+    "url": "https://www.ripe.net/community/tf/",
+    "normalized_url": "https://www.ripe.net/community/tf/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "1ed3fa6a9523ed21e55fceef",
+    "url": "https://www.ripe.net/community/policies/",
+    "normalized_url": "https://www.ripe.net/community/policies/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "db12703f6de17795e8e526f9",
+    "url": "https://www.ripe.net/community/policies/policy-implementation-status/",
+    "normalized_url": "https://www.ripe.net/community/policies/policy-implementation-status/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "f169287beebcf2a3c8a4e7af",
+    "url": "https://www.ripe.net/community/policies/current-proposals/",
+    "normalized_url": "https://www.ripe.net/community/policies/current-proposals/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "5dc6f3a6a5db147cb02de027",
+    "url": "https://www.ripe.net/community/internet-governance/",
+    "normalized_url": "https://www.ripe.net/community/internet-governance/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "a8dc287a9e3df6d6e046a419",
+    "url": "https://www.ripe.net/community/internet-governance/internet-technical-community/",
+    "normalized_url": "https://www.ripe.net/community/internet-governance/internet-technical-community/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "2ea10dfb8aec531d66f2095f",
+    "url": "https://www.ripe.net/community/internet-governance/multi-stakeholder-engagement/",
+    "normalized_url": "https://www.ripe.net/community/internet-governance/multi-stakeholder-engagement/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "8271aed29adc986761dfedcd",
+    "url": "https://www.ripe.net/community/internet-governance/internet-governance-news/",
+    "normalized_url": "https://www.ripe.net/community/internet-governance/internet-governance-news/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "1e202ce5a43c8c70d13bccef",
+    "url": "https://www.ripe.net/community/ripe-labs/",
+    "normalized_url": "https://www.ripe.net/community/ripe-labs/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "d95e499e2f4837a55f8f57db",
+    "url": "https://www.ripe.net/community/nro-nc/",
+    "normalized_url": "https://www.ripe.net/community/nro-nc/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "2650c2fd48d3626d14176a8c",
+    "url": "https://www.ripe.net/community/nro-nc/nro-nc/",
+    "normalized_url": "https://www.ripe.net/community/nro-nc/nro-nc/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "8671e1791c346aabff46f264",
+    "url": "https://www.ripe.net/community/nro-nc/nro-nc-nominations-october-2025/",
+    "normalized_url": "https://www.ripe.net/community/nro-nc/nro-nc-nominations-october-2025/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "fc216ca0d444a84c8df03bb7",
+    "url": "https://www.ripe.net/community/nro-nc/icp-2-review/",
+    "normalized_url": "https://www.ripe.net/community/nro-nc/icp-2-review/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.839732+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "149ff7634470143d03868ced",
+    "url": "https://www.ripe.net/community/community-initiatives/",
+    "normalized_url": "https://www.ripe.net/community/community-initiatives/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "d756f9fe14c1e5d067776147",
+    "url": "https://www.ripe.net/community/community-initiatives/raci/",
+    "normalized_url": "https://www.ripe.net/community/community-initiatives/raci/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "30b8fd38518813d21ae00414",
+    "url": "https://www.ripe.net/community/community-initiatives/ripe-fellowship/",
+    "normalized_url": "https://www.ripe.net/community/community-initiatives/ripe-fellowship/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "7f4ec21ba535aef0fb139b7f",
+    "url": "https://www.ripe.net/community/community-initiatives/diversity/",
+    "normalized_url": "https://www.ripe.net/community/community-initiatives/diversity/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "040670fa315ec233fba98182",
+    "url": "https://www.ripe.net/community/community-initiatives/cpf/",
+    "normalized_url": "https://www.ripe.net/community/community-initiatives/cpf/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "4c8cc8da9fd6ace030aefeb3",
+    "url": "https://www.ripe.net/community/community-initiatives/rob-blokzijl-foundation/",
+    "normalized_url": "https://www.ripe.net/community/community-initiatives/rob-blokzijl-foundation/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "518be9481152cb6deb5196a0",
+    "url": "https://www.ripe.net/community/community-initiatives/support-community-initiatives/",
+    "normalized_url": "https://www.ripe.net/community/community-initiatives/support-community-initiatives/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "90007a8ff383e363668aeb44",
+    "url": "https://www.ripe.net/community/ripe-governance/",
+    "normalized_url": "https://www.ripe.net/community/ripe-governance/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "d0d5b77c4e7123470ab7c802",
+    "url": "https://www.ripe.net/community/ripe-governance/chair/",
+    "normalized_url": "https://www.ripe.net/community/ripe-governance/chair/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "836c8ce54935a5f299169bec",
+    "url": "https://www.ripe.net/community/ripe-governance/code-of-conduct/",
+    "normalized_url": "https://www.ripe.net/community/ripe-governance/code-of-conduct/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "ea56b2cccc70cd834820d079",
+    "url": "https://www.ripe.net/community/ripe-governance/ripe-community-plenary/",
+    "normalized_url": "https://www.ripe.net/community/ripe-governance/ripe-community-plenary/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "0c289cf6ce6913ac19cc7424",
+    "url": "https://www.ripe.net/community/ripe-governance/history/",
+    "normalized_url": "https://www.ripe.net/community/ripe-governance/history/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "ba3903b0e72664ea65aa6929",
+    "url": "https://www.ripe.net/community/ripe-document-store/",
+    "normalized_url": "https://www.ripe.net/community/ripe-document-store/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "90b3a70da67f6a9de2b6b313",
+    "url": "https://www.ripe.net/community/participate/",
+    "normalized_url": "https://www.ripe.net/community/participate/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "7b22ddd14b4d57c64cb87a12",
+    "url": "https://www.ripe.net/community/participate/how-to-participate/",
+    "normalized_url": "https://www.ripe.net/community/participate/how-to-participate/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "f4d24a3bee778d8881941f66",
+    "url": "https://www.ripe.net/community/participate/ripe-mailing-lists/",
+    "normalized_url": "https://www.ripe.net/community/participate/ripe-mailing-lists/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "62a1044358a95be65c2ea297",
+    "url": "https://www.ripe.net/membership/",
+    "normalized_url": "https://www.ripe.net/membership/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "c0b892375e49b3bcdebe873a",
+    "url": "https://www.ripe.net/membership/member-support/",
+    "normalized_url": "https://www.ripe.net/membership/member-support/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "9074e75e64e8004131c428c3",
+    "url": "https://www.ripe.net/membership/member-support/become-a-member/",
+    "normalized_url": "https://www.ripe.net/membership/member-support/become-a-member/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "9c9736b9e1fc872ff356abeb",
+    "url": "https://www.ripe.net/membership/member-support/lir-basics/",
+    "normalized_url": "https://www.ripe.net/membership/member-support/lir-basics/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "eaa7d1379a04d9471a4a073f",
+    "url": "https://www.ripe.net/membership/member-support/ripe-ncc-access/",
+    "normalized_url": "https://www.ripe.net/membership/member-support/ripe-ncc-access/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "45349c1e1f7c17bb3d11389f",
+    "url": "https://www.ripe.net/membership/member-support/surveys/",
+    "normalized_url": "https://www.ripe.net/membership/member-support/surveys/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "d4c834f1261bba34359e7f42",
+    "url": "https://www.ripe.net/membership/gm/",
+    "normalized_url": "https://www.ripe.net/membership/gm/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "085ebad573d85498c53bfa3a",
+    "url": "https://www.ripe.net/membership/gm/general-meeting-oct-2026/",
+    "normalized_url": "https://www.ripe.net/membership/gm/general-meeting-oct-2026/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "1e7da8827330d1fe30b78a6a",
+    "url": "https://www.ripe.net/membership/gm/meetings/",
+    "normalized_url": "https://www.ripe.net/membership/gm/meetings/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "536e25779d9e22f85b8f70ab",
+    "url": "https://www.ripe.net/membership/payment/",
+    "normalized_url": "https://www.ripe.net/membership/payment/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "9444e1fab26980bfd413b3a3",
+    "url": "https://www.ripe.net/membership/payment/charging-schemes/",
+    "normalized_url": "https://www.ripe.net/membership/payment/charging-schemes/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "78afa140c789109a9c58391f",
+    "url": "https://www.ripe.net/membership/payment/ripe-ncc-billing-procedure-2026/",
+    "normalized_url": "https://www.ripe.net/membership/payment/ripe-ncc-billing-procedure-2026/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "f4bd62a0bbbdfb71271de817",
+    "url": "https://www.ripe.net/membership/payment/ripe-ncc-billing-procedure-2025/",
+    "normalized_url": "https://www.ripe.net/membership/payment/ripe-ncc-billing-procedure-2025/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "712ee2cb137cf1ed842940d9",
+    "url": "https://www.ripe.net/membership/payment/tax/",
+    "normalized_url": "https://www.ripe.net/membership/payment/tax/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "4358dabd9bcd480121bebc78",
+    "url": "https://www.ripe.net/membership/payment/financial-information/",
+    "normalized_url": "https://www.ripe.net/membership/payment/financial-information/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "34acca9578dd87280a9b1264",
+    "url": "https://www.ripe.net/membership/ripe-ncc-organisational-documents/",
+    "normalized_url": "https://www.ripe.net/membership/ripe-ncc-organisational-documents/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "bb019c7329820dd7ae70ecaf",
+    "url": "https://www.ripe.net/membership/ripe-ncc-organisational-documents/budgets/",
+    "normalized_url": "https://www.ripe.net/membership/ripe-ncc-organisational-documents/budgets/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "598939e20f636673c301c344",
+    "url": "https://www.ripe.net/membership/ripe-ncc-organisational-documents/reports/",
+    "normalized_url": "https://www.ripe.net/membership/ripe-ncc-organisational-documents/reports/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "5538c489c43be6710c853713",
+    "url": "https://www.ripe.net/membership/ripe-ncc-organisational-documents/financial-reports/",
+    "normalized_url": "https://www.ripe.net/membership/ripe-ncc-organisational-documents/financial-reports/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "9220ccfbcbd70f7d3108e19a",
+    "url": "https://www.ripe.net/membership/ripe-ncc-organisational-documents/charging-schemes/",
+    "normalized_url": "https://www.ripe.net/membership/ripe-ncc-organisational-documents/charging-schemes/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "95cdd4efbcf498c70c478299",
+    "url": "https://www.ripe.net/membership/ripe-ncc-organisational-documents/transparency-report/",
+    "normalized_url": "https://www.ripe.net/membership/ripe-ncc-organisational-documents/transparency-report/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "a2e77749526d534b0eb09dd2",
+    "url": "https://www.ripe.net/membership/ripe-ncc-organisational-documents/strategy/",
+    "normalized_url": "https://www.ripe.net/membership/ripe-ncc-organisational-documents/strategy/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "68ce0ed9e0ce093041984123",
+    "url": "https://www.ripe.net/membership/mail/",
+    "normalized_url": "https://www.ripe.net/membership/mail/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "460f80393f665d6efd5015df",
+    "url": "https://www.ripe.net/membership/mail/ripe-ncc-mailing-lists/",
+    "normalized_url": "https://www.ripe.net/membership/mail/ripe-ncc-mailing-lists/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "85d5c43ce79e6735c67dd827",
+    "url": "https://www.ripe.net/membership/mail/ripe-mailing-lists/",
+    "normalized_url": "https://www.ripe.net/membership/mail/ripe-mailing-lists/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "a7685e09eb56ef6811ad7ed5",
+    "url": "https://www.ripe.net/membership/mail/member-and-community-consultations/",
+    "normalized_url": "https://www.ripe.net/membership/mail/member-and-community-consultations/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "ae7e5f703a7399bc35200bf6",
+    "url": "https://www.ripe.net/membership/ripe-ncc-forum/",
+    "normalized_url": "https://www.ripe.net/membership/ripe-ncc-forum/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "827a615d11f261a4fbc314e5",
+    "url": "https://www.ripe.net/meetings/",
+    "normalized_url": "https://www.ripe.net/meetings/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "6c6e704fd9f843064f5f49f0",
+    "url": "https://www.ripe.net/meetings/ripe-meetings/",
+    "normalized_url": "https://www.ripe.net/meetings/ripe-meetings/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.840730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e5ce588c93a0927495d05328",
+    "url": "https://www.ripe.net/meetings/ripe-meetings/presenting-at-a-ripe-meeting/",
+    "normalized_url": "https://www.ripe.net/meetings/ripe-meetings/presenting-at-a-ripe-meeting/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "32db5b55ce82b1bedd56f292",
+    "url": "https://www.ripe.net/meetings/ripe-meetings/pc/",
+    "normalized_url": "https://www.ripe.net/meetings/ripe-meetings/pc/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "9bc25c38a9c12a84facf377e",
+    "url": "https://www.ripe.net/meetings/ripe-meetings/upcoming-ripe-meetings/",
+    "normalized_url": "https://www.ripe.net/meetings/ripe-meetings/upcoming-ripe-meetings/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "5f9d40ef17a264a65df57534",
+    "url": "https://www.ripe.net/meetings/ripe-meetings/archive/",
+    "normalized_url": "https://www.ripe.net/meetings/ripe-meetings/archive/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "7611407e79175edbd46aa3cf",
+    "url": "https://www.ripe.net/meetings/regional-meetings/",
+    "normalized_url": "https://www.ripe.net/meetings/regional-meetings/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "70ca7ec3efcd7a1452df8ea4",
+    "url": "https://www.ripe.net/meetings/regional-meetings/capif/",
+    "normalized_url": "https://www.ripe.net/meetings/regional-meetings/capif/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e8e07b7b1cf12db8bca346f5",
+    "url": "https://www.ripe.net/meetings/regional-meetings/menog/",
+    "normalized_url": "https://www.ripe.net/meetings/regional-meetings/menog/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "4b07ec9c70262746f00ab66f",
+    "url": "https://www.ripe.net/meetings/regional-meetings/see/",
+    "normalized_url": "https://www.ripe.net/meetings/regional-meetings/see/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "db32b8d24b59be5444100ef6",
+    "url": "https://www.ripe.net/meetings/regional-meetings/ripe-ncc-days/",
+    "normalized_url": "https://www.ripe.net/meetings/regional-meetings/ripe-ncc-days/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "cb0dd99a16d6be8648a4f38f",
+    "url": "https://www.ripe.net/meetings/regional-meetings/next-regional-meetings/",
+    "normalized_url": "https://www.ripe.net/meetings/regional-meetings/next-regional-meetings/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "0f984558ccf03d601dd755bb",
+    "url": "https://www.ripe.net/meetings/roundtable/",
+    "normalized_url": "https://www.ripe.net/meetings/roundtable/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "57b800bbd88f6bfd8be35edb",
+    "url": "https://www.ripe.net/meetings/roundtable/previous-meetings/",
+    "normalized_url": "https://www.ripe.net/meetings/roundtable/previous-meetings/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "021e9fe663647fed86dad709",
+    "url": "https://www.ripe.net/meetings/general-meetings/",
+    "normalized_url": "https://www.ripe.net/meetings/general-meetings/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "febde92b2a05165fe5cd15e6",
+    "url": "https://www.ripe.net/meetings/open-house/",
+    "normalized_url": "https://www.ripe.net/meetings/open-house/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "aa1e4a0fb73529f6f924c20a",
+    "url": "https://www.ripe.net/meetings/open-house/previous-events/",
+    "normalized_url": "https://www.ripe.net/meetings/open-house/previous-events/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "167060a475834eadd6e1a2b4",
+    "url": "https://www.ripe.net/meetings/internet-measurement-day/",
+    "normalized_url": "https://www.ripe.net/meetings/internet-measurement-day/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "8afdb1980f8dcd434fc8496b",
+    "url": "https://www.ripe.net/meetings/internet-measurement-day/internet-measurement-day-sofia/",
+    "normalized_url": "https://www.ripe.net/meetings/internet-measurement-day/internet-measurement-day-sofia/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "c36e7cc85c89103e41a1f889",
+    "url": "https://www.ripe.net/meetings/internet-measurement-day/internet-measurement-day-bucharest/",
+    "normalized_url": "https://www.ripe.net/meetings/internet-measurement-day/internet-measurement-day-bucharest/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "a1851f39cb0bcfae1a351d77",
+    "url": "https://www.ripe.net/meetings/hackathons/",
+    "normalized_url": "https://www.ripe.net/meetings/hackathons/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "27246ee550680a5842b44a53",
+    "url": "https://www.ripe.net/meetings/calendar/",
+    "normalized_url": "https://www.ripe.net/meetings/calendar/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "5ea2043e440cf8fdd64d9ec8",
+    "url": "https://www.ripe.net/meetings/event-sponsorship/",
+    "normalized_url": "https://www.ripe.net/meetings/event-sponsorship/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "16e1ac13dafc4fea32c58e16",
+    "url": "https://www.ripe.net/training/",
+    "normalized_url": "https://www.ripe.net/training/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "5633cd6764966bcb2b85e30d",
+    "url": "https://www.ripe.net/training/in-person-training-courses/",
+    "normalized_url": "https://www.ripe.net/training/in-person-training-courses/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "48879e7090f753865d960640",
+    "url": "https://www.ripe.net/training/in-person-training-courses/upcoming-training-courses/",
+    "normalized_url": "https://www.ripe.net/training/in-person-training-courses/upcoming-training-courses/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "76558de6d9e18ffa91370eb8",
+    "url": "https://www.ripe.net/training/in-person-training-courses/host-a-training-course/",
+    "normalized_url": "https://www.ripe.net/training/in-person-training-courses/host-a-training-course/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "dad9ef259314f3ae9971ec0d",
+    "url": "https://www.ripe.net/training/in-person-training-courses/material/",
+    "normalized_url": "https://www.ripe.net/training/in-person-training-courses/material/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "08df46fd7098d8bbcd594470",
+    "url": "https://www.ripe.net/training/webinars/",
+    "normalized_url": "https://www.ripe.net/training/webinars/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "2bc6c858958b21ba9e32feb7",
+    "url": "https://www.ripe.net/training/webinars/webinar-recordings/",
+    "normalized_url": "https://www.ripe.net/training/webinars/webinar-recordings/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "1350b2126abc540447e604f6",
+    "url": "https://www.ripe.net/training/ripe-ncc-academy/",
+    "normalized_url": "https://www.ripe.net/training/ripe-ncc-academy/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "32fd6a41611a215d66c0191f",
+    "url": "https://www.ripe.net/training/ripe-ncc-certified-professionals/",
+    "normalized_url": "https://www.ripe.net/training/ripe-ncc-certified-professionals/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "f6cac7caf09d1f777c4aef8e",
+    "url": "https://www.ripe.net/training/ripe-ncc-certified-professionals/schedule-exam/",
+    "normalized_url": "https://www.ripe.net/training/ripe-ncc-certified-professionals/schedule-exam/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "8ae265f8a3908c115e4b6733",
+    "url": "https://www.ripe.net/training/ripe-ncc-certified-professionals/bgp-security-associate/",
+    "normalized_url": "https://www.ripe.net/training/ripe-ncc-certified-professionals/bgp-security-associate/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "051df1db5bf6c5dd1d435cde",
+    "url": "https://www.ripe.net/training/ripe-ncc-certified-professionals/ipv6-fundamentals-analyst/",
+    "normalized_url": "https://www.ripe.net/training/ripe-ncc-certified-professionals/ipv6-fundamentals-analyst/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "27b3a552bc3af53d9f286ef9",
+    "url": "https://www.ripe.net/training/ripe-ncc-certified-professionals/ipv6-security-expert/",
+    "normalized_url": "https://www.ripe.net/training/ripe-ncc-certified-professionals/ipv6-security-expert/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "61155babdf38a3033ac33071",
+    "url": "https://www.ripe.net/training/ripe-ncc-certified-professionals/local-internet-registry-lir-fundamentals/",
+    "normalized_url": "https://www.ripe.net/training/ripe-ncc-certified-professionals/local-internet-registry-lir-fundamentals/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "364999037d5e82e5d5f709bf",
+    "url": "https://www.ripe.net/training/ripe-ncc-certified-professionals/ripe-database-associate/",
+    "normalized_url": "https://www.ripe.net/training/ripe-ncc-certified-professionals/ripe-database-associate/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "c19c518ea92ceeb11a93b9df",
+    "url": "https://www.ripe.net/training/ripe-ncc-certified-professionals/practical-information/",
+    "normalized_url": "https://www.ripe.net/training/ripe-ncc-certified-professionals/practical-information/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "5063b6f0ddf8f949c8752c53",
+    "url": "https://www.ripe.net/training/ripe-ncc-certified-professionals/exam-vouchers/",
+    "normalized_url": "https://www.ripe.net/training/ripe-ncc-certified-professionals/exam-vouchers/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "3c3f1e51a26921da3d9c1da7",
+    "url": "https://www.ripe.net/training/videos/",
+    "normalized_url": "https://www.ripe.net/training/videos/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "ac76927d12c24b6d09677f1a",
+    "url": "https://www.ripe.net/training/summer-school-2026/",
+    "normalized_url": "https://www.ripe.net/training/summer-school-2026/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e2b3b512261eccb432b34eb1",
+    "url": "https://www.ripe.net/publications/",
+    "normalized_url": "https://www.ripe.net/publications/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "017fca2ab440315b5a627fff",
+    "url": "https://www.ripe.net/publications/docs/",
+    "normalized_url": "https://www.ripe.net/publications/docs/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "0c0a7613bc59bc346729739f",
+    "url": "https://www.ripe.net/publications/docs/all-ripe-documents-by-number/",
+    "normalized_url": "https://www.ripe.net/publications/docs/all-ripe-documents-by-number/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "f091adcb27f97f624de6d61f",
+    "url": "https://www.ripe.net/publications/docs/ripe-documents/",
+    "normalized_url": "https://www.ripe.net/publications/docs/ripe-documents/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "22c6dcee4b717de4959ffaf6",
+    "url": "https://www.ripe.net/publications/docs/ripe-policies/",
+    "normalized_url": "https://www.ripe.net/publications/docs/ripe-policies/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "632e0ad28edae9a3cd9e4d37",
+    "url": "https://www.ripe.net/publications/documentation/",
+    "normalized_url": "https://www.ripe.net/publications/documentation/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.841731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "b35bc87218efabcd3572b643",
+    "url": "https://www.ripe.net/publications/documentation/developer-documentation/",
+    "normalized_url": "https://www.ripe.net/publications/documentation/developer-documentation/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "a54e343f2cde7fe13edf36ab",
+    "url": "https://www.ripe.net/publications/documentation/quarterly-planning/",
+    "normalized_url": "https://www.ripe.net/publications/documentation/quarterly-planning/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "cb765ab4dfd575489cd267e8",
+    "url": "https://www.ripe.net/publications/documentation/ripe-atlas/",
+    "normalized_url": "https://www.ripe.net/publications/documentation/ripe-atlas/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "7765635a307819daa5a61656",
+    "url": "https://www.ripe.net/publications/documentation/ripe-database-documentation/",
+    "normalized_url": "https://www.ripe.net/publications/documentation/ripe-database-documentation/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "3a43150f98d4bf639ff3b4f4",
+    "url": "https://www.ripe.net/publications/documentation/ris-documentation/",
+    "normalized_url": "https://www.ripe.net/publications/documentation/ris-documentation/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "c4d25f553e9996d7e3c8c689",
+    "url": "https://www.ripe.net/publications/documentation/ripe-ipmap-documentation/",
+    "normalized_url": "https://www.ripe.net/publications/documentation/ripe-ipmap-documentation/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "21b24ff57cf8e2ce5e43b282",
+    "url": "https://www.ripe.net/publications/documentation/ripestat-documentation/",
+    "normalized_url": "https://www.ripe.net/publications/documentation/ripestat-documentation/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "f30a6cee79fd6fe51c8ed84b",
+    "url": "https://www.ripe.net/publications/documentation/disclosures-and-reports/",
+    "normalized_url": "https://www.ripe.net/publications/documentation/disclosures-and-reports/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "b22843a2765d11d8ad6ff1e8",
+    "url": "https://www.ripe.net/publications/ipv6-information-centre/",
+    "normalized_url": "https://www.ripe.net/publications/ipv6-information-centre/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e26a2dd304709051c42254a3",
+    "url": "https://www.ripe.net/publications/ipv6-information-centre/about-ipv6/",
+    "normalized_url": "https://www.ripe.net/publications/ipv6-information-centre/about-ipv6/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "492bd1dbf01d230032d05321",
+    "url": "https://www.ripe.net/publications/ipv6-information-centre/deployment-planning/",
+    "normalized_url": "https://www.ripe.net/publications/ipv6-information-centre/deployment-planning/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "c116346dc6780b3b1f74b4c3",
+    "url": "https://www.ripe.net/publications/ipv6-information-centre/statistics-and-tools/",
+    "normalized_url": "https://www.ripe.net/publications/ipv6-information-centre/statistics-and-tools/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "8c1875cf7a92fdf977fc750f",
+    "url": "https://www.ripe.net/publications/ipv6-information-centre/training-and-materials/",
+    "normalized_url": "https://www.ripe.net/publications/ipv6-information-centre/training-and-materials/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "2f4e987a18c6dc98b721bea9",
+    "url": "https://www.ripe.net/publications/ipv6-information-centre/ipv6-documents/",
+    "normalized_url": "https://www.ripe.net/publications/ipv6-information-centre/ipv6-documents/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "b036acc09e15b452f86a4caf",
+    "url": "https://www.ripe.net/publications/ipv6-information-centre/ipv6-community/",
+    "normalized_url": "https://www.ripe.net/publications/ipv6-information-centre/ipv6-community/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "d96b90bf30f156a1b5b67e67",
+    "url": "https://www.ripe.net/about-us/",
+    "normalized_url": "https://www.ripe.net/about-us/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "927230dabccece92cce3df33",
+    "url": "https://www.ripe.net/about-us/what-we-do/",
+    "normalized_url": "https://www.ripe.net/about-us/what-we-do/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "faca51f06a041c7bc38209d2",
+    "url": "https://www.ripe.net/about-us/what-we-do/regional-internet-registry/",
+    "normalized_url": "https://www.ripe.net/about-us/what-we-do/regional-internet-registry/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "61d40557de0ae6942736393e",
+    "url": "https://www.ripe.net/about-us/what-we-do/ripe-ncc-service-region/",
+    "normalized_url": "https://www.ripe.net/about-us/what-we-do/ripe-ncc-service-region/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "0773388d3bebc0e80857200d",
+    "url": "https://www.ripe.net/about-us/what-we-do/coordination-function/",
+    "normalized_url": "https://www.ripe.net/about-us/what-we-do/coordination-function/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "1638943f4293ff6245cc609a",
+    "url": "https://www.ripe.net/about-us/what-we-do/statistics/",
+    "normalized_url": "https://www.ripe.net/about-us/what-we-do/statistics/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "775b68135456150844277ce6",
+    "url": "https://www.ripe.net/about-us/what-we-do/transition-to-ipv6/",
+    "normalized_url": "https://www.ripe.net/about-us/what-we-do/transition-to-ipv6/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e37b64cc9bf0955f79af58e6",
+    "url": "https://www.ripe.net/about-us/what-we-do/list-of-ripe-ncc-services/",
+    "normalized_url": "https://www.ripe.net/about-us/what-we-do/list-of-ripe-ncc-services/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "370277e4d735994305ef59b5",
+    "url": "https://www.ripe.net/about-us/what-we-do/user-research/",
+    "normalized_url": "https://www.ripe.net/about-us/what-we-do/user-research/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "37c222d72c67d7629a204ba3",
+    "url": "https://www.ripe.net/about-us/staff/",
+    "normalized_url": "https://www.ripe.net/about-us/staff/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "6b97a4e9f1f170722675806f",
+    "url": "https://www.ripe.net/about-us/staff/structure/",
+    "normalized_url": "https://www.ripe.net/about-us/staff/structure/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "f942c50c6b8477c2b99e962b",
+    "url": "https://www.ripe.net/about-us/staff/careers-at-the-ripe-ncc/",
+    "normalized_url": "https://www.ripe.net/about-us/staff/careers-at-the-ripe-ncc/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "1a13cb21614bfdb416d34f01",
+    "url": "https://www.ripe.net/about-us/executive-board/",
+    "normalized_url": "https://www.ripe.net/about-us/executive-board/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "aab9eb3f49604ac756b32587",
+    "url": "https://www.ripe.net/about-us/executive-board/ripe-ncc-executive-board-functions-and-expectations/",
+    "normalized_url": "https://www.ripe.net/about-us/executive-board/ripe-ncc-executive-board-functions-and-expectations/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "d78d2b105a9971671b10889d",
+    "url": "https://www.ripe.net/about-us/executive-board/minutes/",
+    "normalized_url": "https://www.ripe.net/about-us/executive-board/minutes/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e582e7878f53875dd6c68f77",
+    "url": "https://www.ripe.net/about-us/financial-information/",
+    "normalized_url": "https://www.ripe.net/about-us/financial-information/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "cb4f7141fd1297e6521d6edd",
+    "url": "https://www.ripe.net/about-us/financial-information/current-charging-scheme/",
+    "normalized_url": "https://www.ripe.net/about-us/financial-information/current-charging-scheme/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "33c46d1068b470bc4a5c87fa",
+    "url": "https://www.ripe.net/about-us/financial-information/current-billing-procedure/",
+    "normalized_url": "https://www.ripe.net/about-us/financial-information/current-billing-procedure/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "064984c78f44bbd32f791bcf",
+    "url": "https://www.ripe.net/about-us/press-centre/",
+    "normalized_url": "https://www.ripe.net/about-us/press-centre/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "2728e13a73ac21f13f27103d",
+    "url": "https://www.ripe.net/about-us/press-centre/ripe-ncc-in-the-news/",
+    "normalized_url": "https://www.ripe.net/about-us/press-centre/ripe-ncc-in-the-news/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "a5c004ea1186ec959a5247e1",
+    "url": "https://www.ripe.net/about-us/press-centre/publications/",
+    "normalized_url": "https://www.ripe.net/about-us/press-centre/publications/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "966983b57d0724cc168ea4c7",
+    "url": "https://www.ripe.net/about-us/press-centre/press-releases/",
+    "normalized_url": "https://www.ripe.net/about-us/press-centre/press-releases/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "37a72e5e4a73e10531c42d5c",
+    "url": "https://www.ripe.net/about-us/press-centre/press-photos/",
+    "normalized_url": "https://www.ripe.net/about-us/press-centre/press-photos/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e592bb37d1fef5892f767221",
+    "url": "https://www.ripe.net/about-us/legal/",
+    "normalized_url": "https://www.ripe.net/about-us/legal/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "1d75db19f65a6f9bae68247a",
+    "url": "https://www.ripe.net/about-us/legal/arbitration/",
+    "normalized_url": "https://www.ripe.net/about-us/legal/arbitration/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "197cdee260044b15a09d9cad",
+    "url": "https://www.ripe.net/about-us/legal/corporate-governance/",
+    "normalized_url": "https://www.ripe.net/about-us/legal/corporate-governance/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "b369ea99122e79fa9db2c584",
+    "url": "https://www.ripe.net/about-us/legal/internet-number-resources/",
+    "normalized_url": "https://www.ripe.net/about-us/legal/internet-number-resources/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "d6876d89bb064d8c9f6547fc",
+    "url": "https://www.ripe.net/about-us/legal/other-ripe-ncc-services-documents/",
+    "normalized_url": "https://www.ripe.net/about-us/legal/other-ripe-ncc-services-documents/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "2f31a0ee2bdfa5d2664b1cac",
+    "url": "https://www.ripe.net/about-us/legal/information-for-law-enforcement-agencies/",
+    "normalized_url": "https://www.ripe.net/about-us/legal/information-for-law-enforcement-agencies/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "4c52bd1c7153265618f1d4ab",
+    "url": "https://www.ripe.net/about-us/news/",
+    "normalized_url": "https://www.ripe.net/about-us/news/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "50ad7a3e2740d9de196e918b",
+    "url": "https://www.ripe.net/about-us/news/feeds/",
+    "normalized_url": "https://www.ripe.net/about-us/news/feeds/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "a754b277134e602ad536a0d3",
+    "url": "https://www.ripe.net/about-us/news/member-updates/",
+    "normalized_url": "https://www.ripe.net/about-us/news/member-updates/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.842730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "9e01c5cc922fc78109409980",
+    "url": "https://www.ripe.net/about-us/support/",
+    "normalized_url": "https://www.ripe.net/about-us/support/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "08b154f49ed0fb2017653d88",
+    "url": "https://www.ripe.net/about-us/support/contact/",
+    "normalized_url": "https://www.ripe.net/about-us/support/contact/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "ad325778f266cda158cd0991",
+    "url": "https://www.ripe.net/about-us/support/abuse/",
+    "normalized_url": "https://www.ripe.net/about-us/support/abuse/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "2cf3e261855fd2f0d5daa307",
+    "url": "https://www.ripe.net/about-us/support/service-and-security-announcements/",
+    "normalized_url": "https://www.ripe.net/about-us/support/service-and-security-announcements/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "b89092d1a1a80e31954ffbab",
+    "url": "https://www.ripe.net/about-us/ripe-ncc-trust-portal/",
+    "normalized_url": "https://www.ripe.net/about-us/ripe-ncc-trust-portal/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "35137efea9cd32c1c54cccfa",
+    "url": "https://www.ripe.net/about-us/ripe-ncc-middle-east-fz-llc/",
+    "normalized_url": "https://www.ripe.net/about-us/ripe-ncc-middle-east-fz-llc/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "7ebdf9e75cf3d73bc7a9dd09",
+    "url": "https://www.ripe.net/languages/",
+    "normalized_url": "https://www.ripe.net/languages/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "44b98aaa9b78aaa22745e2cc",
+    "url": "https://www.ripe.net/languages/en/",
+    "normalized_url": "https://www.ripe.net/languages/en/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "29df38d43d2d7493f55e22cb",
+    "url": "https://www.ripe.net/languages/en/membership/",
+    "normalized_url": "https://www.ripe.net/languages/en/membership/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "5ddd559833056c85f29a7e2e",
+    "url": "https://www.ripe.net/languages/en/billing/",
+    "normalized_url": "https://www.ripe.net/languages/en/billing/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "0be08640525ccc974af3d454",
+    "url": "https://www.ripe.net/languages/en/resources/",
+    "normalized_url": "https://www.ripe.net/languages/en/resources/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "703b147de0676a34e0c558cd",
+    "url": "https://www.ripe.net/languages/en/transfers/",
+    "normalized_url": "https://www.ripe.net/languages/en/transfers/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "5b7bda23073a85c43dbfac7e",
+    "url": "https://www.ripe.net/languages/en/participation/",
+    "normalized_url": "https://www.ripe.net/languages/en/participation/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e4b4276ba367dbb22bcb5b3a",
+    "url": "https://www.ripe.net/languages/en/governance/",
+    "normalized_url": "https://www.ripe.net/languages/en/governance/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "5b92d03173dcbb3fef45e94b",
+    "url": "https://www.ripe.net/languages/en/abuse/",
+    "normalized_url": "https://www.ripe.net/languages/en/abuse/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "a3678ebf268718067115aa4a",
+    "url": "https://www.ripe.net/languages/en/training/",
+    "normalized_url": "https://www.ripe.net/languages/en/training/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "503a5469cb0f6c777ea405a1",
+    "url": "https://www.ripe.net/languages/tr/",
+    "normalized_url": "https://www.ripe.net/languages/tr/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "842674757571f3a68aa4b5d0",
+    "url": "https://www.ripe.net/languages/tr/membership/",
+    "normalized_url": "https://www.ripe.net/languages/tr/membership/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "04891530195062c7a252db8b",
+    "url": "https://www.ripe.net/languages/tr/billing/",
+    "normalized_url": "https://www.ripe.net/languages/tr/billing/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "389aec3fdc22400500fbcce4",
+    "url": "https://www.ripe.net/languages/tr/resources/",
+    "normalized_url": "https://www.ripe.net/languages/tr/resources/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e60b017bff49506e16ae53e9",
+    "url": "https://www.ripe.net/languages/tr/transfers/",
+    "normalized_url": "https://www.ripe.net/languages/tr/transfers/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "68d9061b962fe2c15c66de9b",
+    "url": "https://www.ripe.net/languages/tr/participation/",
+    "normalized_url": "https://www.ripe.net/languages/tr/participation/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "99377d14e8507a8c75460e22",
+    "url": "https://www.ripe.net/languages/tr/governance/",
+    "normalized_url": "https://www.ripe.net/languages/tr/governance/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "1b6c6686f909b817bd47a331",
+    "url": "https://www.ripe.net/languages/tr/abuse/",
+    "normalized_url": "https://www.ripe.net/languages/tr/abuse/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "206db99e1e2857d142807070",
+    "url": "https://www.ripe.net/languages/tr/training/",
+    "normalized_url": "https://www.ripe.net/languages/tr/training/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "d69965e5ff24806f94324127",
+    "url": "https://www.ripe.net/languages/es/",
+    "normalized_url": "https://www.ripe.net/languages/es/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "883e0dfb7b860016be54aea3",
+    "url": "https://www.ripe.net/languages/es/membership/",
+    "normalized_url": "https://www.ripe.net/languages/es/membership/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "0e5486393b9ca50716e9c910",
+    "url": "https://www.ripe.net/languages/es/billing/",
+    "normalized_url": "https://www.ripe.net/languages/es/billing/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "0cd492bff6c86cad29d8999a",
+    "url": "https://www.ripe.net/languages/es/resources/",
+    "normalized_url": "https://www.ripe.net/languages/es/resources/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "5fc78fb2e8b3231898551144",
+    "url": "https://www.ripe.net/languages/es/transfers/",
+    "normalized_url": "https://www.ripe.net/languages/es/transfers/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "2c90fdc0bc7cd0cbf5ca56c4",
+    "url": "https://www.ripe.net/languages/es/participation/",
+    "normalized_url": "https://www.ripe.net/languages/es/participation/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "1e642654cea02d3f00f9a0d7",
+    "url": "https://www.ripe.net/languages/es/governance/",
+    "normalized_url": "https://www.ripe.net/languages/es/governance/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "dacd180d7bff45d21f526b31",
+    "url": "https://www.ripe.net/languages/es/abuse/",
+    "normalized_url": "https://www.ripe.net/languages/es/abuse/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "aad42e4467138f61cbf0c391",
+    "url": "https://www.ripe.net/languages/es/training/",
+    "normalized_url": "https://www.ripe.net/languages/es/training/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "84aed21fb9fadd85ceae7ccf",
+    "url": "https://www.ripe.net/languages/it/",
+    "normalized_url": "https://www.ripe.net/languages/it/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "c70426c494d3690310276fd2",
+    "url": "https://www.ripe.net/languages/it/membership/",
+    "normalized_url": "https://www.ripe.net/languages/it/membership/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "bc945d047b829d9d728715c7",
+    "url": "https://www.ripe.net/languages/it/billing/",
+    "normalized_url": "https://www.ripe.net/languages/it/billing/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "d0b1f5886c6220be0118fbfc",
+    "url": "https://www.ripe.net/languages/it/resources/",
+    "normalized_url": "https://www.ripe.net/languages/it/resources/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "c0c0aec68dcb454b4d2aa001",
+    "url": "https://www.ripe.net/languages/it/transfers/",
+    "normalized_url": "https://www.ripe.net/languages/it/transfers/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "18e2baf3533b9c5f8e04d67c",
+    "url": "https://www.ripe.net/languages/it/participation/",
+    "normalized_url": "https://www.ripe.net/languages/it/participation/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "ca0097602f1e2db547c7a818",
+    "url": "https://www.ripe.net/languages/it/governance/",
+    "normalized_url": "https://www.ripe.net/languages/it/governance/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "bf328140e88a8523d118c3d3",
+    "url": "https://www.ripe.net/languages/it/abuse/",
+    "normalized_url": "https://www.ripe.net/languages/it/abuse/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "cf7b028d311afd8a1c703d42",
+    "url": "https://www.ripe.net/languages/it/training/",
+    "normalized_url": "https://www.ripe.net/languages/it/training/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "57c0147a576d878b167df121",
+    "url": "https://www.ripe.net/languages/ru/",
+    "normalized_url": "https://www.ripe.net/languages/ru/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "d4e8c5320caf09021e1646f8",
+    "url": "https://www.ripe.net/languages/ru/membership/",
+    "normalized_url": "https://www.ripe.net/languages/ru/membership/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "4be7c3e1ff0ba77465f75eff",
+    "url": "https://www.ripe.net/languages/ru/billing/",
+    "normalized_url": "https://www.ripe.net/languages/ru/billing/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "f53d5dfbd3112b771ece50dc",
+    "url": "https://www.ripe.net/languages/ru/resources/",
+    "normalized_url": "https://www.ripe.net/languages/ru/resources/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "9ccf0e0ba1b97433817651a3",
+    "url": "https://www.ripe.net/languages/ru/transfers/",
+    "normalized_url": "https://www.ripe.net/languages/ru/transfers/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.843731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "039082cc56199e1d1dc01c11",
+    "url": "https://www.ripe.net/languages/ru/participation/",
+    "normalized_url": "https://www.ripe.net/languages/ru/participation/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "4e451d2e4a66e066b6e52402",
+    "url": "https://www.ripe.net/languages/ru/governance/",
+    "normalized_url": "https://www.ripe.net/languages/ru/governance/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "c45c15b340f5cfb5726a3016",
+    "url": "https://www.ripe.net/languages/ru/abuse/",
+    "normalized_url": "https://www.ripe.net/languages/ru/abuse/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "c714e637393e7350d4c9f7dc",
+    "url": "https://www.ripe.net/languages/ru/training/",
+    "normalized_url": "https://www.ripe.net/languages/ru/training/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "b4aabe1e0a2a8004bd0b7643",
+    "url": "https://www.ripe.net/languages/ar/",
+    "normalized_url": "https://www.ripe.net/languages/ar/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "7e8b72565ac8f0c677e65086",
+    "url": "https://www.ripe.net/languages/ar/membership/",
+    "normalized_url": "https://www.ripe.net/languages/ar/membership/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "586abb687e3991b8a8fa9f13",
+    "url": "https://www.ripe.net/languages/ar/billing/",
+    "normalized_url": "https://www.ripe.net/languages/ar/billing/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "8406d1d42f6c2160b5bc6ab1",
+    "url": "https://www.ripe.net/languages/ar/resources/",
+    "normalized_url": "https://www.ripe.net/languages/ar/resources/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "bfe81375ef5dc7ee889949bb",
+    "url": "https://www.ripe.net/languages/ar/transfers/",
+    "normalized_url": "https://www.ripe.net/languages/ar/transfers/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "de2caaeb3a7661eb484ffa56",
+    "url": "https://www.ripe.net/languages/ar/participation/",
+    "normalized_url": "https://www.ripe.net/languages/ar/participation/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "aeae0df5c0b93fd4847ab413",
+    "url": "https://www.ripe.net/languages/ar/governance/",
+    "normalized_url": "https://www.ripe.net/languages/ar/governance/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "598f982f6dd9b9b03017f40a",
+    "url": "https://www.ripe.net/languages/ar/abuse/",
+    "normalized_url": "https://www.ripe.net/languages/ar/abuse/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "344646624cc5be5619550943",
+    "url": "https://www.ripe.net/languages/ar/training/",
+    "normalized_url": "https://www.ripe.net/languages/ar/training/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "8f938769b7d78772f0794c29",
+    "url": "https://www.ripe.net/languages/fa/",
+    "normalized_url": "https://www.ripe.net/languages/fa/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "985bd60661c488ff25042bcb",
+    "url": "https://www.ripe.net/languages/fa/membership/",
+    "normalized_url": "https://www.ripe.net/languages/fa/membership/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "a2532d86b8d74ca1fb26a076",
+    "url": "https://www.ripe.net/languages/fa/billing/",
+    "normalized_url": "https://www.ripe.net/languages/fa/billing/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "c342f35214e3e820a9a46046",
+    "url": "https://www.ripe.net/languages/fa/resources/",
+    "normalized_url": "https://www.ripe.net/languages/fa/resources/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "244af7860b600df2db25e243",
+    "url": "https://www.ripe.net/languages/fa/transfers/",
+    "normalized_url": "https://www.ripe.net/languages/fa/transfers/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "319d748bc906f89848c3e527",
+    "url": "https://www.ripe.net/languages/fa/participation/",
+    "normalized_url": "https://www.ripe.net/languages/fa/participation/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e160dabc84ac3c87306cef77",
+    "url": "https://www.ripe.net/languages/fa/governance/",
+    "normalized_url": "https://www.ripe.net/languages/fa/governance/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "0d1d563d3327e65c4ec3f5fd",
+    "url": "https://www.ripe.net/languages/fa/abuse/",
+    "normalized_url": "https://www.ripe.net/languages/fa/abuse/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "4b5ff9ffb90e914bb1cf4b69",
+    "url": "https://www.ripe.net/languages/fa/training/",
+    "normalized_url": "https://www.ripe.net/languages/fa/training/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "13ac02b72accc1536b755351",
+    "url": "https://www.ripe.net/languages/uk/",
+    "normalized_url": "https://www.ripe.net/languages/uk/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "203095a766cdd1a1e477a83e",
+    "url": "https://www.ripe.net/languages/uk/yak-stati-chlenom-ripe-ncc/",
+    "normalized_url": "https://www.ripe.net/languages/uk/yak-stati-chlenom-ripe-ncc/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "753b25c907c6fe70d9619329",
+    "url": "https://www.ripe.net/languages/uk/vistavlennya-rahunkiv-zbori-ta-platezhi/",
+    "normalized_url": "https://www.ripe.net/languages/uk/vistavlennya-rahunkiv-zbori-ta-platezhi/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "9b16bd02404538aa917e7bea",
+    "url": "https://www.ripe.net/languages/uk/yak-otrimati-ip-adresi/",
+    "normalized_url": "https://www.ripe.net/languages/uk/yak-otrimati-ip-adresi/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "9dd2c8c800e111a03583dd8f",
+    "url": "https://www.ripe.net/languages/uk/yak-peredavati-ip-adresi-ta-asn/",
+    "normalized_url": "https://www.ripe.net/languages/uk/yak-peredavati-ip-adresi-ta-asn/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "884397d2f92c46860ef4468a",
+    "url": "https://www.ripe.net/languages/uk/navchannya-ta-sertifikaciya/",
+    "normalized_url": "https://www.ripe.net/languages/uk/navchannya-ta-sertifikaciya/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "9310802e8a0f6eef8af0af1e",
+    "url": "https://www.ripe.net/languages/uk/yak-funkcionuye-ripe-ncc/",
+    "normalized_url": "https://www.ripe.net/languages/uk/yak-funkcionuye-ripe-ncc/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e29325a47e45678f0ef3f23e",
+    "url": "https://www.ripe.net/languages/uk/yak-znajti-kontaktnu-informaciyu-dlya-povidomlennya-pro-zlovzhivannya/",
+    "normalized_url": "https://www.ripe.net/languages/uk/yak-znajti-kontaktnu-informaciyu-dlya-povidomlennya-pro-zlovzhivannya/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "fe16263fe03e0b096165d95e",
+    "url": "https://www.ripe.net/languages/fr/",
+    "normalized_url": "https://www.ripe.net/languages/fr/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "8c08611e9a8314904b93735e",
+    "url": "https://www.ripe.net/languages/fr/comment-devenir-membre/",
+    "normalized_url": "https://www.ripe.net/languages/fr/comment-devenir-membre/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "3369bcb6160d01de3404524d",
+    "url": "https://www.ripe.net/languages/fr/facturation-frais-et-paiements/",
+    "normalized_url": "https://www.ripe.net/languages/fr/facturation-frais-et-paiements/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "924843852328183090a2ccfb",
+    "url": "https://www.ripe.net/languages/fr/comment-obtenir-des-adresses-ip/",
+    "normalized_url": "https://www.ripe.net/languages/fr/comment-obtenir-des-adresses-ip/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "81d218da652dd4e0f5ae7d69",
+    "url": "https://www.ripe.net/languages/fr/comment-transferer-des-adresses-ip-et-des-numeros-de-systeme-autonome-asn/",
+    "normalized_url": "https://www.ripe.net/languages/fr/comment-transferer-des-adresses-ip-et-des-numeros-de-systeme-autonome-asn/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "5295e6a208c0d75779a9d97e",
+    "url": "https://www.ripe.net/languages/fr/comment-simpliquer-au-sein-du-ripe-ncc/",
+    "normalized_url": "https://www.ripe.net/languages/fr/comment-simpliquer-au-sein-du-ripe-ncc/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "6a59e47a8f69d41320e5f91c",
+    "url": "https://www.ripe.net/languages/fr/comment-fonctionne-le-ripe-ncc/",
+    "normalized_url": "https://www.ripe.net/languages/fr/comment-fonctionne-le-ripe-ncc/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "39f94ccbda97b1f02d788a2d",
+    "url": "https://www.ripe.net/languages/fr/comment-trouver-les-informations-de-contact-dabus/",
+    "normalized_url": "https://www.ripe.net/languages/fr/comment-trouver-les-informations-de-contact-dabus/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "8e5e8668ce40bc0788eff4d4",
+    "url": "https://www.ripe.net/languages/fr/formation-et-certification/",
+    "normalized_url": "https://www.ripe.net/languages/fr/formation-et-certification/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e5afeeaf8b47640315c296e3",
+    "url": "https://apps.db.ripe.net/db-web-ui/query?searchtext=193.171.242.40",
+    "normalized_url": "https://apps.db.ripe.net/db-web-ui/query?searchtext=193.171.242.40"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "66f4695072118eb4299c0e40",
+    "url": "https://www.ripe.net",
+    "normalized_url": "https://www.ripe.net"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "a170e70dcda739738bd7dc14",
+    "url": "https://my.ripe.net",
+    "normalized_url": "https://my.ripe.net"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "dd0b26c91cf598e304924f76",
+    "url": "https://apps.db.ripe.net",
+    "normalized_url": "https://apps.db.ripe.net"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "a09cead695ea75bd5cf7d012",
+    "url": "https://labs.ripe.net",
+    "normalized_url": "https://labs.ripe.net"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "d7915599666914f18b11a113",
+    "url": "https://stat.ripe.net",
+    "normalized_url": "https://stat.ripe.net"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.844730+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "896f2af7ed768b9b57694b2c",
+    "url": "https://atlas.ripe.net",
+    "normalized_url": "https://atlas.ripe.net"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "3ee0bada5e2ce75f48041763",
+    "url": "https://academy.ripe.net",
+    "normalized_url": "https://academy.ripe.net"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "23507d2f5d226444bb8d6ff1",
+    "url": "https://dashboard.rpki.ripe.net",
+    "normalized_url": "https://dashboard.rpki.ripe.net"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "d44d7c9aa2a406b5cfd3c7e7",
+    "url": "https://atlas.ripe.net/dnsmon/",
+    "normalized_url": "https://atlas.ripe.net/dnsmon/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "f6af7f2fd375bc8b47c799c6",
+    "url": "https://access.ripe.net?originalUrl=https://www.ripe.net/",
+    "normalized_url": "https://access.ripe.net?originalUrl=https://www.ripe.net/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "3f08875a457293eeceb5dcf4",
+    "url": "https://www.ripe.net/publications/news/feeds/",
+    "normalized_url": "https://www.ripe.net/publications/news/feeds/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "f8a6d20145afc18d60f0adbd",
+    "url": "https://www.ripe.net/about-us/news/nro-nc-nominations-2026-call-to-fill-one-seat/",
+    "normalized_url": "https://www.ripe.net/about-us/news/nro-nc-nominations-2026-call-to-fill-one-seat/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "d464c5e906c9417abc06f718",
+    "url": "https://www.ripe.net/about-us/news/ripe-ncc-member-update-july-2026/",
+    "normalized_url": "https://www.ripe.net/about-us/news/ripe-ncc-member-update-july-2026/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "1a4ca160a43a4ce9d2a77404",
+    "url": "https://www.ripe.net/about-us/news/aso-ac-delivers-recommended-draft-rir-governance-document-to-nro-ec-1/",
+    "normalized_url": "https://www.ripe.net/about-us/news/aso-ac-delivers-recommended-draft-rir-governance-document-to-nro-ec-1/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "3e5e412994aabd9f6ea421da",
+    "url": "https://www.ripe.net/about-us/news/ripe-ncc-quarterly-sanctions-transparency-report-q3-2026-published/",
+    "normalized_url": "https://www.ripe.net/about-us/news/ripe-ncc-quarterly-sanctions-transparency-report-q3-2026-published/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "3330a8b061df46a71fc953f4",
+    "url": "https://www.ripe.net/about-us/news/ripe-ncc-strategy-2027-31-published/",
+    "normalized_url": "https://www.ripe.net/about-us/news/ripe-ncc-strategy-2027-31-published/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "8dcea865426af022e5362448",
+    "url": "https://www.ripe.net/about-us/news/ripe-95-call-for-host/",
+    "normalized_url": "https://www.ripe.net/about-us/news/ripe-95-call-for-host/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "dab007cfad72da0bfe1b41dc",
+    "url": "https://www.ripe.net/publications/news/",
+    "normalized_url": "https://www.ripe.net/publications/news/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "a60b6c643d5b3c4f226cc0e5",
+    "url": "https://status.ripe.net/history.rss",
+    "normalized_url": "https://status.ripe.net/history.rss"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "d9ceffa58f2ed28fd4d6d36d",
+    "url": "https://stspg.io/k8vvs3tkhfmx",
+    "normalized_url": "https://stspg.io/k8vvs3tkhfmx"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "8558e2a0731f478ef0c53741",
+    "url": "https://stspg.io/d5dnty4zz1mx",
+    "normalized_url": "https://stspg.io/d5dnty4zz1mx"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "db25b9ca8d4d75e9b30f8fd6",
+    "url": "https://stspg.io/spr0wbvz8v4l",
+    "normalized_url": "https://stspg.io/spr0wbvz8v4l"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "4042f59ed4cef07dd07b5cae",
+    "url": "https://stspg.io/rqvzyxmp011d",
+    "normalized_url": "https://stspg.io/rqvzyxmp011d"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "596ca43c209e1a3e83c3d310",
+    "url": "https://stspg.io/p4ff6rc9xr63",
+    "normalized_url": "https://stspg.io/p4ff6rc9xr63"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "327fe187c12050362234f7e5",
+    "url": "https://stspg.io/xmxddv3gvdkc",
+    "normalized_url": "https://stspg.io/xmxddv3gvdkc"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "4449afd063e6bde7f39fcdc0",
+    "url": "https://status.ripe.net/",
+    "normalized_url": "https://status.ripe.net/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "fddbd9565c19603d46ba9cb2",
+    "url": "https://labs.ripe.net/",
+    "normalized_url": "https://labs.ripe.net/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "978b7b07c52acfe873a7bbc1",
+    "url": "https://labs.ripe.net/author/artem-berezin/two-providers-a-stubborn-plateau-and-a-very-long-tail-email-in-the-tranco-top-1m/",
+    "normalized_url": "https://labs.ripe.net/author/artem-berezin/two-providers-a-stubborn-plateau-and-a-very-long-tail-email-in-the-tranco-top-1m/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "9d6fe94e6548764774152294",
+    "url": "https://labs.ripe.net/author/artem-berezin/",
+    "normalized_url": "https://labs.ripe.net/author/artem-berezin/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "8c302e463b2207b04def83f5",
+    "url": "https://labs.ripe.net/author/remco-van-mook/whats-arp-got-to-do-with-it/",
+    "normalized_url": "https://labs.ripe.net/author/remco-van-mook/whats-arp-got-to-do-with-it/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "9068c41642d2c6fdf2e70508",
+    "url": "https://labs.ripe.net/author/remco-van-mook/",
+    "normalized_url": "https://labs.ripe.net/author/remco-van-mook/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "521b47c37656713e82dd63a9",
+    "url": "https://labs.ripe.net/author/mdkamruzzaman-khan-2/inside-a-shutdown-bgp-evidence-from-an-operator-who-was-there/",
+    "normalized_url": "https://labs.ripe.net/author/mdkamruzzaman-khan-2/inside-a-shutdown-bgp-evidence-from-an-operator-who-was-there/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "f0eb2c70c3cb4bf68d1ce1c4",
+    "url": "https://labs.ripe.net/author/mdkamruzzaman-khan-2/",
+    "normalized_url": "https://labs.ripe.net/author/mdkamruzzaman-khan-2/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "3181082dd2e9aa567d31334a",
+    "url": "https://www.ripe.net/community/policies/proposals/",
+    "normalized_url": "https://www.ripe.net/community/policies/proposals/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "6ed0671b7da33fa28c9b4232",
+    "url": "https://academy.ripe.net/summer-school-2026",
+    "normalized_url": "https://academy.ripe.net/summer-school-2026"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "b5f58f504f9f323ea80b928e",
+    "url": "https://www.ripe.net/meetings/calendar/capif-5/",
+    "normalized_url": "https://www.ripe.net/meetings/calendar/capif-5/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "6fd7136b89e31e6092e7065b",
+    "url": "https://www.ripe.net/meetings/calendar/ripe-93/",
+    "normalized_url": "https://www.ripe.net/meetings/calendar/ripe-93/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e5893836e76481a222d6dc42",
+    "url": "https://www.ripe.net/meetings/calendar/see-15/",
+    "normalized_url": "https://www.ripe.net/meetings/calendar/see-15/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "f88d1d0840141ad800625998",
+    "url": "https://www.ripe.net/meetings/calendar/ripe-94/",
+    "normalized_url": "https://www.ripe.net/meetings/calendar/ripe-94/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "3462f3c002c572a240bf4e77",
+    "url": "https://www.ripe.net/meetings/calendar/ripe-95/",
+    "normalized_url": "https://www.ripe.net/meetings/calendar/ripe-95/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "485062ab9f8b00e882770600",
+    "url": "https://www.ripe.net/meetings/calendar/ripe-96/",
+    "normalized_url": "https://www.ripe.net/meetings/calendar/ripe-96/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.845731+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "689e7063fe809c6b778c71a1",
+    "url": "https://www.ripe.net/meetings/ripe-ncc-events/",
+    "normalized_url": "https://www.ripe.net/meetings/ripe-ncc-events/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.848256+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "fc184e74fb462c8b8a02bbb7",
+    "url": "https://www.ripe.net/support/contact/social-networking",
+    "normalized_url": "https://www.ripe.net/support/contact/social-networking"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.848256+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "e5e6efb4f252b4978effd8a0",
+    "url": "https://www.ripe.net/sitemap.xml",
+    "normalized_url": "https://www.ripe.net/sitemap.xml"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.848256+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "419b8cf404c7b0761cced8c5",
+    "url": "https://www.ripe.net/support/contact/",
+    "normalized_url": "https://www.ripe.net/support/contact/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.848256+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "f8af08b81db47b88615485e3",
+    "url": "https://www.ripe.net/careers/",
+    "normalized_url": "https://www.ripe.net/careers/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.848256+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "b11d85d5ca2e5acdfb60225c",
+    "url": "https://status.ripe.net",
+    "normalized_url": "https://status.ripe.net"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.848256+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "d46e539081fe46d20878efca",
+    "url": "https://www.ripe.net/about-us/legal/ripe-ncc-privacy-statement/",
+    "normalized_url": "https://www.ripe.net/about-us/legal/ripe-ncc-privacy-statement/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.848256+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "8cbe4e79520c1303c5a2aff0",
+    "url": "https://www.ripe.net/about-us/legal/cookies/",
+    "normalized_url": "https://www.ripe.net/about-us/legal/cookies/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.848256+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "fb2447aa2ad3564f5ff43084",
+    "url": "https://www.ripe.net/about-us/legal/copyright-statement/",
+    "normalized_url": "https://www.ripe.net/about-us/legal/copyright-statement/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/",
+    "discovered_at": "2026-08-10T06:30:34.848256+00:00",
+    "parent_url": "https://www.ripe.net/",
+    "source_id": "556732cbce7b19c229ee694e",
+    "url": "https://www.ripe.net/about-us/legal/terms-of-service/",
+    "normalized_url": "https://www.ripe.net/about-us/legal/terms-of-service/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/publications/",
+    "discovered_at": "2026-08-10T06:30:36.853147+00:00",
+    "parent_url": "https://www.ripe.net/publications/",
+    "source_id": "213b2be9aedee43ccea709d0",
+    "url": "https://access.ripe.net?originalUrl=https://www.ripe.net/publications/",
+    "normalized_url": "https://access.ripe.net?originalUrl=https://www.ripe.net/publications/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/publications/",
+    "discovered_at": "2026-08-10T06:30:36.853147+00:00",
+    "parent_url": "https://www.ripe.net/publications/",
+    "source_id": "369c969d9f51bf69436b2bc4",
+    "url": "https://www.ripe.net/membership/member-support/member-updates/",
+    "normalized_url": "https://www.ripe.net/membership/member-support/member-updates/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/publications/",
+    "discovered_at": "2026-08-10T06:30:36.854239+00:00",
+    "parent_url": "https://www.ripe.net/publications/",
+    "source_id": "c775a51c263e5ab6ae7b3735",
+    "url": "https://www.ripe.net/publications/docs/ripe-documents/ripe-governance/",
+    "normalized_url": "https://www.ripe.net/publications/docs/ripe-documents/ripe-governance/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/publications/",
+    "discovered_at": "2026-08-10T06:30:36.854239+00:00",
+    "parent_url": "https://www.ripe.net/publications/",
+    "source_id": "e71cc12cb2e4e5d32f6f965a",
+    "url": "https://www.ripe.net/publications/docs/ripe-documents/ipv6-documents/",
+    "normalized_url": "https://www.ripe.net/publications/docs/ripe-documents/ipv6-documents/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/publications/",
+    "discovered_at": "2026-08-10T06:30:36.854239+00:00",
+    "parent_url": "https://www.ripe.net/publications/",
+    "source_id": "6b59a9c5dd3f68d9ce778611",
+    "url": "https://www.ripe.net/publications/docs/ripe-documents/best-common-practices/",
+    "normalized_url": "https://www.ripe.net/publications/docs/ripe-documents/best-common-practices/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/publications/",
+    "discovered_at": "2026-08-10T06:30:36.854239+00:00",
+    "parent_url": "https://www.ripe.net/publications/",
+    "source_id": "bd9829f0bbb41734b1aef7ae",
+    "url": "https://www.ripe.net/publications/docs/ripe-documents/guidelines/",
+    "normalized_url": "https://www.ripe.net/publications/docs/ripe-documents/guidelines/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/publications/",
+    "discovered_at": "2026-08-10T06:30:36.854239+00:00",
+    "parent_url": "https://www.ripe.net/publications/",
+    "source_id": "42e5afb421159bbad4140797",
+    "url": "https://www.ripe.net/publications/docs/ripe-documents/other-documents/",
+    "normalized_url": "https://www.ripe.net/publications/docs/ripe-documents/other-documents/"
+  },
+  {
+    "discovery_source": "https://www.ripe.net/publications/",
+    "discovered_at": "2026-08-10T06:30:36.854239+00:00",
+    "parent_url": "https://www.ripe.net/publications/",
+    "source_id": "a06c34870c85c199cfd9dea2",
+    "url": "https://www.ripe.net/about-us/legal/corporate-governance-documents/",
+    "normalized_url": "https://www.ripe.net/about-us/legal/corporate-governance-documents/"
+  }
+]

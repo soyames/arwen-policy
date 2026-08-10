@@ -1,0 +1,24 @@
+{
+  "event_id": "bd03262f-89c6-48cc-88f6-781ee0ace7e2",
+  "event_type": "capture_and_extract",
+  "entity_id": "188b234f-abf6-48b5-8d07-59f852018b7c",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "a116d7182bab571620b9f12508d7b7b02a28312732d8b3074cde7e4d22164ad6"
+  ],
+  "attributes": {
+    "requested_url": "https://www.rfc-editor.org/rfc/rfc3935",
+    "final_url": "https://www.rfc-editor.org/info/rfc3935/",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "RFC 3935: A Mission Statement for the IETF | RFC Editor",
+      "language": "en",
+      "summary": "This memo gives a mission statement for the IETF, tries to define the terms used in the statement sufficiently to make the mission statement understandable and useful, argues why the IETF needs a mission statement, and tries to capture some of the debate that led to this point.  This document specifies an Internet Best Current Practices for the Internet Community, and requests discussion and suggestions for improvements.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:35:22.625902+00:00"
+}

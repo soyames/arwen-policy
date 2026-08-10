@@ -1,0 +1,19 @@
+{
+  "source_id": "76a56df61ca260d5731acb58",
+  "source_url": "https://www.icann.org/resources/pages/now-2012-02-25-en",
+  "final_url": "https://www.icann.org/resources/pages/now-2012-02-25-en",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "What's Going on Now? - ICANN",
+  "publisher": "ICANN",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:32:14.624694Z",
+  "published_at": null,
+  "artifact_sha256": "2548a44e7e5ae6370849f4176786a5387f8c5b6d40a7626c3e2d9b9c788e7d42",
+  "byte_size": 73804,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

@@ -1,0 +1,24 @@
+{
+  "event_id": "ba381031-daa6-4b03-9f2b-5e1c3e42e079",
+  "event_type": "capture_and_extract",
+  "entity_id": "8a3e1516-88cb-4a42-a02f-78b03bc974f7",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "ca032103be25c8922100366b14792800d199c62d549633c84f37f177603edfc5"
+  ],
+  "attributes": {
+    "requested_url": "https://www.icann.org/resources/pages/about-icann",
+    "final_url": "https://www.icann.org/resources/pages/about-icann",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "About ICANN - ICANN",
+      "language": "en",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:28:42.281871+00:00"
+}

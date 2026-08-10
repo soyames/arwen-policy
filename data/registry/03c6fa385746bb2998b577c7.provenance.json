@@ -1,0 +1,24 @@
+{
+  "event_id": "83c5fea1-0e43-4b2a-8cab-bca28cdca9a1",
+  "event_type": "capture_and_extract",
+  "entity_id": "3edacad9-c1d3-43a3-923c-5012786a34bb",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "3d0abb47608a5db89d12983fab5a557652d2ffbb1c088bd9cd9b421ed18dc014"
+  ],
+  "attributes": {
+    "requested_url": "https://www.icann.org/resources/pages/odp-2021-04-26-en",
+    "final_url": "https://www.icann.org/odp",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Operational Design Phase - ICANN",
+      "language": "en",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:29:23.588529+00:00"
+}

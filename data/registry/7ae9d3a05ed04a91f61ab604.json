@@ -1,0 +1,19 @@
+{
+  "source_id": "7ae9d3a05ed04a91f61ab604",
+  "source_url": "https://www.arin.net/reference/",
+  "final_url": "https://www.arin.net/reference/",
+  "source_family": "technical_community",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "Reference & Tools - American Registry for Internet Numbers",
+  "publisher": "ARIN",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:32:21.106577Z",
+  "published_at": null,
+  "artifact_sha256": "f903589a5c244370d8ea8c2ab027cd7a170dbe34c510c01dac09d790a481587b",
+  "byte_size": 23696,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

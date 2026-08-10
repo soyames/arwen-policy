@@ -1,0 +1,19 @@
+{
+  "source_id": "1f1b0aabb5f659b0961836d4",
+  "source_url": "https://www.apnic.net/community/participate/",
+  "final_url": "https://www.apnic.net/community/participate/",
+  "source_family": "technical_community",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "Participate – APNIC",
+  "publisher": "APNIC",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:34:03.378743Z",
+  "published_at": null,
+  "artifact_sha256": "b36d47597032a5eeb4454be894d567f3e1f8349ea555e27f8399fd84b56bfd09",
+  "byte_size": 78211,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "9e093aacb0deae5481b8c428",
+  "source_url": "https://www.internetsociety.org/about-internet-society/",
+  "final_url": "https://www.internetsociety.org/about-internet-society/",
+  "source_family": "civil_society",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "About the Internet Society - Internet Society",
+  "publisher": "Internet Society",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:34:32.249976Z",
+  "published_at": null,
+  "artifact_sha256": "5ac97191bb867df3dbb65244dcc01c3e01c47fe8a92ebb44bcd663d3ecc1b03b",
+  "byte_size": 257409,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

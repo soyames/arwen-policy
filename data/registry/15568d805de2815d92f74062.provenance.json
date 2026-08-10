@@ -1,0 +1,24 @@
+{
+  "event_id": "8af83e91-cca4-4ecf-8abf-a5fe56340e9a",
+  "event_type": "capture_and_extract",
+  "entity_id": "8ef15647-5a74-40e6-a420-d72d650a4f60",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "9e5e1bb3660c07f5f27955f4d4c6309faf793727a1c04a0bb077610633b6137a"
+  ],
+  "attributes": {
+    "requested_url": "https://www.rfc-editor.org/rfc/rfc6973",
+    "final_url": "https://www.rfc-editor.org/info/rfc6973/",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "RFC 6973: Privacy Considerations for Internet Protocols | RFC Editor",
+      "language": "en",
+      "summary": "This document offers guidance for developing privacy considerations for inclusion in protocol specifications.  It aims to make designers, implementers, and users of Internet protocols aware of privacy-related design choices.  It suggests that whether any individual RFC warrants a specific privacy considerations section will depend on the document's content.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T07:03:38.476160+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "event_id": "a71f1f73-d1dc-488d-baf0-f1f6dbe3389a",
+  "event_type": "capture_and_extract",
+  "entity_id": "46456a94-426f-4c2d-8a98-8dc57a70878c",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "649bd56fc9c3706cf0cad1c11a4db35f9abdd505603d168b8efdf1c67a64e608"
+  ],
+  "attributes": {
+    "requested_url": "https://subscribe.icann.org/",
+    "final_url": "https://subscribe.icann.org/",
+    "capture_status": 200,
+    "etag": "W/\"518d2-QQuZwu5OvogIx0Y2+AKI9UJPp3k-br\"",
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "ICANN News Subscriptions",
+      "language": "en",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:29:11.742081+00:00"
+}

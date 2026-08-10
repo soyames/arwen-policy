@@ -1,0 +1,24 @@
+{
+  "event_id": "ff95248f-555f-4e98-b63e-045e9f0035d3",
+  "event_type": "capture_and_extract",
+  "entity_id": "12693785-a53b-4c32-a3cc-a6953da9818d",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "fc5b8e581bd7b144da252ea85dd88bf40d02ccaf161cb86c384672280a2e0739"
+  ],
+  "attributes": {
+    "requested_url": "https://www.unesco.org/en/artificial-intelligence",
+    "final_url": "https://www.unesco.org/en/artificial-intelligence",
+    "capture_status": 200,
+    "etag": "W/\"1786331591\"",
+    "last_modified": "Mon, 10 Aug 2026 03:13:11 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Artificial Intelligence and emerging technologies | UNESCO",
+      "language": "en",
+      "summary": "UNESCO is committed to a future where AI and emerging technologies work for the people",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:36:47.466365+00:00"
+}

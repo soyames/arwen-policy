@@ -1,0 +1,24 @@
+{
+  "event_id": "91196693-5845-4a97-9e3a-04ef5bd32ca7",
+  "event_type": "capture_and_extract",
+  "entity_id": "61ae5b11-e3eb-44ff-b1b6-97597c196844",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "9011a878aeac3cf12bcbf13dd20203f428b859b8fdcff2f63f67a3c56a3063bf"
+  ],
+  "attributes": {
+    "requested_url": "https://www.icann.org/resources/pages/effect-2012-02-25-en",
+    "final_url": "https://www.icann.org/resources/pages/effect-2012-02-25-en",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "What's the effect of ICANN's role and work on the Internet? - ICANN",
+      "language": "en",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:32:11.499450+00:00"
+}

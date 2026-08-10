@@ -1,0 +1,24 @@
+{
+  "event_id": "5138e522-f28f-41ad-95f3-c5d4c1c5e979",
+  "event_type": "capture_and_extract",
+  "entity_id": "278f2ea4-1635-401a-8ca4-f77ca789a49b",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "b40b8f9f84c9c84e3628f0f01447e067a3886423ad12259160fcffe2f2ccbcb0"
+  ],
+  "attributes": {
+    "requested_url": "https://www.icann.org/news",
+    "final_url": "https://www.icann.org/en/announcements",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "ICANN Announcements",
+      "language": "en",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:28:53.356488+00:00"
+}

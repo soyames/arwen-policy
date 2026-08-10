@@ -1,0 +1,24 @@
+{
+  "event_id": "749286f4-fff8-4b82-9536-0621ef5a269a",
+  "event_type": "capture_and_extract",
+  "entity_id": "9562324a-9da5-4a80-ae1c-0996905a4c91",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "5c6338bf5c0df41a89917cb55c99a6aa7d6b6c86e3e5aa9fecb934af079c8048"
+  ],
+  "attributes": {
+    "requested_url": "https://www.intgovforum.org/en",
+    "final_url": "https://www.intgovforum.org/en",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Internet Governance Forum (IGF)",
+      "language": "en",
+      "summary": "The IGF is a global multistakeholder platform that facilitates the discussion of public policy issues pertaining to the Internet",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:35:38.301206+00:00"
+}

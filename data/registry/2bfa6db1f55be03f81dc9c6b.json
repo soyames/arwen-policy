@@ -1,0 +1,19 @@
+{
+  "source_id": "2bfa6db1f55be03f81dc9c6b",
+  "source_url": "https://www.internetsociety.org/internet-governance/",
+  "final_url": "https://www.internetsociety.org/our-work/internet-governance/",
+  "source_family": "civil_society",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "Internet Governance - Internet Society",
+  "publisher": "Internet Society",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:35:48.667395Z",
+  "published_at": null,
+  "artifact_sha256": "4d05c6e28b5fc72cea6fe401d1c498d5d7bc2173db7f0a55e6485d1e800ec956",
+  "byte_size": 310050,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "eece47486d0db9f96dacd12e",
+  "source_url": "https://www.iana.org/",
+  "final_url": "https://www.iana.org/",
+  "source_family": null,
+  "source_adapter": null,
+  "source_status": null,
+  "title": "Internet Assigned Numbers Authority",
+  "publisher": null,
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:31:20.493996Z",
+  "published_at": null,
+  "artifact_sha256": "3bafa1612b7778ce3ca2f983bacaf9db01a21bb8ae82bd2dc09920141b81fc04",
+  "byte_size": 6253,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

@@ -1,0 +1,24 @@
+{
+  "event_id": "52c59683-78cc-41b5-8f6b-8fb22212a129",
+  "event_type": "capture_and_extract",
+  "entity_id": "28390ebf-7e9a-4a6f-b474-9d5159d71554",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "e25a8deed6bc8d57148a01cce2f6d896ab6eae49284d29c5df04e6b4844f2510"
+  ],
+  "attributes": {
+    "requested_url": "https://arxiv.org/abs/2301.01234",
+    "final_url": "https://arxiv.org/abs/2301.01234",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": "Wed, 04 Jan 2023 01:13:45 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "[2301.01234] AmbieGen: A Search-based Framework for Autonomous Systems Testing",
+      "language": "en",
+      "summary": "Abstract page for arXiv paper 2301.01234: AmbieGen: A Search-based Framework for Autonomous Systems Testing",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:33:29.079539+00:00"
+}

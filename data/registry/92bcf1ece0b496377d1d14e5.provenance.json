@@ -1,0 +1,24 @@
+{
+  "event_id": "e6266dd9-6c82-401b-ba95-7374742c0078",
+  "event_type": "capture_and_extract",
+  "entity_id": "3fcdbcfe-4087-41e5-a4cb-bfb8190f5b63",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "79e8a56d5fa41ddac221a7c2923cb329eca7a9e1760a9aa018645de9a0fc6e3e"
+  ],
+  "attributes": {
+    "requested_url": "https://www.un.org/en/desa",
+    "final_url": "https://www.un.org/en/desa",
+    "capture_status": 200,
+    "etag": "\"1786345309-1\"",
+    "last_modified": "Mon, 10 Aug 2026 07:01:49 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "DESA-EN | United Nations",
+      "language": "en",
+      "summary": "meta description",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T07:02:37.034528+00:00"
+}

@@ -163,7 +163,15 @@ class GenericSourceAdapter:
         saw_success = False
         last_error: str | None = None
 
+        import time as _time
+        _last_domain: str | None = None
         for candidate_url in _candidate_urls(self.source):
+            # Rate-limit: delay 1s between requests to the same domain.
+            from urllib.parse import urlparse as _urlparse
+            _domain = (_urlparse(candidate_url).hostname or "")[:30]
+            if _domain == _last_domain:
+                _time.sleep(1.0)
+            _last_domain = _domain
             try:
                 artifact = capture_url(candidate_url, **settings)
             except PermissionError as exc:

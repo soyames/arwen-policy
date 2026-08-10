@@ -1,0 +1,650 @@
+[
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "a7e52f32edb4ec4f2eea509f",
+    "url": "https://www.itu.int/en/",
+    "normalized_url": "https://www.itu.int/en/"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "20134473c9fac086ddb131c4",
+    "url": "https://www.itu.int/ar/Pages/default.aspx",
+    "normalized_url": "https://www.itu.int/ar/Pages/default.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "a827863875797c9d19ca1837",
+    "url": "https://www.itu.int/zh/Pages/default.aspx",
+    "normalized_url": "https://www.itu.int/zh/Pages/default.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "55c62beb6cee7b5583e4bec0",
+    "url": "https://www.itu.int/es/Pages/default.aspx",
+    "normalized_url": "https://www.itu.int/es/Pages/default.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "349d85f24d929462d35aa2ee",
+    "url": "https://www.itu.int/fr/Pages/default.aspx",
+    "normalized_url": "https://www.itu.int/fr/Pages/default.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "b6db332cf8d79dbaababb042",
+    "url": "https://www.itu.int/ru/Pages/default.aspx",
+    "normalized_url": "https://www.itu.int/ru/Pages/default.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "8211e98d08872035d7c76e21",
+    "url": "https://wtpf.itu.int/2026/",
+    "normalized_url": "https://wtpf.itu.int/2026/"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "1c30b9459c81bfca623f72dd",
+    "url": "https://www.itu.int/search",
+    "normalized_url": "https://www.itu.int/search"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "71d57fdd95e8c45f170b57e0",
+    "url": "https://www.itu.int/en/Pages/default.aspx",
+    "normalized_url": "https://www.itu.int/en/Pages/default.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "0b351d4cc0c31de01863e011",
+    "url": "https://www.itu.int/en/about",
+    "normalized_url": "https://www.itu.int/en/about"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "badb506b8eb2263aba7bd7fa",
+    "url": "https://www.itu.int/en/mediacentre/Pages/default.aspx",
+    "normalized_url": "https://www.itu.int/en/mediacentre/Pages/default.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "efad016bd4beeaf5bea29174",
+    "url": "https://www.itu.int/en/events",
+    "normalized_url": "https://www.itu.int/en/events"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "a82088b9eccd258898fc6574",
+    "url": "https://www.itu.int/hub/pubs/",
+    "normalized_url": "https://www.itu.int/hub/pubs/"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "0e25af1ba5755d49f2786549",
+    "url": "https://www.itu.int/en/ITU-D/Statistics",
+    "normalized_url": "https://www.itu.int/en/ITU-D/Statistics"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "6ff3a907e6c3163b2f64cec8",
+    "url": "https://www.itu.int/en/action",
+    "normalized_url": "https://www.itu.int/en/action"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "41f45f60bc758ea5365b36be",
+    "url": "https://www.itu.int/en/ITU-D/Pages/Regional-Presence.aspx",
+    "normalized_url": "https://www.itu.int/en/ITU-D/Pages/Regional-Presence.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "e214705ffbcf07b14f6428c2",
+    "url": "https://www.itu.int/en/careers",
+    "normalized_url": "https://www.itu.int/en/careers"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "a9b98a83dff540e8b24ebecc",
+    "url": "https://www.itu.int/en/general-secretariat/Pages/default.aspx",
+    "normalized_url": "https://www.itu.int/en/general-secretariat/Pages/default.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "a15f2938fa7e52675fddc789",
+    "url": "https://www.itu.int/en/ITU-R",
+    "normalized_url": "https://www.itu.int/en/ITU-R"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "3371813b949828ab96ae9621",
+    "url": "https://www.itu.int/en/ITU-T/Pages/default.aspx",
+    "normalized_url": "https://www.itu.int/en/ITU-T/Pages/default.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "bfc59a8550172d52e5e890a7",
+    "url": "https://www.itu.int/en/ITU-D",
+    "normalized_url": "https://www.itu.int/en/ITU-D"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "e470d6d06f07342f8ec2f2d6",
+    "url": "https://www.itu.int/hub/news/",
+    "normalized_url": "https://www.itu.int/hub/news/"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "20d2b13b8b8fbbaaf46d9873",
+    "url": "https://www.itu.int/hub/membership/",
+    "normalized_url": "https://www.itu.int/hub/membership/"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.072091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "c51494042997f948dedd053f",
+    "url": "https://www.itu.int/hub/membership/become-a-member/",
+    "normalized_url": "https://www.itu.int/hub/membership/become-a-member/"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "e4cc8d55f0a9ead7c5df07c1",
+    "url": "https://www.itu.int/Pages/VariationRoot.aspx",
+    "normalized_url": "https://www.itu.int/Pages/VariationRoot.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "eac979023765c138057ffc03",
+    "url": "https://www.itu.int/initiatives/digital-unga2026/awards/about-awards/",
+    "normalized_url": "https://www.itu.int/initiatives/digital-unga2026/awards/about-awards/"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "9f9330e68b96f334472267f8",
+    "url": "https://www.itu.int/hub/2026/07/beyond-vvc-call-for-proposals-on-future-video-coding/",
+    "normalized_url": "https://www.itu.int/hub/2026/07/beyond-vvc-call-for-proposals-on-future-video-coding/"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "5adcfb85a1a6b9e1d53ef0be",
+    "url": "https://www.itu.int/hub/2026/07/public-digital-learning-itu-reinforces-un-gateways-initiative/",
+    "normalized_url": "https://www.itu.int/hub/2026/07/public-digital-learning-itu-reinforces-un-gateways-initiative/"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "5d39785a77132540015d5cd3",
+    "url": "https://www.itu.int/en/mediacentre/Pages/PR-2026-07-08-P2C-milestone.aspx",
+    "normalized_url": "https://www.itu.int/en/mediacentre/Pages/PR-2026-07-08-P2C-milestone.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "8565f5da2a30a4cdd381d2bf",
+    "url": "https://www.itu.int/hub/news/disclaimer",
+    "normalized_url": "https://www.itu.int/hub/news/disclaimer"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "9e4c34d7ca40997e33a45c31",
+    "url": "https://www.itu.int/hub/news/itu-translate",
+    "normalized_url": "https://www.itu.int/hub/news/itu-translate"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "9ae73bb1b1ca056ff0f6c0b8",
+    "url": "https://www.youtube.com/playlist?list=PLpoIPNlF8P2PKwsEp_gHAi5j2rNYBsjHM",
+    "normalized_url": "https://www.youtube.com/playlist?list=PLpoIPNlF8P2PKwsEp_gHAi5j2rNYBsjHM"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "c2d8dbf85aa46c055ad8c6f5",
+    "url": "https://www.youtube.com/watch?v=huc3PEnn2K4",
+    "normalized_url": "https://www.youtube.com/watch?v=huc3PEnn2K4"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "ed6f6386f7f4a4173d61ab25",
+    "url": "https://www.itu.int/en/mediacentre/Pages/PR-2026-07-10-Geneva-Digital-Week-closing.aspx",
+    "normalized_url": "https://www.itu.int/en/mediacentre/Pages/PR-2026-07-10-Geneva-Digital-Week-closing.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "01581f70b5bc687290500887",
+    "url": "https://www.itu.int/itu-d/reports/statistics/facts-figures-2025/",
+    "normalized_url": "https://www.itu.int/itu-d/reports/statistics/facts-figures-2025/"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "111afcb7cbc8e4b08412bacb",
+    "url": "https://www.itu.int/rr120/",
+    "normalized_url": "https://www.itu.int/rr120/"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "34cb62069c56ef1d4ad66400",
+    "url": "https://www.itu.int/hub/publication/S-REP-WTISD-2026/",
+    "normalized_url": "https://www.itu.int/hub/publication/S-REP-WTISD-2026/"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "e31280483bd5f5dd7038ab8a",
+    "url": "https://www.itu.int/itu-d/meetings/wtis26/",
+    "normalized_url": "https://www.itu.int/itu-d/meetings/wtis26/"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "240b53d31aee50a0fb92c74c",
+    "url": "https://pp.itu.int/2026/en//",
+    "normalized_url": "https://pp.itu.int/2026/en//"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "6d4f7fc46499af9f14b63ced",
+    "url": "https://pp.itu.int/2026/en/",
+    "normalized_url": "https://pp.itu.int/2026/en/"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "22762de4edf5974feb6d419c",
+    "url": "https://www.itu.int/en/about/Pages/default.aspx",
+    "normalized_url": "https://www.itu.int/en/about/Pages/default.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "a59c5c1fccf939feacf440e5",
+    "url": "https://academy.itu.int/",
+    "normalized_url": "https://academy.itu.int/"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "ec9d31fbdae48b509c3adec3",
+    "url": "https://www.itu.int/en/council/planning/Pages/default.aspx",
+    "normalized_url": "https://www.itu.int/en/council/planning/Pages/default.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "09a2248ba3847abf49cb203e",
+    "url": "https://www.itu.int/highlights-report-activities/connect2030-agenda",
+    "normalized_url": "https://www.itu.int/highlights-report-activities/connect2030-agenda"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "d9c722a6b2b387edd1ebd58a",
+    "url": "https://www.itu.int/dms_pub/itu-s/md/26/cl/c/S26-CL-C-0035%21%21PDF-E.pdf",
+    "normalized_url": "https://www.itu.int/dms_pub/itu-s/md/26/cl/c/S26-CL-C-0035%21%21PDF-E.pdf"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "f26239078b5bd30cfe801078",
+    "url": "https://www.itu.int/wtisd",
+    "normalized_url": "https://www.itu.int/wtisd"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "4a7615387bd49282f4c2abd4",
+    "url": "https://www.itu.int/160-anniversary",
+    "normalized_url": "https://www.itu.int/160-anniversary"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "25c60e8a9bf2dbeeaa6453e0",
+    "url": "https://www.itu.int/en/action/gender-equality/Pages/default.aspx",
+    "normalized_url": "https://www.itu.int/en/action/gender-equality/Pages/default.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "6cc011d96cd9f197acbbf692",
+    "url": "https://www.itu.int/en/history/Pages/home.aspx",
+    "normalized_url": "https://www.itu.int/en/history/Pages/home.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "93eb9efef2fce3feede75f72",
+    "url": "https://www.itu.int/hqbuilding",
+    "normalized_url": "https://www.itu.int/hqbuilding"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "6358918dadcc9f88ca3ab87d",
+    "url": "https://www.itu.int/en/procurement/Pages/default.aspx",
+    "normalized_url": "https://www.itu.int/en/procurement/Pages/default.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "fb4b6fd7338ca2537cb3cdd3",
+    "url": "https://www.itu.int/en/ethics/pages/default.aspx",
+    "normalized_url": "https://www.itu.int/en/ethics/pages/default.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "5f97613d8ee4610b79c3f478",
+    "url": "https://www.itu.int/en/oversight-unit/Pages/default.aspx",
+    "normalized_url": "https://www.itu.int/en/oversight-unit/Pages/default.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "df4bc88d43c5d12484b7aded",
+    "url": "https://www.itu.int/en/general-secretariat/Pages/itu-translate-disclaimer.aspx",
+    "normalized_url": "https://www.itu.int/en/general-secretariat/Pages/itu-translate-disclaimer.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "512ce39e2d50e2a906cc04cd",
+    "url": "https://council.itu.int/2026/en/",
+    "normalized_url": "https://council.itu.int/2026/en/"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "6c62936e250766a537548eb3",
+    "url": "https://www.itu.int/pub/S-CONF-PLEN",
+    "normalized_url": "https://www.itu.int/pub/S-CONF-PLEN"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "cc44d043c56fe63cde6a80a9",
+    "url": "https://www.itu.int/en/access-policy/Pages/default.aspx",
+    "normalized_url": "https://www.itu.int/en/access-policy/Pages/default.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "28680924bc2ab0f3fba48863",
+    "url": "https://www.itu.int/en/council/Pages/rto.aspx",
+    "normalized_url": "https://www.itu.int/en/council/Pages/rto.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "1fd77d36cbd3efaddca23b5b",
+    "url": "https://www.itu.int/en/events/Pages/conferences.aspx",
+    "normalized_url": "https://www.itu.int/en/events/Pages/conferences.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "7143b00f7757179d817a0782",
+    "url": "https://www.itu.int/en/Documents/ITU-WSIS-global-digital-compact-objectives.pdf",
+    "normalized_url": "https://www.itu.int/en/Documents/ITU-WSIS-global-digital-compact-objectives.pdf"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "ca8d7500f9750623015f84fc",
+    "url": "https://www.itu.int/initiatives/digital-unga2026/",
+    "normalized_url": "https://www.itu.int/initiatives/digital-unga2026/"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "b8adb8a30957685805bd5b9e",
+    "url": "https://www.itu.int/ssf/",
+    "normalized_url": "https://www.itu.int/ssf/"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "0635d3893375ae6dc546f447",
+    "url": "https://www.itu.int/en/events/Pages/Calendar-Events.aspx",
+    "normalized_url": "https://www.itu.int/en/events/Pages/Calendar-Events.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "a31800def631c8ae4a829436",
+    "url": "https://www.itu.int/en/Pages/social-media.aspx",
+    "normalized_url": "https://www.itu.int/en/Pages/social-media.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.073091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "8a1b17be218ae96941460f39",
+    "url": "https://www.itu.int/twitter",
+    "normalized_url": "https://www.itu.int/twitter"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.074091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "f0df0171baf20a6c01ebc4cf",
+    "url": "https://www.itu.int/facebook",
+    "normalized_url": "https://www.itu.int/facebook"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.074091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "128ebdd0d0dc141817d90de7",
+    "url": "https://www.itu.int/youtube",
+    "normalized_url": "https://www.itu.int/youtube"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.074091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "54a178e22d9f89610a70fdb7",
+    "url": "https://www.itu.int/flickr",
+    "normalized_url": "https://www.itu.int/flickr"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.074091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "a80c8103df5996a5a59b3509",
+    "url": "https://www.itu.int/linkedin",
+    "normalized_url": "https://www.itu.int/linkedin"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.074091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "dae40511ca194a477b12b626",
+    "url": "https://www.itu.int/instagram",
+    "normalized_url": "https://www.itu.int/instagram"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.074091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "6a886ac19c6d363a9a599744",
+    "url": "https://www.itu.int/soundcloud",
+    "normalized_url": "https://www.itu.int/soundcloud"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.074091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "0ad7806b01af9a521feb3659",
+    "url": "https://www.itu.int/applepodcasts",
+    "normalized_url": "https://www.itu.int/applepodcasts"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.074091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "10358ede32531fc59e5556be",
+    "url": "https://www.itu.int/spotify",
+    "normalized_url": "https://www.itu.int/spotify"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.074091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "849f6073788a2d33faabf95a",
+    "url": "https://www.itu.int/spreaker",
+    "normalized_url": "https://www.itu.int/spreaker"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.074091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "ee037ec0bc1ebdc5c9f77a7e",
+    "url": "https://www.itu.int/tiktok",
+    "normalized_url": "https://www.itu.int/tiktok"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.074091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "a24f4c1f44dbd2e99da5416e",
+    "url": "https://www.itu.int/en/osg/Pages/default.aspx",
+    "normalized_url": "https://www.itu.int/en/osg/Pages/default.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.074091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "524f70ab7eabbab740559fe9",
+    "url": "https://www.itu.int/home/contact/index.html",
+    "normalized_url": "https://www.itu.int/home/contact/index.html"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.074091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "dcbab75e4d48f629475134d2",
+    "url": "https://www.itu.int/en/about/Pages/terms-of-use.aspx",
+    "normalized_url": "https://www.itu.int/en/about/Pages/terms-of-use.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.074091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "cad3a791298ed22a4ef230a6",
+    "url": "https://www.itu.int/en/about/Pages/privacy-notice.aspx",
+    "normalized_url": "https://www.itu.int/en/about/Pages/privacy-notice.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.074091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "5fd6b700ad9c9e74592716c2",
+    "url": "https://www.itu.int/en/Pages/accessibility.aspx",
+    "normalized_url": "https://www.itu.int/en/Pages/accessibility.aspx"
+  },
+  {
+    "discovery_source": "https://www.itu.int/en/Pages/default.aspx",
+    "discovered_at": "2026-08-10T06:28:06.074091+00:00",
+    "parent_url": "https://www.itu.int/en/Pages/default.aspx",
+    "source_id": "07a674f819d9d733b397f1bb",
+    "url": "https://www.itu.int/en/oversight-unit/Pages/report-misconduct.aspx",
+    "normalized_url": "https://www.itu.int/en/oversight-unit/Pages/report-misconduct.aspx"
+  }
+]

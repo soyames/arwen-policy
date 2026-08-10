@@ -1,0 +1,24 @@
+{
+  "event_id": "437af003-094f-4ce8-b0a7-fbfd7ed5b764",
+  "event_type": "capture_and_extract",
+  "entity_id": "6fc6e04e-e35e-49d4-a5a6-aa2e3b8870e7",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "4c30dea30fcc3d860d5b1763873befad6917f7cf53248d4b6fefca853ce6fdbb"
+  ],
+  "attributes": {
+    "requested_url": "https://newgtldprogram.icann.org/",
+    "final_url": "https://newgtldprogram.icann.org/en",
+    "capture_status": 200,
+    "etag": "\"1786341899-br\"",
+    "last_modified": "Mon, 10 Aug 2026 06:04:59 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "The New gTLD Program | New gTLD Program",
+      "language": "en",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:31:32.835255+00:00"
+}

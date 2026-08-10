@@ -1,0 +1,24 @@
+{
+  "event_id": "94deabcd-deba-485a-814e-406874109ccc",
+  "event_type": "capture_and_extract",
+  "entity_id": "4ec597e1-1f5f-47ed-9298-1a20c9aa45a3",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "938ac9ba20ac7211d9aba4584c16b825263bd522620f9f7aa652f518ed695f60"
+  ],
+  "attributes": {
+    "requested_url": "https://www.icann.org/en/careers",
+    "final_url": "https://www.icann.org/en/careers",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Careers at ICANN",
+      "language": "en",
+      "summary": "careers",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:30:31.893561+00:00"
+}

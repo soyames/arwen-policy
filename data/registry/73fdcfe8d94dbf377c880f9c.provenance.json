@@ -1,0 +1,24 @@
+{
+  "event_id": "1c624ec8-baf9-4af0-9e10-dadf858bab6e",
+  "event_type": "capture_and_extract",
+  "entity_id": "af9bb7f5-f465-4741-a30a-6130b80210b4",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "5cc925d4da853c86d05ddb257a8615d8b3bc47bf059fed5a95103daa62151998"
+  ],
+  "attributes": {
+    "requested_url": "https://www.apnic.net/about-apnic/",
+    "final_url": "https://www.apnic.net/about-apnic/",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": "Mon, 10 Aug 2026 06:29:15 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "About APNIC – APNIC",
+      "language": "en-AU",
+      "summary": "A global, open, stable, and secure Internet that serves the entire Asia Pacific community",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:31:27.207942+00:00"
+}

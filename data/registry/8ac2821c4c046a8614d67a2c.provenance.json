@@ -1,0 +1,24 @@
+{
+  "event_id": "8494d2f7-41fa-49a0-bb83-5c92329b2a2a",
+  "event_type": "capture_and_extract",
+  "entity_id": "4bc0d238-4808-4da4-827c-5b0ac292961d",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "eceff890c34ff5ed73776d2a958b4a47497b98f86d7c099dc5a44726160b3832"
+  ],
+  "attributes": {
+    "requested_url": "https://www.icann.org/en/beginners/courses-and-learning",
+    "final_url": "https://www.icann.org/en/beginners/courses-and-learning",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Courses and Learning",
+      "language": "en",
+      "summary": "View courses learn about how the Internet works and how it’s governed, how to write policy, and what to expect at ICANN’s Public Meetings.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:32:01.363976+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "event_id": "64648dc7-3dc9-4ff2-b019-cfa3926a7f01",
+  "event_type": "capture_and_extract",
+  "entity_id": "efffc388-64db-49ca-908f-f944e070f1bc",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "e65250ec4ad5ab03d2b34de7541bc924126ed23e5e6bc59ff9836bbe26941ef2"
+  ],
+  "attributes": {
+    "requested_url": "https://www.itu.int/en/ITU-T/studygroups/Pages/default.aspx",
+    "final_url": "https://www.itu.int/en/ITU-T/studygroups/2025-2028/Pages/default.aspx",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "ITU-T Study Groups (Study Period 2025 - 2028)",
+      "language": "en-US",
+      "summary": "ITU-T Study Groups (Study Period 2025 - 2028)",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:37:01.086286+00:00"
+}

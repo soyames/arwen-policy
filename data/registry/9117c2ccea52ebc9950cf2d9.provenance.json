@@ -1,0 +1,24 @@
+{
+  "event_id": "7c96ad22-8dc6-4964-bbee-8efa0e48076d",
+  "event_type": "capture_and_extract",
+  "entity_id": "9d1b27f5-9fc7-497a-83d0-62b623bbf96a",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "5f7bff9f89fe8d8c1378e4013fef4c0ce61e4620c0831bb6b732d197eb62a72e"
+  ],
+  "attributes": {
+    "requested_url": "https://www.icann.org/grant-program-en",
+    "final_url": "https://www.icann.org/en/grant-program",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "ICANN Grant Program - ICANN",
+      "language": "en",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:31:29.005270+00:00"
+}

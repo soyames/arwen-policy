@@ -1,0 +1,19 @@
+{
+  "source_id": "a43f893ae59e551ccbce8c4c",
+  "source_url": "https://www.itu.int/net/wsis/",
+  "final_url": "https://www.itu.int/net/wsis/",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "World Summit on the Information Society",
+  "publisher": "World Summit on the Information Society",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:44:10.768794Z",
+  "published_at": null,
+  "artifact_sha256": "52f1ed0f7491e4ce1689ff0aa2d04ef4c049ad8d1ed8bdba9901dfa97cd3db8a",
+  "byte_size": 55915,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

@@ -1,0 +1,24 @@
+{
+  "event_id": "497d3137-3cdd-4e11-8f6b-0f634e061dc3",
+  "event_type": "capture_and_extract",
+  "entity_id": "81826eac-eb02-4864-bce0-c3bf639b5e15",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "f1f76dfbd066c64b31bd0373d905149ac7171c44a0dcffdc561276f081aaf0ee"
+  ],
+  "attributes": {
+    "requested_url": "https://intgovforum.org/en/content/igf-brochures-select-publication",
+    "final_url": "https://intgovforum.org/en/content/igf-brochures-select-publication",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "IGF Brochures and Select Publications | Internet Governance Forum",
+      "language": "en",
+      "summary": "This section contains the Proceedings for each of the annual IGF meetings held since 2006. Each of the Proceedings reflects the meeting programme, content and format, and serves as the primary document of record for that meeting. Below are the Proceedings, presented by year, venue and main theme of the meeting.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:47:27.069639+00:00"
+}

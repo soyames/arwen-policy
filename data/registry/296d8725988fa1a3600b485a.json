@@ -1,0 +1,19 @@
+{
+  "source_id": "296d8725988fa1a3600b485a",
+  "source_url": "https://aso.icann.org/",
+  "final_url": "https://aso.icann.org/",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "The Address Supporting Organization (ASO ICANN) | The Address Supporting Organization",
+  "publisher": "ICANN",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:30:48.503597Z",
+  "published_at": null,
+  "artifact_sha256": "ac300fad4bf9e6faf78a33fc597827fd4bff6ef1fb5fcb58e170895c9fb64f63",
+  "byte_size": 54792,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

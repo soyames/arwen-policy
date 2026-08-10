@@ -1,0 +1,24 @@
+{
+  "event_id": "b242c8bd-7638-404e-a927-4d01049768dc",
+  "event_type": "capture_and_extract",
+  "entity_id": "ff376d99-ca50-408e-aa5a-76d216ac5456",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "e7328ada6b5b054eb36f025590facc4428a6059cf0a88d135b365269fa6c5259"
+  ],
+  "attributes": {
+    "requested_url": "https://digital-strategy.ec.europa.eu/en/policies/cybersecurity",
+    "final_url": "https://digital-strategy.ec.europa.eu/en/policies/cybersecurity",
+    "capture_status": 200,
+    "etag": "\"1786341957-gzip\"",
+    "last_modified": "Mon, 10 Aug 2026 06:05:57 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Cybersecurity | Shaping Europe’s digital future",
+      "language": "en",
+      "summary": "The EU has outlined a cybersecurity strategy to boost Europe’s ability to fight and recover from cyberattacks.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:33:24.662457+00:00"
+}

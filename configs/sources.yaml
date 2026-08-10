@@ -1,107 +1,269 @@
 sources:
-  - id: icann
-    name: ICANN
-    family: internet_governance
-    domains:
-      - icann.org
-      - www.icann.org
-    enabled: true
-    discovery:
-      seed_urls:
-        - https://www.icann.org/
-        - https://www.icann.org/resources
-      sitemap_urls:
-        - https://www.icann.org/sitemap.xml
-
-  - id: igf
-    name: Internet Governance Forum
-    family: internet_governance
-    domains:
-      - intgovforum.org
-      - www.intgovforum.org
-    enabled: true
-    discovery:
-      seed_urls:
-        - https://www.intgovforum.org/
-        - https://www.intgovforum.org/en
-
-  - id: ietf
-    name: Internet Engineering Task Force
-    family: technical_community
-    domains:
-      - ietf.org
-      - www.ietf.org
-      - datatracker.ietf.org
-    enabled: true
-    discovery:
-      seed_urls:
-        - https://www.ietf.org/
-        - https://datatracker.ietf.org/
-      feed_urls:
-        - https://www.ietf.org/blog/rss/
-
-  - id: itu
-    name: International Telecommunication Union
-    family: intergovernmental
-    domains:
-      - itu.int
-      - www.itu.int
-    enabled: true
-    discovery:
-      seed_urls:
-        - https://www.itu.int/
-
-  - id: un
-    name: United Nations
-    family: intergovernmental
-    domains:
-      - un.org
-      - www.un.org
-    enabled: true
-    discovery:
-      seed_urls:
-        - https://www.un.org/
-
-  - id: un_desa
-    name: United Nations Department of Economic and Social Affairs
-    family: intergovernmental
-    domains:
-      - un.org
-      - desa.un.org
-    enabled: true
-    discovery:
-      seed_urls:
-        - https://www.un.org/desa
-
-  - id: unesco
-    name: UNESCO
-    family: intergovernmental
-    domains:
-      - unesco.org
-      - www.unesco.org
-    enabled: true
-    discovery:
-      seed_urls:
-        - https://www.unesco.org/
-
-  - id: oecd
-    name: OECD
-    family: intergovernmental
-    domains:
-      - oecd.org
-      - www.oecd.org
-    enabled: true
-    discovery:
-      seed_urls:
-        - https://www.oecd.org/
-
-  - id: isoc
-    name: Internet Society
-    family: civil_society
-    domains:
-      - internetsociety.org
-      - www.internetsociety.org
-    enabled: true
-    discovery:
-      seed_urls:
-        - https://www.internetsociety.org/
+- id: icann
+  name: ICANN
+  family: internet_governance
+  domains:
+  - icann.org
+  - www.icann.org
+  enabled: true
+  discovery:
+    seed_urls:
+    - https://www.icann.org/
+    - https://www.icann.org/resources
+    sitemap_urls:
+    - https://www.icann.org/sitemap.xml
+- id: igf
+  name: Internet Governance Forum
+  family: internet_governance
+  domains:
+  - intgovforum.org
+  - www.intgovforum.org
+  enabled: true
+  discovery:
+    seed_urls:
+    - https://www.intgovforum.org/en
+    - https://www.intgovforum.org/en/content/igf-annual-meeting-proceedings
+    - https://www.intgovforum.org/en/content/intersessional-work
+    - https://www.intgovforum.org/en/content/best-practice-forums
+    - https://www.intgovforum.org/en/content/dynamic-coalitions
+    - https://www.intgovforum.org/en/content/policy-networks
+    - https://www.intgovforum.org/en/content/publications-and-reports
+    - https://www.intgovforum.org/en/content/capacity-development
+    - https://www.intgovforum.org/en/content/national-and-regional-igfs
+    - https://www.intgovforum.org/en/content/igf-2025-lillestrom
+    - https://www.intgovforum.org/en/content/igf-2024-riyadh
+    - https://www.intgovforum.org/en/content/igf-2023-kyoto
+    - https://www.intgovforum.org/en/content/igf-2022-addis-ababa
+    - https://www.intgovforum.org/en/content/igf-2021-katowice
+    - https://www.intgovforum.org/en/content/igf-2020-virtual
+    - https://www.intgovforum.org/en/content/igf-2019-berlin
+    - https://www.intgovforum.org/en/content/igf-2018-paris
+    - https://www.intgovforum.org/en/content/igf-2017-geneva
+    - https://www.intgovforum.org/en/content/igf-2016-jalisco
+    - https://www.intgovforum.org/en/content/igf-2015-joao-pessoa
+    - https://www.intgovforum.org/en/content/igf-2014-istanbul
+    - https://www.intgovforum.org/en/content/igf-2013-bali
+    - https://www.intgovforum.org/en/content/igf-2012-baku
+    - https://www.intgovforum.org/en/content/igf-2011-nairobi
+    - https://www.intgovforum.org/en/content/igf-2010-vilnius
+    - https://www.intgovforum.org/en/content/igf-2009-sharm-el-sheikh
+    - https://www.intgovforum.org/en/content/igf-2008-hyderabad
+    - https://www.intgovforum.org/en/content/igf-2007-rio-de-janeiro
+    - https://www.intgovforum.org/en/content/igf-2006-athens
+    - https://www.intgovforum.org/en/content/igf-news
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-accessibility-and-disability-1
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-blockchain-assurance-and-standardization-dc-bas
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-community-connectivity-0
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-core-internet-values-2
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-data-and-artificial-intelligence-governance-dc-daig
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-data-driven-health-technologies-dc-ddht
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-digital-financial-inclusion-dc-dfi
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-digital-health
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-emerging-technologies-dc-emerging-tech
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-environment-dce
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-gaming-for-purpose-dc-g4p
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-internet-rights-and-principles-1
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-internet-standards-security-and-safety-dc-isss
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-network-neutrality-1
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-open-educational-resources-dc-oer
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-platform-responsibility
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-schools-of-internet-governance
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-small-island-developing-states-in-the-internet-economy-dc-sids
+    - https://www.intgovforum.org/en/content/dynamic-coalition-on-the-sustainability-of-journalism-and-news-media-dc-sustainability
+    - https://www.intgovforum.org/en/content/dc-on-internet-universality-indicators-dc-iui
+    - https://www.intgovforum.org/en/content/inactive-dynamic-coalitions-2
+    - https://www.intgovforum.org/en/content/igf-policy-network-on-ai-0
+    - https://www.intgovforum.org/en/content/pn-cybersecurity
+    - https://www.intgovforum.org/en/content/igf-policy-network-on-open-digital-infrastructure
+    - https://www.intgovforum.org/en/content/igf-policy-network-on-digital-inclusion
+    - https://www.intgovforum.org/en/content/igf-policy-network-on-internet-fragmentation
+    - https://www.intgovforum.org/en/content/policy-network-on-environment-and-digitalisation-pne
+    - https://www.intgovforum.org/en/content/igf-policy-network-on-meaningful-access
+    - https://www.intgovforum.org/en/content/policy-network-on-internet-fragmentation
+    - https://www.intgovforum.org/en/pnai
+    - https://www.intgovforum.org/en/search/igf-sessions
+    - https://www.intgovforum.org/en/search/transcripts
+    - https://www.intgovforum.org/en/search/news
+    - https://www.intgovforum.org/en/search/initiatives
+    - https://www.intgovforum.org/en/content/african-regional-group
+    - https://www.intgovforum.org/en/content/asia-pacific-regional-group
+    - https://www.intgovforum.org/en/content/eastern-european-regional-group
+    - https://www.intgovforum.org/en/content/latin-american-and-caribbean-regional-group-grulac
+    - https://www.intgovforum.org/en/content/western-european-and-others-regional-group-weog
+    - https://www.intgovforum.org/en/content/best-practice-forums-bpfs
+- id: wsis
+  name: World Summit on the Information Society
+  family: internet_governance
+  domains:
+  - itu.int
+  - www.itu.int
+  enabled: true
+  discovery:
+    seed_urls:
+    - https://www.itu.int/net/wsis/
+    - https://www.itu.int/net/wsis/basic/about.html
+    - https://www.itu.int/net/wsis/outcome/booklet.html
+    - https://www.itu.int/net/wsis/implementation/index.html
+    - https://www.itu.int/net/wsis/review/index.html
+    - https://www.itu.int/net/wsis/forum2019/
+    - https://www.itu.int/net/wsis/forum2020/
+    - https://www.itu.int/net/wsis/forum2021/
+    - https://www.itu.int/net/wsis/forum2022/
+    - https://www.itu.int/net/wsis/forum2023/
+    - https://www.itu.int/net/wsis/forum2024/
+    - https://www.itu.int/net/wsis/forum2025/
+    - https://www.itu.int/net/wsis/stocktaking/
+    - https://www.itu.int/net/wsis/geneva/
+    - https://www.itu.int/net/wsis/tunis/
+- id: ietf
+  name: Internet Engineering Task Force
+  family: technical_community
+  domains:
+  - ietf.org
+  - www.ietf.org
+  - datatracker.ietf.org
+  enabled: true
+  discovery:
+    seed_urls:
+    - https://www.ietf.org/
+    - https://datatracker.ietf.org/
+    feed_urls:
+    - https://www.ietf.org/blog/rss/
+- id: itu
+  name: International Telecommunication Union
+  family: intergovernmental
+  domains:
+  - itu.int
+  - www.itu.int
+  enabled: true
+  discovery:
+    seed_urls:
+    - https://www.itu.int/
+- id: un
+  name: United Nations
+  family: intergovernmental
+  domains:
+  - un.org
+  - www.un.org
+  enabled: true
+  discovery:
+    seed_urls:
+    - https://www.un.org/
+- id: un_desa
+  name: United Nations Department of Economic and Social Affairs
+  family: intergovernmental
+  domains:
+  - un.org
+  - desa.un.org
+  enabled: true
+  discovery:
+    seed_urls:
+    - https://www.un.org/desa
+- id: unesco
+  name: UNESCO
+  family: intergovernmental
+  domains:
+  - unesco.org
+  - www.unesco.org
+  enabled: true
+  discovery:
+    seed_urls:
+    - https://www.unesco.org/
+- id: oecd
+  name: OECD
+  family: intergovernmental
+  domains:
+  - oecd.org
+  - www.oecd.org
+  enabled: true
+  discovery:
+    seed_urls:
+    - https://www.oecd.org/
+- id: isoc
+  name: Internet Society
+  family: civil_society
+  domains:
+  - internetsociety.org
+  - www.internetsociety.org
+  enabled: true
+  discovery:
+    seed_urls:
+    - https://www.internetsociety.org/
+    - https://www.internetsociety.org/issues/
+    - https://www.internetsociety.org/resources/
+    - https://www.internetsociety.org/policy-briefs/
+- id: arin
+  name: ARIN
+  family: technical_community
+  domains:
+  - arin.net
+  - www.arin.net
+  enabled: true
+  discovery:
+    seed_urls:
+    - https://www.arin.net/
+    - https://www.arin.net/about/
+    - https://www.arin.net/policy/
+- id: ripe
+  name: RIPE NCC
+  family: technical_community
+  domains:
+  - ripe.net
+  - www.ripe.net
+  enabled: true
+  discovery:
+    seed_urls:
+    - https://www.ripe.net/
+    - https://www.ripe.net/publications/
+- id: apnic
+  name: APNIC
+  family: technical_community
+  domains:
+  - apnic.net
+  - www.apnic.net
+  enabled: true
+  discovery:
+    seed_urls:
+    - https://www.apnic.net/
+    - https://www.apnic.net/about-apnic/
+- id: lacnic
+  name: LACNIC
+  family: technical_community
+  domains:
+  - lacnic.net
+  - www.lacnic.net
+  enabled: true
+  discovery:
+    seed_urls:
+    - https://www.lacnic.net/
+- id: afrinic
+  name: AFRINIC
+  family: technical_community
+  domains:
+  - afrinic.net
+  - www.afrinic.net
+  enabled: true
+  discovery:
+    seed_urls:
+    - https://www.afrinic.net/
+- id: eu_commission
+  name: European Commission Digital
+  family: government
+  domains:
+  - digital-strategy.ec.europa.eu
+  - commission.europa.eu
+  enabled: true
+  discovery:
+    seed_urls:
+    - https://digital-strategy.ec.europa.eu/en
+    - https://digital-strategy.ec.europa.eu/en/policies
+- id: academic_arxiv
+  name: arXiv CS-CY
+  family: academia
+  domains:
+  - arxiv.org
+  enabled: true
+  discovery:
+    seed_urls:
+    - https://arxiv.org/list/cs.CY/recent
+    - https://arxiv.org/list/cs.CR/recent

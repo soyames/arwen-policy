@@ -1,0 +1,19 @@
+{
+  "source_id": "93b2b1c29686449f4bf41f15",
+  "source_url": "https://www.ripe.net/participate/",
+  "final_url": "https://www.ripe.net/membership/",
+  "source_family": "technical_community",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "Membership — RIPE Network Coordination Centre",
+  "publisher": "RIPE NCC",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:33:58.796093Z",
+  "published_at": null,
+  "artifact_sha256": "f3eaf7374f67342d77e30768b319c065685601d6c7cc2306b5093531f967fe90",
+  "byte_size": 124405,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

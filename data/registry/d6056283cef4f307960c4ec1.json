@@ -1,0 +1,19 @@
+{
+  "source_id": "d6056283cef4f307960c4ec1",
+  "source_url": "https://www.ietf.org/about/introduction/",
+  "final_url": "https://www.ietf.org/about/introduction/",
+  "source_family": "technical_community",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "IETF  | Introduction",
+  "publisher": "Internet Engineering Task Force",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:35:02.682389Z",
+  "published_at": null,
+  "artifact_sha256": "5a3392a4be8b620ffb3b98e26161d0255768b78d20003448de2230380c3d4c1f",
+  "byte_size": 85959,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

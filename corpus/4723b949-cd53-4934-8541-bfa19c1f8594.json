@@ -1,0 +1,37 @@
+{
+  "document_id": "4723b949-cd53-4934-8541-bfa19c1f8594",
+  "source_id": "62d62de3f53003a56bf376bc",
+  "source_url": "https://www.lacnic.net/",
+  "final_url": "https://www.lacnic.net/",
+  "artifact_sha256": "02382ac7915e39a10ff399909a23efe0546da2de96a30e6731beaa31957fefee",
+  "byte_size": 55029,
+  "content_type": "text/html",
+  "metadata": {
+    "title": "LACNIC - Registro de Direcciones IP en LAC",
+    "language": "es",
+    "summary": "Registro de Direcciones de Internet de América Latina y Caribe; administra recursos de numeración de Internet (IPv4 IPv6) números autónomos, resolución inversa",
+    "published_at": null
+  },
+  "extraction_method": "html_bs4",
+  "extraction_warnings": [],
+  "text": "LACNIC - Registro de Direcciones IP en LAC\nMi\nLACNIC\nportuguês\nenglish\nespañol\nAcerca de\nConoce todo acerca de LACNIC\nAcerca de LACNIC\nAnuncios\nEstatuto\nPresupuesto\nTransparencia\nCódigo de Conducta de la comunidad de LACNIC\nCódigo de Ética de LACNIC\nCasa de Internet\nIntegrantes de LACNIC\nDirectorio\nComisión Electoral\nComisión Fiscal\nComité de Ética\nStaff\nIP & ASN\nSolicita IP&ASN\nSolicitar IP & ASN\nLista de espera para recibir direcciones IPv4\nDespliega IPv6\nTransferencias de direcciones IP\nRevocación de IP & ASN\nDevolución de IP & ASN\nGestión de recursos legados\nEstadísticas de Asignación de LACNIC\nAdministra IP&ASN\nMiLACNIC (Ingresar a mi cuenta)\nWhois\nResolución reversa del DNS\nCertificación de recursos (RPKI)\nInternet Routing Registry (IRR)\nGeolocalización de IP\nAutomatización e integración de la gestión IP\nAcceso a Bulk Whois\nLACNIC Tools\nSistema Automatizado para la Administración de Recursos de Internet (SARA)\nMembresía\nMembresía y facturación\nMembresía\nCategorías y Cuotas de Asociados\nFormas de pago\nElecciones\nAsamblea\nTabla de votos\nCapacitaciones\nCampus LACNIC\nPróximas capacitaciones\nCAMPUS\nCursos\nDocentes\nIngresar al campus\nEspecializaciones\nFortalece tus habilidades técnicas\nWebinars\nPodcast\nTutoriales y guías\nNovedades\nParticipar\nEventos de LACNIC\nEventos\n¿Qué es un evento de LACNIC?\nHospedar un evento\nNovedades\n¿Cómo patrocinar?\nEspacios abiertos a la comunidad\nDesarrollo de Políticas\nElecciones\nForo Técnico de LACNIC\nPremio Trayectoria\nListas de Discusión\nConsulta pública sobre el Documento de Gobernanza de los RIR (ICP-2)\nOportunidades\nDescubre nuestras oportunidades de apoyo\nCalendario de iniciativas\nEmbajadores I+D\nFRIDA\nPrograma de becas\nGobernanza de Internet\nInvestigación aplicada\n+RAICES\nIniciativas anteriores\nMentoreo de IT Women\nLíderes\nI+D\nMediciones e informes técnicos\nMediciones de Internet\nIP/ASN para investigación\nHerramientas de medición\nInformes técnicos de Interconexión\nInformes técnicos de IPv6\nInformes técnicos de ciberseguridad\nFactores técnicos del éxito de Internet\nCiberseguridad\nCiberseguridad\nLACNIC CSIRT\nInformación para LEAs\nInformes técnicos de ciberseguridad\nCSIRT Estadísticas\nNovedades\nBlog\nMi\nLACNIC\nConvocatoria a organizaciones titulares de recursos IPv4 legados\nIngresar aquí\nSolicitar recursos\nDespliega IPv6\nConsultar Whois\nLACNIC Tools\nInformes I+D\nEventos\nComunidad\nDesarrollo de Políticas\nIngresar aquí\nOrganización\nAcerca de LACNIC\nCasa de Internet\nReporte Anual\nEmpleo\nContactar\nSugerencias\nListas de Discusión\nContacto\nFAQ\nThe Number Resource Organization\nNRO News\nComité de Revisión\nASO, NRO\nCiberseguridad\nLACNIC CSIRT\nInformación para LEAs\nReportar Incidente\nCSIRT Estadísticas\nPolítica de privacidad\nTransparencia\nArchivo\nGreat Place To Work\nCHK_LACNIC",
+  "segments": [
+    {
+      "segment_id": "74453fdb-1448-4aa4-ad1c-ef54da402abc",
+      "document_id": "4723b949-cd53-4934-8541-bfa19c1f8594",
+      "ordinal": 0,
+      "text": "LACNIC - Registro de Direcciones IP en LAC\nMi\nLACNIC\nportuguês\nenglish\nespañol\nAcerca de\nConoce todo acerca de LACNIC\nAcerca de LACNIC\nAnuncios\nEstatuto\nPresupuesto\nTransparencia\nCódigo de Conducta de la comunidad de LACNIC\nCódigo de Ética de LACNIC\nCasa de Internet\nIntegrantes de LACNIC\nDirectorio\nComisión Electoral\nComisión Fiscal\nComité de Ética\nStaff\nIP & ASN\nSolicita IP&ASN\nSolicitar IP & ASN\nLista de espera para recibir direcciones IPv4\nDespliega IPv6\nTransferencias de direcciones IP\nRevocación de IP & ASN\nDevolución de IP & ASN\nGestión de recursos legados\nEstadísticas de Asignación de LACNIC\nAdministra IP&ASN\nMiLACNIC (Ingresar a mi cuenta)\nWhois\nResolución reversa del DNS\nCertificación de recursos (RPKI)\nInternet Routing Registry (IRR)\nGeolocalización de IP\nAutomatización e integración de la gestión IP\nAcceso a Bulk Whois\nLACNIC Tools\nSistema Automatizado para la Administración de Recursos de Internet (SARA)\nMembresía\nMembresía y facturación\nMembresía\nCategorías y Cuotas de Asociados\nFormas de pago\nElecciones\nAsamblea\nTabla de votos\nCapacitaciones\nCampus LACNIC\nPróximas capacitaciones\nCAMPUS\nCursos\nDocentes\nIngresar al campus\nEspecializaciones\nFortalece tus habilidades técnicas\nWebinars\nPodcast\nTutoriales y guías\nNovedades\nParticipar\nEventos de LACNIC\nEventos\n¿Qué es un evento de LACNIC?\nHospedar un evento\nNovedades\n¿Cómo patrocinar?\nEspacios abiertos a la comunidad\nDesarrollo de Políticas\nElecciones\nForo Técnico de LACNIC\nPremio Trayectoria\nListas de Discusión\nConsulta pública sobre el Documento de Gobernanza de los RIR (ICP-2)\nOportunidades\nDescubre nuestras oportunidades de apoyo\nCalendario de iniciativas\nEmbajadores I+D\nFRIDA\nPrograma de becas\nGobernanza de Internet\nInvestigación aplicada\n+RAICES\nIniciativas anteriores\nMentoreo de IT Women\nLíderes\nI+D\nMediciones e informes técnicos\nMediciones de Internet\nIP/ASN para investigación\nHerramientas de medición\nInformes técnicos de Interconexión\nInformes técnicos de IPv6\nInformes técnicos de ciberseguridad\nFactores técnicos del éxito de Internet\nCiberseguridad\nCiberseguridad\nLACNIC CSIRT\nInformación para LEAs\nInformes técnicos de ciberseguridad\nCSIRT Estadísticas\nNovedades\nBlog\nMi\nLACNIC\nConvocatoria a organizaciones titulares de recursos IPv4 legados\nIngresar aquí\nSolicitar recursos\nDespliega IPv6\nConsultar Whois\nLACNIC Tools\nInformes I+D\nEventos\nComunidad\nDesarrollo de Políticas\nIngresar aquí\nOrganización\nAcerca de LACNIC\nCasa de Internet\nReporte Anual\nEmpleo\nContactar\nSugerencias\nListas de Discusión\nContacto\nFAQ\nThe Number Resource Organization\nNRO News\nComité de Revisión\nASO, NRO\nCiberseguridad\nLACNIC CSIRT\nInformación para LEAs\nReportar Incidente\nCSIRT Estadísticas\nPolítica de privacidad\nTransparencia\nArchivo\nGreat Place To Work\nCHK_LACNIC",
+      "char_start": 0,
+      "char_end": 2748,
+      "page_start": null,
+      "page_end": null,
+      "timestamp_start": null,
+      "timestamp_end": null,
+      "language": "und",
+      "attributes": {
+        "reading_time_minutes": 2,
+        "word_count": 380
+      }
+    }
+  ]
+}

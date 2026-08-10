@@ -1,0 +1,24 @@
+{
+  "event_id": "59d1429d-2f45-4b95-b09b-8f8bf311a041",
+  "event_type": "capture_and_extract",
+  "entity_id": "04e00423-321d-489e-a5b7-775137dfa002",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "050a2999d0ddb6cd15e71b12c89a849cc705a7e319a0d462aca1f2120ffe745d"
+  ],
+  "attributes": {
+    "requested_url": "https://www.icann.org/news/blog",
+    "final_url": "https://www.icann.org/en/blogs",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "ICANN Blogs",
+      "language": "en",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:28:59.652434+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "45255d7d3a03279506328dcc",
+  "source_url": "https://datatracker.ietf.org/doc/rfc3935/",
+  "final_url": "https://datatracker.ietf.org/doc/rfc3935/",
+  "source_family": "technical_community",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "RFC 3935 - A Mission Statement for the IETF",
+  "publisher": "Internet Engineering Task Force",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T07:03:49.305571Z",
+  "published_at": null,
+  "artifact_sha256": "9a7a2d17d07ab537f01a176679bad71f26e85e12e29f2f37d6684e1d1ea53b56",
+  "byte_size": 48562,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

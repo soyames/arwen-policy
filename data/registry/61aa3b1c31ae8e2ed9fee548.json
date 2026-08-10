@@ -1,0 +1,19 @@
+{
+  "source_id": "61aa3b1c31ae8e2ed9fee548",
+  "source_url": "https://www.icann.org/en/government-engagement",
+  "final_url": "https://www.icann.org/en/government-engagement",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "Government and Intergovernmental Organization Engagement",
+  "publisher": "ICANN",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:30:28.038931Z",
+  "published_at": null,
+  "artifact_sha256": "60ee347bb6a355d262613430e6775cd7514fb4c8ca0a811010f3331101d69db6",
+  "byte_size": 334125,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

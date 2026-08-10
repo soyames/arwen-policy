@@ -1,0 +1,19 @@
+{
+  "source_id": "403fc9d7a37befaa632b332a",
+  "source_url": "https://arxiv.org/abs/2408.12345",
+  "final_url": "https://arxiv.org/abs/2408.12345",
+  "source_family": "academia",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "[2408.12345] Linearly Multiplexed Photon Number Resolving Single-photon Detectors Array",
+  "publisher": "arXiv CS-CY",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:32:10.494098Z",
+  "published_at": null,
+  "artifact_sha256": "4c28da52a9898f496a5ada1e0fb6abcec84124ec9381f054cee77c58f2478f4b",
+  "byte_size": 43540,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

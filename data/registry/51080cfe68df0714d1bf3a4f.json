@@ -1,0 +1,19 @@
+{
+  "source_id": "51080cfe68df0714d1bf3a4f",
+  "source_url": "https://www.icann.org/en/about/participate/fellowships",
+  "final_url": "https://www.icann.org/fellowshipprogram",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "ICANN Fellowship Program - ICANN",
+  "publisher": "ICANN",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:28:45.361561Z",
+  "published_at": null,
+  "artifact_sha256": "9563efd2fa4ce319fafe56014c6d1c6419b0b33cfc21efaf924948655e3b7a35",
+  "byte_size": 81518,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

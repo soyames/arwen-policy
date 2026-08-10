@@ -1,0 +1,19 @@
+{
+  "source_id": "4796f43b3d8ae8537a7aedce",
+  "source_url": "https://account.icann.org/authorize?redirect_uri=https://www.icann.org/oauth&client_id=0oa9o9k9rp8VUcyJL2p7&nonce=6f5398ba-8a62-4370-99a8-e00d981b692d&state=https://www.icann.org/",
+  "final_url": "https://icann-account.okta.com/sso/idps/0oa1onjgxe0rOvxPR2p7?stateTokenExternalId=eXRyMGFIcjBxRTduMHVNREt4a1FTMkZ6alZQU2tnNUp2aFUvL01pR0R5dTduNXVyb1lyWmQ5U01qR1BqK2NtWA",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "Icann-account - Signing in...",
+  "publisher": "ICANN",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:28:33.749858Z",
+  "published_at": null,
+  "artifact_sha256": "8dcfacf85092fa368f872f018c93d3ff25b7625c1e43d3e06f25d276d67857d0",
+  "byte_size": 26269,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

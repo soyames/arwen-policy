@@ -1,0 +1,37 @@
+{
+  "document_id": "ad825a35-1078-47ef-832f-467492b45284",
+  "source_id": "e0d6dc70addb3391ad4456fb",
+  "source_url": "https://account.icann.org/registeraccount?redirect_uri=https://www.icann.org/oauth&client_id=0oa9o9k9rp8VUcyJL2p7&nonce=6f5398ba-8a62-4370-99a8-e00d981b692d&state=https://www.icann.org/",
+  "final_url": "https://account.icann.org/registeraccount?redirect_uri=https://www.icann.org/oauth&client_id=0oa9o9k9rp8VUcyJL2p7&nonce=6f5398ba-8a62-4370-99a8-e00d981b692d&state=https://www.icann.org/",
+  "artifact_sha256": "8f9d364eec71fe5eab2f23f1d319c1f49afbcee38fee2c34f539f36fca85bb4a",
+  "byte_size": 13771,
+  "content_type": "text/html",
+  "metadata": {
+    "title": "Create an ICANN Account",
+    "language": "en",
+    "summary": "Create an ICANN Account",
+    "published_at": null
+  },
+  "extraction_method": "html_bs4",
+  "extraction_warnings": [],
+  "text": "Create an ICANN Account\nHELP\n|\nLOG IN\nICANN Account Setup\n(Step 1 of 2)\nCreate Account and Verify Identity\nSet Password and Complete profile\nCreate Account and Verify Identity\nA message will be sent to your email address to verify your identity\nPrimary Email Address*\nFirst / Given Name(s)*\nLast / Family Name(s)*\nBy submitting my personal data to create and manage an ICANN Account, I agree that my personal data will be processed in accordance with the ICANN\nPrivacy Policy\nand ICANN\nCookies Policy\n, and agree to abide by the electronic\nTerms of Service\n.\nClear\nBack to Log In\n© Internet Corporation for Assigned Names and Numbers.\nPrivacy Policy\nTerms of Service\nCookies Policy",
+  "segments": [
+    {
+      "segment_id": "5614bf60-33f6-4025-a226-db6a6a15bc29",
+      "document_id": "ad825a35-1078-47ef-832f-467492b45284",
+      "ordinal": 0,
+      "text": "Create an ICANN Account\nHELP\n|\nLOG IN\nICANN Account Setup\n(Step 1 of 2)\nCreate Account and Verify Identity\nSet Password and Complete profile\nCreate Account and Verify Identity\nA message will be sent to your email address to verify your identity\nPrimary Email Address*\nFirst / Given Name(s)*\nLast / Family Name(s)*\nBy submitting my personal data to create and manage an ICANN Account, I agree that my personal data will be processed in accordance with the ICANN\nPrivacy Policy\nand ICANN\nCookies Policy\n, and agree to abide by the electronic\nTerms of Service\n.\nClear\nBack to Log In\n© Internet Corporation for Assigned Names and Numbers.\nPrivacy Policy\nTerms of Service\nCookies Policy",
+      "char_start": 0,
+      "char_end": 681,
+      "page_start": null,
+      "page_end": null,
+      "timestamp_start": null,
+      "timestamp_end": null,
+      "language": "und",
+      "attributes": {
+        "reading_time_minutes": 1,
+        "word_count": 118
+      }
+    }
+  ]
+}

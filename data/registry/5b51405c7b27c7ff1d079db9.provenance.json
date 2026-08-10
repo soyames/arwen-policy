@@ -1,0 +1,24 @@
+{
+  "event_id": "6d98dd84-888c-4678-b3f0-d341f17ab363",
+  "event_type": "capture_and_extract",
+  "entity_id": "917c0476-5b2c-4e98-8ea0-e365c0a6e8e5",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "5596e34681d28d85cbcda0635774f79f6cb042e13acab86088d2d7a76666754a"
+  ],
+  "attributes": {
+    "requested_url": "https://www.icann.org/resources/pages/regional-reports",
+    "final_url": "https://www.icann.org/resources/pages/regional-reports-2027-2026-07-29-en",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "ICANN Regional Plans and Reports | 2027 - ICANN",
+      "language": "en",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:29:14.630691+00:00"
+}

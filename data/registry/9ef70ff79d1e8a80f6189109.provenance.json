@@ -1,0 +1,24 @@
+{
+  "event_id": "113b82f3-d6d8-4819-b098-75d0ffdf1f53",
+  "event_type": "capture_and_extract",
+  "entity_id": "c354bd34-5ed5-4e26-8639-be4b0063cdb2",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "7fd6a4c119a4167c4b3f6c95fd7aa27ed364c211a2bcf727f8d7155eaa3e8838"
+  ],
+  "attributes": {
+    "requested_url": "https://www.icann.org/resources/pages/participate-2014-03-17-en",
+    "final_url": "https://www.icann.org/resources/pages/participate-2014-03-17-en",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Learn How to Participate in Policy Development - ICANN",
+      "language": "en",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:29:30.966224+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "048310f8d97bcc14eb6eddb8",
+  "source_url": "https://intgovforum.org/en/content/igf-remote-hubs",
+  "final_url": "https://intgovforum.org/en/content/igf-remote-hubs",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "IGF Remote Hubs | Internet Governance Forum",
+  "publisher": "Internet Governance Forum",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:48:25.983727Z",
+  "published_at": null,
+  "artifact_sha256": "7c47076e9a91741fba28b55e11ac722a02619ee323f803cd2bbdc6d52dac5b2e",
+  "byte_size": 84789,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

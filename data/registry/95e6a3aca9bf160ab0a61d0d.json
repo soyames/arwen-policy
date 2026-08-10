@@ -1,0 +1,19 @@
+{
+  "source_id": "95e6a3aca9bf160ab0a61d0d",
+  "source_url": "https://www.icann.org/resources/pages/about-icann",
+  "final_url": "https://www.icann.org/resources/pages/about-icann",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "About ICANN - ICANN",
+  "publisher": "ICANN",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:28:42.256872Z",
+  "published_at": null,
+  "artifact_sha256": "ca032103be25c8922100366b14792800d199c62d549633c84f37f177603edfc5",
+  "byte_size": 77393,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

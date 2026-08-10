@@ -1,0 +1,19 @@
+{
+  "source_id": "0e9fac1aeb321f77499b7340",
+  "source_url": "https://www.icann.org/en/resources/compliance",
+  "final_url": "https://www.icann.org/compliance",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "Contractual Compliance - ICANN",
+  "publisher": "ICANN",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:30:19.063091Z",
+  "published_at": null,
+  "artifact_sha256": "d2162d80ba6b60a19a912830645359fcef6434a920cad668dab29a938c6bae1a",
+  "byte_size": 75880,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

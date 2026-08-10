@@ -1,0 +1,24 @@
+{
+  "event_id": "5e05801d-8e48-4f93-83c0-f060668f80ed",
+  "event_type": "capture_and_extract",
+  "entity_id": "4723b949-cd53-4934-8541-bfa19c1f8594",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "02382ac7915e39a10ff399909a23efe0546da2de96a30e6731beaa31957fefee"
+  ],
+  "attributes": {
+    "requested_url": "https://www.lacnic.net/",
+    "final_url": "https://www.lacnic.net/",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "LACNIC - Registro de Direcciones IP en LAC",
+      "language": "es",
+      "summary": "Registro de Direcciones de Internet de América Latina y Caribe; administra recursos de numeración de Internet (IPv4 IPv6) números autónomos, resolución inversa",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:31:46.076115+00:00"
+}

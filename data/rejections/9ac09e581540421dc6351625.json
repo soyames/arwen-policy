@@ -1,0 +1,18 @@
+{
+  "event_id": "38ebbe8f-cd20-4e4b-9de1-87b9935765b3",
+  "event_type": "CAPTURE_REJECTED",
+  "entity_id": "9ac09e581540421dc6351625",
+  "agent": "arwen-policy-etl",
+  "input_ids": [],
+  "attributes": {
+    "url": "https://www.itu.int/net/wsis/forum2025/",
+    "reason": "HTTP_404",
+    "action": "NO_CAPTURE",
+    "details": {
+      "message": "Client error '404 Not Found' for url 'https://www.itu.int/net/wsis/forum2025/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "final_url": "https://www.itu.int/net/wsis/forum2025/",
+      "status_code": 404
+    }
+  },
+  "timestamp": "2026-08-10T06:43:17.802118+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "831d1af606b537dd1caeb8f6",
+  "source_url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+  "final_url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+  "source_family": "intergovernmental",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "Ethics of Artificial Intelligence - AI | UNESCO",
+  "publisher": "UNESCO",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T07:02:52.232818Z",
+  "published_at": null,
+  "artifact_sha256": "dafa77914e1db77995927fbf55e760ed833592677a6af362543679cde9a98665",
+  "byte_size": 285408,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

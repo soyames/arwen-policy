@@ -1,0 +1,24 @@
+{
+  "event_id": "54ab7d64-476e-49c3-9d33-2f74ebcda57a",
+  "event_type": "capture_and_extract",
+  "entity_id": "b10ca2ee-9f57-41ab-b428-0c3b6cfa90e9",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "f96c4645aa35fdde6c8a80f76ffc9af5c2dbfb86648dd4f57e9b47792447dc3c"
+  ],
+  "attributes": {
+    "requested_url": "https://arxiv.org/abs/2306.12345",
+    "final_url": "https://arxiv.org/abs/2306.12345",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": "Thu, 28 Nov 2024 01:21:49 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "[2306.12345] The Effect of Noise on the Emergence of Continuous Norms and its Evolutionary Dynamics",
+      "language": "en",
+      "summary": "Abstract page for arXiv paper 2306.12345: The Effect of Noise on the Emergence of Continuous Norms and its Evolutionary Dynamics",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T07:04:05.296133+00:00"
+}

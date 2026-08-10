@@ -1,0 +1,24 @@
+{
+  "event_id": "229064cf-47c9-4060-8053-e7c4df3fa350",
+  "event_type": "capture_and_extract",
+  "entity_id": "e91b9739-66de-4f07-af5a-d6825a7e74b8",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "4dee002b90bfec21f5fe471be2230b7e1198677409637051a7312e834ed774d7"
+  ],
+  "attributes": {
+    "requested_url": "https://www.arin.net//contact/",
+    "final_url": "https://www.arin.net//contact/",
+    "capture_status": 200,
+    "etag": "W/\"6a785e47-89f4\"",
+    "last_modified": "Sun, 09 Aug 2026 11:02:31 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Contact Us - American Registry for Internet Numbers",
+      "language": "en-us",
+      "summary": "Contact information for ARIN via the website, phone, and email as well as mailing addresses, and holiday closing schedule.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:30:02.192418+00:00"
+}

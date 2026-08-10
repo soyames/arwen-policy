@@ -1,0 +1,19 @@
+{
+  "source_id": "9402f8f9ec59755dac89938f",
+  "source_url": "https://www.ietf.org/topics/",
+  "final_url": "https://www.ietf.org/technologies/",
+  "source_family": "technical_community",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "IETF  | Technologies",
+  "publisher": "Internet Engineering Task Force",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:34:22.444424Z",
+  "published_at": null,
+  "artifact_sha256": "1e09c77c831634077c6dc71b53ff71793a6db27325d7cc024e3fd24c43ce8378",
+  "byte_size": 81796,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

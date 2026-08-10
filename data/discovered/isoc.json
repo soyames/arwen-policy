@@ -1,0 +1,490 @@
+[
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.491965+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "b46178d44fde2f8f6bebca0a",
+    "url": "https://www.internetsociety.org/",
+    "normalized_url": "https://www.internetsociety.org/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.491965+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "9e093aacb0deae5481b8c428",
+    "url": "https://www.internetsociety.org/about-internet-society/",
+    "normalized_url": "https://www.internetsociety.org/about-internet-society/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.491965+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "cdaf1431d31460df2809dd8d",
+    "url": "https://www.internetsociety.org/mission/",
+    "normalized_url": "https://www.internetsociety.org/mission/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.491965+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "39582796331cbb79b86744d8",
+    "url": "https://www.internetsociety.org/board-of-trustees/",
+    "normalized_url": "https://www.internetsociety.org/board-of-trustees/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.491965+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "72387656d6d1bc8ca3deb1a9",
+    "url": "https://www.internetsociety.org/community/",
+    "normalized_url": "https://www.internetsociety.org/community/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.491965+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "a407316c503d185e47e28ff7",
+    "url": "https://www.internetsociety.org/about-internet-society/team/",
+    "normalized_url": "https://www.internetsociety.org/about-internet-society/team/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.491965+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "b39e9b6c1694611a3db7bf73",
+    "url": "https://www.internetsociety.org/transparency/",
+    "normalized_url": "https://www.internetsociety.org/transparency/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "4c7647ec944b117f1c1752ef",
+    "url": "https://www.internetsociety.org/action-plan/2026/",
+    "normalized_url": "https://www.internetsociety.org/action-plan/2026/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "02df523f4147c374df4923f8",
+    "url": "https://www.internetsociety.org/our-work/",
+    "normalized_url": "https://www.internetsociety.org/our-work/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "ce39a6de2642b5a6457954fb",
+    "url": "https://www.internetsociety.org/our-work/connectivity/",
+    "normalized_url": "https://www.internetsociety.org/our-work/connectivity/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "de7965afca27ec03738eb18e",
+    "url": "https://www.internetsociety.org/our-work/how-the-internet-works/",
+    "normalized_url": "https://www.internetsociety.org/our-work/how-the-internet-works/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "8e0005c62b66fbb5278a2f13",
+    "url": "https://www.internetsociety.org/our-work/internet-governance/",
+    "normalized_url": "https://www.internetsociety.org/our-work/internet-governance/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "f5bf0f4b98b99304b4b90b00",
+    "url": "https://www.internetsociety.org/our-work/internet-policy/",
+    "normalized_url": "https://www.internetsociety.org/our-work/internet-policy/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "caf06761295f5cd07c2298c9",
+    "url": "https://www.internetsociety.org/our-work/privacy/",
+    "normalized_url": "https://www.internetsociety.org/our-work/privacy/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "ec5306b66bdd74e6da149a67",
+    "url": "https://www.internetsociety.org/our-work/security/",
+    "normalized_url": "https://www.internetsociety.org/our-work/security/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "d6c6ff241c232388de0c1968",
+    "url": "https://www.internetsociety.org/news-and-updates/",
+    "normalized_url": "https://www.internetsociety.org/news-and-updates/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "41253bf711a40b9f615f67f9",
+    "url": "https://www.internetsociety.org/blog/",
+    "normalized_url": "https://www.internetsociety.org/blog/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "4677055ee9649bcc170615e8",
+    "url": "https://www.internetsociety.org/newsroom/",
+    "normalized_url": "https://www.internetsociety.org/newsroom/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "2525764ee1d8492c67e34d98",
+    "url": "https://www.internetsociety.org/our-impact/",
+    "normalized_url": "https://www.internetsociety.org/our-impact/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "17f7768a3447bc458304fd3a",
+    "url": "https://www.internetsociety.org/resources/",
+    "normalized_url": "https://www.internetsociety.org/resources/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "7a876c7bf97717e03ff9832e",
+    "url": "https://www.internetsociety.org/get-involved/",
+    "normalized_url": "https://www.internetsociety.org/get-involved/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "d6ae2a6c3897725f8dd4040d",
+    "url": "https://www.internetsociety.org/become-a-member/",
+    "normalized_url": "https://www.internetsociety.org/become-a-member/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "862193123fb6ba795b4a6884",
+    "url": "https://www.internetsociety.org/about-internet-society/organization-members/",
+    "normalized_url": "https://www.internetsociety.org/about-internet-society/organization-members/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "bfa653a2ef0b66e77c9f22fb",
+    "url": "https://www.internetsociety.org/fellowships/",
+    "normalized_url": "https://www.internetsociety.org/fellowships/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "042f64bc772e78d28309886c",
+    "url": "https://www.internetsociety.org/learning/",
+    "normalized_url": "https://www.internetsociety.org/learning/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "4805ad38fef7e7279442eedb",
+    "url": "https://www.internetsociety.org/events/upcoming/",
+    "normalized_url": "https://www.internetsociety.org/events/upcoming/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "7bb99a44823971abe5066a5c",
+    "url": "https://community.internetsociety.org/s/home-community",
+    "normalized_url": "https://community.internetsociety.org/s/home-community"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "069fd9fb8f2079e7338a2dde",
+    "url": "https://www.internetsociety.org/fr/",
+    "normalized_url": "https://www.internetsociety.org/fr/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "9326aa4a25534a98a2846b6a",
+    "url": "https://www.internetsociety.org/es/",
+    "normalized_url": "https://www.internetsociety.org/es/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "bbac07b9327bcccbded82c60",
+    "url": "https://www.internetsociety.org/globalgw/",
+    "normalized_url": "https://www.internetsociety.org/globalgw/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "5855a8580edfa4add20dc209",
+    "url": "https://www.internetsociety.org/donate/",
+    "normalized_url": "https://www.internetsociety.org/donate/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "b13cfeef9918ffb649942157",
+    "url": "https://www.internetsociety.org/resources/doc/2026/2025-annual-report/",
+    "normalized_url": "https://www.internetsociety.org/resources/doc/2026/2025-annual-report/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "0f160e5e5c2a4abe233f0e4c",
+    "url": "https://www.internetsociety.org/blog/2026/06/community-centered-connectivity-initiatives-earn-viddy-awards-recognition/",
+    "normalized_url": "https://www.internetsociety.org/blog/2026/06/community-centered-connectivity-initiatives-earn-viddy-awards-recognition/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "35b8e1cb6248498acb025f3a",
+    "url": "https://www.internetsociety.org/blog/2026/05/from-email-to-case-study-what-we-learned-about-connecting-refugee-communities-in-just-one-year/",
+    "normalized_url": "https://www.internetsociety.org/blog/2026/05/from-email-to-case-study-what-we-learned-about-connecting-refugee-communities-in-just-one-year/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.492863+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "c7adf969c87fdc49d31715ba",
+    "url": "https://www.internetsociety.org/blog/2026/04/anatomy-of-a-scam/",
+    "normalized_url": "https://www.internetsociety.org/blog/2026/04/anatomy-of-a-scam/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "afb9dc65a7a41d9bf5a00b96",
+    "url": "https://www.internetsociety.org/terms-of-use/",
+    "normalized_url": "https://www.internetsociety.org/terms-of-use/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "34733d4af75488117f605e05",
+    "url": "https://www.internetsociety.org/privacy-policy/",
+    "normalized_url": "https://www.internetsociety.org/privacy-policy/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "6988da6ab967e96203740828",
+    "url": "https://community.internetsociety.org/s/",
+    "normalized_url": "https://community.internetsociety.org/s/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "e079fe5351ad735d9b5d5107",
+    "url": "https://www.internetsociety.org/chapters/",
+    "normalized_url": "https://www.internetsociety.org/chapters/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "82b6d3c17dc74ca7a83a97e4",
+    "url": "https://www.internetsociety.org/sigs/",
+    "normalized_url": "https://www.internetsociety.org/sigs/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "37e11e06facbd4a832f05673",
+    "url": "https://www.internetsociety.org/about-the-ietf/",
+    "normalized_url": "https://www.internetsociety.org/about-the-ietf/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "5e5103d2be353f54aecb1f35",
+    "url": "https://www.internetsociety.org/pir/",
+    "normalized_url": "https://www.internetsociety.org/pir/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "0b089aac97fea09c75b1acbf",
+    "url": "https://www.internetsociety.org/foundation/",
+    "normalized_url": "https://www.internetsociety.org/foundation/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "547538d4d4949016f7772e1b",
+    "url": "https://pulse.internetsociety.org/",
+    "normalized_url": "https://pulse.internetsociety.org/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "108d45ee329bceab6154abec",
+    "url": "https://www.internethalloffame.org/",
+    "normalized_url": "https://www.internethalloffame.org/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "19f70f30d7360b4185b12341",
+    "url": "https://www.ndss-symposium.org/",
+    "normalized_url": "https://www.ndss-symposium.org/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "bc2d2153739d8ca91ec8895a",
+    "url": "https://www.internetsociety.org/internet/",
+    "normalized_url": "https://www.internetsociety.org/internet/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "fddf62bfb7b81af1c33441e4",
+    "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/",
+    "normalized_url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "0643d0dff4e3b5e5de866285",
+    "url": "https://www.internetsociety.org",
+    "normalized_url": "https://www.internetsociety.org"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "d7bb92c94277fe373a348595",
+    "url": "https://twitter.com/internetsociety",
+    "normalized_url": "https://twitter.com/internetsociety"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "b9446126b5668b2948765f64",
+    "url": "https://www.linkedin.com/company/internet-society/",
+    "normalized_url": "https://www.linkedin.com/company/internet-society/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "68f5d99def80c6c47ccb655a",
+    "url": "https://www.facebook.com/InternetSociety",
+    "normalized_url": "https://www.facebook.com/InternetSociety"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "6201db5ce3d79c3876583386",
+    "url": "https://www.instagram.com/internetsociety/",
+    "normalized_url": "https://www.instagram.com/internetsociety/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "97e7cd59d8390cd1f873cda4",
+    "url": "https://www.youtube.com/user/InternetSocietyVideo",
+    "normalized_url": "https://www.youtube.com/user/InternetSocietyVideo"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "e0e0033cb79ea300080669e7",
+    "url": "https://www.internetsociety.org/feed/",
+    "normalized_url": "https://www.internetsociety.org/feed/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "932e2168f10efc916d5f2f08",
+    "url": "https://www.internetsociety.org/legal/",
+    "normalized_url": "https://www.internetsociety.org/legal/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "4c5181437b29795023154f8e",
+    "url": "https://www.internetsociety.org/about-internet-society/organization-reports/",
+    "normalized_url": "https://www.internetsociety.org/about-internet-society/organization-reports/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "22d2a70671d76054d709629d",
+    "url": "https://www.internetsociety.org/contact-us/",
+    "normalized_url": "https://www.internetsociety.org/contact-us/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "ae717ebbbc18dfef7462e463",
+    "url": "https://www.internetsociety.org/careers/",
+    "normalized_url": "https://www.internetsociety.org/careers/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "269dc56d8e3ec66c284bfd93",
+    "url": "https://www.internetsociety.org/follow-us/",
+    "normalized_url": "https://www.internetsociety.org/follow-us/"
+  },
+  {
+    "discovery_source": "https://www.internetsociety.org/",
+    "discovered_at": "2026-08-10T06:28:14.493868+00:00",
+    "parent_url": "https://www.internetsociety.org/",
+    "source_id": "f483f59a15da7df7baf65411",
+    "url": "https://www.internetsociety.org/affiliated-sites/",
+    "normalized_url": "https://www.internetsociety.org/affiliated-sites/"
+  }
+]

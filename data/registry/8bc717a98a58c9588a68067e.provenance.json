@@ -1,0 +1,24 @@
+{
+  "event_id": "81fdab9b-d95f-486e-9159-823b1cc6f331",
+  "event_type": "capture_and_extract",
+  "entity_id": "d2509c4a-9b37-42b9-808d-2100ddc08410",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "60c02926c5b50160dc9cd1708217f38600ff688f719383d122a0bf79ae0154f7"
+  ],
+  "attributes": {
+    "requested_url": "https://www.icann.org/resources/pages/domain-name-registrants-2017-06-20-en",
+    "final_url": "https://www.icann.org/registrants",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Information for Domain Name Registrants - ICANN",
+      "language": "en",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:30:16.806134+00:00"
+}

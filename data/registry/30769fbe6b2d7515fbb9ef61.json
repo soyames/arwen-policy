@@ -1,0 +1,19 @@
+{
+  "source_id": "30769fbe6b2d7515fbb9ef61",
+  "source_url": "https://icann.org/en/board-activities-and-meetings",
+  "final_url": "https://www.icann.org/en/board-activities-and-meetings",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "2026 Board Activities and Meetings",
+  "publisher": "ICANN",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:30:07.467938Z",
+  "published_at": null,
+  "artifact_sha256": "849fb103e151f4ea440ba6a65643d765f4ac2458d47d10f15260e2fdabb2f81e",
+  "byte_size": 482799,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

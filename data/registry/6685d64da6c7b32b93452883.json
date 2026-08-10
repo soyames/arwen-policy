@@ -1,0 +1,19 @@
+{
+  "source_id": "6685d64da6c7b32b93452883",
+  "source_url": "https://www.icann.org/en/ssac",
+  "final_url": "https://www.icann.org/en/ssac",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "Security and Stability Advisory Committee (SSAC)",
+  "publisher": "ICANN",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:31:10.066493Z",
+  "published_at": null,
+  "artifact_sha256": "1b1eeb8410e7477d18b5cc883fd0be8d60e747e46bf4c5df806aa3e900901e13",
+  "byte_size": 328732,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

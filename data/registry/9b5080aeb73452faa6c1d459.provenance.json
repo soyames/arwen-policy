@@ -1,0 +1,24 @@
+{
+  "event_id": "aef996f8-5707-47dd-ae9b-eda991c26ca9",
+  "event_type": "capture_and_extract",
+  "entity_id": "790489d7-b951-4324-bf92-250125e093e1",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "05498f5819d1f67697bedc48e3ec39cd1e3118c2e740dc642e9f7423d86e372a"
+  ],
+  "attributes": {
+    "requested_url": "https://www.icann.org/dataprotectionprivacy",
+    "final_url": "https://www.icann.org/dataprotectionprivacy",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Data Protection and Privacy - ICANN",
+      "language": "en",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:31:17.332626+00:00"
+}

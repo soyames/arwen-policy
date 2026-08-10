@@ -1,0 +1,19 @@
+{
+  "source_id": "1fd21c93c9932e80292bc112",
+  "source_url": "https://arxiv.org/abs/2301.01234",
+  "final_url": "https://arxiv.org/abs/2301.01234",
+  "source_family": "academia",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "[2301.01234] AmbieGen: A Search-based Framework for Autonomous Systems Testing",
+  "publisher": "arXiv CS-CY",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:33:28.838199Z",
+  "published_at": null,
+  "artifact_sha256": "e25a8deed6bc8d57148a01cce2f6d896ab6eae49284d29c5df04e6b4844f2510",
+  "byte_size": 41172,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

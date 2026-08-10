@@ -1,0 +1,24 @@
+{
+  "event_id": "994b9742-da6e-49cd-a697-fbe3a2271c08",
+  "event_type": "capture_and_extract",
+  "entity_id": "222fa444-7d9d-4e60-aa1f-e703d44adbdc",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "f40a0937ef1f3c342a348a8043131d81f87180767473c481ea033a09bf32e77f"
+  ],
+  "attributes": {
+    "requested_url": "https://digital-strategy.ec.europa.eu/en/library",
+    "final_url": "https://digital-strategy.ec.europa.eu/en/library",
+    "capture_status": 200,
+    "etag": "\"1786341753-gzip\"",
+    "last_modified": "Mon, 10 Aug 2026 06:02:33 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Library | Shaping Europe’s digital future",
+      "language": "en",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:32:25.310340+00:00"
+}

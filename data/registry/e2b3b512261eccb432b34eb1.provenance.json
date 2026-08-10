@@ -1,0 +1,24 @@
+{
+  "event_id": "de54041b-202d-4089-ad30-26aeb7ebb478",
+  "event_type": "capture_and_extract",
+  "entity_id": "4c0ada2f-199b-4cfc-950b-893cfee17b1a",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "e4b52599a061086973fa6bd2f4e17db85bbf69509eda54a1653570261d88cbb6"
+  ],
+  "attributes": {
+    "requested_url": "https://www.ripe.net/publications/",
+    "final_url": "https://www.ripe.net/publications/",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Documents and Resources — RIPE Network Coordination Centre",
+      "language": "en",
+      "summary": "Find the documents that you need from the RIPE Document Store, the RIPE NCC's technical documentation and IPv6 resources.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:31:17.511597+00:00"
+}

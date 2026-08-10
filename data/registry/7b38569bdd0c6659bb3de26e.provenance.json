@@ -1,0 +1,24 @@
+{
+  "event_id": "0c76e0e6-f8b3-45b3-81a6-de4e4e7f8d68",
+  "event_type": "capture_and_extract",
+  "entity_id": "d207e9ce-551f-4f1e-b461-525c8ab7f401",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "662949b8c96c0d7c0ffd66907843da57dc4d91e1779c0b8a8b2515f058c757e0"
+  ],
+  "attributes": {
+    "requested_url": "https://info.icann.org/LP---Regional-Newsletter.html",
+    "final_url": "https://info.icann.org/LP---Regional-Newsletter.html",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": null,
+      "language": "en",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:29:08.076671+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "event_id": "9f4dda5e-e90f-4bc5-b3b8-f1c9478c99bb",
+  "event_type": "capture_and_extract",
+  "entity_id": "f4121e79-a821-4357-85a2-8a1ea5952284",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "ffd4d9cce0bbc3d2adcf17420447c025d761fbc757b8eeb2521b37bd8a41b241"
+  ],
+  "attributes": {
+    "requested_url": "https://www.icann.org/public-responsibility-support/nextgen",
+    "final_url": "https://www.icann.org/public-responsibility-support/nextgen",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "NextGen - ICANN",
+      "language": "en",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:28:48.117548+00:00"
+}

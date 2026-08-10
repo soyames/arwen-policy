@@ -1,0 +1,37 @@
+{
+  "document_id": "1ed0ccbe-9827-4087-a92f-47b1d8303e4b",
+  "source_id": "b46f130a84b18dce1afd4c88",
+  "source_url": "https://opendata.icann.org/",
+  "final_url": "https://opendata.icann.org/pages/home-page/",
+  "artifact_sha256": "32cbc9da389c9fb00d3326aeb5eed6f9623e834cd3f50736e2f40c6036b7cf1d",
+  "byte_size": 61613,
+  "content_type": "text/html",
+  "metadata": {
+    "title": "Home Page — ICANN Open Data",
+    "language": "en-US",
+    "summary": "ICANN's Open Data Portal",
+    "published_at": null
+  },
+  "extraction_method": "html_bs4",
+  "extraction_warnings": [],
+  "text": "Home Page — ICANN Open Data\nBack to ICANN Account\nSEARCH\nHome\nData\nCharts\nAPI\nAbout\nHelp\nBack to ICANN Account\nSearch\nSearch\nOther ICANN sites\nICANN.org\nAddress Supporting Organization (ASO)\nAt-Large\nICANN Community Wiki\nCountry Code Names Supporting Organization (ccNSO)\nGeneric Names Supporting Organization (GNSO)\nGovernmental Advisory Committee (GAC)\nRoot Server System Advisory Committee (RSSAC)\nSecurity and Stability Advisory Committee (SSAC)\nConnect with us\nCONTACT US\nCAREERS AT ICANN\n© 2021 Internet Corporation for Assigned Names and Numbers\nPrivacy Policy\nCookies Policy\nTerms of Service",
+  "segments": [
+    {
+      "segment_id": "cdbd638d-fd39-4936-99d2-5f27da076bd7",
+      "document_id": "1ed0ccbe-9827-4087-a92f-47b1d8303e4b",
+      "ordinal": 0,
+      "text": "Home Page — ICANN Open Data\nBack to ICANN Account\nSEARCH\nHome\nData\nCharts\nAPI\nAbout\nHelp\nBack to ICANN Account\nSearch\nSearch\nOther ICANN sites\nICANN.org\nAddress Supporting Organization (ASO)\nAt-Large\nICANN Community Wiki\nCountry Code Names Supporting Organization (ccNSO)\nGeneric Names Supporting Organization (GNSO)\nGovernmental Advisory Committee (GAC)\nRoot Server System Advisory Committee (RSSAC)\nSecurity and Stability Advisory Committee (SSAC)\nConnect with us\nCONTACT US\nCAREERS AT ICANN\n© 2021 Internet Corporation for Assigned Names and Numbers\nPrivacy Policy\nCookies Policy\nTerms of Service",
+      "char_start": 0,
+      "char_end": 599,
+      "page_start": null,
+      "page_end": null,
+      "timestamp_start": null,
+      "timestamp_end": null,
+      "language": "und",
+      "attributes": {
+        "reading_time_minutes": 1,
+        "word_count": 86
+      }
+    }
+  ]
+}

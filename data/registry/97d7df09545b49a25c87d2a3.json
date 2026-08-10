@@ -1,0 +1,19 @@
+{
+  "source_id": "97d7df09545b49a25c87d2a3",
+  "source_url": "https://www.itu.int/net/wsis/geneva/",
+  "final_url": "https://www.itu.int/net/wsis/geneva/",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "World Summit on the Information Society",
+  "publisher": "World Summit on the Information Society",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:44:22.091567Z",
+  "published_at": null,
+  "artifact_sha256": "757bf5dc09f76107a9fde374287fcc79981efad82a04f0c1bf3be28fa56e8263",
+  "byte_size": 14817,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

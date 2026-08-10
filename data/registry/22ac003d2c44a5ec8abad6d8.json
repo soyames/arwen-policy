@@ -1,0 +1,19 @@
+{
+  "source_id": "22ac003d2c44a5ec8abad6d8",
+  "source_url": "https://www.apnic.net/community/policy/",
+  "final_url": "https://www.apnic.net/community/policy/",
+  "source_family": "technical_community",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "Resource Policies – APNIC",
+  "publisher": "APNIC",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T07:04:45.923065Z",
+  "published_at": null,
+  "artifact_sha256": "326fb4c655e1b3fa6b96967318591da8fcc8d24a8ecd0cc3a6a532e0616a300c",
+  "byte_size": 79097,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

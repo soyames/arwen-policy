@@ -1,0 +1,24 @@
+{
+  "event_id": "6a4daa76-7a58-4758-b9bd-a7bf01e9a97e",
+  "event_type": "capture_and_extract",
+  "entity_id": "dfb3d010-ecc6-46a0-9a28-7be8ab99b65b",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "63498a754214adf821c69d3c2924fb60840dacd3eb6536b89c9a406148c0687b"
+  ],
+  "attributes": {
+    "requested_url": "https://www.intgovforum.org/en/content/policy-networks",
+    "final_url": "https://www.intgovforum.org/en/content/policy-networks",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Policy Networks | Internet Governance Forum",
+      "language": "en",
+      "summary": "The mandate ‎of the Internet Governance Forum (",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:43:58.482296+00:00"
+}

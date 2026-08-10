@@ -1,0 +1,24 @@
+{
+  "event_id": "bb4613ba-ed16-4053-82f7-b23b69cacdfb",
+  "event_type": "capture_and_extract",
+  "entity_id": "f0d315e3-816c-46f8-8b79-53edcf9829f0",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "5ac97191bb867df3dbb65244dcc01c3e01c47fe8a92ebb44bcd663d3ecc1b03b"
+  ],
+  "attributes": {
+    "requested_url": "https://www.internetsociety.org/about-internet-society/",
+    "final_url": "https://www.internetsociety.org/about-internet-society/",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "About the Internet Society - Internet Society",
+      "language": "en-US",
+      "summary": "A global community of members, special interest groups, and 120+ chapters working to close the digital divide and rebuild trust in the Internet.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:34:32.439408+00:00"
+}

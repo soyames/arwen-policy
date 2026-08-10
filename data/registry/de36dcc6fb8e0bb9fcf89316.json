@@ -1,0 +1,19 @@
+{
+  "source_id": "de36dcc6fb8e0bb9fcf89316",
+  "source_url": "https://www.icann.org/resources/pages/committee-2012-02-25-en",
+  "final_url": "https://www.icann.org/resources/pages/fellowship-selection-committee",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "ICANN Fellowship Selection Committee - ICANN",
+  "publisher": "ICANN",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:32:25.473758Z",
+  "published_at": null,
+  "artifact_sha256": "dd575c9cda8a802766329689ee145384aaae3a9072aec7e737cf66a51709dd34",
+  "byte_size": 83171,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

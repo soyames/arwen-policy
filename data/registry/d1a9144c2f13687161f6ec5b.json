@@ -1,0 +1,19 @@
+{
+  "source_id": "d1a9144c2f13687161f6ec5b",
+  "source_url": "https://www.rfc-editor.org/rfc/rfc9364",
+  "final_url": "https://www.rfc-editor.org/info/rfc9364/",
+  "source_family": null,
+  "source_adapter": null,
+  "source_status": null,
+  "title": "RFC 9364: DNS Security Extensions (DNSSEC) | RFC Editor",
+  "publisher": null,
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T07:03:12.842682Z",
+  "published_at": null,
+  "artifact_sha256": "4d81f67b83114a490403546fc4edc97683731e4d04db7661fac02ab72b608a3d",
+  "byte_size": 322771,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

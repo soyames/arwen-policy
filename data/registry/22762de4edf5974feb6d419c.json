@@ -1,0 +1,19 @@
+{
+  "source_id": "22762de4edf5974feb6d419c",
+  "source_url": "https://www.itu.int/en/about/Pages/default.aspx",
+  "final_url": "https://www.itu.int/en/about/Pages/default.aspx",
+  "source_family": "intergovernmental",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "About ITU",
+  "publisher": "International Telecommunication Union",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:35:26.497376Z",
+  "published_at": null,
+  "artifact_sha256": "91c7d06d676aa064d40643d5bebdf19071f29f5c2c3bbb8ecdc1debb5c9de879",
+  "byte_size": 98887,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

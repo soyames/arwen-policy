@@ -1,0 +1,24 @@
+{
+  "event_id": "6958a5f5-772c-40a0-8ac2-0a8c40ea624a",
+  "event_type": "capture_and_extract",
+  "entity_id": "23334896-a3bc-4303-9950-b7e52ccf276f",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "de788520c7a5df0bc02bf4bddc39469353540da1b2a9c2c16ac15192f927c291"
+  ],
+  "attributes": {
+    "requested_url": "https://www.icann.org/en/public-comment/closed-proceedings?page=1&sort-param=closed-date&sort-direction=desc",
+    "final_url": "https://www.icann.org/en/public-comment/closed-proceedings?page=1&sort-param=closed-date&sort-direction=desc",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Public Comment Closed Proceedings",
+      "language": "en",
+      "summary": "Access closed ICANN Public Comment Proceedings published after September 2021.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T07:03:08.683424+00:00"
+}

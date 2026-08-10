@@ -1,0 +1,24 @@
+{
+  "event_id": "614418ac-b9ff-4482-9bf3-337c68753440",
+  "event_type": "capture_and_extract",
+  "entity_id": "9ebaf8bb-cf61-40cc-9dac-03ddf6706904",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "d6d620e3b82d32f81085a2cb06d7644a3b2712a634ad766176a0616f306533f8"
+  ],
+  "attributes": {
+    "requested_url": "https://gnso.icann.org/",
+    "final_url": "https://gnso.icann.org/en",
+    "capture_status": 200,
+    "etag": "\"1786343458-br\"",
+    "last_modified": "Mon, 10 Aug 2026 06:30:58 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Home | Generic Names Supporting Organization",
+      "language": "en",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:30:57.429216+00:00"
+}

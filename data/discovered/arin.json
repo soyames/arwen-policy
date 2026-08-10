@@ -1,0 +1,1050 @@
+[
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "7ab0653adb62b5673c269254",
+    "url": "https://www.arin.net/",
+    "normalized_url": "https://www.arin.net/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "47192fe138cff0ffb6f7b36c",
+    "url": "https://www.arin.net//contact/",
+    "normalized_url": "https://www.arin.net//contact/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "ce18ed2c7b0f7172b6f13c97",
+    "url": "https://account.arin.net/public/login",
+    "normalized_url": "https://account.arin.net/public/login"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "ad131d92c859c899429835f6",
+    "url": "javascript:void(0)",
+    "normalized_url": "javascript:void(0)"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "30fef69b85ec1f92ae5294a8",
+    "url": "https://account.arin.net/public/secure/dashboard",
+    "normalized_url": "https://account.arin.net/public/secure/dashboard"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "af288cf7e56ee8822ef2a6c7",
+    "url": "https://account.arin.net/public/secure/profile",
+    "normalized_url": "https://account.arin.net/public/secure/profile"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "b9d54abe8bcaddfa24c7330e",
+    "url": "https://account.arin.net/public/logout",
+    "normalized_url": "https://account.arin.net/public/logout"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "0b7612c61f4ffb5344cf05bc",
+    "url": "https://www.arin.net/resources/registry/whois/tou/",
+    "normalized_url": "https://www.arin.net/resources/registry/whois/tou/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "74e33064a12a78db26e4e063",
+    "url": "https://www.arin.net/resources/",
+    "normalized_url": "https://www.arin.net/resources/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "0efc33fada6ee4a595c1d917",
+    "url": "https://www.arin.net/resources/guide/",
+    "normalized_url": "https://www.arin.net/resources/guide/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "a34b5cd6063ec7b934f97aa1",
+    "url": "https://www.arin.net/resources/guide/account/",
+    "normalized_url": "https://www.arin.net/resources/guide/account/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "d2285686df8e23c2879b5f30",
+    "url": "https://www.arin.net/resources/guide/request/",
+    "normalized_url": "https://www.arin.net/resources/guide/request/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "c50070261164a5287de5782f",
+    "url": "https://www.arin.net/resources/guide/ipv6/",
+    "normalized_url": "https://www.arin.net/resources/guide/ipv6/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "510c3a0cfbaf0acf52ac0299",
+    "url": "https://www.arin.net/resources/guide/ipv4/",
+    "normalized_url": "https://www.arin.net/resources/guide/ipv4/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "bc54cb613c760ffd6d65041f",
+    "url": "https://www.arin.net/resources/guide/asn/",
+    "normalized_url": "https://www.arin.net/resources/guide/asn/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "42d4173ae43952942cfd71a6",
+    "url": "https://www.arin.net/resources/guide/legacy/",
+    "normalized_url": "https://www.arin.net/resources/guide/legacy/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "106690ccf82bfae370c4949d",
+    "url": "https://www.arin.net/resources/fees/",
+    "normalized_url": "https://www.arin.net/resources/fees/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "9792eeb5c748def94c114cdc",
+    "url": "https://www.arin.net/resources/fees/fee_schedule/",
+    "normalized_url": "https://www.arin.net/resources/fees/fee_schedule/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "dc47093bc71e3e2b1b5864bb",
+    "url": "https://www.arin.net/resources/fees/psp/",
+    "normalized_url": "https://www.arin.net/resources/fees/psp/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "5d3d9153d871303105f4aa62",
+    "url": "https://www.arin.net/resources/fees/payment/",
+    "normalized_url": "https://www.arin.net/resources/fees/payment/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "948b41522ceaecbfedbfaf2e",
+    "url": "https://www.arin.net/resources/fees/contact/",
+    "normalized_url": "https://www.arin.net/resources/fees/contact/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "617b8080832c32ad3cd68732",
+    "url": "https://www.arin.net/resources/fees/returns/",
+    "normalized_url": "https://www.arin.net/resources/fees/returns/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "c8e1fc24f5b82721905fecab",
+    "url": "https://www.arin.net/resources/registry/",
+    "normalized_url": "https://www.arin.net/resources/registry/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "57aea673876c85fa790c61e3",
+    "url": "https://www.arin.net/resources/registry/manage/",
+    "normalized_url": "https://www.arin.net/resources/registry/manage/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "c8d6592c989b034542963784",
+    "url": "https://www.arin.net/resources/registry/regrws/",
+    "normalized_url": "https://www.arin.net/resources/registry/regrws/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "e9456df9d37373eca6b1f0aa",
+    "url": "https://www.arin.net/resources/registry/transfers/",
+    "normalized_url": "https://www.arin.net/resources/registry/transfers/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "b54821998941eb29f37a662f",
+    "url": "https://www.arin.net/resources/registry/reassignments/",
+    "normalized_url": "https://www.arin.net/resources/registry/reassignments/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "63b85bebe86f1c43a6659257",
+    "url": "https://www.arin.net/resources/registry/whois/",
+    "normalized_url": "https://www.arin.net/resources/registry/whois/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "87fe81aa4bdedcf910bc5072",
+    "url": "https://www.arin.net/resources/manage/",
+    "normalized_url": "https://www.arin.net/resources/manage/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "ad4706b6ad4d2955ed5e0026",
+    "url": "https://www.arin.net/resources/manage/rpki/",
+    "normalized_url": "https://www.arin.net/resources/manage/rpki/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "b46ffe084f57090c378d72bb",
+    "url": "https://www.arin.net/resources/manage/irr/",
+    "normalized_url": "https://www.arin.net/resources/manage/irr/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "d4f32a0dff6cd72727a7634e",
+    "url": "https://www.arin.net/resources/manage/dnssec/",
+    "normalized_url": "https://www.arin.net/resources/manage/dnssec/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "80b3945d55c051f865647ee8",
+    "url": "https://www.arin.net/resources/manage/reverse/",
+    "normalized_url": "https://www.arin.net/resources/manage/reverse/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "6e874560107fed671eef4142",
+    "url": "https://www.arin.net/resources/manage/routingsecurity/",
+    "normalized_url": "https://www.arin.net/resources/manage/routingsecurity/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "5a2ec70c07062a235ada25ed",
+    "url": "https://www.arin.net/participate/",
+    "normalized_url": "https://www.arin.net/participate/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "8450b108637b7e5e55bc917e",
+    "url": "https://www.arin.net/participate/policy/",
+    "normalized_url": "https://www.arin.net/participate/policy/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "ca8ebbaebb5d9f042aac05fa",
+    "url": "https://www.arin.net/participate/policy/nrpm/",
+    "normalized_url": "https://www.arin.net/participate/policy/nrpm/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "c0355fa08fc44a355e96c5ac",
+    "url": "https://www.arin.net/participate/policy/pdp/",
+    "normalized_url": "https://www.arin.net/participate/policy/pdp/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "ae5b08babbc624db264b1cf8",
+    "url": "https://www.arin.net/participate/policy/drafts/",
+    "normalized_url": "https://www.arin.net/participate/policy/drafts/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "da1baaa97bcd4099fe95d700",
+    "url": "https://www.arin.net/participate/policy/proposals/",
+    "normalized_url": "https://www.arin.net/participate/policy/proposals/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "988864a0f9b9309611aeae3f",
+    "url": "https://www.arin.net/participate/meetings/",
+    "normalized_url": "https://www.arin.net/participate/meetings/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "ea6ead8f20884bddcefb80d5",
+    "url": "https://www.arin.net/participate/meetings/upcoming/",
+    "normalized_url": "https://www.arin.net/participate/meetings/upcoming/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "c4e894e4a1ce2e5b30beaeac",
+    "url": "https://www.arin.net/participate/meetings/outreach/",
+    "normalized_url": "https://www.arin.net/participate/meetings/outreach/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "6fdf1fe97a8b68460137817c",
+    "url": "https://www.arin.net/participate/meetings/fellowships/",
+    "normalized_url": "https://www.arin.net/participate/meetings/fellowships/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "4256a3597b9c14baaafac5e3",
+    "url": "https://www.arin.net/participate/meetings/sponsors/",
+    "normalized_url": "https://www.arin.net/participate/meetings/sponsors/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "fb1d4225cd51b3556d3b3249",
+    "url": "https://www.arin.net/participate/meetings/past/",
+    "normalized_url": "https://www.arin.net/participate/meetings/past/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "9b8cb9820b563cf425ebc623",
+    "url": "https://www.arin.net/participate/oversight/",
+    "normalized_url": "https://www.arin.net/participate/oversight/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "2322e77bd127cb7875cde13e",
+    "url": "https://www.arin.net/participate/oversight/membership/",
+    "normalized_url": "https://www.arin.net/participate/oversight/membership/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "1fb312856955950ab00b0d49",
+    "url": "https://www.arin.net/participate/oversight/elections/",
+    "normalized_url": "https://www.arin.net/participate/oversight/elections/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "40d7e4bdef6597a802f7355a",
+    "url": "https://www.arin.net/participate/community/",
+    "normalized_url": "https://www.arin.net/participate/community/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "6246946d58bda920d0da2d32",
+    "url": "https://www.arin.net/participate/community/community_surveys/",
+    "normalized_url": "https://www.arin.net/participate/community/community_surveys/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "2d7a7fea736dcdfc44360d3e",
+    "url": "https://www.arin.net/participate/community/mailing_lists/",
+    "normalized_url": "https://www.arin.net/participate/community/mailing_lists/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "d1bc78a83c140a2de534785b",
+    "url": "https://www.arin.net/participate/community/acsp/",
+    "normalized_url": "https://www.arin.net/participate/community/acsp/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "7ae9d3a05ed04a91f61ab604",
+    "url": "https://www.arin.net/reference/",
+    "normalized_url": "https://www.arin.net/reference/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "6d353085cf3ca609aa413114",
+    "url": "https://www.arin.net/reference/tools/",
+    "normalized_url": "https://www.arin.net/reference/tools/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "bec7aeb5f4e190fda2139a64",
+    "url": "https://www.arin.net/reference/tools/testing/",
+    "normalized_url": "https://www.arin.net/reference/tools/testing/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "963414aa4a42deddeaba2a53",
+    "url": "https://www.arin.net/reference/tools/cidr/",
+    "normalized_url": "https://www.arin.net/reference/tools/cidr/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "ace0eacbc72d28f3a4438a9d",
+    "url": "https://www.arin.net/reference/tools/software/",
+    "normalized_url": "https://www.arin.net/reference/tools/software/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "15c6209db75a2427a9cf2596",
+    "url": "https://www.arin.net/reference/tools/fraud_report/",
+    "normalized_url": "https://www.arin.net/reference/tools/fraud_report/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "4d9f7cd246d3f8aa9e88b945",
+    "url": "https://www.arin.net/reference/materials/",
+    "normalized_url": "https://www.arin.net/reference/materials/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "ffe80e29fc5a62cde2e80af7",
+    "url": "https://www.arin.net/reference/materials/abuse/",
+    "normalized_url": "https://www.arin.net/reference/materials/abuse/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "c9451dc911ef44798dc1e3ba",
+    "url": "https://www.arin.net/reference/materials/data/",
+    "normalized_url": "https://www.arin.net/reference/materials/data/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "ac4890605b526cae472e792c",
+    "url": "https://www.arin.net/reference/materials/accuracy/",
+    "normalized_url": "https://www.arin.net/reference/materials/accuracy/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "ae652c08272b3211a9c18454",
+    "url": "https://www.arin.net/reference/materials/security/",
+    "normalized_url": "https://www.arin.net/reference/materials/security/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "16444032f9164831622a5159",
+    "url": "https://www.arin.net/reference/materials/software/",
+    "normalized_url": "https://www.arin.net/reference/materials/software/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "f3bfd0a9ecd9f1e5c4023e78",
+    "url": "https://www.arin.net/reference/research/",
+    "normalized_url": "https://www.arin.net/reference/research/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "3a82d8e8706acc4794354af5",
+    "url": "https://www.arin.net/reference/research/statistics/",
+    "normalized_url": "https://www.arin.net/reference/research/statistics/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "1632ed0a5266b1938db03e82",
+    "url": "https://www.arin.net/reference/research/whowas/",
+    "normalized_url": "https://www.arin.net/reference/research/whowas/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "49b60da8796bc3f13ee51039",
+    "url": "https://www.arin.net/reference/research/bulkwhois/",
+    "normalized_url": "https://www.arin.net/reference/research/bulkwhois/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "3f80e8f1a318adc45f40e8cb",
+    "url": "https://www.arin.net/reference/training/",
+    "normalized_url": "https://www.arin.net/reference/training/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "117ed01ae8ba3b789026394a",
+    "url": "https://www.arin.net/reference/training/leadership/",
+    "normalized_url": "https://www.arin.net/reference/training/leadership/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "1e5f8be9223c35f8d18218fb",
+    "url": "https://www.arin.net/reference/training/webinars/",
+    "normalized_url": "https://www.arin.net/reference/training/webinars/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "8507e1ead69ccff005280cdb",
+    "url": "https://www.arin.net/reference/training/resources/",
+    "normalized_url": "https://www.arin.net/reference/training/resources/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "b60f15193ead2ca51d568fbb",
+    "url": "https://www.arin.net/reference/training/help_videos/",
+    "normalized_url": "https://www.arin.net/reference/training/help_videos/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "85288aa92c6841e6e9ea9ad7",
+    "url": "https://www.arin.net/about/",
+    "normalized_url": "https://www.arin.net/about/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "18d81835c8db1f4a91f41174",
+    "url": "https://www.arin.net/about/welcome/",
+    "normalized_url": "https://www.arin.net/about/welcome/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "18a2d46e59cb8a4fb2a2d23e",
+    "url": "https://www.arin.net/about/welcome/staff/",
+    "normalized_url": "https://www.arin.net/about/welcome/staff/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "fe0104b6583d5a720fd33ae6",
+    "url": "https://www.arin.net/about/welcome/region/",
+    "normalized_url": "https://www.arin.net/about/welcome/region/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "08a0f70204144197344daefa",
+    "url": "https://www.arin.net/about/welcome/board/",
+    "normalized_url": "https://www.arin.net/about/welcome/board/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "9e1361236c9e30bbaf152dad",
+    "url": "https://www.arin.net/about/welcome/ac/",
+    "normalized_url": "https://www.arin.net/about/welcome/ac/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "851a9ef11ebd22474cf3f381",
+    "url": "https://www.arin.net/about/welcome/nronc/",
+    "normalized_url": "https://www.arin.net/about/welcome/nronc/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "e27148135ecb2b66e79da718",
+    "url": "https://www.arin.net/about/welcome/careers/",
+    "normalized_url": "https://www.arin.net/about/welcome/careers/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "fc2800a308fc81e766ccbc9d",
+    "url": "https://www.arin.net/about/corporate/",
+    "normalized_url": "https://www.arin.net/about/corporate/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "b8d6d799fade0ebfe2a22066",
+    "url": "https://www.arin.net/about/corporate/documents/",
+    "normalized_url": "https://www.arin.net/about/corporate/documents/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "8516dea5d8395a85a60fd4c7",
+    "url": "https://www.arin.net/about/corporate/annual/",
+    "normalized_url": "https://www.arin.net/about/corporate/annual/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "b7cc3112129332cbed39ded6",
+    "url": "https://www.arin.net/about/corporate/planning/",
+    "normalized_url": "https://www.arin.net/about/corporate/planning/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "29cdfbcb5b58745a97c21cd5",
+    "url": "https://www.arin.net/about/corporate/agreements/",
+    "normalized_url": "https://www.arin.net/about/corporate/agreements/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "b02eeb02af354bdcd528b027",
+    "url": "https://www.arin.net/about/corporate/history/",
+    "normalized_url": "https://www.arin.net/about/corporate/history/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "d97333d8fad4d02230ce9fcd",
+    "url": "https://www.arin.net/about/corporate/nonIPv6vendors/",
+    "normalized_url": "https://www.arin.net/about/corporate/nonIPv6vendors/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "c0b8fec51a6f147ef581e0b0",
+    "url": "https://www.arin.net/about/community_grants/",
+    "normalized_url": "https://www.arin.net/about/community_grants/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "6c1466ae70a6641ffc48af92",
+    "url": "https://www.arin.net/about/community_grants/program/",
+    "normalized_url": "https://www.arin.net/about/community_grants/program/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "022b56b2991476d8fec5c5d0",
+    "url": "https://www.arin.net/about/community_grants/recipients/",
+    "normalized_url": "https://www.arin.net/about/community_grants/recipients/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "2276fdaa17de1c9c8717906c",
+    "url": "https://www.arin.net/about/relations/",
+    "normalized_url": "https://www.arin.net/about/relations/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "80135f8352fd62f65486f78f",
+    "url": "https://www.arin.net/about/relations/governance/",
+    "normalized_url": "https://www.arin.net/about/relations/governance/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "9d272eac7ac50cf05f566fe6",
+    "url": "https://www.arin.net/about/relations/membership/",
+    "normalized_url": "https://www.arin.net/about/relations/membership/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "4fe0dd03bed13506bd73b510",
+    "url": "https://www.arin.net/about/relations/law_enforcement/",
+    "normalized_url": "https://www.arin.net/about/relations/law_enforcement/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "708c86bce88b2fa0e2d25608",
+    "url": "https://www.arin.net/about/relations/community/",
+    "normalized_url": "https://www.arin.net/about/relations/community/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "bc825a72d1a60a3c3cc09d20",
+    "url": "https://www.arin.net/blog/",
+    "normalized_url": "https://www.arin.net/blog/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "f250e7c19180a95edbfcf7ae",
+    "url": "https://www.arin.net/resources/fees/payment",
+    "normalized_url": "https://www.arin.net/resources/fees/payment"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "78d2243a11b70a4a63b1cc8f",
+    "url": "https://www.arin.net/new/",
+    "normalized_url": "https://www.arin.net/new/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "d86d5938a6da9725b135f9a4",
+    "url": "https://www.arin.net/announcements/20260804/",
+    "normalized_url": "https://www.arin.net/announcements/20260804/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "eb3c5b8b0edae3856efbde99",
+    "url": "https://www.arin.net/announcements/20260728/",
+    "normalized_url": "https://www.arin.net/announcements/20260728/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "dd7697ad5ac32dee69d8d927",
+    "url": "https://www.arin.net/announcements/20260728-release/",
+    "normalized_url": "https://www.arin.net/announcements/20260728-release/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "8b0521857264e5cc1528fb58",
+    "url": "https://www.arin.net/announcements/20260709/",
+    "normalized_url": "https://www.arin.net/announcements/20260709/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "4793a30173e7136b914c73ee",
+    "url": "https://www.arin.net/announcements/20260702/",
+    "normalized_url": "https://www.arin.net/announcements/20260702/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "4235c03a3c52cbbb59fc079a",
+    "url": "https://www.arin.net/announcements/20260625/",
+    "normalized_url": "https://www.arin.net/announcements/20260625/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "3c709b6f3fcabe3dbd3d1aac",
+    "url": "https://www.arin.net/announcements",
+    "normalized_url": "https://www.arin.net/announcements"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "277c2f7023c0976f58b0082a",
+    "url": "https://www.arin.net/jacksonville",
+    "normalized_url": "https://www.arin.net/jacksonville"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "eba4eb6dff918edda0ef8dd8",
+    "url": "https://www.arin.net/participate/meetings/#all-upcoming-arin-events",
+    "normalized_url": "https://www.arin.net/participate/meetings/#all-upcoming-arin-events"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "b77c01363cbc768344613aea",
+    "url": "https://www.arin.net/sponsorship/",
+    "normalized_url": "https://www.arin.net/sponsorship/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "fa2927fed52cf94dbb993e02",
+    "url": "https://www.arin.net/events/",
+    "normalized_url": "https://www.arin.net/events/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "de325ed4b94fead2a697c176",
+    "url": "https://www.arin.net/blog/2026/08/07/state-ipv6-caribbean-2026/",
+    "normalized_url": "https://www.arin.net/blog/2026/08/07/state-ipv6-caribbean-2026/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "2be703053206995aab726de6",
+    "url": "https://www.arin.net/blog/2026/08/05/legacy-whois-stewardship/",
+    "normalized_url": "https://www.arin.net/blog/2026/08/05/legacy-whois-stewardship/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "40fc9b8f392e7f5b5446f5e6",
+    "url": "https://www.arin.net/blog/2026/07/21/ipv6-mostly/",
+    "normalized_url": "https://www.arin.net/blog/2026/07/21/ipv6-mostly/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "8685cd8c4b4d7ef658e8df85",
+    "url": "https://account.arin.net/public/terms-of-service",
+    "normalized_url": "https://account.arin.net/public/terms-of-service"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "1e14f164e02a771ea698e901",
+    "url": "https://www.arin.net/sitemap/",
+    "normalized_url": "https://www.arin.net/sitemap/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "a8e3297e4dae1f51a9641bca",
+    "url": "https://www.arin.net/about/privacy/",
+    "normalized_url": "https://www.arin.net/about/privacy/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "75d32608f4c671bbee9ccdc5",
+    "url": "https://www.arin.net/reference/accessibility",
+    "normalized_url": "https://www.arin.net/reference/accessibility"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "83ab88a130d284954239027e",
+    "url": "https://www.arin.net/about/corporate/standards/",
+    "normalized_url": "https://www.arin.net/about/corporate/standards/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "c4cbc2efed6db2607d3e5c77",
+    "url": "http://www.nro.net/",
+    "normalized_url": "http://www.nro.net/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "f33545266066391ec8dbe4c2",
+    "url": "https://arin.statuspage.io/",
+    "normalized_url": "https://arin.statuspage.io/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "414b0481c5b13d579da54cfb",
+    "url": "https://www.arin.net/contact/",
+    "normalized_url": "https://www.arin.net/contact/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "c7cf95308ebc0e99027f54ed",
+    "url": "tel:+1-703-227-0660",
+    "normalized_url": "tel:+1-703-227-0660"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "01a0528ef9667dad462b80dc",
+    "url": "tel:+1-703-227-9886",
+    "normalized_url": "tel:+1-703-227-9886"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "2ed8f509976c4af0df6e1261",
+    "url": "tel:+1-703-227-9840",
+    "normalized_url": "tel:+1-703-227-9840"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "412002047625b7db3d22176e",
+    "url": "https://www.linkedin.com/company/arin",
+    "normalized_url": "https://www.linkedin.com/company/arin"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "672675f6c6a872eb688e7428",
+    "url": "https://www.instagram.com/arin_rir/",
+    "normalized_url": "https://www.instagram.com/arin_rir/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "641dc4ffd1ae8af829ab5e5d",
+    "url": "https://www.facebook.com/TeamARIN",
+    "normalized_url": "https://www.facebook.com/TeamARIN"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "3187b441b6af6b7e16e332dc",
+    "url": "https://x.com/TeamARIN",
+    "normalized_url": "https://x.com/TeamARIN"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "46a86f0b9d2414f5968cc217",
+    "url": "https://www.youtube.com/c/teamarin/",
+    "normalized_url": "https://www.youtube.com/c/teamarin/"
+  },
+  {
+    "discovery_source": "https://www.arin.net/",
+    "discovered_at": "2026-08-10T06:30:27.017174+00:00",
+    "parent_url": "https://www.arin.net/",
+    "source_id": "1944badaf1e09b05f6eaef93",
+    "url": "https://www.arin.net/about/media/",
+    "normalized_url": "https://www.arin.net/about/media/"
+  }
+]

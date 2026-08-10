@@ -1,0 +1,24 @@
+{
+  "event_id": "3f0cd2ef-b4c4-4ab6-8487-2d91e807ed86",
+  "event_type": "capture_and_extract",
+  "entity_id": "1b63a5cb-58d5-42a6-9538-10b6982c35b5",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "10dd51e4f38ddc09405658acaea1a7135a9e9b19ab2f46a6862e7dc16c88257a"
+  ],
+  "attributes": {
+    "requested_url": "https://www.rfc-editor.org/rfc/rfc7258",
+    "final_url": "https://www.rfc-editor.org/info/rfc7258/",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "RFC 7258: Pervasive Monitoring Is an Attack | RFC Editor",
+      "language": "en",
+      "summary": "Pervasive monitoring is a technical attack that should be mitigated in the design of IETF protocols, where possible.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T07:03:44.559372+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "event_id": "2da390b4-06e6-4ecc-838d-f65e9ffd5c88",
+  "event_type": "capture_and_extract",
+  "entity_id": "92d18e97-cf56-45c4-967e-d3b5e9b986f4",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "310b785b653e1c311718ad1085bb4b938799a789081f2ff97787d4297c578676"
+  ],
+  "attributes": {
+    "requested_url": "https://www.icann.org/resources/pages/pp-services-2017-08-31-en",
+    "final_url": "https://www.icann.org/en/contracted-parties/accredited-registrars/privacy-and-proxy-service-providers",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Information for Privacy and Proxy Service Providers, Customers and Third-Party Requesters",
+      "language": "en",
+      "summary": "Information for customers, third-party requesters and privacy and proxy service providers, which offer services that permit customers to register a domain name without publishing the customer’s contact information in the public Registration Data Directory System (RDDS), also known as WHOIS.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:30:24.704770+00:00"
+}

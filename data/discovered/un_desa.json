@@ -1,0 +1,762 @@
+[
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "976d31fadb331ab8695d5b05",
+    "url": "https://www.un.org/",
+    "normalized_url": "https://www.un.org/"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "c20c3fbe26424f98256943d4",
+    "url": "https://www.un.org/ar/desa",
+    "normalized_url": "https://www.un.org/ar/desa"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "febd240bb22979fbe25c5605",
+    "url": "https://www.un.org/zh/desa",
+    "normalized_url": "https://www.un.org/zh/desa"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "92bcf1ece0b496377d1d14e5",
+    "url": "https://www.un.org/en/desa",
+    "normalized_url": "https://www.un.org/en/desa"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "913d7558873591f12c2032bc",
+    "url": "https://www.un.org/fr/desa",
+    "normalized_url": "https://www.un.org/fr/desa"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "e7caa7c5e584682b61cfb6ff",
+    "url": "https://www.un.org/ru/desa",
+    "normalized_url": "https://www.un.org/ru/desa"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "be64b0120ecd97ce8163d3b5",
+    "url": "https://www.un.org/es/desa",
+    "normalized_url": "https://www.un.org/es/desa"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "7f413045eac77f5a6251a823",
+    "url": "https://www.un.org/en",
+    "normalized_url": "https://www.un.org/en"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "263e27cfb0b64e668ec9322f",
+    "url": "https://www.un.org/en/desa/about-us",
+    "normalized_url": "https://www.un.org/en/desa/about-us"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "0f855fae3d4c2496e9275733",
+    "url": "https://www.un.org/en/desa/about-us/leadership",
+    "normalized_url": "https://www.un.org/en/desa/about-us/leadership"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "83bb45f5713c8e55f8c77ab3",
+    "url": "https://www.un.org/en/desa/about-us/advisory-board",
+    "normalized_url": "https://www.un.org/en/desa/about-us/advisory-board"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "678833e88da97f397317745a",
+    "url": "https://desapublications.un.org/policy-dialogues",
+    "normalized_url": "https://desapublications.un.org/policy-dialogues"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "0bec4fc45b75822304044f35",
+    "url": "https://www.un.org/en/desa/ecesa",
+    "normalized_url": "https://www.un.org/en/desa/ecesa"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "4da0e31a0a0a548b3e646c23",
+    "url": "https://www.un.org/en/desa/2030agenda-tf",
+    "normalized_url": "https://www.un.org/en/desa/2030agenda-tf"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "8875c124af7d9696615470c0",
+    "url": "https://www.un.org/en/desa/about-us/organigramme",
+    "normalized_url": "https://www.un.org/en/desa/about-us/organigramme"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "fb005ffed2e61e7e54a69648",
+    "url": "https://www.un.org/en/desa/contact-us",
+    "normalized_url": "https://www.un.org/en/desa/contact-us"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "249e0f387b6e82eaa9be8fb9",
+    "url": "https://www.un.org/en/desa/what-we-do",
+    "normalized_url": "https://www.un.org/en/desa/what-we-do"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "bc3a01bec6098af1c2edb72e",
+    "url": "https://www.un.org/en/desa/what-we-do/intergovernmental-support",
+    "normalized_url": "https://www.un.org/en/desa/what-we-do/intergovernmental-support"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "d8dd5efc9cd0eecf52c2ebdf",
+    "url": "https://www.un.org/en/desa/what-we-do/analysis",
+    "normalized_url": "https://www.un.org/en/desa/what-we-do/analysis"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "6b0d4b33a8c0053837fedbe8",
+    "url": "https://www.un.org/en/desa/what-we-do/capacity-building",
+    "normalized_url": "https://www.un.org/en/desa/what-we-do/capacity-building"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "13560ae9322c0b7a4f978fac",
+    "url": "https://www.un.org/en/desa/key-topics/climate-action",
+    "normalized_url": "https://www.un.org/en/desa/key-topics/climate-action"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "8a50b1d97630370af98cba08",
+    "url": "https://www.un.org/en/desa/key-topics/data-sdgs",
+    "normalized_url": "https://www.un.org/en/desa/key-topics/data-sdgs"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "5fb6cc4440949e3e54fd2c20",
+    "url": "https://www.un.org/en/desa/key-topics/financing-sustainable-development",
+    "normalized_url": "https://www.un.org/en/desa/key-topics/financing-sustainable-development"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "df42dc54f5df9a598dab864e",
+    "url": "https://www.un.org/en/desa/key-topics/enhancing-global-partnerships",
+    "normalized_url": "https://www.un.org/en/desa/key-topics/enhancing-global-partnerships"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "e6e66b359afd92a0ed7b7aea",
+    "url": "https://www.un.org/en/desa/key-topics/hlpf",
+    "normalized_url": "https://www.un.org/en/desa/key-topics/hlpf"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "839eb6321cb80a53184f9345",
+    "url": "https://www.un.org/en/desa/key-topics/leaving-no-one-behind",
+    "normalized_url": "https://www.un.org/en/desa/key-topics/leaving-no-one-behind"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "8921eeefde6aa48b3a5ed57c",
+    "url": "https://www.un.org/en/desa/key-topics/science-technology-and-innovation",
+    "normalized_url": "https://www.un.org/en/desa/key-topics/science-technology-and-innovation"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "80c253fa4864dbcce39d66a9",
+    "url": "https://www.un.org/en/desa/key-topics/strengthening-institutions",
+    "normalized_url": "https://www.un.org/en/desa/key-topics/strengthening-institutions"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "07819cd3d61b872bcbb69dc6",
+    "url": "https://www.un.org/en/desa/key-topics/thought-leadership",
+    "normalized_url": "https://www.un.org/en/desa/key-topics/thought-leadership"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "331648976195b07201da344d",
+    "url": "https://www.un.org/en/articles-by-property-w-date/81254",
+    "normalized_url": "https://www.un.org/en/articles-by-property-w-date/81254"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.485457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "d57a3e4371498375fa40974e",
+    "url": "https://desapublications.un.org/",
+    "normalized_url": "https://desapublications.un.org/"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "75da1948009e1b54c0a19e79",
+    "url": "https://www.un.org/en/desa/products/un-desa-databases",
+    "normalized_url": "https://www.un.org/en/desa/products/un-desa-databases"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "021c79d2aab98e45630f9b40",
+    "url": "https://desapublications.un.org/policy-briefs",
+    "normalized_url": "https://desapublications.un.org/policy-briefs"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "05b59cdf3abc8ef1c303a16a",
+    "url": "https://desapublications.un.org/working-papers",
+    "normalized_url": "https://desapublications.un.org/working-papers"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "8cf7b33394d35118bb410b54",
+    "url": "https://www.un.org/en/desa/products/webinars",
+    "normalized_url": "https://www.un.org/en/desa/products/webinars"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "ce679325da0776d712f21eb1",
+    "url": "https://www.un.org/en/desa/products/statements",
+    "normalized_url": "https://www.un.org/en/desa/products/statements"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "7e6bdf99a30a29f02586d503",
+    "url": "https://www.youtube.com/user/UnitedNationsDESA",
+    "normalized_url": "https://www.youtube.com/user/UnitedNationsDESA"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "a888d3ba9255634ad70d205a",
+    "url": "https://desapublications.un.org/un-desa-voice",
+    "normalized_url": "https://desapublications.un.org/un-desa-voice"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "b481e87b084c7b4ed800d8cd",
+    "url": "https://www.un.org/en/desa/highlights-report-2025",
+    "normalized_url": "https://www.un.org/en/desa/highlights-report-2025"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "42d2cafa687f01e097936907",
+    "url": "https://www.un.org/en/desa/highlights-report-2023-2024",
+    "normalized_url": "https://www.un.org/en/desa/highlights-report-2023-2024"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "a22e0f0570cadbc16a3f5685",
+    "url": "https://www.un.org/en/desa/highlights-report-2022-2023",
+    "normalized_url": "https://www.un.org/en/desa/highlights-report-2022-2023"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "30f6479c32b0c45e4495120d",
+    "url": "https://www.un.org/en/desa/highlights-report-2021-2022",
+    "normalized_url": "https://www.un.org/en/desa/highlights-report-2021-2022"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "89ffa23fb338302005685cb9",
+    "url": "https://www.un.org/en/desa/highlights-report-2020-2021",
+    "normalized_url": "https://www.un.org/en/desa/highlights-report-2020-2021"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "4203fba9dd85f5bf4eea8eba",
+    "url": "https://www.un.org/en/desa/highlights-report-2019-2020",
+    "normalized_url": "https://www.un.org/en/desa/highlights-report-2019-2020"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "75f27c5ce2a6868e965ca70f",
+    "url": "https://www.un.org/esa/desa-highlight-2018-2019/",
+    "normalized_url": "https://www.un.org/esa/desa-highlight-2018-2019/"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "75684bf322bcafc3c5cfdcbf",
+    "url": "https://www.un.org/en/calendar-by-property/month/81254",
+    "normalized_url": "https://www.un.org/en/calendar-by-property/month/81254"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "1eb1778e3654bc3da971af49",
+    "url": "https://social.desa.un.org/issues/indigenous-peoples/international-day-of-the-worlds-indigenous-peoples",
+    "normalized_url": "https://social.desa.un.org/issues/indigenous-peoples/international-day-of-the-worlds-indigenous-peoples"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "b6d80203f1c91e417225ae95",
+    "url": "https://social.desa.un.org/issues/youth/international-youth-day-main",
+    "normalized_url": "https://social.desa.un.org/issues/youth/international-youth-day-main"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "64620fd21a92c2ea8a71b697",
+    "url": "https://hlpf.un.org/2026",
+    "normalized_url": "https://hlpf.un.org/2026"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "1e96afec8c2e969f946669d0",
+    "url": "https://sdgs.un.org/2026-hlpf-special-events",
+    "normalized_url": "https://sdgs.un.org/2026-hlpf-special-events"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "456ae286d03d068c83c1bc5f",
+    "url": "https://www.un.org/en/events/81254",
+    "normalized_url": "https://www.un.org/en/events/81254"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "c0e9ad864804f42be7eb3634",
+    "url": "https://www.un.org/en/honouring-indigenous-midwives-advancing-rights-ensuring-cultural-continuity-and-promoting-intergenerational-well-being",
+    "normalized_url": "https://www.un.org/en/honouring-indigenous-midwives-advancing-rights-ensuring-cultural-continuity-and-promoting-intergenerational-well-being"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "87a0fb6b5b29f1cc63554478",
+    "url": "https://www.un.org/en/desa/global-justice-report-examines-long-term-pathways-for-equality-and-sustainability",
+    "normalized_url": "https://www.un.org/en/desa/global-justice-report-examines-long-term-pathways-for-equality-and-sustainability"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "2c815214791d317d4c2ce970",
+    "url": "https://www.un.org/en/desa/making-the-global-tax-system-work-for-everyone",
+    "normalized_url": "https://www.un.org/en/desa/making-the-global-tax-system-work-for-everyone"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "11619175736f14ba864ef2a9",
+    "url": "https://www.un.org/en/desa-en/un-ggim-putting-geospatial-information-heart-sustainable-development",
+    "normalized_url": "https://www.un.org/en/desa-en/un-ggim-putting-geospatial-information-heart-sustainable-development"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "13a691f72115ab599fef42e3",
+    "url": "https://www.un.org/globalgeospatial/en/united-nations-integrated-geospatial-information-framework-un-igif",
+    "normalized_url": "https://www.un.org/globalgeospatial/en/united-nations-integrated-geospatial-information-framework-un-igif"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "10648d35895481bcf003629e",
+    "url": "https://unstats.un.org/sdgs/report/2024",
+    "normalized_url": "https://unstats.un.org/sdgs/report/2024"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "71bc5ed21b613f395bfe3f67",
+    "url": "https://sustainabledevelopment.un.org/sdgactions",
+    "normalized_url": "https://sustainabledevelopment.un.org/sdgactions"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "b61ebc0fb24413baa9877e0a",
+    "url": "https://www.un.org/sites/un2.un.org/files/desa_decade_of_actionfor_website_0.pdf",
+    "normalized_url": "https://www.un.org/sites/un2.un.org/files/desa_decade_of_actionfor_website_0.pdf"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.486457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "717b82fb2f91bac6fdf020cb",
+    "url": "https://www.un.org/en/desa/sdg-blog",
+    "normalized_url": "https://www.un.org/en/desa/sdg-blog"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "5a98aea4e07920880c6295bd",
+    "url": "https://www.un.org/en/desa/products/publications",
+    "normalized_url": "https://www.un.org/en/desa/products/publications"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "f5329d49cb0ce387bfc99c80",
+    "url": "https://www.un.org/en/desa/products/policy-briefs",
+    "normalized_url": "https://www.un.org/en/desa/products/policy-briefs"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "e794a068bad06cdc4c2ec531",
+    "url": "https://www.un.org/en/desa/products/working-papers",
+    "normalized_url": "https://www.un.org/en/desa/products/working-papers"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "59edea502bc0736a05ed93d7",
+    "url": "https://www.un.org/development/desa/un-desa-voice/current",
+    "normalized_url": "https://www.un.org/development/desa/un-desa-voice/current"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "ed14c30245b08387ed3c20ab",
+    "url": "https://www.un.org/en/desa/products/infographics",
+    "normalized_url": "https://www.un.org/en/desa/products/infographics"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "278b1552ad9951b20708653b",
+    "url": "https://sdgs.un.org/",
+    "normalized_url": "https://sdgs.un.org/"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "4e42471e2a285d1dafa14a1a",
+    "url": "https://www.un.org/esa/forests/",
+    "normalized_url": "https://www.un.org/esa/forests/"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "7a2685df32c2f4b0fcc6687e",
+    "url": "https://www.un.org/en/conferences/ocean2020",
+    "normalized_url": "https://www.un.org/en/conferences/ocean2020"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "7dabb920480fea4ee0767fc6",
+    "url": "https://www.un.org/en/conferences/transport2020",
+    "normalized_url": "https://www.un.org/en/conferences/transport2020"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "6ef8beabe790198f6922c482",
+    "url": "https://sdgs.un.org/topics/energy",
+    "normalized_url": "https://sdgs.un.org/topics/energy"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "d7c4739bce2ad8df6aed93ce",
+    "url": "https://sdgs.un.org/topics/water-and-sanitation/wateractiondecade",
+    "normalized_url": "https://sdgs.un.org/topics/water-and-sanitation/wateractiondecade"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "cccc15b83f415887ec5c78da",
+    "url": "https://www.un.org/development/desa/ecesa/",
+    "normalized_url": "https://www.un.org/development/desa/ecesa/"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "69e26f945b954eb70b3949a9",
+    "url": "https://desapublications.un.org",
+    "normalized_url": "https://desapublications.un.org"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "db678802f4dc8a222e357c61",
+    "url": "https://ecosoc.un.org",
+    "normalized_url": "https://ecosoc.un.org"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "0caf86895acdc4201965170e",
+    "url": "https://sdgs.un.org",
+    "normalized_url": "https://sdgs.un.org"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "22dd050c4084a4f8fc7e05a6",
+    "url": "https://www.un.org/development/desa/pd/",
+    "normalized_url": "https://www.un.org/development/desa/pd/"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "ae39f96c1044b32c43ac106b",
+    "url": "https://publicadministration.desa.un.org/",
+    "normalized_url": "https://publicadministration.desa.un.org/"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "48e4251b12bc4100da40d753",
+    "url": "https://financing.desa.un.org/",
+    "normalized_url": "https://financing.desa.un.org/"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "97c0ef271047ceb131ee41b9",
+    "url": "https://social.desa.un.org/",
+    "normalized_url": "https://social.desa.un.org/"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "3b83b8431546c25c5b129423",
+    "url": "http://unstats.un.org/unsd/default.htm",
+    "normalized_url": "http://unstats.un.org/unsd/default.htm"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "a7095ba0b868e82c14246ae4",
+    "url": "https://policy.desa.un.org",
+    "normalized_url": "https://policy.desa.un.org"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "2339cd582c6742f72b686dd1",
+    "url": "http://www.un.org/esa/forests/",
+    "normalized_url": "http://www.un.org/esa/forests/"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.487457+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "7d6b2b2149faf4f90a85dac4",
+    "url": "https://capacity.desa.un.org/",
+    "normalized_url": "https://capacity.desa.un.org/"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.488458+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "a65c9678123756600697d339",
+    "url": "https://www.un.org/en/",
+    "normalized_url": "https://www.un.org/en/"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.488458+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "c05621bb25b4bdd220448884",
+    "url": "https://www.un.org/en/about-us/how-to-donate-to-the-un-system",
+    "normalized_url": "https://www.un.org/en/about-us/how-to-donate-to-the-un-system"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.488458+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "3c3f5d7df94adc309c369938",
+    "url": "https://www.facebook.com/joinundesa",
+    "normalized_url": "https://www.facebook.com/joinundesa"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.488458+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "5416d294a9bdcc8bd2714219",
+    "url": "https://twitter.com/undesa",
+    "normalized_url": "https://twitter.com/undesa"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.488458+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "332d7a1b3a4b9e6659cdaad6",
+    "url": "https://www.linkedin.com/company/united-nations-department-of-economic-and-social-affairs/",
+    "normalized_url": "https://www.linkedin.com/company/united-nations-department-of-economic-and-social-affairs/"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.488458+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "a01e7b63bf6c5137a30e8045",
+    "url": "https://www.un.org/en/site-index",
+    "normalized_url": "https://www.un.org/en/site-index"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.488458+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "ea5004df8f21ec5ab54bd0e9",
+    "url": "https://www.un.org/en/contact-us-0",
+    "normalized_url": "https://www.un.org/en/contact-us-0"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.488458+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "74d85e370d7726d58f0898d5",
+    "url": "https://www.un.org/en/about-us/copyright",
+    "normalized_url": "https://www.un.org/en/about-us/copyright"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.488458+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "e2fa47a4e7bacb066150b735",
+    "url": "https://www.un.org/en/about-us/frequently-asked-questions",
+    "normalized_url": "https://www.un.org/en/about-us/frequently-asked-questions"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.488458+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "b7bcc1a4e6ed1c4e912041d4",
+    "url": "https://www.un.org/en/about-us/fraud-alert",
+    "normalized_url": "https://www.un.org/en/about-us/fraud-alert"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.488458+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "40e4b5ef3b4358d519dadc56",
+    "url": "https://www.un.org/en/about-us/privacy-notice",
+    "normalized_url": "https://www.un.org/en/about-us/privacy-notice"
+  },
+  {
+    "discovery_source": "https://www.un.org/en/desa/",
+    "discovered_at": "2026-08-10T06:28:09.488458+00:00",
+    "parent_url": "https://www.un.org/en/desa/",
+    "source_id": "80911d703dfb3bde0e3ac31e",
+    "url": "https://www.un.org/en/about-us/terms-of-use",
+    "normalized_url": "https://www.un.org/en/about-us/terms-of-use"
+  }
+]

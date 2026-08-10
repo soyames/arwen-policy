@@ -1,0 +1,24 @@
+{
+  "event_id": "fbec8e6e-2e86-437c-ba3f-8a3676e4f6a9",
+  "event_type": "capture_and_extract",
+  "entity_id": "88a34f78-2b65-495c-b808-c435a24f91dc",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "3ad5fd95645b6c3a8de6c7ca3e3f12820ec6788c6171199ca307451093cecdc4"
+  ],
+  "attributes": {
+    "requested_url": "https://www.afrinic.net/",
+    "final_url": "https://www.afrinic.net/",
+    "capture_status": 200,
+    "etag": "W/\"6a738d97-a07e\"",
+    "last_modified": "Wed, 05 Aug 2026 19:23:03 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "AFRINIC - Regional Internet Registry for Africa",
+      "language": "en",
+      "summary": "AFRINIC is responsible for the allocation and management of Internet numbers (IPv4, IPv6 & ASNs) resources in Africa.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:31:50.894309+00:00"
+}

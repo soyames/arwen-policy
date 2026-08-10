@@ -1,0 +1,19 @@
+{
+  "source_id": "badb506b8eb2263aba7bd7fa",
+  "source_url": "https://www.itu.int/en/mediacentre/Pages/default.aspx",
+  "final_url": "https://www.itu.int/en/mediacentre/Pages/default.aspx",
+  "source_family": "intergovernmental",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "Media Centre",
+  "publisher": "International Telecommunication Union",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:35:31.617906Z",
+  "published_at": null,
+  "artifact_sha256": "60ea9d94c8eba588c5f473c7a182cf5d6d839348a914277dfc17f37bd0ccfa46",
+  "byte_size": 78761,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

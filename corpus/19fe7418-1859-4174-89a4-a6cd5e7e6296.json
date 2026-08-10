@@ -1,0 +1,37 @@
+{
+  "document_id": "19fe7418-1859-4174-89a4-a6cd5e7e6296",
+  "source_id": "c99ba3deb6abcedd00dabf54",
+  "source_url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449",
+  "final_url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449",
+  "artifact_sha256": "2d7447c98e31677dab7c7e4d619f5222ec47160cf1ea91b6b20245efb9b4d3e3",
+  "byte_size": 4035,
+  "content_type": "text/html",
+  "metadata": {
+    "title": "OECD Legal Instruments",
+    "language": "en",
+    "summary": "Web site created using create-react-app",
+    "published_at": null
+  },
+  "extraction_method": "html_bs4",
+  "extraction_warnings": [],
+  "text": "OECD Legal Instruments",
+  "segments": [
+    {
+      "segment_id": "cd74b83e-7a67-4a9c-bc9d-28adc30da23b",
+      "document_id": "19fe7418-1859-4174-89a4-a6cd5e7e6296",
+      "ordinal": 0,
+      "text": "OECD Legal Instruments",
+      "char_start": 0,
+      "char_end": 22,
+      "page_start": null,
+      "page_end": null,
+      "timestamp_start": null,
+      "timestamp_end": null,
+      "language": "und",
+      "attributes": {
+        "reading_time_minutes": 1,
+        "word_count": 3
+      }
+    }
+  ]
+}

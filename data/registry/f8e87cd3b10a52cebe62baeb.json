@@ -1,0 +1,19 @@
+{
+  "source_id": "f8e87cd3b10a52cebe62baeb",
+  "source_url": "https://www.ietf.org/standards/",
+  "final_url": "https://www.ietf.org/process/",
+  "source_family": "technical_community",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "IETF  | Process",
+  "publisher": "Internet Engineering Task Force",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:32:33.893379Z",
+  "published_at": null,
+  "artifact_sha256": "5c2014eaff7cdb2e6fcee41df0608dc4c396ed7f5d016cc7e99da15cbaad086e",
+  "byte_size": 79828,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

@@ -1,0 +1,24 @@
+{
+  "event_id": "aba68f98-139e-45ff-852a-751133855ce5",
+  "event_type": "capture_and_extract",
+  "entity_id": "58c65d20-f68e-49ed-b560-001b5922f219",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "58c79bfab7880c00e847e6e9326be86b455f1954b5a4248730adcaa4d96b513a"
+  ],
+  "attributes": {
+    "requested_url": "https://digital-strategy.ec.europa.eu/en/policies/digital-decade",
+    "final_url": "https://digital-strategy.ec.europa.eu/en/page-not-found",
+    "capture_status": 200,
+    "etag": "\"1786341714-gzip\"",
+    "last_modified": "Mon, 10 Aug 2026 06:01:54 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "Page not found | Shaping Europe’s digital future",
+      "language": "en",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:34:12.969814+00:00"
+}

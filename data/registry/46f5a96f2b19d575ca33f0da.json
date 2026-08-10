@@ -1,0 +1,19 @@
+{
+  "source_id": "46f5a96f2b19d575ca33f0da",
+  "source_url": "https://www.icann.org/en/beginners",
+  "final_url": "https://www.icann.org/en/beginners",
+  "source_family": "internet_governance",
+  "source_adapter": "generic-web-adapter",
+  "source_status": "reachable",
+  "title": "ICANN for Beginners",
+  "publisher": "ICANN",
+  "content_type": "text/html",
+  "media_type": "text/html",
+  "retrieved_at": "2026-08-10T06:28:40.407513Z",
+  "published_at": null,
+  "artifact_sha256": "79cc3aef3be34f46ad38c00c1d53bc2c687e389e266e409c8f5e4997b094ad91",
+  "byte_size": 362296,
+  "license": null,
+  "access_conditions": null,
+  "extraction_status": "extracted"
+}

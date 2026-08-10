@@ -1,0 +1,24 @@
+{
+  "event_id": "79fae388-9de9-4cb8-a96d-d55d25c50018",
+  "event_type": "capture_and_extract",
+  "entity_id": "8396c79f-7d21-4982-b5b2-ddfe20c4a4d3",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "1e09c77c831634077c6dc71b53ff71793a6db27325d7cc024e3fd24c43ce8378"
+  ],
+  "attributes": {
+    "requested_url": "https://www.ietf.org/topics/",
+    "final_url": "https://www.ietf.org/technologies/",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": "Mon, 10 Aug 2026 06:34:23 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "IETF  | Technologies",
+      "language": "en",
+      "summary": "The IETF works on a broad range of networking technologies that provide the foundation for the Internet's growth and evolution.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:34:22.593072+00:00"
+}

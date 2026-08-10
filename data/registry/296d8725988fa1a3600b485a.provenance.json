@@ -1,0 +1,24 @@
+{
+  "event_id": "4c32e2c8-ffab-4491-8e7e-670f904fcecd",
+  "event_type": "capture_and_extract",
+  "entity_id": "126f6e12-8df8-4a8d-9e97-57e259c6245d",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "ac300fad4bf9e6faf78a33fc597827fd4bff6ef1fb5fcb58e170895c9fb64f63"
+  ],
+  "attributes": {
+    "requested_url": "https://aso.icann.org/",
+    "final_url": "https://aso.icann.org/",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "The Address Supporting Organization (ASO ICANN) | The Address Supporting Organization",
+      "language": "en-US",
+      "summary": null,
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:30:48.614983+00:00"
+}

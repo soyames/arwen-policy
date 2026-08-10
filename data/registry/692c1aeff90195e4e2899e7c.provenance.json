@@ -1,0 +1,24 @@
+{
+  "event_id": "71cc4392-3a66-4050-b90e-d64134ce65ed",
+  "event_type": "capture_and_extract",
+  "entity_id": "f09e61fd-0fb5-4a72-8c2c-4ea2f93f69e6",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "efa84f3e75e00bd15ecdbd871fc319e35b1bf219a528706ee81202482c592562"
+  ],
+  "attributes": {
+    "requested_url": "https://www.rfc-editor.org/rfc/rfc8890",
+    "final_url": "https://www.rfc-editor.org/info/rfc8890/",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "RFC 8890: The Internet is for End Users | RFC Editor",
+      "language": "en",
+      "summary": "This document explains why the IAB believes that, when there is a conflict between the interests of end users of the Internet and other parties, IETF decisions should favor end users.  It also explores how the IETF can more effectively achieve this.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T07:03:25.865264+00:00"
+}

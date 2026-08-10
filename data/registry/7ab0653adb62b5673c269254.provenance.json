@@ -1,0 +1,24 @@
+{
+  "event_id": "9d270f2a-66b3-42c0-bbac-dcad4d20c7c2",
+  "event_type": "capture_and_extract",
+  "entity_id": "7be2037d-80f1-4441-8a13-493d8558f810",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "9b3455676a4915ed4c1d98e9a4acc598eec6bdcfba17bc43c30bb6e2835fe8f6"
+  ],
+  "attributes": {
+    "requested_url": "https://www.arin.net/",
+    "final_url": "https://www.arin.net/",
+    "capture_status": 200,
+    "etag": "W/\"6a785e47-7384\"",
+    "last_modified": "Sun, 09 Aug 2026 11:02:31 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "American Registry for Internet Numbers",
+      "language": "en-us",
+      "summary": "ARIN is a nonprofit, member-based organization that administers IP addresses & ASNs in support of the operation and growth of the Internet.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:29:57.826682+00:00"
+}

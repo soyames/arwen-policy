@@ -1,0 +1,24 @@
+{
+  "event_id": "67ae3fe4-3e11-419b-a8b4-375c1012f55d",
+  "event_type": "capture_and_extract",
+  "entity_id": "bdece214-750e-4d84-ad1d-3d4c5bb60677",
+  "agent": "arwen-policy-etl/0.1.0",
+  "input_ids": [
+    "5a3392a4be8b620ffb3b98e26161d0255768b78d20003448de2230380c3d4c1f"
+  ],
+  "attributes": {
+    "requested_url": "https://www.ietf.org/about/introduction/",
+    "final_url": "https://www.ietf.org/about/introduction/",
+    "capture_status": 200,
+    "etag": null,
+    "last_modified": "Mon, 10 Aug 2026 06:35:04 GMT",
+    "extraction_method": "html_bs4",
+    "metadata": {
+      "title": "IETF  | Introduction",
+      "language": "en",
+      "summary": "The Internet Engineering Task Force (IETF), founded in 1986, is the premier standards development organization (SDO) for the Internet.",
+      "published_at": null
+    }
+  },
+  "timestamp": "2026-08-10T06:35:02.910081+00:00"
+}
