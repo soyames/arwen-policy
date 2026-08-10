@@ -199,16 +199,55 @@ def sync_hf_dataset(
             import pyarrow as pa
             import pyarrow.parquet as pq
 
-            # Remove full content for parquet (too large), keep summary
-            pq_records = [
-                {k: v for k, v in d.items() if k != "content"}
-                for d in hf_docs
-            ]
+            def _safe_str(v, default=""):
+                if v is None:
+                    return default
+                if isinstance(v, (list, dict)):
+                    return json.dumps(v, ensure_ascii=False)[:500]
+                return str(v)[:500]
+
+            def _safe_int(v, default=0):
+                if v is None:
+                    return default
+                if isinstance(v, (int, float)):
+                    return int(v)
+                if isinstance(v, list):
+                    return len(v)
+                try:
+                    return int(v)
+                except (ValueError, TypeError):
+                    return default
+
+            # Build flat schema suitable for Parquet — no nested structures
+            pq_records = []
+            for d in hf_docs:
+                prov = d.get("provenance", {}) if isinstance(d.get("provenance"), dict) else {}
+                rec = {
+                    "document_id": _safe_str(d.get("id")),
+                    "source_id": _safe_str(prov.get("content_hash", "")[:24] if prov.get("content_hash") else ""),
+                    "source": _safe_str(d.get("source")),
+                    "source_url": _safe_str(prov.get("source_url") or ""),
+                    "final_url": _safe_str(prov.get("final_url") or ""),
+                    "title": _safe_str(d.get("title")),
+                    "language": _safe_str(d.get("language"), "und"),
+                    "extraction_method": _safe_str(prov.get("extraction_method")),
+                    "content_type": _safe_str(prov.get("content_type")),
+                    "artifact_sha256": _safe_str(prov.get("content_hash")),
+                    "byte_size": _safe_int(prov.get("byte_size")),
+                    "text_length": len(d.get("content", "") or ""),
+                    "published_at": _safe_str(prov.get("date_value")),
+                    "date_source": _safe_str(prov.get("date_source")),
+                    "date_confidence": _safe_str(prov.get("date_confidence")),
+                }
+                pq_records.append(rec)
+
             table = pa.Table.from_pylist(pq_records)
             pq.write_table(table, parquet_path)
             parquet_written = True
         except ImportError:
             pass
+        except Exception as e:
+            print(f"Parquet generation warning: {e}")
 
     # Write split JSONL files (train = all current docs)
     train_jsonl = train_dir / "documents.jsonl"
