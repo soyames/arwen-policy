@@ -257,6 +257,8 @@ def run_smoke_test(
         )
 
     tokenized = train_dataset.map(tokenize_fn, batched=True)
+    # Remove raw text column — the collator only needs input_ids/attention_mask
+    tokenized = tokenized.remove_columns(["text"])
     result["dataset_train_samples"] = len(tokenized)
 
     # ---- Training args ----
@@ -274,7 +276,7 @@ def run_smoke_test(
         bf16=(compute_dtype == torch.bfloat16),
         seed=seed,
         report_to="none",
-        remove_unused_columns=False,
+        remove_unused_columns=True,
     )
 
     data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
