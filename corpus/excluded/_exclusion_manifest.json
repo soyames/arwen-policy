@@ -1,0 +1,62 @@
+[
+  {
+    "document_id": "19fe7418-1859-4174-89a4-a6cd5e7e6296",
+    "exclusion_reason": "navigation_stub",
+    "text_length": 22,
+    "title": "OECD Legal Instruments",
+    "source_url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449",
+    "final_url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449",
+    "excluded_at": "2026-08-10",
+    "text_preview": "OECD Legal Instruments"
+  },
+  {
+    "document_id": "80aeecef-1838-4759-aca3-90c295ac74a1",
+    "exclusion_reason": "navigation_stub",
+    "text_length": 40,
+    "title": "https://www.arin.net/participate/policy/",
+    "source_url": "https://www.arin.net/policy/",
+    "final_url": "https://www.arin.net/policy/",
+    "excluded_at": "2026-08-10",
+    "text_preview": "https://www.arin.net/participate/policy/"
+  },
+  {
+    "document_id": "c0f2dd4f-cd41-46c3-bada-7dc599e4f4f3",
+    "exclusion_reason": "navigation_stub",
+    "text_length": 34,
+    "title": "Public Technical Identifiers (PTI)",
+    "source_url": "https://pti.icann.org/",
+    "final_url": "https://pti.icann.org/",
+    "excluded_at": "2026-08-10",
+    "text_preview": "Public Technical Identifiers (PTI)"
+  },
+  {
+    "document_id": "d207e9ce-551f-4f1e-b461-525c8ab7f401",
+    "exclusion_reason": "cookie_page",
+    "text_length": 152,
+    "title": null,
+    "source_url": "https://info.icann.org/LP---Regional-Newsletter.html",
+    "final_url": "https://info.icann.org/LP---Regional-Newsletter.html",
+    "excluded_at": "2026-08-10",
+    "text_preview": "Privacy Policy\nTerms of Service\nCookies Policy\n© Internet Corporation For Assigned Names and Numbers.\nPrivacy Policy\n|\nTerms of Service\n|\nCookies Policy"
+  },
+  {
+    "document_id": "d729188d-cf29-4f4c-bc98-07d1199ffbad",
+    "exclusion_reason": "authentication_page",
+    "text_length": 40,
+    "title": "Icann-account - Signing in...",
+    "source_url": "https://account.icann.org/authorize?redirect_uri=https://www.icann.org/oauth&client_id=0oa9o9k9rp8VUcyJL2p7&nonce=6f5398ba-8a62-4370-99a8-e00d981b692d&state=https://www.icann.org/",
+    "final_url": "https://icann-account.okta.com/sso/idps/0oa1onjgxe0rOvxPR2p7?stateTokenExternalId=eXRyMGFIcjBxRTduMHVNREt4a1FTMkZ6alZQU2tnNUp2aFUvL01pR0R5dTduNXVyb1lyWmQ5U01qR1BqK2NtWA",
+    "excluded_at": "2026-08-10",
+    "text_preview": "Icann-account - Signing in...\nSigning In"
+  },
+  {
+    "document_id": "e46ac2f5-caa4-4a48-ab5e-dfbe1cbf73ca",
+    "exclusion_reason": "navigation_stub",
+    "text_length": 24,
+    "title": "WSIS+20",
+    "source_url": "https://www.itu.int/net/wsis/review/index.html",
+    "final_url": "https://www.itu.int/net/wsis/review/index.html",
+    "excluded_at": "2026-08-10",
+    "text_preview": "WSIS+20\nWSIS Review 2014"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "document_id": "d729188d-cf29-4f4c-bc98-07d1199ffbad",
+  "exclusion_reason": "authentication_page",
+  "text_length": 40,
+  "title": "Icann-account - Signing in...",
+  "source_url": "https://account.icann.org/authorize?redirect_uri=https://www.icann.org/oauth&client_id=0oa9o9k9rp8VUcyJL2p7&nonce=6f5398ba-8a62-4370-99a8-e00d981b692d&state=https://www.icann.org/",
+  "final_url": "https://icann-account.okta.com/sso/idps/0oa1onjgxe0rOvxPR2p7?stateTokenExternalId=eXRyMGFIcjBxRTduMHVNREt4a1FTMkZ6alZQU2tnNUp2aFUvL01pR0R5dTduNXVyb1lyWmQ5U01qR1BqK2NtWA",
+  "excluded_at": "2026-08-10",
+  "text_preview": "Icann-account - Signing in...\nSigning In"
+}

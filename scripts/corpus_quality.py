@@ -1,5 +1,8 @@
 """Arwen Policy Corpus Quality Diagnostics.
 
+Uses the date provenance model to distinguish verified dates from
+weak URL-based inferences. Future dates are flagged, not accepted.
+
 Usage: python scripts/corpus_quality.py [--corpus-dir corpus/] [--json]
 """
 
@@ -8,8 +11,16 @@ from __future__ import annotations
 import argparse
 import json
 from collections import Counter
-from datetime import datetime
 from pathlib import Path
+
+from arwen_etl.date_provenance import (
+    DateConfidence,
+    EARLIEST_YEAR,
+    extract_year_safe,
+)
+
+TODAY_YEAR = 2026
+FUTURE_CUTOFF = TODAY_YEAR + 1
 
 
 def classify_source(url: str) -> str:
@@ -43,29 +54,8 @@ def classify_source(url: str) -> str:
     return "other"
 
 
-def extract_year(doc: dict) -> int | None:
-    """Extract year from document metadata."""
-    meta = doc.get("metadata") or {}
-    published = meta.get("published_at")
-    if published:
-        try:
-            if isinstance(published, str):
-                return int(published[:4])
-            if hasattr(published, "year"):
-                return published.year
-        except (ValueError, TypeError):
-            pass
-    # Try title for common year patterns (e.g., "IGF 2024")
-    title = meta.get("title", "")
-    import re
-    years = re.findall(r"\b(19[9]\d|20[0-2]\d)\b", str(title))
-    if years:
-        return int(years[0])
-    return None
-
-
 def run(corpus_dir: str = "corpus", json_output: bool = False) -> dict:
-    """Run corpus quality diagnostics."""
+    """Run corpus quality diagnostics with date provenance."""
     corpus = Path(corpus_dir)
     docs = []
     for f in sorted(corpus.glob("*.json")):
@@ -86,17 +76,46 @@ def run(corpus_dir: str = "corpus", json_output: bool = False) -> dict:
         url = d.get("source_url", "") or d.get("final_url", "")
         sources[classify_source(url)] += 1
 
-    # Year distribution
-    years = []
+    # Date extraction with provenance
+    years_verified = []
+    years_weak = []
+    years_all = []
     missing_years = 0
+    future_flags = []
+    date_sources = Counter()
+    year_counts_verified = Counter()
+
     for d in docs:
-        y = extract_year(d)
-        if y:
-            years.append(y)
+        meta = d.get("metadata") or {}
+        source_url = d.get("source_url", "") or d.get("final_url", "")
+        text = d.get("text", "")
+
+        dr = extract_year_safe(
+            doc_metadata=meta,
+            source_url=source_url,
+            extracted_text=text,
+        )
+
+        if dr.published_at and dr.date_confidence != DateConfidence.none:
+            year = dr.published_at.year
+            years_all.append(year)
+            date_sources[dr.date_source.value] += 1
+
+            if dr.date_confidence in (DateConfidence.high, DateConfidence.medium):
+                years_verified.append(year)
+                year_counts_verified[year] += 1
+            else:
+                years_weak.append(year)
+
+            if year >= FUTURE_CUTOFF:
+                future_flags.append({
+                    "document_id": d.get("document_id"),
+                    "year": year,
+                    "title": meta.get("title"),
+                    "date_source": dr.date_source.value,
+                })
         else:
             missing_years += 1
-
-    year_counts = Counter(years)
 
     # Document types
     content_types = Counter()
@@ -145,6 +164,9 @@ def run(corpus_dir: str = "corpus", json_output: bool = False) -> dict:
     duplicates = sum(c - 1 for c in hashes.values() if c > 1)
     unique_docs = len(hashes)
 
+    # 1990-1993 coverage
+    early_years = sorted(set(y for y in years_all if EARLIEST_YEAR <= y <= 1993))
+
     result = {
         "total_documents": len(docs),
         "unique_documents": unique_docs,
@@ -158,26 +180,51 @@ def run(corpus_dir: str = "corpus", json_output: bool = False) -> dict:
         "short_documents": short_docs,
         "empty_documents": empty_content,
         "missing_titles": missing_titles,
-        "missing_years": missing_years,
-        "year_range": f"{min(years)}-{max(years)}" if years else "N/A",
-        "year_distribution": dict(sorted(year_counts.items())),
-        "temporal_coverage_1990": years and min(years) >= 1990,
+        # Date provenance
+        "verified_dates": len(years_verified),
+        "weak_dates": len(years_weak),
+        "missing_dates": missing_years,
+        "earliest_verified": min(years_verified) if years_verified else None,
+        "latest_verified": max(years_verified) if years_verified else None,
+        "earliest_any": min(years_all) if years_all else None,
+        "latest_any": max(years_all) if years_all else None,
+        "year_distribution_verified": dict(sorted(year_counts_verified.items())),
+        "date_sources": dict(date_sources),
+        "future_dates_flagged": len(future_flags),
+        "temporal_coverage_1990": years_all and min(years_all) >= EARLIEST_YEAR,
+        "historical_1990_1993": early_years,
     }
 
     if not json_output:
         print("=" * 60)
         print("ARWEN POLICY CORPUS — QUALITY DIAGNOSTICS")
         print("=" * 60)
-        print(f"Documents:           {len(docs)}")
-        print(f"Unique (by SHA-256): {unique_docs}")
-        print(f"Duplicates:          {duplicates}")
-        print(f"Sources:             {len(sources)}")
-        print(f"Total characters:    {total_chars:,}")
-        print(f"Short docs (<200c):  {short_docs}")
-        print(f"Empty docs (<20c):   {empty_content}")
-        print(f"Missing titles:      {missing_titles}")
-        print(f"Missing years:       {missing_years}")
-        print(f"Year range:          {result['year_range']}")
+        print(f"Documents:                {len(docs)}")
+        print(f"Unique (by SHA-256):      {unique_docs}")
+        print(f"Duplicates:               {duplicates}")
+        print(f"Sources:                  {len(sources)}")
+        print(f"Total characters:         {total_chars:,}")
+        print(f"Short docs (<200c):       {short_docs}")
+        print(f"Empty docs (<20c):        {empty_content}")
+        print(f"Missing titles:           {missing_titles}")
+        print()
+        print("--- Dates (with provenance) ---")
+        print(f"Verified dates:           {len(years_verified)}")
+        print(f"Weak dates (URL-based):   {len(years_weak)}")
+        print(f"Missing dates:            {missing_years}")
+        print(f"Earliest verified:        {result['earliest_verified']}")
+        print(f"Latest verified:          {result['latest_verified']}")
+        print(f"Earliest any:             {result['earliest_any']}")
+        print(f"Latest any:               {result['latest_any']}")
+        print(f"Future dates flagged:     {len(future_flags)}")
+        print(f"Date sources:             {dict(date_sources)}")
+        if future_flags:
+            for ff in future_flags:
+                print(f"  FUTURE: {ff['document_id']} year={ff['year']} src={ff['date_source']} title={ff.get('title','?')[:60]}")
+        print()
+        print("--- 1990–1993 Historical Coverage ---")
+        print(f"Documents found:          {len(early_years)}")
+        print(f"Years covered:            {early_years}")
         print()
         print("--- Source Distribution ---")
         for s, c in sources.most_common():
@@ -191,9 +238,15 @@ def run(corpus_dir: str = "corpus", json_output: bool = False) -> dict:
         for m, c in extraction_methods.most_common():
             print(f"  {m:15} {c:>4}")
         print()
-        print("--- Year Distribution ---")
-        for y, c in sorted(year_counts.items()):
-            print(f"  {y}: {c}")
+        print("--- Year Distribution (verified + weak) ---")
+        all_year_counts = Counter(years_all)
+        for y, c in sorted(all_year_counts.items()):
+            marker = ""
+            if y >= FUTURE_CUTOFF:
+                marker = " [FUTURE - FLAGGED]"
+            elif y <= 1993:
+                marker = " [1990-1993 target]"
+            print(f"  {y}: {c}{marker}")
         print()
         print("--- Blocked/Absent Sources ---")
         configured = [
@@ -202,7 +255,13 @@ def run(corpus_dir: str = "corpus", json_output: bool = False) -> dict:
         ]
         for src_name in configured:
             count = sources.get(src_name, 0)
-            status = "OK" if count >= 20 else ("LOW" if count > 0 else "MISSING")
+            threshold = 5 if src_name in ("Academic", "EU", "OECD") else 10
+            if count == 0:
+                status = "MISSING"
+            elif count < threshold:
+                status = f"LOW (<{threshold})"
+            else:
+                status = "OK"
             print(f"  {src_name:12} {count:>4} {status}")
 
     return result
