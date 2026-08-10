@@ -1,0 +1,83 @@
+{
+  "status": "OK",
+  "total_documents": 192,
+  "documents_per_split": {
+    "train": 153,
+    "validation": 19,
+    "test": 20
+  },
+  "corpus_revision": "911c82f",
+  "schema_version": "1.0.0",
+  "seed": 42,
+  "task_types": [
+    "policy_question",
+    "stakeholder_position",
+    "evidence_extraction",
+    "argument_identification",
+    "historical_context",
+    "institutional_role",
+    "document_understanding"
+  ],
+  "tasks_per_doc": 3,
+  "use_teacher": false,
+  "generated_at": "2026-08-10T13:40:07.657294+00:00",
+  "total_examples": 576,
+  "validation": {
+    "valid": true,
+    "total": 576,
+    "error_count": 0,
+    "duplicates": 0,
+    "errors": []
+  },
+  "year_distribution": {
+    "1990": 15,
+    "1991": 18,
+    "1992": 27,
+    "1993": 21,
+    "2017": 3,
+    "2020": 3,
+    "2022": 3,
+    "2023": 6,
+    "2026": 3
+  },
+  "source_distribution": {
+    "ICANN": 183,
+    "IETF": 153,
+    "IGF": 45,
+    "ITU": 39,
+    "EU": 21,
+    "ARIN": 21,
+    "APNIC": 18,
+    "ISOC": 18,
+    "RIPE": 18,
+    "UNESCO": 15,
+    "Academic": 15,
+    "UN": 12,
+    "IANA": 3,
+    "LACNIC": 3,
+    "AFRINIC": 3,
+    "OECD": 3,
+    "WTO": 3,
+    "other": 3
+  },
+  "task_distribution": {
+    "policy_question": 74,
+    "evidence_extraction": 87,
+    "historical_context": 74,
+    "stakeholder_position": 80,
+    "argument_identification": 95,
+    "institutional_role": 79,
+    "document_understanding": 87
+  },
+  "language_distribution": {
+    "en": 477,
+    "en-AU": 15,
+    "null": 21,
+    "en-US": 42,
+    "es": 3,
+    "en-us": 18
+  },
+  "failures": 0,
+  "rejects": 0,
+  "elapsed_seconds": 0.3
+}
