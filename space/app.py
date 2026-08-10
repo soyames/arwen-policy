@@ -29,17 +29,26 @@ from arwen_retrieval.retriever import InMemoryRetriever
 from arwen_retrieval.service import RetrievalService
 
 # ---------------------------------------------------------------------------
-# Model provider (optional -- Ollama / HF endpoint)
+# Model provider — HF Inference API (configurable via MODEL_ID / HF_TOKEN)
 # ---------------------------------------------------------------------------
 
 _model_provider = None
-try:
-    from arwen_etl.engine.qwen_provider import QwenProvider
+_model_backend = "unavailable"
+_model_error = None
 
-    _model_provider = QwenProvider()
-    _model_backend = _model_provider.get_model_info().get("backend", "unknown")
-except Exception:
+# Try HF Inference API first (works on Spaces with HF_TOKEN secret)
+try:
+    from arwen_etl.engine.hf_inference_provider import HfInferenceProvider
+
+    _model_provider = HfInferenceProvider()
+    _info = _model_provider.get_model_info()
+    _model_backend = _info.get("backend", "unknown")
+    if not _info.get("token_configured"):
+        _model_backend = "unconfigured"
+        _model_error = "HF_TOKEN not set. Add it as a Space Secret."
+except Exception as exc:
     _model_backend = "unavailable"
+    _model_error = str(exc)
 
 
 # ---------------------------------------------------------------------------
@@ -131,15 +140,20 @@ _engine = ArwenPolicyEngine(
 # ---------------------------------------------------------------------------
 
 @spaces.GPU
-def _model_synthesize(synthesis_prompt: str) -> str | None:
-    """Run model inference on ZeroGPU.  Returns model output or None."""
+def _model_synthesize(synthesis_prompt: str) -> dict[str, Any]:
+    """Run model inference on ZeroGPU. Returns dict with output or error."""
     if _model_provider is None:
-        return None
+        return {"output": None, "error": "No model provider available. Check Space configuration."}
     try:
         result = _model_provider.generate(prompt=synthesis_prompt)
-        return result.get("output") if isinstance(result, dict) else str(result)
-    except Exception:
-        return None
+        if isinstance(result, dict):
+            err = result.get("error")
+            if err:
+                return {"output": None, "error": f"{err.get('code', 'unknown')}: {err.get('message', '')}"}
+            return {"output": result.get("output"), "error": None}
+        return {"output": str(result), "error": None}
+    except Exception as exc:
+        return {"output": None, "error": str(exc)}
 
 
 # ---------------------------------------------------------------------------
@@ -159,9 +173,11 @@ def analyse(question: str, top_k: int) -> str:
     answer = _engine.analyze(request)
 
     # Model synthesis (ZeroGPU)  --  called separately
-    synthesis: str | None = None
+    synthesis_result: dict[str, Any] | None = None
     if _model_provider is not None and answer.synthesis_prompt:
-        synthesis = _model_synthesize(answer.synthesis_prompt)
+        synthesis_result = _model_synthesize(answer.synthesis_prompt)
+    synthesis = synthesis_result.get("output") if synthesis_result else None
+    synthesis_error = synthesis_result.get("error") if synthesis_result else None
 
     # -- Header -----------------------------------------------------------
     lines = [
@@ -231,7 +247,6 @@ def analyse(question: str, top_k: int) -> str:
     lines.append("### Analysis")
     lines.append("")
     if synthesis:
-        # Clean up JSON wrapping if the model returned structured JSON
         synth = synthesis
         if synth.strip().startswith("{"):
             try:
@@ -253,10 +268,16 @@ def analyse(question: str, top_k: int) -> str:
                 lines.append(synth)
         else:
             lines.append(synth)
-    elif _model_backend != "unavailable":
-        lines.append("*(Model synthesis pending  --  provider did not return output)*")
+    elif synthesis_error:
+        lines.append(f":warning: **Model synthesis unavailable:** {synthesis_error}")
+        lines.append("")
+        lines.append("*Evidence retrieval is working. The model backend needs configuration.*")
+    elif _model_backend == "unconfigured":
+        lines.append(":warning: **Model not configured.** Add `HF_TOKEN` as a Space Secret.")
+    elif _model_backend == "unavailable":
+        lines.append(":warning: **Model backend unavailable.** Check Space logs for details.")
     else:
-        lines.append("*(No model available for synthesis)*")
+        lines.append("*(Model synthesis pending — provider did not return output)*")
     lines.append("")
 
     # -- Limitations ------------------------------------------------------
