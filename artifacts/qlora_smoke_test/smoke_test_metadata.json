@@ -1,0 +1,59 @@
+{
+  "run_at": "2026-08-10T16:54:15.265865+00:00",
+  "environment": {
+    "python": "3.12.10",
+    "cuda_available": false,
+    "gpu_name": "NONE",
+    "gpu_vram_gb": 0.0,
+    "gpu_count": 0,
+    "recommended_dtype": "float32",
+    "torch": "2.13.0+cpu",
+    "transformers": "5.15.0",
+    "peft": "0.20.0",
+    "accelerate": "1.14.0",
+    "bitsandbytes": "0.50.0",
+    "datasets": "5.0.1"
+  },
+  "tokenization": {
+    "total_examples": 627,
+    "min": 77,
+    "max": 290,
+    "mean": 162.9,
+    "median": 163,
+    "p95": 204,
+    "p99": 227,
+    "max_length": 2048,
+    "truncated": 0,
+    "truncation_pct": 0.0
+  },
+  "result": {
+    "status": "SKIPPED",
+    "reason": "No GPU",
+    "environment": {
+      "python": "3.12.10",
+      "cuda_available": false,
+      "gpu_name": "NONE",
+      "gpu_vram_gb": 0.0,
+      "gpu_count": 0,
+      "recommended_dtype": "float32",
+      "torch": "2.13.0+cpu",
+      "transformers": "5.15.0",
+      "peft": "0.20.0",
+      "accelerate": "1.14.0",
+      "bitsandbytes": "0.50.0",
+      "datasets": "5.0.1"
+    },
+    "tokenization": {
+      "total_examples": 627,
+      "min": 77,
+      "max": 290,
+      "mean": 162.9,
+      "median": 163,
+      "p95": 204,
+      "p99": 227,
+      "max_length": 2048,
+      "truncated": 0,
+      "truncation_pct": 0.0
+    }
+  }
+}
