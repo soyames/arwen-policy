@@ -1,0 +1,71 @@
+{
+  "smoke_test": "QLoRA — Lightning Tesla T4",
+  "timestamp": "2026-08-10",
+  "status": "SUCCESS",
+  "gpu": {
+    "name": "Tesla T4",
+    "vram_total_gb": 15.0,
+    "cuda_available": true
+  },
+  "model": {
+    "foundation": "Qwen/Qwen3-8B",
+    "architecture": "Qwen3ForCausalLM",
+    "total_parameters": 8234382336,
+    "trainable_parameters": 43646976,
+    "trainable_percentage": 0.5301
+  },
+  "qlora": {
+    "quantization": "4-bit NF4",
+    "double_quantization": true,
+    "compute_dtype": "float16",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj", "k_proj", "v_proj", "o_proj",
+      "gate_proj", "up_proj", "down_proj"
+    ]
+  },
+  "dataset": {
+    "source": "datasets/sft_final",
+    "train": 503,
+    "validation": 60,
+    "test": 64,
+    "smoke_test_samples": 16,
+    "tokenization_truncation": "0%"
+  },
+  "training": {
+    "steps": 2,
+    "train_loss": 3.5785,
+    "steps_completed": true,
+    "elapsed_seconds": 114.2
+  },
+  "memory": {
+    "peak_allocated_gb": 11.01,
+    "peak_reserved_gb": 12.09
+  },
+  "checkpoint": {
+    "saved": true,
+    "adapter_config_present": true,
+    "adapter_model_present": true
+  },
+  "adapter_reload": {
+    "reloaded": true,
+    "attached_successfully": true
+  },
+  "inference": {
+    "test_ran": true,
+    "output_valid": true
+  },
+  "fix_verified": {
+    "issue": "ValueError: too many dimensions str",
+    "root_cause": "Raw text column passed to DataCollatorForLanguageModeling",
+    "fix": "remove_columns(['text']) after tokenization + remove_unused_columns=True",
+    "regression_tests": 12,
+    "regression_passing": true
+  },
+  "git": {
+    "commit": "221a33c",
+    "fix_commit": "d04a0f1"
+  }
+}
