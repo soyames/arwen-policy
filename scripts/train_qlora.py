@@ -247,7 +247,9 @@ def main() -> int:
     print(f"Adapter saved to {adapter_path}")
 
     # ---- 10. Reload and test ----
-    print("\n=== Reloading best adapter ===")
+    # Capture best checkpoint before freeing trainer
+    best_checkpoint = trainer.state.best_model_checkpoint or str(adapter_path)
+    print(f"\n=== Reloading best adapter: {best_checkpoint} ===")
     del model, trainer
     torch.cuda.empty_cache()
 
@@ -258,7 +260,6 @@ def main() -> int:
         trust_remote_code=True,
         torch_dtype=compute_dtype,
     )
-    best_checkpoint = trainer.state.best_model_checkpoint or str(adapter_path)
     loaded = PeftModel.from_pretrained(base_model, best_checkpoint)
     print("Adapter reloaded successfully")
 
