@@ -340,7 +340,8 @@ def run_smoke_test(
 if __name__ == "__main__":
     import argparse
     p = argparse.ArgumentParser(description="Arwen Policy QLoRA Smoke Test")
-    p.add_argument("--model", default="Qwen/Qwen3.6-27B")
+    p.add_argument("--model", default="Qwen/Qwen3-8B",
+                   help="Foundation model (default: Qwen3-8B for T4. Use Qwen/Qwen3.6-27B for A100+)")
     p.add_argument("--data-dir", default="datasets/sft_final")
     p.add_argument("--output-dir", default="artifacts/qlora_smoke_test")
     p.add_argument("--max-steps", type=int, default=2)

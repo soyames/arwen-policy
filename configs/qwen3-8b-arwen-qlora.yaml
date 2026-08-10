@@ -1,23 +1,17 @@
 # Arwen Policy — QLoRA Training Configuration
-# Qwen/Qwen3.6-27B with 4-bit NF4 quantization
-# Target: A100 (40/80 GB) or L40S (48 GB)
-# NOTE: Does NOT fit on a single T4 (15 GB). T4 result: BLOCKED.
-# For T4, use configs/qwen3-8b-arwen-qlora.yaml (Qwen3-8B).
+# Qwen/Qwen3-8B with 4-bit NF4 quantization
+# Target: Tesla T4 (15 GB VRAM) — verified to fit
+# Also compatible with L40S/A100 for larger batch sizes
 
-base_model: Qwen/Qwen3.6-27B
+base_model: Qwen/Qwen3-8B
 dataset: datasets/sft_final
-output_dir: artifacts/qlora-arwen
+output_dir: artifacts/qlora-arwen-8b
 
 # ---- QLoRA (4-bit) ----
 load_in_4bit: true
 bnb_4bit_quant_type: nf4
 bnb_4bit_use_double_quant: true
-bnb_4bit_compute_dtype: bfloat16  # override per GPU below
-
-# GPU-specific overrides:
-#   T4        → bnb_4bit_compute_dtype: float16
-#   L40S/A100 → bnb_4bit_compute_dtype: bfloat16
-# The training script auto-detects and overrides.
+bnb_4bit_compute_dtype: float16  # T4 default; bfloat16 for Ampere+
 
 # ---- LoRA ----
 lora_r: 16
@@ -25,11 +19,10 @@ lora_alpha: 32
 lora_dropout: 0.05
 lora_task_type: CAUSAL_LM
 
-# Verified from Qwen3.6-27B architecture (config skeleton + weight-map inspection):
-#   Gated Attention layers (every 4th): q_proj, k_proj, v_proj, o_proj
-#   Gated DeltaNet layers (most layers): in_proj_qkv, in_proj_z, out_proj
-#   MLP layers (all): gate_proj, up_proj, down_proj
-# Targeting the standard attention + MLP projections for broad adaptation.
+# Verified from Qwen3-8B architecture (Qwen3ForCausalLM, model_type qwen3):
+#   36 layers, 4096 hidden, 32 attn heads, 8 KV heads
+#   Standard self-attention (no Gated DeltaNet — simpler than Qwen3.6)
+#   Linear modules: q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj
 target_modules:
   - q_proj
   - k_proj
@@ -74,3 +67,7 @@ report_to: none
 #   train.jsonl:      503 examples (153 source documents)
 #   validation.jsonl:  60 examples ( 19 source documents)
 #   test.jsonl:        64 examples ( 20 source documents)
+
+# ---- ALTERNATIVE: Larger GPU (see configs/qwen3.6-27b-arwen-qlora.yaml) ----
+# Qwen/Qwen3.6-27B requires ~18-24 GB VRAM even with 4-bit.
+# Use A100/L40S/H100 for the 27B model.

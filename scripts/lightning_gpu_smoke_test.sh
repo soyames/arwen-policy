@@ -71,10 +71,13 @@ nvidia-smi --query-gpu=memory.used,memory.free,memory.total --format=csv
 echo ""
 echo "=== 7. QLORA SMOKE TEST ==="
 uv run python scripts/qlora_smoke_test.py \
-    --model Qwen/Qwen3.6-27B \
+    --model Qwen/Qwen3-8B \
     --data-dir datasets/sft_final \
-    --output-dir artifacts/qlora_smoke_test \
+    --output-dir artifacts/qlora_smoke_test_8b \
     --max-steps 2
+
+# For larger GPUs (A100/L40S), use instead:
+# uv run python scripts/qlora_smoke_test.py --model Qwen/Qwen3.6-27B
 
 # ---- 8. GPU memory after ----
 echo ""
