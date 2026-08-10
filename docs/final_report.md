@@ -99,7 +99,7 @@ python -m arwen_etl.cli build-release --version 0.1.0 --dry-run
 python -m arwen_etl.cli build-release --version 0.1.0
 
 # 4. Publish to Hugging Face (requires HF_TOKEN env var)
-export HF_TOKEN=hf_xxxxxxxxxxxxx
+export HF_TOKEN=hf_your_token_here
 python -m arwen_etl.cli release --version 0.1.0
 
 # 5. Run the benchmark suite

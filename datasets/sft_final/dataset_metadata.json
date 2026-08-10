@@ -1,0 +1,81 @@
+{
+  "schema_version": "3.0.0",
+  "corpus_revision": "911c82f",
+  "built_at": "2026-08-10T16:16:07.794620+00:00",
+  "splits": {
+    "train": 503,
+    "validation": 60,
+    "test": 64
+  },
+  "total": 627,
+  "v1_original": 576,
+  "v1_filtered_kept": 627,
+  "v2_cleaned_kept": 78,
+  "validation": {
+    "leakage": {
+      "train/validation": 0,
+      "train/test": 0,
+      "validation/test": 0
+    },
+    "missing_provenance": 0,
+    "duplicates": 0,
+    "private_cot_fields": 0,
+    "errors": [],
+    "valid": true
+  },
+  "quality": {
+    "avg_grounding": 4.9,
+    "avg_evidence": 2.2,
+    "avg_policy_relevance": 3.8,
+    "avg_specificity": 3.4,
+    "avg_reasoning": 1.2,
+    "avg_provenance": 5.0
+  },
+  "year_distribution": {
+    "1990": 16,
+    "1991": 21,
+    "1992": 30,
+    "1993": 24,
+    "2017": 3,
+    "2020": 3,
+    "2022": 3,
+    "2023": 8,
+    "2026": 4
+  },
+  "decade_distribution": {
+    "1990-1999": 91,
+    "2020-2026": 18,
+    "2010-2019": 3
+  },
+  "source_distribution": {
+    "ICANN": 196,
+    "IETF": 170,
+    "IGF": 51,
+    "ITU": 42,
+    "ARIN": 24,
+    "EU": 22,
+    "ISOC": 20,
+    "APNIC": 20,
+    "RIPE": 18,
+    "Academic": 17,
+    "UNESCO": 16,
+    "UN": 13,
+    "OECD": 3,
+    "IANA": 3,
+    "LACNIC": 3,
+    "AFRINIC": 3,
+    "WTO": 3,
+    "other": 3
+  },
+  "task_distribution": {
+    "evidence_extraction": 95,
+    "tradeoff_analysis": 6,
+    "document_understanding": 91,
+    "stakeholder_position": 88,
+    "argument_identification": 101,
+    "policy_question": 81,
+    "historical_context": 80,
+    "institutional_role": 83,
+    "policy_comparison": 2
+  }
+}
