@@ -1,0 +1,20 @@
+{
+  "document_id": "a7549efd-cebb-40d8-82af-e9f711c9e4c1",
+  "source_id": "ba5afd76101bec0c54fc09e8",
+  "source_url": "https://www.ripe.net/publications/docs/ripe-documents/",
+  "final_url": "https://www.ripe.net/publications/docs/ripe-documents/",
+  "artifact_sha256": "ba5afd76101bec0c54fc09e896a846fc75a690ef3224fc2603ff271fba0f47b2",
+  "content_type": "text/html; charset=utf-8",
+  "extraction_method": "html_bs4",
+  "byte_size": 121976,
+  "text": "RIPE Documents by Category — RIPE Network Coordination Centre\nSkip to main content\nSearch\nSearch\nYour IP Address is:\n193.171.242.40\nTip: try using \"quotes around your search phrase\"\nApps\nLog in\nMenu\nClose\nRIPE Documents by Category\nDocs / RIPE Document Store / RIPE Documents by Category\nAll Current RIPE Documents\nList of current RIPE Documents.\nPage\nDocs / RIPE Document Store / RIPE Documents by Category\nRIPE Database Documents\nThis page regroups reference manuals and other useful documents for RIPE Database users are available from the Database Document Library. Below please find a list of all current RIPE Documents relating to the RIPE Database.\nPage\nDocs / RIPE Document Store / RIPE Documents by Category\nIPv6 Documents\nAll documents relating to IPv6.\nPage\nDocs / RIPE Document Store / RIPE Documents by Category\nRIPE NCC Organisational Documents\nIncludes all documents relating to the RIPE NCC and its organisation, including Annual Reports, Financial Reports and Charging Schemes.\nPage\nDocs / RIPE Document Store / RIPE Documents by Category\nRIPE Governance\nThese documents describe how the RIPE community is governed. This includes the framework of processes, functions, structures and rules between the different stakeholders forming the RIPE community.\nPage\nDocs / RIPE Document Store / RIPE Documents by Category\nProcedural Documents\nThis page is a collection of all RIPE NCC procedural documents. These documents contain details of how the RIPE NCC carries out various internal procedures.\nPage\nDocs / RIPE Document Store / RIPE Documents by Category\nBest Common Practices\nThis page regroups all documents proposing mutually accepted norms on the best way to carry out specific operations. This process is often led by the community at the initiative of Task Forces.\nPage\nDocs / RIPE Document Store / RIPE Documents by Category\nGuidelines\nThis page regroups informational material for the community.\nPage\nDocs / RIPE Document Store / RIPE Documents by Category\nRequest Forms & Supporting Notes\nResource Request Forms and Supporting Notes\nPage\nDocs / RIPE Document Store / RIPE Documents by Category\nDraft and Discussion Documents\nThis section contains draft documents that are intended to serve as a basis for discussion. They can later become fully-fledged RIPE Documents.\nPage",
+  "text_length": 2297,
+  "retrieved_at": "2026-08-10T11:35:12.141955+00:00",
+  "http_status": 200,
+  "metadata": {
+    "title": "RIPE Documents Repository",
+    "language": "en"
+  },
+  "provenance_events": [],
+  "policy_topics": []
+}

@@ -1,0 +1,25 @@
+{
+  "document_id": "efd23641-0ee5-4a43-925a-19fa5fa8c8b3",
+  "source_id": "3629daee90adaefc61c6b7de",
+  "source_url": "https://www.rfc-editor.org/rfc/rfc1181",
+  "final_url": "https://www.rfc-editor.org/info/rfc1181/",
+  "artifact_sha256": "3629daee90adaefc61c6b7def186ecd6b7bdb557ce81ac2eb2afaa4e3589009a",
+  "content_type": "text/html;charset=utf-8",
+  "extraction_method": "html_bs4",
+  "byte_size": 72303,
+  "text": "RFC 1181: RIPE Terms of Reference | RFC Editor\nSkip to content\nInfo\nRFC\n1181\n:\nRIPE Terms of Reference\nR. Blokzijl\nInformational\nNetwork Working Group                                        R. Blokzijl\nRequest for Comments: 1181                                   RIPE/NIKHEF\n                                                          September 1990\nRIPE Terms of Reference\nStatus of this Memo\n\n   This RFC describes the Terms of Reference of RIPE (Reseaux IP\n   Europeens), the cooperation of European IP networks.  This memo\n   provides information for the Internet community.  It does not specify\n   any standard.\n\n   Distribution of this memo is unlimited.\n1\n. Terms of Reference of RIPE\nRecognising that IP networks are growing beyond the LAN's in Europe,\n   and are extending over national and international WAN's in Europe,\n   the RIPE coordinating body has been created.  RIPE stands for the\n   \"Reseaux IP Europeens\".\n\n   The objective of RIPE is to ensure the necessary administrative and\n   technical coordination to allow the operation and expansion of a\n   pan-European IP network.\n\n      o RIPE acts as a forum for the exchange of technical information\n        and the creation of expertise on IP networking.\n\n      o The area of relevance for RIPE is Europe.\n\n      o All parties operating wide area IP networks are encouraged to\n        participate.\n\n      o RIPE promotes and coordinates interconnection of IP networks\n        within Europe and to other continents.\n\n      o RIPE establishes agreement on common network management\n        practices and the operational management of the interconnected\n        networks.\n\n      o RIPE serves as a focal point for other common activities of the\n        participants related to IP networking.\n\n      o All documents produced by RIPE will be publicly available.\n\n      o RIPE is not a network service provider.  IP networks\nBlokzijl                                                        [Page 1]\nRFC 1181\nRIPE Terms of Reference           September 1990\ncollaborating in RIPE remain under the executive authority of\n        their respective organisations.\n\nSecurity Considerations\n\n   Security issues are not discussed in this memo.\n\nAuthor's Address\n\n   Rob Blokzijl\n   RIPE\n   c/o NIKHEF\n   P.O.B. 41882\n   NL-1009 DB  Amsterdam\n   the Netherlands\n\n   Phone:  +31 20 5920413\n\n   EMail:  k13@nikhef.nl\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlokzijl                                                        [Page 2]\nRFC\n1181\n: RIPE Terms of Reference\nInformational",
+  "text_length": 2518,
+  "retrieved_at": "2026-08-10T11:32:49.304867+00:00",
+  "http_status": 200,
+  "metadata": {
+    "title": "RFC 1181: RIPE Terms of Reference",
+    "authors": "R. Blokzijl",
+    "published_at": "1990-09-01",
+    "language": "en"
+  },
+  "provenance_events": [],
+  "policy_topics": [
+    "internet-governance",
+    "technical-standards"
+  ]
+}

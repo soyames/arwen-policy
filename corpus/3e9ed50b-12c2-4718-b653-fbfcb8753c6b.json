@@ -1,0 +1,27 @@
+{
+  "document_id": "3e9ed50b-12c2-4718-b653-fbfcb8753c6b",
+  "source_id": "9e229857b3641c02c59450f7",
+  "source_url": "https://www.icann.org/management-organization-chart",
+  "final_url": "https://www.icann.org/en/system/files/files/management-org-16mar26-en.pdf",
+  "artifact_sha256": "9e229857b3641c02c59450f769643c94a553f9e34b64067fc54a6bbf2470c1ef",
+  "content_type": "application/pdf",
+  "extraction_method": "pypdf",
+  "byte_size": 3736354,
+  "text": "1\nPg.Executive Team | As of 16 M arch 2026B\noard of Directors\n\n2\nPg.Executive Team | As of 16 M arch 2026B\noard of DirectorsE\nlizabeth FieldO\nmbudsK\nurtis LindqvistP\nresident and Chief Executive Officer\n\n3\nPg.Executive Team | As of 16 M arch 2026K\nurtis LindqvistPresident and Chief Executive OfficerC\nassia OliveiraDirector, Office of the CEOG\nlobal Communications and Language ServicesSally Newell CohenSVP, Global CommunicationsG\nlobal Domains and StrategyTheresa SwinehartSVP, Global Domains & StrategyG\nlobal Government Engagement and Contractual ComplianceJamie HedlundSVP, Global Government Engagement and ComplianceG\nlobal Human ResourcesGino MarlianiSVP, Global Human ResourcesG\novernanceJohn JeffreyGeneral Counsel and SecretaryO\nffice of the CFOXavier CalvezSVP, Planning & Chief Financial Officer (CFO)O\nffice of the Chief Technology OfficerJohn CrainSVP & Chief Technology OfficerP\nolicy Development SupportRuss WeinsteinSVP, Policy Development SupportS\ntakeholder EngagementSally CostertonSVP, Global Stakeholder Engagement",
+  "text_length": 1037,
+  "retrieved_at": "2026-08-10T11:38:43.558561+00:00",
+  "http_status": 200,
+  "metadata": {
+    "title": "ICANN Management Organization Chart (March 2026)",
+    "language": "en",
+    "published_at": "2026-03-16"
+  },
+  "provenance_events": [
+    {
+      "event_type": "INGESTED_FROM_HF_RECONCILIATION"
+    }
+  ],
+  "policy_topics": [
+    "icann-governance"
+  ]
+}

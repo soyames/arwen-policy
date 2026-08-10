@@ -1,0 +1,21 @@
+{
+  "document_id": "87cc90e9-6548-482e-accb-0a2cb95d3a05",
+  "source_id": "551bfdc3cfa70745ac60de7e",
+  "source_url": "https://digital-strategy.ec.europa.eu/en/library/european-declaration-digital-rights-and-principles-digital-decade",
+  "final_url": "https://digital-strategy.ec.europa.eu/en/page-not-found",
+  "artifact_sha256": "551bfdc3cfa70745ac60de7e00a3a5f59a29246f3b254a5cfaba2a45d1042bb0",
+  "content_type": "text/html; charset=UTF-8",
+  "extraction_method": "html_bs4",
+  "byte_size": 46147,
+  "text": "Page not found | Shaping Europe’s digital future\nSkip to main content\nen\nSelect your language\nClose\nbg\nбългарски\nes\nespañol\ncs\nčeština\nda\ndansk\nde\nDeutsch\net\neesti\nel\nελληνικά\nen\nEnglish\nfr\nfrançais\nga\nGaeilge\nhr\nhrvatski\nit\nitaliano\nlv\nlatviešu\nlt\nlietuvių\nhu\nmagyar\nmt\nMalti\nnl\nNederlands\npl\npolski\npt\nportuguês\nro\nromână\nsk\nslovenčina\nsl\nslovenščina\nfi\nsuomi\nsv\nsvenska\nSearch\nSearch\nShaping Europe’s digital future\nPage not found\nSorry, we could not find that page\nThe page or document you are looking for may have been moved or the URL may be incorrect.\nSome suggestions to help your search:\nUse the search box above\nBrowse the menu sections above\nReport any broken link via our\ncontact form\nPolicies\nFind out more about the Digital EU policies\nNews highlights\nCheck our latest news and publications\nJobs opportunities\nFind out about open vacancies\nSubscribe to the news\nCheck out our newsletters and register",
+  "text_length": 914,
+  "retrieved_at": "2026-08-10T11:34:27.422096+00:00",
+  "http_status": 200,
+  "metadata": {
+    "title": "European Declaration on Digital Rights and Principles",
+    "language": "en",
+    "published_at": "2022-07-01"
+  },
+  "provenance_events": [],
+  "policy_topics": []
+}
