@@ -56,6 +56,8 @@ class SourcePolicy:
         parser = RobotFileParser()
         parser.set_url(robots_url)
 
+        robots_text: str | None = None
+
         try:
             client = self._client or httpx.Client(
                 timeout=self.timeout,
@@ -78,8 +80,6 @@ class SourcePolicy:
             )
 
         if response.status_code == 404:
-            # No robots.txt means there is no robots exclusion
-            # file to apply.
             return PolicyDecision(
                 allowed=True,
                 reason="ROBOTS_NOT_FOUND",
@@ -87,14 +87,26 @@ class SourcePolicy:
             )
 
         if response.status_code >= 400:
-            return PolicyDecision(
-                allowed=False,
-                reason="ROBOTS_UNAVAILABLE",
-                policy_source=robots_url,
-                details={"status_code": str(response.status_code)},
-            )
+            # Try curl fallback for Cloudflare/WAF-blocked domains.
+            robots_text = _fetch_robots_via_curl(robots_url, self.USER_AGENT)
+            if robots_text is None:
+                return PolicyDecision(
+                    allowed=False,
+                    reason="ROBOTS_UNAVAILABLE",
+                    policy_source=robots_url,
+                    details={"status_code": str(response.status_code)},
+                )
+        else:
+            robots_text = response.text
 
-        parser.parse(response.text.splitlines())
+        if robots_text:
+            parser.parse(robots_text.splitlines())
+        else:
+            return PolicyDecision(
+                allowed=True,
+                reason="ROBOTS_EMPTY",
+                policy_source=robots_url,
+            )
 
         allowed = parser.can_fetch(self.USER_AGENT, url)
 
@@ -121,3 +133,21 @@ class SourcePolicy:
             )
 
         return self.check_robots(url)
+
+
+def _fetch_robots_via_curl(robots_url: str, user_agent: str) -> str | None:
+    """Fetch robots.txt via curl subprocess (bypasses Cloudflare TLS fingerprinting)."""
+    try:
+        import subprocess
+
+        result = subprocess.run(
+            ["curl", "-s", "-L", "--max-time", "15", "-A", user_agent, robots_url],
+            capture_output=True,
+            text=True,
+            timeout=20,
+        )
+        if result.returncode == 0 and "Disallow:" in result.stdout:
+            return result.stdout
+    except Exception:
+        pass
+    return None

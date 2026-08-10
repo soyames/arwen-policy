@@ -198,6 +198,23 @@ def capture_url(
     if max_redirects is not None:
         client_kwargs["max_redirects"] = max_redirects
 
+    # Domains that block httpx's TLS fingerprint — use curl fallback.
+    _CURL_DOMAINS = {"oecd.org", "intgovforum.org", "internetsociety.org"}
+
+    use_curl = any(
+        parsed.netloc.endswith(d) for d in _CURL_DOMAINS
+    )
+
+    if use_curl:
+        return _capture_via_curl(
+            url,
+            source_id=source_id,
+            output_dir=output_dir,
+            effective_max_bytes=effective_max_bytes,
+            effective_timeout=effective_timeout,
+            user_agent=user_agent or USER_AGENT,
+        )
+
     try:
         with httpx.Client(**client_kwargs) as client:
             with client.stream("GET", url) as response:
@@ -352,6 +369,69 @@ def capture_url(
     write_artifact(artifact, output_dir)
 
     return artifact
+
+
+def _capture_via_curl(
+    url: str,
+    *,
+    source_id: str,
+    output_dir: str | Path,
+    effective_max_bytes: int,
+    effective_timeout: float,
+    user_agent: str,
+) -> CapturedArtifact:
+    """Capture a URL using curl subprocess (bypasses Cloudflare TLS fingerprinting)."""
+    import subprocess
+    import tempfile
+
+    tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".curl_out")
+    tmp_path = tmp.name
+    tmp.close()
+
+    try:
+        cmd = [
+            "curl", "-s", "-L", "--max-time", str(int(effective_timeout)),
+            "--max-filesize", str(effective_max_bytes),
+            "-A", user_agent,
+            "-o", tmp_path,
+            "-w", "%{http_code}\\n%{url_effective}\\n%{content_type}",
+            url,
+        ]
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=effective_timeout + 10)
+        lines = result.stdout.strip().split("\n")
+        status_code = int(lines[0]) if lines and lines[0].isdigit() else 0
+        final_url = lines[1] if len(lines) > 1 else url
+        content_type = lines[2].split(";")[0].strip() if len(lines) > 2 else "text/html"
+
+        if status_code == 0:
+            raise CaptureError("CURL_FAILED", {"stderr": result.stderr[:500]})
+
+        with open(tmp_path, "rb") as fh:
+            data = fh.read()
+
+        if len(data) > effective_max_bytes:
+            data = data[:effective_max_bytes]
+
+        digest = sha256_bytes(data)
+        artifact = CapturedArtifact(
+            source_id=source_id,
+            requested_url=url,
+            final_url=final_url,
+            status_code=status_code,
+            content_type=content_type,
+            data=data,
+            sha256=digest,
+        )
+        write_artifact(artifact, output_dir)
+        return artifact
+    except subprocess.TimeoutExpired:
+        raise CaptureError("TIMEOUT", {"url": url})
+    finally:
+        try:
+            import os
+            os.unlink(tmp_path)
+        except Exception:
+            pass
 
 
 def write_artifact(

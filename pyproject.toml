@@ -31,6 +31,7 @@ dependencies = [
   "pytest>=8.4.2",
   "ollama>=0.6.2",
   "gradio>=6.22.0",
+  "pyarrow>=25.0.0",
 ]
 
 [project.optional-dependencies]

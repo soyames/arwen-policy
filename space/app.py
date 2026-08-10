@@ -2,7 +2,7 @@
 Arwen Policy -- Evidence-grounded, model-backed digital-policy deliberation.
 
 Uses the real Arwen retrieval + deliberation pipeline with optional
-Qwen/Ollama model synthesis.
+Qwen/Ollama model synthesis.  ZeroGPU compatible.
 """
 
 from __future__ import annotations
@@ -14,6 +14,7 @@ from pathlib import Path
 from typing import Any
 
 import gradio as gr
+import spaces
 
 # Ensure the src/ directory is on the path.
 _src = Path(__file__).resolve().parents[1] / "src"
@@ -21,7 +22,6 @@ if str(_src) not in sys.path:
     sys.path.insert(0, str(_src))
 
 from arwen_deliberation.council import DeliberationCouncil
-from arwen_deliberation.models import Perspective
 from arwen_engine.models import PolicyRequest
 from arwen_engine.pipeline import ArwenPolicyEngine
 from arwen_retrieval.models import CorpusRecord
@@ -29,7 +29,7 @@ from arwen_retrieval.retriever import InMemoryRetriever
 from arwen_retrieval.service import RetrievalService
 
 # ---------------------------------------------------------------------------
-# Model provider (optional -- Ollama)
+# Model provider (optional -- Ollama / HF endpoint)
 # ---------------------------------------------------------------------------
 
 _model_provider = None
@@ -48,8 +48,19 @@ except Exception:
 
 def _load_corpus() -> list[CorpusRecord]:
     records: list[CorpusRecord] = []
-    extracted_dir = Path(__file__).resolve().parents[1] / "data" / "extracted"
-    if not extracted_dir.is_dir():
+    # Try the HF Space path first (/app/data/extracted), then local paths.
+    app_dir = Path(__file__).resolve().parent
+    candidates = [
+        app_dir / "data" / "extracted",          # HF Space
+        app_dir.parent / "data" / "extracted",    # local dev (space/ dir)
+        Path("data") / "extracted",               # repo root
+    ]
+    extracted_dir = None
+    for cand in candidates:
+        if cand.is_dir():
+            extracted_dir = cand
+            break
+    if extracted_dir is None:
         return records
 
     for fpath in sorted(extracted_dir.glob("*.json")):
@@ -106,11 +117,29 @@ _corpus_records = _load_corpus()
 
 _retriever = InMemoryRetriever(_corpus_records)
 _service = RetrievalService(_retriever)
+# Build engine WITHOUT model provider  --  synthesis is done via the GPU fn.
 _engine = ArwenPolicyEngine(
     retrieval=_service,
     council=DeliberationCouncil(),
-    model_provider=_model_provider,
+    model_provider=None,
 )
+
+
+# ---------------------------------------------------------------------------
+# ZeroGPU model inference  --  only THIS function runs on GPU.
+# Retrieval, deliberation and prompt construction stay on CPU.
+# ---------------------------------------------------------------------------
+
+@spaces.GPU
+def _model_synthesize(synthesis_prompt: str) -> str | None:
+    """Run model inference on ZeroGPU.  Returns model output or None."""
+    if _model_provider is None:
+        return None
+    try:
+        result = _model_provider.generate(prompt=synthesis_prompt)
+        return result.get("output") if isinstance(result, dict) else str(result)
+    except Exception:
+        return None
 
 
 # ---------------------------------------------------------------------------
@@ -126,7 +155,13 @@ def analyse(question: str, top_k: int) -> str:
         question=question,
         top_k=max(1, min(top_k, len(_corpus_records))),
     )
+    # Retrieval + deliberation (CPU only)
     answer = _engine.analyze(request)
+
+    # Model synthesis (ZeroGPU)  --  called separately
+    synthesis: str | None = None
+    if _model_provider is not None and answer.synthesis_prompt:
+        synthesis = _model_synthesize(answer.synthesis_prompt)
 
     # -- Header -----------------------------------------------------------
     lines = [
@@ -166,12 +201,12 @@ def analyse(question: str, top_k: int) -> str:
     lines.append("")
     if represented:
         for group in represented:
-            lines.append(f"- **{group}** — represented in evidence")
+            lines.append(f"- **{group}**  --  represented in evidence")
     else:
         lines.append("- *No stakeholder groups identified in evidence*")
     if missing:
         for group in missing:
-            lines.append(f"- **{group}** — *no evidence found*")
+            lines.append(f"- **{group}**  --  *no evidence found*")
     lines.append("")
 
     # -- Deliberation -----------------------------------------------------
@@ -195,9 +230,9 @@ def analyse(question: str, top_k: int) -> str:
     # -- Analysis ---------------------------------------------------------
     lines.append("### Analysis")
     lines.append("")
-    if answer.synthesis:
+    if synthesis:
         # Clean up JSON wrapping if the model returned structured JSON
-        synth = answer.synthesis
+        synth = synthesis
         if synth.strip().startswith("{"):
             try:
                 parsed = json.loads(synth)
@@ -219,7 +254,7 @@ def analyse(question: str, top_k: int) -> str:
         else:
             lines.append(synth)
     elif _model_backend != "unavailable":
-        lines.append("*(Model synthesis pending — provider did not return output)*")
+        lines.append("*(Model synthesis pending  --  provider did not return output)*")
     else:
         lines.append("*(No model available for synthesis)*")
     lines.append("")
