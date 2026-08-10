@@ -1,0 +1,65 @@
+{
+  "total_examples": 78,
+  "per_split": {
+    "train": 63,
+    "validation": 6,
+    "test": 9
+  },
+  "requests": {
+    "total": 192,
+    "success": 192,
+    "failed": 0
+  },
+  "rejects": {
+    "hallucination": 0,
+    "malformed": 0,
+    "insufficient": 114
+  },
+  "validation": {
+    "errors": 0,
+    "duplicates": 0
+  },
+  "year_distribution": {
+    "1990": 2,
+    "1991": 3,
+    "1992": 3,
+    "1993": 3,
+    "2020": 1,
+    "2023": 2,
+    "2026": 1
+  },
+  "source_distribution": {
+    "ICANN": 25,
+    "IETF": 21,
+    "IGF": 7,
+    "ISOC": 5,
+    "APNIC": 4,
+    "ITU": 4,
+    "ARIN": 4,
+    "Academic": 2,
+    "UNESCO": 2,
+    "UN": 2,
+    "EU": 1,
+    "OECD": 1
+  },
+  "task_distribution": {
+    "evidence_extraction": 16,
+    "tradeoff_analysis": 6,
+    "document_understanding": 7,
+    "stakeholder_position": 11,
+    "argument_identification": 11,
+    "policy_question": 9,
+    "historical_context": 9,
+    "institutional_role": 7,
+    "policy_comparison": 2
+  },
+  "language_distribution": {
+    "en": 63,
+    "en-US": 7,
+    "en-AU": 3,
+    "en-us": 4,
+    "null": 1
+  },
+  "elapsed_seconds": 4723.8,
+  "output_dir": "datasets/sft_v2"
+}
