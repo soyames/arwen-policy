@@ -14,8 +14,6 @@ from pathlib import Path
 from typing import Any
 
 import gradio as gr
-import spaces
-
 # Ensure the src/ directory is on the path.
 _src = Path(__file__).resolve().parents[1] / "src"
 if str(_src) not in sys.path:
@@ -135,11 +133,11 @@ _engine = ArwenPolicyEngine(
 
 
 # ---------------------------------------------------------------------------
-# ZeroGPU model inference  --  only THIS function runs on GPU.
-# Retrieval, deliberation and prompt construction stay on CPU.
+# Model inference — runs on HF Inference Providers (serverless).
+# No local GPU required. Retrieval, deliberation, and prompt construction
+# stay on CPU.  Synthesis prompt is sent to HF-hosted model.
 # ---------------------------------------------------------------------------
 
-@spaces.GPU
 def _model_synthesize(synthesis_prompt: str) -> dict[str, Any]:
     """Run model inference on ZeroGPU. Returns dict with output or error."""
     if _model_provider is None:
