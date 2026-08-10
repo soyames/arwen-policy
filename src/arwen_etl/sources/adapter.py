@@ -189,7 +189,7 @@ class GenericSourceAdapter:
                 continue
 
             extracted = extract(artifact.data, artifact.content_type)
-            metadata = extract_metadata(artifact.data, artifact.content_type, extracted)
+            metadata = extract_metadata(artifact.data, artifact.content_type, extracted, source_url=candidate_url)
 
             saw_success = True
             health.canonical_url = artifact.final_url

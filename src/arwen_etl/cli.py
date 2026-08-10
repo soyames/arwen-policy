@@ -94,7 +94,7 @@ def ingest_url(url: str) -> dict:
     raw_path = write_artifact(artifact, data_dir / "raw")
 
     extracted = extract(artifact.data, artifact.content_type)
-    metadata = extract_metadata(artifact.data, artifact.content_type, extracted)
+    metadata = extract_metadata(artifact.data, artifact.content_type, extracted, source_url=url)
     normalized = normalize_text(extracted.text)
     source_def = _source_for_url(url)
 

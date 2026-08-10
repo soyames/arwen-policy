@@ -253,10 +253,15 @@ def extract(data: bytes, media_type: str) -> ExtractedContent:
     )
 
 
-def extract_metadata(data: bytes, media_type: str, extracted: ExtractedContent) -> dict:
-    """Return simple metadata (title, language, summary) where available.
+def extract_metadata(
+    data: bytes, media_type: str, extracted: ExtractedContent,
+    source_url: str = "",
+) -> dict:
+    """Return simple metadata (title, language, summary, publication date).
 
     Attempts best-effort extraction without adding hard dependencies.
+    When *source_url* is provided, date patterns in the URL are used as a
+    fallback when no structured metadata is available.
     """
     meta: dict = {"title": None, "language": None, "summary": None, "published_at": None}
 
@@ -324,39 +329,46 @@ def extract_metadata(data: bytes, media_type: str, extracted: ExtractedContent) 
 
     # Fallback date extraction from URL and content patterns.
     # Many policy pages lack meta tags but encode dates in URLs
-    # (e.g., icann-2012-02-25, /igf-2023/, rfc3935).
+    # (e.g., icann-2012-02-25, /igf-2023/, rfc3935, /1999/).
     if not meta.get("published_at"):
         import re as _re
         from datetime import datetime as _datetime
 
-        # Try URL patterns first: look for YYYY-MM-DD or YYYY/MM/DD or YYYY
-        url_patterns: list[str] = []
-        if "html" in mt:
-            url_patterns.append(str(getattr(data, "url", "") or ""))
-        url_patterns.append("")  # will be filled from context if available
-        text_to_search = extracted.text[:2000] if extracted.text else ""
+        # Search in URL first (most reliable), then in document text.
+        search_targets: list[str] = []
+        if source_url:
+            search_targets.append(source_url)
+        if extracted.text:
+            search_targets.append(extracted.text[:2000])
 
-        # Date patterns in URL: icann-2012-02-25-en, /2024/, igf-2023-kyoto, rfc3935
-        date_match = _re.search(
-            r"(?:^|[^0-9])((?:19|20)\d{2})[-/](0[1-9]|1[0-2])[-/](0[1-9]|[12]\d|3[01])(?:[^0-9]|$)",
-            text_to_search,
-        )
-        if not date_match:
+        date_match = None
+        for target in search_targets:
+            # YYYY-MM-DD
             date_match = _re.search(
-                r"(?:^|[^0-9])((?:19|20)\d{2})[-/](0[1-9]|1[0-2])(?:[^0-9]|$)",
-                text_to_search,
+                r"(?:^|[^0-9])((?:19[9]\d|20[0-2]\d))-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])(?:[^0-9]|$)",
+                target,
             )
-        if not date_match:
-            # Just a year: /2024/ /igf-2023- /2006/
+            if date_match:
+                break
+            # YYYY-MM
+            date_match = _re.search(
+                r"(?:^|[^0-9])((?:19[9]\d|20[0-2]\d))-(0[1-9]|1[0-2])(?:[^0-9]|$)",
+                target,
+            )
+            if date_match:
+                break
+            # /YYYY/ or -YYYY- or igf-YYYY- patterns (must be 1990-2027)
             date_match = _re.search(
                 r"(?:^|[^0-9])((?:199\d|20[0-2]\d))(?:[^0-9]|$)",
-                text_to_search,
+                target,
             )
+            if date_match:
+                break
 
         if date_match:
             try:
                 year = int(date_match.group(1))
-                month = int(date_match.group(2)) if date_match.lastindex and date_match.lastindex >= 2 else 1
+                month = int(date_match.group(2)) if date_match.lastindex and date_match.lastindex >= 2 else 7
                 day = int(date_match.group(3)) if date_match.lastindex and date_match.lastindex >= 3 else 1
                 month = max(1, min(12, month))
                 day = max(1, min(28, day))
