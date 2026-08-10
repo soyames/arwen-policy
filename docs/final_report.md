@@ -86,17 +86,16 @@ arwen-policy/
 # 1. Clone & install
 git clone https://github.com/soyames/arwen-policy.git
 cd arwen-policy
-python -m venv .venv && source .venv/bin/activate
-pip install -e ".[dev]"
+uv sync --extra dev
 
 # 2. Ingest a source (URL or local file)
-python -m arwen_etl.cli ingest-url https://www.icann.org/resources/pages/annual-report-2023-en
+uv run python -m arwen_etl.cli ingest-url https://www.icann.org/resources/pages/annual-report-2023-en
 # or
-python -m arwen_etl.cli ingest-file ./local_policy.pdf
+uv run python -m arwen_etl.cli ingest-file ./local_policy.pdf
 
 # 3. Build a versioned release (dry‑run first)
-python -m arwen_etl.cli build-release --version 0.1.0 --dry-run
-python -m arwen_etl.cli build-release --version 0.1.0
+uv run python -m arwen_etl.cli build-release --version 0.1.0 --dry-run
+uv run python -m arwen_etl.cli build-release --version 0.1.0
 
 # 4. Publish to Hugging Face (requires HF_TOKEN env var)
 export HF_TOKEN=hf_your_token_here

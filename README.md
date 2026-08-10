@@ -30,18 +30,24 @@ The system records documented perspectives with attribution, provenance, evidenc
 ```bash
 git clone https://github.com/soyames/arwen-policy.git
 cd arwen-policy
-pip install -e ".[dev]"
+uv sync
 ```
 
-Optional extras: `pdf`, `docx`, `ocr`, `audio`, `video`, `semantic`, `hf`.
+Optional extras: `uv sync --extra pdf --extra ocr --extra audio --extra video --extra semantic --extra hf`
+
+Or for development:
+
+```bash
+uv sync --extra dev
+```
 
 ## Quick Start
 
 ```bash
-arwen-etl validate-config
-arwen-etl ingest-url https://www.icann.org/resources/pages/governance/bylaws-en
-arwen-etl discover
-arwen-etl build-release --version 0.1.0
+uv run arwen-etl validate-config
+uv run arwen-etl ingest-url https://www.icann.org/resources/pages/governance/bylaws-en
+uv run arwen-etl discover
+uv run arwen-etl build-release --version 0.1.0
 ```
 
 ## Design Principles

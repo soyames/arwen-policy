@@ -60,6 +60,15 @@ semantic = [
 hf = [
   "huggingface-hub>=0.30,<2"
 ]
+gpu = [
+  "torch>=2.4,<3",
+  "transformers>=4.46,<6",
+  "peft>=0.13,<2",
+  "bitsandbytes>=0.44,<2",
+  "accelerate>=1.0,<2",
+  "trl>=0.10,<2",
+  "datasets>=3.0,<6",
+]
 dev = [
   "pytest>=8,<9",
   "pytest-cov>=5,<7",

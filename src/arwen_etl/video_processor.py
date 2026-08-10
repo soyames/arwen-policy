@@ -307,7 +307,7 @@ def create_video_processor(
     if not _VIDEO_AVAILABLE:
         raise RuntimeError(
             "Video processing dependencies not installed. "
-            "Install with: pip install opencv-python numpy Pillow"
+            "Install with: uv sync --extra ocr"
         )
     return FFmpegVideoProcessor(
         output_dir=output_dir,

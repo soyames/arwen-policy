@@ -4,7 +4,7 @@ Usage:
     python -m arwen_training.train_lora --data_dir data/extracted --output_dir ./lora-output
 
 Requirements:
-    pip install transformers peft accelerate datasets torch
+    uv sync
 
 This script is designed to be run when the corpus is sufficient (>= 100 documents).
 For development/testing, use --dev_mode with the local 8.2B model.
@@ -41,7 +41,7 @@ def _prepare_dataset(examples: list[dict[str, Any]]) -> Any:
     try:
         from datasets import Dataset
     except ImportError:
-        raise RuntimeError("Install datasets: pip install datasets")
+        raise RuntimeError("Install with: uv sync --extra dev")
 
     formatted: list[dict[str, str]] = []
     for ex in examples:
@@ -134,7 +134,7 @@ def train(
     except ImportError as e:
         return {
             "status": "BLOCKED",
-            "reason": f"Missing dependency: {e}. Install: pip install transformers peft accelerate torch",
+            "reason": f"Missing dependency: {e}. Install: uv sync",
             "corpus_stats": quality,
         }
 

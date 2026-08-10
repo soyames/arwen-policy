@@ -108,12 +108,8 @@ jobs:
       - name: Set up Python
         run: uv python install 3.12
 
-      - name: Install project
-        run: uv sync
-
-      - name: Install Hugging Face Hub CLI
-        run: |
-          uv pip install "huggingface_hub>=1.19.0"
+      - name: Install project (with Hugging Face Hub)
+        run: uv sync --extra hf
 
       - name: Determine release version
         id: version

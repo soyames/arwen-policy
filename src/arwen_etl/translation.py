@@ -21,7 +21,7 @@ class Translator:
         if not _TRANSLATION_AVAILABLE:
             raise RuntimeError(
                 "Translation dependencies not installed. "
-                "Install with: pip install torch transformers"
+                "Install with: uv sync"
             )
         self.device = device if torch.cuda.is_available() else "cpu"
         self.models: Dict[str, MarianMTModel] = {}

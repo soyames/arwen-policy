@@ -28,7 +28,7 @@ class SpeakerDiarizer:
         if not _DIARIZATION_AVAILABLE:
             raise RuntimeError(
                 "Diarization dependencies not installed. "
-                "Install with: pip install torch pyannote.audio"
+                "Install with: uv sync --extra audio"
             )
         self.device = device if torch.cuda.is_available() else "cpu"
         self.pipeline = _PyannotePipeline.from_pretrained(

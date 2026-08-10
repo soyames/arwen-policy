@@ -27,7 +27,7 @@ class OCRProcessor:
     def __init__(self, lang: str = 'eng'):
         if not _OCR_AVAILABLE:
             raise RuntimeError(
-                "OCR dependencies not installed. Install with: pip install opencv-python "
+                "OCR dependencies not installed. Install with: uv sync --extra ocr"
                 "numpy Pillow pdf2image pytesseract"
             )
         self.lang = lang
