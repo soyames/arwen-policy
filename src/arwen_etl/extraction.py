@@ -322,4 +322,46 @@ def extract_metadata(data: bytes, media_type: str, extracted: ExtractedContent) 
         except Exception:
             meta["language"] = None
 
+    # Fallback date extraction from URL and content patterns.
+    # Many policy pages lack meta tags but encode dates in URLs
+    # (e.g., icann-2012-02-25, /igf-2023/, rfc3935).
+    if not meta.get("published_at"):
+        import re as _re
+        from datetime import datetime as _datetime
+
+        # Try URL patterns first: look for YYYY-MM-DD or YYYY/MM/DD or YYYY
+        url_patterns: list[str] = []
+        if "html" in mt:
+            url_patterns.append(str(getattr(data, "url", "") or ""))
+        url_patterns.append("")  # will be filled from context if available
+        text_to_search = extracted.text[:2000] if extracted.text else ""
+
+        # Date patterns in URL: icann-2012-02-25-en, /2024/, igf-2023-kyoto, rfc3935
+        date_match = _re.search(
+            r"(?:^|[^0-9])((?:19|20)\d{2})[-/](0[1-9]|1[0-2])[-/](0[1-9]|[12]\d|3[01])(?:[^0-9]|$)",
+            text_to_search,
+        )
+        if not date_match:
+            date_match = _re.search(
+                r"(?:^|[^0-9])((?:19|20)\d{2})[-/](0[1-9]|1[0-2])(?:[^0-9]|$)",
+                text_to_search,
+            )
+        if not date_match:
+            # Just a year: /2024/ /igf-2023- /2006/
+            date_match = _re.search(
+                r"(?:^|[^0-9])((?:199\d|20[0-2]\d))(?:[^0-9]|$)",
+                text_to_search,
+            )
+
+        if date_match:
+            try:
+                year = int(date_match.group(1))
+                month = int(date_match.group(2)) if date_match.lastindex and date_match.lastindex >= 2 else 1
+                day = int(date_match.group(3)) if date_match.lastindex and date_match.lastindex >= 3 else 1
+                month = max(1, min(12, month))
+                day = max(1, min(28, day))
+                meta["published_at"] = _datetime(year, month, day)
+            except (ValueError, IndexError):
+                pass
+
     return meta
