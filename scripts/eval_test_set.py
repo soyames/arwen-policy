@@ -272,7 +272,7 @@ def main() -> int:
             messages, tokenize=True, add_generation_prompt=True,
             return_tensors="pt",
         ).to("cuda:0")
-        prompt_len = formatted.shape[1]
+        prompt_len = formatted["input_ids"].shape[1]
         with torch.no_grad():
             out = model.generate(
                 formatted, max_new_tokens=200, do_sample=True,
