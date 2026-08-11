@@ -62,16 +62,37 @@ def main() -> int:
     ]
 
     print("\n=== Qualitative Evaluation ===")
+    system_msg = (
+        "You are a policy analysis AI. Answer questions using only the supplied source "
+        "evidence. Attribute claims to documented sources. Disclose uncertainty. "
+        "Do not invent facts, dates, stakeholders, or positions."
+    )
     results = []
     for prompt in prompts:
-        inputs = tokenizer(prompt, return_tensors="pt")
+        messages = [
+            {"role": "system", "content": system_msg},
+            {"role": "user", "content": prompt},
+        ]
+        # Use chat template matching training format: <|im_start|>system...<|im_start|>user...<|im_start|>assistant\n
+        formatted = tokenizer.apply_chat_template(
+            messages, tokenize=True, add_generation_prompt=True,
+            return_tensors="pt",
+        )
         if torch.cuda.is_available():
-            inputs = {k: v.to("cuda") for k, v in inputs.items()}
+            formatted = formatted.to("cuda")
         with torch.no_grad():
-            out = model.generate(**inputs, max_new_tokens=100, do_sample=True,
-                                 temperature=0.7, pad_token_id=tokenizer.eos_token_id)
+            out = model.generate(
+                formatted, max_new_tokens=200, do_sample=True,
+                temperature=0.2, top_p=0.9,
+                pad_token_id=tokenizer.eos_token_id,
+                eos_token_id=tokenizer.eos_token_id,
+            )
         response = tokenizer.decode(out[0], skip_special_tokens=True)
-        results.append({"prompt": prompt, "response": response[len(prompt):][:400]})
+        # Extract only the assistant response (after the last chat marker)
+        assistant_marker = "assistant\n"
+        if assistant_marker in response:
+            response = response[response.rindex(assistant_marker) + len(assistant_marker):]
+        results.append({"prompt": prompt, "response": response[:500]})
         print(f"  Q: {prompt[:80]}...")
         print(f"  A: {response[len(prompt):][:200]}...")
         print()

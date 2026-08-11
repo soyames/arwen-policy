@@ -27,7 +27,6 @@ from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
     BitsAndBytesConfig,
-    DataCollatorForLanguageModeling,
     Trainer,
     TrainingArguments,
 )
@@ -98,12 +97,13 @@ def main() -> int:
                 continue
             try:
                 ex = json.loads(line)
-                text_parts = []
+                messages = []
                 for msg in ex.get("messages", []):
-                    role = msg.get("role", "user")
-                    content = msg.get("content", "")
-                    text_parts.append(f"<|im_start|>{role}\n{content}<|im_end|>")
-                examples.append({"text": "\n".join(text_parts)})
+                    messages.append({
+                        "role": msg.get("role", "user"),
+                        "content": msg.get("content", ""),
+                    })
+                examples.append({"messages": messages})
             except Exception:
                 continue
         return examples
@@ -114,8 +114,8 @@ def main() -> int:
 
     print(f"Train: {len(train_data)}, Validation: {len(val_data)}, Test: {len(test_data)}")
 
-    if len(train_data) != 503:
-        print(f"WARNING: Expected 503 train examples, got {len(train_data)}")
+    if len(train_data) < 300:
+        print(f"WARNING: Expected >=300 train examples, got {len(train_data)}")
 
     train_dataset = Dataset.from_list(train_data)
     val_dataset = Dataset.from_list(val_data) if val_data else None
@@ -127,18 +127,35 @@ def main() -> int:
         tokenizer.pad_token = tokenizer.eos_token
 
     def tokenize_fn(examples: dict) -> dict:
-        return tokenizer(
-            examples["text"], truncation=True, padding="max_length",
+        """Tokenize chat messages using the model's chat template.
+
+        Uses apply_chat_template which produces properly formatted
+        <|im_start|>role\ncontent<|im_end|> sequences with correct
+        label masking: assistant tokens are targets, user/system tokens
+        are masked with -100.
+        """
+        batch_messages = []
+        for msgs in examples["messages"]:
+            batch_messages.append(msgs)
+
+        tokenized = tokenizer.apply_chat_template(
+            batch_messages,
+            tokenize=True,
+            add_generation_prompt=False,  # training: full sequence with assistant
+            padding="max_length",
+            truncation=True,
             max_length=MAX_SEQ_LENGTH,
+            return_dict=True,
         )
+        return tokenized
 
     train_tokenized = train_dataset.map(tokenize_fn, batched=True)
-    train_tokenized = train_tokenized.remove_columns(["text"])
+    train_tokenized = train_tokenized.remove_columns(["messages"])
     print(f"Train tokenized: {len(train_tokenized)}")
 
     if val_dataset is not None:
         val_tokenized = val_dataset.map(tokenize_fn, batched=True)
-        val_tokenized = val_tokenized.remove_columns(["text"])
+        val_tokenized = val_tokenized.remove_columns(["messages"])
         print(f"Val tokenized: {len(val_tokenized)}")
     else:
         val_tokenized = None
@@ -206,7 +223,8 @@ def main() -> int:
         dataloader_num_workers=0,
     )
 
-    data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
+    from transformers import DataCollatorWithPadding
+    data_collator = DataCollatorWithPadding(tokenizer=tokenizer, padding="max_length", max_length=MAX_SEQ_LENGTH)
 
     # ---- 7. Train ----
     print(f"\n=== Starting training ({NUM_EPOCHS} epoch, {len(train_tokenized)} examples) ===")

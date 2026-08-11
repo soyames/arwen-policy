@@ -236,12 +236,13 @@ def run_smoke_test(
                 continue
             try:
                 ex = json.loads(line)
-                text_parts = []
+                messages = []
                 for msg in ex.get("messages", []):
-                    role = msg.get("role", "user")
-                    content = msg.get("content", "")
-                    text_parts.append(f"<|im_start|>{role}\n{content}<|im_end|>")
-                examples.append({"text": "\n".join(text_parts)})
+                    messages.append({
+                        "role": msg.get("role", "user"),
+                        "content": msg.get("content", ""),
+                    })
+                examples.append({"messages": messages})
             except Exception:
                 continue
         return examples
@@ -251,14 +252,15 @@ def run_smoke_test(
     train_dataset = Dataset.from_list(train_data)
 
     def tokenize_fn(examples):
-        return tokenizer(
-            examples["text"], truncation=True, padding="max_length",
-            max_length=max_seq_length,
+        batch_msgs = [msgs for msgs in examples["messages"]]
+        return tokenizer.apply_chat_template(
+            batch_msgs, tokenize=True, add_generation_prompt=False,
+            padding="max_length", truncation=True, max_length=max_seq_length,
+            return_dict=True,
         )
 
     tokenized = train_dataset.map(tokenize_fn, batched=True)
-    # Remove raw text column — the collator only needs input_ids/attention_mask
-    tokenized = tokenized.remove_columns(["text"])
+    tokenized = tokenized.remove_columns(["messages"])
     result["dataset_train_samples"] = len(tokenized)
 
     # ---- Training args ----
@@ -279,7 +281,8 @@ def run_smoke_test(
         remove_unused_columns=True,
     )
 
-    data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
+    from transformers import DataCollatorWithPadding
+    data_collator = DataCollatorWithPadding(tokenizer=tokenizer, padding="max_length", max_length=max_seq_length)
 
     trainer = Trainer(
         model=model,

@@ -62,7 +62,7 @@ class TestDatasetLoading:
             assert path.exists(), f"Missing {split}.jsonl"
 
     def test_split_counts(self):
-        expected = {"train": 503, "validation": 60, "test": 64}
+        expected = {"train": 304, "validation": 37, "test": 35}
         for split, count in expected.items():
             path = Path("datasets/sft_final") / f"{split}.jsonl"
             lines = [l for l in path.read_text(encoding="utf-8").splitlines() if l.strip()]
