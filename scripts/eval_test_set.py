@@ -109,6 +109,10 @@ def main() -> int:
         help="Path to LoRA adapter checkpoint (e.g., artifacts/qlora_arwen_8b/checkpoint-38)",
     )
     parser.add_argument("--model", default=MODEL_NAME)
+    parser.add_argument(
+        "--qualitative-only", action="store_true",
+        help="Skip 35-example loss evaluation; run only the qualitative generation sample.",
+    )
     args = parser.parse_args()
 
     adapter_path = Path(args.adapter_path)
@@ -182,80 +186,82 @@ def main() -> int:
     model.eval()
     print("Model + adapter loaded.")
 
-    # ---- Evaluate per-example ----
-    print(f"\n=== Test-set evaluation ({len(test_tokenized)} examples) ===")
-    collator = DataCollatorForSeq2Seq(
-        tokenizer=tokenizer, padding=True, label_pad_token_id=-100,
-    )
-
+    # ---- Evaluate per-example (skip if qualitative-only) ----
     losses = []
     perplexities = []
     skipped = 0
+    n_evaluated = 0
 
-    for i in range(len(test_tokenized)):
-        example = test_tokenized[i]
-        n_active = sum(1 for l in example["labels"] if l != -100)
-        if n_active == 0:
-            skipped += 1
-            continue
+    if not args.qualitative_only:
+        print(f"\n=== Test-set evaluation ({len(test_tokenized)} examples) ===")
+        collator = DataCollatorForSeq2Seq(
+            tokenizer=tokenizer, padding=True, label_pad_token_id=-100,
+        )
 
-        # Create single-example batch
-        batch = collator([example])
-        batch = {k: v.to("cuda:0") for k, v in batch.items()}
+        for i in range(len(test_tokenized)):
+            example = test_tokenized[i]
+            n_active = sum(1 for l in example["labels"] if l != -100)
+            if n_active == 0:
+                skipped += 1
+                continue
 
-        with torch.no_grad():
-            outputs = model(**batch)
-            loss = outputs.loss.item()
+            # Create single-example batch
+            batch = collator([example])
+            batch = {k: v.to("cuda:0") for k, v in batch.items()}
 
-        if math.isfinite(loss):
-            losses.append(loss)
-            perplexities.append(math.exp(loss))
-        else:
-            skipped += 1
+            with torch.no_grad():
+                outputs = model(**batch)
+                loss = outputs.loss.item()
 
-    # ---- Report ----
-    n_evaluated = len(losses)
-    print(f"\nEvaluated: {n_evaluated}/{len(test_tokenized)}")
-    if skipped > 0:
-        print(f"Skipped: {skipped} (no active labels or non-finite loss)")
+            if math.isfinite(loss):
+                losses.append(loss)
+                perplexities.append(math.exp(loss))
+            else:
+                skipped += 1
 
-    if n_evaluated == 0:
-        print("ERROR: No examples evaluated.")
-        return 1
+        # ---- Report ----
+        n_evaluated = len(losses)
+        print(f"\nEvaluated: {n_evaluated}/{len(test_tokenized)}")
+        if skipped > 0:
+            print(f"Skipped: {skipped} (no active labels or non-finite loss)")
 
-    avg_loss = sum(losses) / n_evaluated
-    avg_perplexity = sum(perplexities) / n_evaluated
-    min_loss = min(losses)
-    max_loss = max(losses)
-    sorted_losses = sorted(losses)
-    median_loss = sorted_losses[n_evaluated // 2]
+        if n_evaluated == 0:
+            print("ERROR: No examples evaluated.")
+            return 1
 
-    print(f"\n=== Test-set Results ===")
-    print(f"  Examples evaluated:  {n_evaluated}")
-    print(f"  Average loss:        {avg_loss:.6f}")
-    print(f"  Average perplexity:  {avg_perplexity:.2f}")
-    print(f"  Median loss:         {median_loss:.6f}")
-    print(f"  Min loss:            {min_loss:.6f}")
-    print(f"  Max loss:            {max_loss:.6f}")
+        avg_loss = sum(losses) / n_evaluated
+        avg_perplexity = sum(perplexities) / n_evaluated
+        min_loss = min(losses)
+        max_loss = max(losses)
+        sorted_losses = sorted(losses)
+        median_loss = sorted_losses[n_evaluated // 2]
 
-    # Top-5 and bottom-5
-    indexed = list(enumerate(losses))
-    indexed.sort(key=lambda x: x[1])
+        print(f"\n=== Test-set Results ===")
+        print(f"  Examples evaluated:  {n_evaluated}")
+        print(f"  Average loss:        {avg_loss:.6f}")
+        print(f"  Average perplexity:  {avg_perplexity:.2f}")
+        print(f"  Median loss:         {median_loss:.6f}")
+        print(f"  Min loss:            {min_loss:.6f}")
+        print(f"  Max loss:            {max_loss:.6f}")
 
-    print(f"\n  Best 5 (lowest loss):")
-    for idx, loss_val in indexed[:5]:
-        msgs = test_data[idx]["messages"]
-        q = next((m["content"][:80] for m in msgs if m["role"] == "user"), "?")
-        print(f"    [{idx}] loss={loss_val:.4f}  Q: {q}...")
+        # Top-5 and bottom-5
+        indexed = list(enumerate(losses))
+        indexed.sort(key=lambda x: x[1])
 
-    print(f"\n  Worst 5 (highest loss):")
-    for idx, loss_val in indexed[-5:]:
-        msgs = test_data[idx]["messages"]
-        q = next((m["content"][:80] for m in msgs if m["role"] == "user"), "?")
-        print(f"    [{idx}] loss={loss_val:.4f}  Q: {q}...")
+        print(f"\n  Best 5 (lowest loss):")
+        for idx, loss_val in indexed[:5]:
+            msgs = test_data[idx]["messages"]
+            q = next((m["content"][:80] for m in msgs if m["role"] == "user"), "?")
+            print(f"    [{idx}] loss={loss_val:.4f}  Q: {q}...")
+
+        print(f"\n  Worst 5 (highest loss):")
+        for idx, loss_val in indexed[-5:]:
+            msgs = test_data[idx]["messages"]
+            q = next((m["content"][:80] for m in msgs if m["role"] == "user"), "?")
+            print(f"    [{idx}] loss={loss_val:.4f}  Q: {q}...")
 
     # Qualitative sample
-    print(f"\n=== Qualitative sample (first 3 test examples) ===")
+    print(f"\n=== Qualitative sample ===")
     system_msg = (
         "You are a policy analysis AI. Answer questions using only the supplied source "
         "evidence. Attribute claims to documented sources. Disclose uncertainty. "
@@ -285,22 +291,25 @@ def main() -> int:
         print(f"\n  Q{idx}: {q[:120]}...")
         print(f"  A{idx}: {response[:300]}")
 
-    # Write report
-    report = {
-        "adapter_path": str(adapter_path),
-        "test_examples": len(test_data),
-        "evaluated": n_evaluated,
-        "skipped": skipped,
-        "avg_loss": round(avg_loss, 6),
-        "avg_perplexity": round(avg_perplexity, 2),
-        "median_loss": round(median_loss, 6),
-        "min_loss": round(min_loss, 6),
-        "max_loss": round(max_loss, 6),
-        "per_example_losses": [round(l, 6) for l in losses],
-    }
-    report_path = adapter_path / "test_set_eval.json"
-    report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False))
-    print(f"\nReport saved to {report_path}")
+    # Write report (skip if qualitative-only — no loss data)
+    if not args.qualitative_only and n_evaluated > 0:
+        avg_loss = sum(losses) / n_evaluated
+        avg_perplexity = sum(perplexities) / n_evaluated
+        report = {
+            "adapter_path": str(adapter_path),
+            "test_examples": len(test_data),
+            "evaluated": n_evaluated,
+            "skipped": skipped,
+            "avg_loss": round(avg_loss, 6),
+            "avg_perplexity": round(avg_perplexity, 2),
+            "median_loss": round(sorted(losses)[n_evaluated // 2], 6),
+            "min_loss": round(min(losses), 6),
+            "max_loss": round(max(losses), 6),
+            "per_example_losses": [round(l, 6) for l in losses],
+        }
+        report_path = adapter_path / "test_set_eval.json"
+        report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False))
+        print(f"\nReport saved to {report_path}")
 
     return 0
 

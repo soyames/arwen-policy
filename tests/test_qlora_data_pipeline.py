@@ -466,3 +466,20 @@ class TestDynamicPadding:
         assert len(set(lengths)) > 1, (
             f"All lengths identical ({lengths[0]}). Static padding detected."
         )
+
+
+class TestEvalTestSetCLI:
+    """Regression: eval_test_set.py --qualitative-only flag must be accepted."""
+
+    def test_qualitative_only_flag_accepted(self):
+        """--qualitative-only must be a recognized argument."""
+        import subprocess
+        import sys
+        result = subprocess.run(
+            [sys.executable, "scripts/eval_test_set.py", "--help"],
+            capture_output=True, text=True,
+        )
+        assert result.returncode == 0
+        assert "--qualitative-only" in result.stdout, (
+            "eval_test_set.py must accept --qualitative-only flag."
+        )
