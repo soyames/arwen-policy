@@ -42,7 +42,8 @@ def main() -> int:
     )
     print(f"Loading base model: {args.model}...")
     base = AutoModelForCausalLM.from_pretrained(
-        args.model, quantization_config=bnb_config, device_map="auto",
+        args.model, quantization_config=bnb_config,
+        device_map={"": "cuda:0"},  # single-GPU — prevents OOM on dual-T4 Kaggle
         trust_remote_code=True, torch_dtype=torch.float16,
     )
 
