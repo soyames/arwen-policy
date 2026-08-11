@@ -93,7 +93,7 @@ def main() -> int:
         response = tokenizer.decode(new_tokens, skip_special_tokens=True)
         results.append({"prompt": prompt, "response": response[:500]})
         print(f"  Q: {prompt[:80]}...")
-        print(f"  A: {response[len(prompt):][:200]}...")
+        print(f"  A: {response[:200]}...")
         print()
 
     print("Verification complete.")

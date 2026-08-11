@@ -50,3 +50,26 @@ QwenArwen.Modelfile
 tree
 .claude
 arwen-policy-corpus/
+
+# Model weights / LoRA adapters
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+adapter_config.json
+adapter_model.*
+!tests/**/adapter_config.json
+
+# Training artifacts
+artifacts/qlora_arwen_8b/checkpoint-*/
+artifacts/qlora_arwen_8b/adapter_*
+artifacts/qlora_arwen_8b/tokenizer*
+
+# Hugging Face cache
+.cache/huggingface/
+hf_cache/
+
+# Kaggle
+.kaggle/
+kaggle/

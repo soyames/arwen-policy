@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
-"""Full QLoRA training for Arwen Policy on Qwen3-8B + Tesla T4.
+"""Full QLoRA training for Arwen Policy on Qwen3-8B.
 
-Runs 1 epoch, evaluates on validation, checkpoints regularly,
-tracks best validation loss, saves final adapter, reloads and
-runs qualitative evaluation.
+Runs 20 epochs, evaluates on validation at every epoch, saves
+epoch checkpoints, tracks best validation loss, and produces the
+final adapter from the best checkpoint (not blind last epoch).
 
-Usage (on Lightning T4):
+Usage:
     uv sync --extra gpu
-    uv run python scripts/train_qlora.py
+    uv run python scripts/train_qlora.py [--epochs 20]
 """
 
 from __future__ import annotations
 
+import argparse
 import json
+import math
 import os
 import sys
 import time
@@ -42,13 +44,17 @@ MAX_SEQ_LENGTH = 2048
 SEED = 42
 
 # Training
-NUM_EPOCHS = 1
+NUM_EPOCHS = 20
 PER_DEVICE_BATCH_SIZE = 1
 GRADIENT_ACCUMULATION_STEPS = 8
 LEARNING_RATE = 2e-4
 WARMUP_RATIO = 0.03
 WEIGHT_DECAY = 0.01
 LR_SCHEDULER = "cosine"
+
+# Effective batch size = PER_DEVICE_BATCH_SIZE * GRADIENT_ACCUMULATION_STEPS = 8
+# Steps per epoch ≈ ceil(304 / 8) = 38
+# Total steps ≈ 20 * 38 = 760
 
 # LoRA
 LORA_R = 16
@@ -59,11 +65,9 @@ TARGET_MODULES = [
     "gate_proj", "up_proj", "down_proj",
 ]
 
-# Checkpointing
-SAVE_STEPS = 50
-EVAL_STEPS = 50
+# Checkpointing — per-epoch evaluation and save
 LOGGING_STEPS = 10
-SAVE_TOTAL_LIMIT = 5
+SAVE_TOTAL_LIMIT = 25  # enough for all epoch checkpoints
 
 
 # ===================================================================
@@ -71,9 +75,17 @@ SAVE_TOTAL_LIMIT = 5
 # ===================================================================
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description="QLoRA training for Arwen Policy")
+    parser.add_argument("--epochs", type=int, default=NUM_EPOCHS,
+                        help=f"Number of training epochs (default: {NUM_EPOCHS})")
+    args = parser.parse_args()
+
     start_time = time.time()
     out = Path(OUTPUT_DIR)
     out.mkdir(parents=True, exist_ok=True)
+
+    num_epochs = args.epochs
+    effective_batch = PER_DEVICE_BATCH_SIZE * GRADIENT_ACCUMULATION_STEPS
 
     # ---- 1. GPU check ----
     if not torch.cuda.is_available():
@@ -116,6 +128,14 @@ def main() -> int:
 
     if len(train_data) < 300:
         print(f"WARNING: Expected >=300 train examples, got {len(train_data)}")
+
+    # Compute expected steps from actual dataset size
+    n_train = len(train_data)
+    steps_per_epoch = math.ceil(n_train / effective_batch)
+    total_steps_expected = steps_per_epoch * num_epochs
+    print(f"Effective batch size: {effective_batch}")
+    print(f"Steps per epoch:      {steps_per_epoch} (ceil({n_train} / {effective_batch}))")
+    print(f"Expected total steps: {total_steps_expected} ({num_epochs} epochs × {steps_per_epoch} steps)")
 
     train_dataset = Dataset.from_list(train_data)
     val_dataset = Dataset.from_list(val_data) if val_data else None
@@ -223,7 +243,7 @@ def main() -> int:
     # ---- 6. Training arguments ----
     training_args = TrainingArguments(
         output_dir=str(out),
-        num_train_epochs=NUM_EPOCHS,
+        num_train_epochs=num_epochs,
         per_device_train_batch_size=PER_DEVICE_BATCH_SIZE,
         per_device_eval_batch_size=1,
         eval_accumulation_steps=1,
@@ -233,10 +253,8 @@ def main() -> int:
         weight_decay=WEIGHT_DECAY,
         lr_scheduler_type=LR_SCHEDULER,
         logging_steps=LOGGING_STEPS,
-        eval_strategy="steps",
-        eval_steps=EVAL_STEPS,
-        save_strategy="steps",
-        save_steps=SAVE_STEPS,
+        eval_strategy="epoch",
+        save_strategy="epoch",
         save_total_limit=SAVE_TOTAL_LIMIT,
         load_best_model_at_end=True,
         metric_for_best_model="eval_loss",
@@ -249,39 +267,109 @@ def main() -> int:
         dataloader_num_workers=0,
     )
 
-    from transformers import DataCollatorWithPadding
+    from transformers import DataCollatorWithPadding, TrainerCallback
     data_collator = DataCollatorWithPadding(tokenizer=tokenizer, padding="max_length", max_length=MAX_SEQ_LENGTH)
 
+    # Per-epoch logging callback
+    epoch_log: list[dict] = []
+    epoch_start_time = [time.time()]
+
+    class EpochLoggerCallback(TrainerCallback):
+        def on_epoch_end(self, trainer_args, state, control, **kwargs):
+            epoch_idx = int(state.epoch) if state.epoch else 0
+            elapsed = time.time() - epoch_start_time[0]
+            train_loss = None
+            val_loss = None
+            # Extract losses from log_history
+            for entry in reversed(state.log_history):
+                if "eval_loss" in entry and val_loss is None:
+                    val_loss = entry["eval_loss"]
+                if "loss" in entry and train_loss is None:
+                    train_loss = entry["loss"]
+                if train_loss is not None and val_loss is not None:
+                    break
+            lr = None
+            for entry in reversed(state.log_history):
+                if "learning_rate" in entry:
+                    lr = entry["learning_rate"]
+                    break
+            entry = {
+                "epoch": epoch_idx,
+                "step": state.global_step,
+                "train_loss": round(train_loss, 6) if train_loss is not None else None,
+                "val_loss": round(val_loss, 6) if val_loss is not None else None,
+                "learning_rate": round(lr, 8) if lr is not None else None,
+                "elapsed_s": round(elapsed, 1),
+            }
+            epoch_log.append(entry)
+            print(f"\n--- Epoch {epoch_idx} ---")
+            print(f"  Step: {state.global_step}")
+            print(f"  Train loss: {train_loss:.6f}" if train_loss is not None else "  Train loss: N/A")
+            print(f"  Val loss:   {val_loss:.6f}" if val_loss is not None else "  Val loss: N/A")
+            print(f"  LR:         {lr:.2e}" if lr is not None else "  LR: N/A")
+            print(f"  Time:       {elapsed:.1f}s")
+
     # ---- 7. Train ----
-    print(f"\n=== Starting training ({NUM_EPOCHS} epoch, {len(train_tokenized)} examples) ===")
+    print(f"\n=== Starting training ({num_epochs} epochs, {len(train_tokenized)} examples) ===")
+    print(f"Expected: {steps_per_epoch} steps/epoch, ~{total_steps_expected} total steps")
     trainer = Trainer(
         model=model,
         args=training_args,
         train_dataset=train_tokenized,
         eval_dataset=val_tokenized,
         data_collator=data_collator,
+        callbacks=[EpochLoggerCallback()],
     )
 
     train_result = trainer.train()
     elapsed = time.time() - start_time
 
     # ---- 8. Metrics ----
+    best_epoch = None
+    best_val = float("inf")
+    for entry in epoch_log:
+        if entry["val_loss"] is not None and entry["val_loss"] < best_val:
+            best_val = entry["val_loss"]
+            best_epoch = entry["epoch"]
+
+    final_epoch_val = None
+    for entry in reversed(epoch_log):
+        if entry["val_loss"] is not None:
+            final_epoch_val = entry["val_loss"]
+            break
+
+    steps_actual = trainer.state.global_step
     metrics = {
         "training_completed": True,
-        "epochs": NUM_EPOCHS,
-        "total_steps": trainer.state.global_step,
-        "train_loss": float(train_result.training_loss),
+        "epochs_configured": num_epochs,
+        "epochs_completed": len(epoch_log),
+        "total_optimizer_steps": steps_actual,
+        "steps_per_epoch_configured": steps_per_epoch,
+        "steps_per_epoch_actual": round(steps_actual / max(1, len(epoch_log)), 1),
+        "final_train_loss": float(train_result.training_loss),
         "best_validation_loss": float(trainer.state.best_metric) if trainer.state.best_metric else None,
+        "best_epoch": best_epoch,
+        "final_epoch_validation_loss": final_epoch_val,
         "best_checkpoint": str(trainer.state.best_model_checkpoint),
         "elapsed_seconds": round(elapsed, 1),
         "elapsed_minutes": round(elapsed / 60, 1),
-        "steps_per_second": round(trainer.state.global_step / elapsed, 2) if elapsed > 0 else 0,
+        "steps_per_second": round(steps_actual / elapsed, 2) if elapsed > 0 else 0,
         "peak_vram_allocated_gb": round(torch.cuda.max_memory_allocated() / 1e9, 2),
         "peak_vram_reserved_gb": round(torch.cuda.max_memory_reserved() / 1e9, 2),
     }
     print(f"\n=== Training complete ===")
     for k, v in metrics.items():
         print(f"  {k}: {v}")
+
+    # Per-epoch summary
+    print(f"\n=== Per-epoch summary ===")
+    print(f"  {'Epoch':<7} {'Step':<7} {'Train Loss':<12} {'Val Loss':<12} {'LR':<12}")
+    for entry in epoch_log:
+        tl = f"{entry['train_loss']:.6f}" if entry["train_loss"] is not None else "N/A"
+        vl = f"{entry['val_loss']:.6f}" if entry["val_loss"] is not None else "N/A"
+        lr = f"{entry['learning_rate']:.2e}" if entry["learning_rate"] is not None else "N/A"
+        marker = " <-- BEST" if entry["epoch"] == best_epoch else ""
+        print(f"  {entry['epoch']:<7} {entry['step']:<7} {tl:<12} {vl:<12} {lr:<12}{marker}")
 
     # ---- 9. Save final adapter ----
     adapter_path = out / "final_adapter"
@@ -319,16 +407,32 @@ def main() -> int:
 
     comparisons = []
     for prompt in eval_prompts:
-        inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
+        messages = [
+            {"role": "system", "content": (
+                "You are a policy analysis AI. Answer questions using only the supplied source "
+                "evidence. Attribute claims to documented sources. Disclose uncertainty. "
+                "Do not invent facts, dates, stakeholders, or positions."
+            )},
+            {"role": "user", "content": prompt},
+        ]
+        formatted = tokenizer.apply_chat_template(
+            messages, tokenize=True, add_generation_prompt=True,
+            return_tensors="pt",
+        ).to("cuda")
+        prompt_len = formatted.shape[1]
         with torch.no_grad():
             out_tokens = loaded.generate(
-                **inputs, max_new_tokens=100, do_sample=True,
-                temperature=0.7, pad_token_id=tokenizer.eos_token_id,
+                formatted, max_new_tokens=200, do_sample=True,
+                temperature=0.7, top_p=0.9,
+                pad_token_id=tokenizer.eos_token_id,
+                eos_token_id=tokenizer.eos_token_id,
             )
-        response = tokenizer.decode(out_tokens[0], skip_special_tokens=True)
-        comparisons.append({"prompt": prompt, "response": response[len(prompt):][:300]})
+        # Decode only newly generated tokens (after the prompt)
+        new_tokens = out_tokens[0][prompt_len:]
+        response = tokenizer.decode(new_tokens, skip_special_tokens=True)
+        comparisons.append({"prompt": prompt, "response": response[:500]})
         print(f"  Q: {prompt[:80]}...")
-        print(f"  A: {response[len(prompt):][:200]}...")
+        print(f"  A: {response[:200]}...")
         print()
 
     # ---- 12. Save complete report ----
@@ -341,7 +445,20 @@ def main() -> int:
         "qlora": {"bits": 4, "nf4": True, "double_quant": True,
                    "lora_r": LORA_R, "lora_alpha": LORA_ALPHA,
                    "lora_dropout": LORA_DROPOUT, "target_modules": TARGET_MODULES},
+        "training_config": {
+            "epochs": num_epochs,
+            "micro_batch_size": PER_DEVICE_BATCH_SIZE,
+            "gradient_accumulation": GRADIENT_ACCUMULATION_STEPS,
+            "effective_batch_size": effective_batch,
+            "learning_rate": LEARNING_RATE,
+            "scheduler": LR_SCHEDULER,
+            "warmup_ratio": WARMUP_RATIO,
+            "max_seq_length": MAX_SEQ_LENGTH,
+            "steps_per_epoch_expected": steps_per_epoch,
+            "total_steps_expected": total_steps_expected,
+        },
         "dataset": {"train": len(train_data), "validation": len(val_data), "test": len(test_data)},
+        "per_epoch": epoch_log,
         "metrics": metrics,
         "qualitative_eval": comparisons,
         "adapter_path": str(adapter_path),
