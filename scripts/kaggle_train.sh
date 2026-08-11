@@ -17,6 +17,9 @@
 
 set -euo pipefail
 
+# Reduce CUDA allocator fragmentation — critical for T4 with seq_len=2048
+export PYTORCH_CUDA_ALLOC_CONF="${PYTORCH_CUDA_ALLOC_CONF:-expandable_segments:True}"
+
 MODE="${1:-validate}"
 
 echo "============================================"
@@ -49,13 +52,18 @@ uv sync --extra gpu
 # ---- 4. Verify GPU is visible ----
 echo ""
 echo "Checking GPU..."
+echo "Note: 'ModuleNotFoundError: No module named \"wrapt\"' is a Kaggle"
+echo "      sitecustomize warning — not an Arwen Policy issue. Ignore it."
 uv run python -c "
 import torch
 print(f'CUDA available: {torch.cuda.is_available()}')
+print(f'GPU count: {torch.cuda.device_count()}')
 if torch.cuda.is_available():
-    print(f'GPU: {torch.cuda.get_device_name(0)}')
-    vram = torch.cuda.get_device_properties(0).total_memory / 1e9
-    print(f'VRAM: {vram:.1f} GB')
+    for i in range(torch.cuda.device_count()):
+        name = torch.cuda.get_device_name(i)
+        vram = torch.cuda.get_device_properties(i).total_memory / 1e9
+        print(f'  GPU {i}: {name} ({vram:.1f} GB)')
+    print('Forcing GPU 0 only (single-GPU validation)')
 else:
     print('WARNING: No GPU detected.')
 "

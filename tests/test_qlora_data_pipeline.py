@@ -245,3 +245,126 @@ class TestNoRawStringInBatch:
         # This MUST raise an error about too many dimensions / str
         with pytest.raises((ValueError, TypeError, RuntimeError)):
             collator(bad_batch)
+
+
+class TestGPUValidationBatchSize:
+    """Regression: gpu_validate.py must use batch_size=1, not 4.
+
+    Batch size 4 with seq_len=2048 and Qwen3-8B's ~152K vocab causes CUDA OOM
+    on Tesla T4 because logits.float() inside ForCausalLMLoss allocates ~4.64 GB
+    per batch dimension for the float32 conversion. Single-example batches keep
+    this tensor at ~1.16 GB, leaving headroom on the 14.56 GiB T4.
+    """
+
+    def test_validation_batch_size_is_one(self):
+        """gpu_validate.py VALIDATION_BATCH_SIZE must be exactly 1."""
+        # Parse the constant from the source file
+        import ast
+        from pathlib import Path
+
+        script = Path("scripts/gpu_validate.py").read_text(encoding="utf-8")
+        tree = ast.parse(script)
+
+        found = False
+        for node in ast.walk(tree):
+            if isinstance(node, ast.Assign):
+                for target in node.targets:
+                    if isinstance(target, ast.Name) and target.id == "VALIDATION_BATCH_SIZE":
+                        if isinstance(node.value, ast.Constant):
+                            assert node.value.value == 1, (
+                                f"VALIDATION_BATCH_SIZE must be 1, got {node.value.value}. "
+                                "batch_size > 1 causes CUDA OOM on T4 (logits.float() ~4.64 GB at batch=4). "
+                                "See the Kaggle validation failure for details."
+                            )
+                            found = True
+        assert found, "VALIDATION_BATCH_SIZE constant not found in gpu_validate.py"
+
+    def test_validation_batch_size_is_not_four(self):
+        """Explicit guard: batch_size must not be 4."""
+        import ast
+        from pathlib import Path
+
+        script = Path("scripts/gpu_validate.py").read_text(encoding="utf-8")
+        tree = ast.parse(script)
+
+        for node in ast.walk(tree):
+            if isinstance(node, ast.Assign):
+                for target in node.targets:
+                    if isinstance(target, ast.Name) and target.id == "VALIDATION_BATCH_SIZE":
+                        if isinstance(node.value, ast.Constant):
+                            assert node.value.value != 4, (
+                                "VALIDATION_BATCH_SIZE=4 causes CUDA OOM on T4. Must be 1."
+                            )
+
+    def test_device_map_is_not_auto(self):
+        """device_map must be explicit ({"": "cuda:0"}), not "auto".
+
+        device_map="auto" splits the model across all GPUs, which on a dual-T4
+        system can cause unpredictable OOMs when GPU 1 receives the logits.float()
+        allocation during loss computation.
+        """
+        script = Path("scripts/gpu_validate.py").read_text(encoding="utf-8")
+        # Must contain the exact device_map restriction
+        assert 'device_map={"": "cuda:0"}' in script or \
+               "device_map={'': 'cuda:0'}" in script or \
+               'device_map={"":"cuda:0"}' in script, (
+            "gpu_validate.py must use device_map={\"\": \"cuda:0\"} to force single-GPU. "
+            "device_map=\"auto\" splits across GPUs and causes OOM on dual-T4 Kaggle."
+        )
+
+    def test_cuda_set_device_is_called(self):
+        """torch.cuda.set_device(0) must be called to lock the default device."""
+        script = Path("scripts/gpu_validate.py").read_text(encoding="utf-8")
+        assert "torch.cuda.set_device(0)" in script, (
+            "gpu_validate.py must call torch.cuda.set_device(0) to prevent "
+            "accidental allocation on other GPUs."
+        )
+
+    def test_batch_moved_to_explicit_cuda0(self):
+        """Batch must be moved to 'cuda:0', not 'cuda' (which may default elsewhere)."""
+        script = Path("scripts/gpu_validate.py").read_text(encoding="utf-8")
+        # The batch move must target cuda:0 explicitly
+        assert 'to("cuda:0")' in script, (
+            "Batch must be moved to 'cuda:0' explicitly, not 'cuda'. "
+            "The default device may change if another GPU is initialized first."
+        )
+
+
+class TestTrainingSingleGPU:
+    """Regression: train_qlora.py must force single-GPU (cuda:0) for 20-epoch run.
+
+    device_map="auto" on dual-T4 Kaggle splits the model across both GPUs.
+    During training, ForCausalLMLoss.logits.float() allocates a [1, 2048, 151936]
+    float32 tensor (~1.16 GB) on whichever GPU holds lm_head. With model layers
+    already on that GPU, this can OOM mid-training — potentially after hours.
+    """
+
+    def test_training_device_map_is_not_auto(self):
+        """train_qlora.py model loading must use device_map={"": "cuda:0"}, not "auto"."""
+        script = Path("scripts/train_qlora.py").read_text(encoding="utf-8")
+        assert 'device_map={"": "cuda:0"}' in script or \
+               "device_map={'': 'cuda:0'}" in script or \
+               'device_map={"":"cuda:0"}' in script, (
+            "train_qlora.py must use device_map={\"\": \"cuda:0\"} to force single-GPU. "
+            "device_map=\"auto\" splits across GPUs and can OOM mid-training on dual-T4."
+        )
+
+    def test_training_device_map_not_auto_string(self):
+        """The string 'device_map=\"auto\"' must not appear in the model loading section."""
+        script = Path("scripts/train_qlora.py").read_text(encoding="utf-8")
+        # Only check the model-loading section (around the AutoModelForCausalLM call)
+        # The word "auto" may appear elsewhere (e.g., device_map="auto" in comments)
+        import re
+        # Find all device_map assignments
+        matches = re.findall(r'device_map\s*=\s*"auto"', script)
+        assert len(matches) == 0, (
+            f"Found device_map=\"auto\" in train_qlora.py ({len(matches)} occurrence(s)). "
+            "Must be device_map={\"\": \"cuda:0\"} for single-GPU training."
+        )
+
+    def test_training_cuda_set_device(self):
+        """train_qlora.py must call torch.cuda.set_device(0) before model loading."""
+        script = Path("scripts/train_qlora.py").read_text(encoding="utf-8")
+        assert "torch.cuda.set_device(0)" in script, (
+            "train_qlora.py must call torch.cuda.set_device(0) to lock the default device."
+        )

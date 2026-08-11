@@ -1,27 +1,28 @@
 #!/usr/bin/env python3
 """GPU validation smoke test for Arwen Policy QLoRA pipeline.
 
-Validates that the QLoRA training pipeline works correctly on an actual GPU:
-- CUDA, GPU name, VRAM
-- Qwen3-8B 4-bit NF4 loading
+Validates that the QLoRA training pipeline works correctly on a single GPU:
+- CUDA, GPU name, VRAM (GPU 0 only)
+- Qwen3-8B 4-bit NF4 loading (forced onto cuda:0)
 - LoRA adapter attachment
 - Tokenization + label masking (exact tokenize_fn from train_qlora.py)
-- Forward pass with real labels
+- Forward pass with real labels (batch_size=1, seq_len=2048)
 - Finite loss check
 - Backward pass with non-zero LoRA gradients
-- Peak VRAM reporting
+- Peak VRAM reporting at each stage
 
 Does NOT perform optimizer.step() or full training.
+Does NOT use multi-GPU — everything stays on cuda:0.
 
 Usage:
-    uv sync --extra gpu
-    uv run python scripts/gpu_validate.py
+    PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True uv run python scripts/gpu_validate.py
 """
 
 from __future__ import annotations
 
 import json
 import math
+import os
 import sys
 import time
 from pathlib import Path
@@ -43,6 +44,7 @@ from transformers import (
 MODEL_NAME = "Qwen/Qwen3-8B"
 DATA_DIR = "datasets/sft_final"
 MAX_SEQ_LENGTH = 2048
+VALIDATION_BATCH_SIZE = 1  # single-example batch to stay within T4 VRAM
 SEED = 42
 
 # LoRA
@@ -53,6 +55,19 @@ TARGET_MODULES = [
     "q_proj", "k_proj", "v_proj", "o_proj",
     "gate_proj", "up_proj", "down_proj",
 ]
+
+
+def _vram_report() -> dict:
+    """Snapshot of current GPU 0 VRAM state."""
+    return {
+        "allocated_gb": round(torch.cuda.memory_allocated(0) / 1e9, 3),
+        "reserved_gb": round(torch.cuda.memory_reserved(0) / 1e9, 3),
+    }
+
+
+def _vram_summary_str() -> str:
+    s = _vram_report()
+    return f"alloc={s['allocated_gb']:.2f} GB, reserved={s['reserved_gb']:.2f} GB"
 
 
 # ===================================================================
@@ -139,30 +154,58 @@ def load_split(split_name: str) -> list[dict]:
 
 def main() -> int:
     print("=" * 70)
-    print("ARWEN POLICY — GPU VALIDATION")
+    print("ARWEN POLICY — GPU VALIDATION (SINGLE-GPU, BATCH=1)")
     print("=" * 70)
+
+    # ---- Environment warnings (non-blocking) ----
+    alloc_conf = os.environ.get("PYTORCH_CUDA_ALLOC_CONF", "")
+    if "expandable_segments:True" not in alloc_conf:
+        print("\n[ENV] Recommended but not set: PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True")
+        print("      This reduces CUDA allocator fragmentation. Set it before running:")
+        print("      export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True")
+    else:
+        print("\n[ENV] PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True (enabled)")
+
+    # Document Kaggle wrapt warning (not our dependency)
+    print("\n[ENV] Note: 'ModuleNotFoundError: No module named \"wrapt\"' from sitecustomize")
+    print("      is a Kaggle environment warning, not an Arwen Policy issue.")
+    print("      It does not affect PyTorch, transformers, or the validation result.")
 
     results = {
         "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "phases": {},
     }
 
-    # ---- 1. GPU CHECK ----
-    print("\n[1/8] GPU check")
+    # ---- 1. GPU CHECK (GPU 0 only) ----
+    print("\n[1/9] GPU check (single-GPU mode)")
     if not torch.cuda.is_available():
         print("  FAIL: CUDA not available. This script requires a GPU.")
         return 1
 
+    n_gpus = torch.cuda.device_count()
+    print(f"  GPUs visible: {n_gpus}")
+    if n_gpus > 1:
+        print(f"  Multi-GPU detected. Forcing GPU 0 only (not using GPU 1..{n_gpus-1}).")
+
+    # Lock to GPU 0
+    torch.cuda.set_device(0)
     gpu_name = torch.cuda.get_device_name(0)
     vram_total = torch.cuda.get_device_properties(0).total_memory / 1e9
-    print(f"  GPU:        {gpu_name}")
+    print(f"  GPU 0:      {gpu_name}")
     print(f"  VRAM total: {vram_total:.1f} GB")
     print(f"  PyTorch:    {torch.__version__}")
     print(f"  CUDA:       {torch.version.cuda}")
 
+    # Log memory state on all GPUs
+    for g in range(n_gpus):
+        alloc = torch.cuda.memory_allocated(g) / 1e9
+        reserved = torch.cuda.memory_reserved(g) / 1e9
+        print(f"  GPU {g} init: alloc={alloc:.2f} GB, reserved={reserved:.2f} GB")
+
     results["gpu"] = {
         "name": gpu_name,
         "vram_total_gb": round(vram_total, 1),
+        "gpu_count": n_gpus,
         "pytorch": torch.__version__,
         "cuda": torch.version.cuda,
     }
@@ -179,13 +222,12 @@ def main() -> int:
     if vram_total < 14.5:
         print(f"  WARNING: VRAM < 15 GB ({vram_total:.1f} GB). Full training may OOM.")
         print(f"  Gradient accumulation is already configured (batch=1, accum=8).")
-        print(f"  Consider using a GPU with >= 16 GB VRAM.")
 
-    torch.cuda.reset_peak_memory_stats()
+    torch.cuda.reset_peak_memory_stats(0)
     results["phases"]["gpu_check"] = "PASS"
 
     # ---- 2. LOAD DATASET ----
-    print("\n[2/8] Load dataset")
+    print("\n[2/9] Load dataset")
     train_data = load_split("train")
     print(f"  Training examples: {len(train_data)}")
     if len(train_data) != 304:
@@ -195,7 +237,7 @@ def main() -> int:
     results["phases"]["dataset_load"] = "PASS"
 
     # ---- 3. TOKENIZE WITH LABEL MASKING ----
-    print("\n[3/8] Tokenize with label masking")
+    print("\n[3/9] Tokenize with label masking")
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, trust_remote_code=True)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
@@ -254,14 +296,15 @@ def main() -> int:
     }
 
     # ---- 4. CREATE BATCH VIA COLLATOR ----
-    print("\n[4/8] Create training batch")
+    print("\n[4/9] Create training batch (batch_size=1)")
     data_collator = DataCollatorWithPadding(
         tokenizer=tokenizer, padding="max_length", max_length=MAX_SEQ_LENGTH,
     )
-    batch_size = 4
+    batch_size = VALIDATION_BATCH_SIZE
     batch_examples = [tokenized[i] for i in range(min(batch_size, len(tokenized)))]
     batch = data_collator(batch_examples)
 
+    print(f"  Batch size:           {batch_size}")
     print(f"  input_ids shape:      {batch['input_ids'].shape}")
     print(f"  attention_mask shape: {batch['attention_mask'].shape}")
     print(f"  labels shape:         {batch['labels'].shape}")
@@ -284,10 +327,15 @@ def main() -> int:
         print("  Collator preserves labels: PASS")
 
     results["phases"]["collator"] = "PASS"
+    results["batch_config"] = {
+        "batch_size": batch_size,
+        "max_seq_length": MAX_SEQ_LENGTH,
+    }
 
-    # ---- 5. LOAD MODEL WITH QLORA ----
-    print(f"\n[5/8] Load model: {MODEL_NAME}")
+    # ---- 5. LOAD MODEL (GPU 0 ONLY) ----
+    print(f"\n[5/9] Load model: {MODEL_NAME} (forcing cuda:0)")
     print("  Quantization: 4-bit NF4, double quant, float16 compute")
+    print(f"  VRAM before load: {_vram_summary_str()}")
 
     compute_dtype = torch.float16
     bnb_config = BitsAndBytesConfig(
@@ -297,10 +345,14 @@ def main() -> int:
         bnb_4bit_compute_dtype=compute_dtype,
     )
 
+    # ── CRITICAL: force everything onto cuda:0 ──
+    # device_map="auto" would split the model across all GPUs, causing
+    # unpredictable OOMs on GPU 1 when logits.float() allocates a large
+    # temporary tensor during causal-LM loss computation.
     model = AutoModelForCausalLM.from_pretrained(
         MODEL_NAME,
         quantization_config=bnb_config,
-        device_map="auto",
+        device_map={"": "cuda:0"},
         trust_remote_code=True,
         torch_dtype=compute_dtype,
     )
@@ -321,34 +373,34 @@ def main() -> int:
     trainable = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"  LoRA trainable:  {trainable:,} ({100*trainable/total_params:.4f}%)")
 
+    after_load = _vram_report()
+    print(f"  VRAM after load:  {_vram_summary_str()}")
+
     results["model"] = {
         "total_params": total_params,
         "trainable_params": trainable,
         "trainable_pct": round(100 * trainable / total_params, 4),
     }
-
-    vram_after_model_load = torch.cuda.memory_allocated() / 1e9
-    print(f"  VRAM after load: {vram_after_model_load:.2f} GB")
+    results["vram_after_model_load"] = after_load
 
     results["phases"]["model_load"] = "PASS"
 
     # ---- 6. FORWARD PASS ----
-    print("\n[6/8] Forward pass")
-    batch_gpu = {k: v.to("cuda") for k, v in batch.items()}
+    print(f"\n[6/9] Forward pass (batch={batch_size}, seq={MAX_SEQ_LENGTH})")
+    # Move batch explicitly to cuda:0
+    batch_gpu = {k: v.to("cuda:0") for k, v in batch.items()}
     model.train()  # enable dropout for valid backward
 
-    alloc_before = torch.cuda.memory_allocated() / 1e9
+    vram_before_fwd = _vram_report()
+    print(f"  VRAM before forward: {_vram_summary_str()}")
 
     outputs = model(**batch_gpu)
     loss = outputs.loss
 
-    alloc_after = torch.cuda.memory_allocated() / 1e9
-
-    print(f"  Loss:               {loss.item():.6f}")
-    print(f"  Loss is finite:     {math.isfinite(loss.item())}")
-    print(f"  VRAM allocated:     {alloc_after:.2f} GB")
-    print(f"  Peak allocated:     {torch.cuda.max_memory_allocated() / 1e9:.2f} GB")
-    print(f"  Peak reserved:      {torch.cuda.max_memory_reserved() / 1e9:.2f} GB")
+    vram_after_fwd = _vram_report()
+    print(f"  VRAM after forward:  {_vram_summary_str()}")
+    print(f"  Loss:                {loss.item():.6f}")
+    print(f"  Loss is finite:      {math.isfinite(loss.item())}")
 
     if not math.isfinite(loss.item()):
         print("  FAIL: Loss is not finite")
@@ -357,15 +409,22 @@ def main() -> int:
     results["phases"]["forward_pass"] = "PASS"
     results["forward"] = {
         "loss": round(loss.item(), 6),
-        "vram_allocated_gb": round(alloc_after, 2),
-        "peak_allocated_gb": round(torch.cuda.max_memory_allocated() / 1e9, 2),
-        "peak_reserved_gb": round(torch.cuda.max_memory_reserved() / 1e9, 2),
+        "vram_before_gb": vram_before_fwd,
+        "vram_after_gb": vram_after_fwd,
+        "peak_allocated_gb": round(torch.cuda.max_memory_allocated(0) / 1e9, 2),
+        "peak_reserved_gb": round(torch.cuda.max_memory_reserved(0) / 1e9, 2),
     }
 
     # ---- 7. BACKWARD PASS ----
-    print("\n[7/8] Backward pass")
+    print(f"\n[7/9] Backward pass")
+    vram_before_bwd = _vram_report()
+    print(f"  VRAM before backward: {_vram_summary_str()}")
+
     try:
         loss.backward()
+
+        vram_after_bwd = _vram_report()
+        print(f"  VRAM after backward:  {_vram_summary_str()}")
         print("  backward() succeeded")
 
         nonzero = 0
@@ -394,17 +453,24 @@ def main() -> int:
         results["backward"] = {
             "nonzero_grad_params": nonzero,
             "zero_grad_params": zero,
+            "vram_before_gb": vram_before_bwd,
+            "vram_after_gb": vram_after_bwd,
             "sample_gradients": [{"name": n, "norm": round(v, 6)} for n, v in sample_grads],
         }
 
+    except torch.OutOfMemoryError as e:
+        print(f"  FAIL: CUDA OOM during backward: {e}")
+        results["phases"]["backward_pass"] = "FAIL"
+        results["backward_error"] = str(e)[:500]
+        return 1
     except Exception as e:
         print(f"  FAIL: backward() raised: {e}")
         return 1
 
     # ---- 8. VRAM SUMMARY ----
-    print("\n[8/8] VRAM summary")
-    peak_alloc = torch.cuda.max_memory_allocated() / 1e9
-    peak_reserved = torch.cuda.max_memory_reserved() / 1e9
+    print(f"\n[8/9] VRAM summary (GPU 0)")
+    peak_alloc = torch.cuda.max_memory_allocated(0) / 1e9
+    peak_reserved = torch.cuda.max_memory_reserved(0) / 1e9
     print(f"  Peak allocated: {peak_alloc:.2f} GB")
     print(f"  Peak reserved:  {peak_reserved:.2f} GB")
     print(f"  GPU total:      {vram_total:.1f} GB")
@@ -417,14 +483,28 @@ def main() -> int:
         results["phases"]["vram_summary"] = "FAIL"
     else:
         print("  VRAM adequate for full training.")
+        results["phases"]["vram_summary"] = "PASS"
 
-    results["phases"]["vram_summary"] = "PASS"
     results["vram"] = {
         "total_gb": round(vram_total, 1),
         "peak_allocated_gb": round(peak_alloc, 2),
         "peak_reserved_gb": round(peak_reserved, 2),
         "headroom_gb": round(vram_total - peak_reserved, 2),
     }
+
+    # ---- 9. LOGITS MEMORY ESTIMATE ----
+    print(f"\n[9/9] Logits memory estimate (for documentation)")
+    # Qwen3-8B vocab size; compute theoretical float32 logits tensor size
+    vocab_size = model.config.vocab_size if hasattr(model.config, "vocab_size") else 151936
+    logits_elements = batch_size * MAX_SEQ_LENGTH * vocab_size
+    logits_gb_f32 = logits_elements * 4 / 1e9
+    logits_gb_f16 = logits_elements * 2 / 1e9
+    print(f"  Vocab size:              {vocab_size:,}")
+    print(f"  Logits shape:            [{batch_size}, {MAX_SEQ_LENGTH}, {vocab_size}]")
+    print(f"  Logits elements:         {logits_elements:,}")
+    print(f"  Logits size (float32):   {logits_gb_f32:.2f} GB  ← loss computation casts here")
+    print(f"  Logits size (float16):   {logits_gb_f16:.2f} GB")
+    print(f"  With batch_size=4 this would be ~{logits_gb_f32 * 4:.2f} GB (OOM cause confirmed)")
 
     # ---- FINAL ----
     all_pass = all(v == "PASS" for v in results["phases"].values())

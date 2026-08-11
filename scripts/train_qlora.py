@@ -92,6 +92,8 @@ def main() -> int:
         print("ERROR: CUDA not available. This script requires a GPU.")
         return 1
 
+    torch.cuda.set_device(0)  # lock to GPU 0 — no multi-GPU on dual-T4 Kaggle
+
     gpu_name = torch.cuda.get_device_name(0)
     vram = torch.cuda.get_device_properties(0).total_memory / 1e9
     print(f"GPU: {gpu_name} ({vram:.1f} GB VRAM)")
@@ -219,7 +221,7 @@ def main() -> int:
     model = AutoModelForCausalLM.from_pretrained(
         MODEL_NAME,
         quantization_config=bnb_config,
-        device_map="auto",
+        device_map={"": "cuda:0"},  # single-GPU only — prevents OOM on dual-T4 Kaggle
         trust_remote_code=True,
         torch_dtype=compute_dtype,
     )
@@ -388,7 +390,7 @@ def main() -> int:
     base_model = AutoModelForCausalLM.from_pretrained(
         MODEL_NAME,
         quantization_config=bnb_config,
-        device_map="auto",
+        device_map={"": "cuda:0"},
         trust_remote_code=True,
         torch_dtype=compute_dtype,
     )
