@@ -34,7 +34,7 @@ from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
     BitsAndBytesConfig,
-    DataCollatorWithPadding,
+    DataCollatorForSeq2Seq,
 )
 
 # ===================================================================
@@ -82,8 +82,7 @@ def build_tokenize_fn(tokenizer):
 
         tokenized = tokenizer.apply_chat_template(
             batch_messages, tokenize=True, add_generation_prompt=False,
-            padding="max_length", truncation=True,
-            max_length=MAX_SEQ_LENGTH, return_dict=True,
+            truncation=True, max_length=MAX_SEQ_LENGTH, return_dict=True,
         )
 
         im_start_id = 151644
@@ -297,8 +296,8 @@ def main() -> int:
 
     # ---- 4. CREATE BATCH VIA COLLATOR ----
     print("\n[4/9] Create training batch (batch_size=1)")
-    data_collator = DataCollatorWithPadding(
-        tokenizer=tokenizer, padding="max_length", max_length=MAX_SEQ_LENGTH,
+    data_collator = DataCollatorForSeq2Seq(
+        tokenizer=tokenizer, padding=True, label_pad_token_id=-100,
     )
     batch_size = VALIDATION_BATCH_SIZE
     batch_examples = [tokenized[i] for i in range(min(batch_size, len(tokenized)))]

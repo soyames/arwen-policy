@@ -159,8 +159,7 @@ def main() -> int:
 
         tokenized = tokenizer.apply_chat_template(
             batch_messages, tokenize=True, add_generation_prompt=False,
-            padding="max_length", truncation=True,
-            max_length=MAX_SEQ_LENGTH, return_dict=True,
+            truncation=True, max_length=MAX_SEQ_LENGTH, return_dict=True,
         )
 
         # Build labels: mask everything except assistant content
@@ -269,8 +268,8 @@ def main() -> int:
         dataloader_num_workers=0,
     )
 
-    from transformers import DataCollatorWithPadding, TrainerCallback
-    data_collator = DataCollatorWithPadding(tokenizer=tokenizer, padding="max_length", max_length=MAX_SEQ_LENGTH)
+    from transformers import DataCollatorForSeq2Seq, TrainerCallback
+    data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, padding=True, label_pad_token_id=-100)
 
     # Per-epoch logging callback
     epoch_log: list[dict] = []

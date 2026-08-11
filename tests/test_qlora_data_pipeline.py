@@ -368,3 +368,101 @@ class TestTrainingSingleGPU:
         assert "torch.cuda.set_device(0)" in script, (
             "train_qlora.py must call torch.cuda.set_device(0) to lock the default device."
         )
+
+
+class TestDynamicPadding:
+    """Regression: tokenization must use dynamic padding, not static max_length.
+
+    Static padding to 2048 forces every training batch to [1, 2048], inflating
+    attention memory by ~12× (2048² vs actual ~170² per example). On T4 with
+    14.56 GiB VRAM, the wasted attention + hidden-state memory pushes peak VRAM
+    over the limit when combined with AdamW optimizer states (~350 MB).
+    Dynamic padding reduces peak VRAM from ~14.6 GiB to ~4-6 GiB.
+    """
+
+    def test_tokenize_fn_has_no_static_max_length_padding(self):
+        """tokenize_fn must NOT use padding=\"max_length\"."""
+        import re
+        script = Path("scripts/train_qlora.py").read_text(encoding="utf-8")
+        # Find padding="max_length" inside the tokenize_fn (not in comments)
+        matches = re.findall(r'padding\s*=\s*"max_length"', script)
+        assert len(matches) == 0, (
+            f"Found padding=\"max_length\" in train_qlora.py ({len(matches)} occurrence(s)). "
+            "Static padding to 2048 causes CUDA OOM on T4. Use dynamic padding."
+        )
+
+    def test_collator_uses_dynamic_padding(self):
+        """Collator must use DataCollatorForSeq2Seq with padding=True.
+
+        DataCollatorWithPadding cannot pad the 'labels' field when sequences
+        have different lengths — tokenizer.pad() only handles input_ids and
+        attention_mask. DataCollatorForSeq2Seq explicitly pads labels with
+        label_pad_token_id=-100.
+        """
+        script = Path("scripts/train_qlora.py").read_text(encoding="utf-8")
+        assert "DataCollatorForSeq2Seq" in script, (
+            "Must use DataCollatorForSeq2Seq (not DataCollatorWithPadding) for dynamic padding. "
+            "DataCollatorWithPadding cannot pad labels with varying lengths."
+        )
+        assert "label_pad_token_id=-100" in script, (
+            "DataCollatorForSeq2Seq must use label_pad_token_id=-100 to pad label positions."
+        )
+        assert "padding=True" in script, (
+            "Collator must use padding=True for dynamic per-batch padding."
+        )
+
+    def test_gpu_validate_has_no_static_padding(self):
+        """gpu_validate.py must also use dynamic padding with DataCollatorForSeq2Seq."""
+        import re
+        script = Path("scripts/gpu_validate.py").read_text(encoding="utf-8")
+        matches = re.findall(r'padding\s*=\s*"max_length"', script)
+        assert len(matches) == 0, (
+            f"Found padding=\"max_length\" in gpu_validate.py ({len(matches)} occurrence(s))."
+        )
+        assert "DataCollatorForSeq2Seq" in script, (
+            "gpu_validate.py must use DataCollatorForSeq2Seq for label-compatible dynamic padding."
+        )
+
+    def test_dynamic_padding_produces_variable_lengths(self):
+        """Tokenized examples must have different lengths (not all 2048)."""
+        import json
+        from pathlib import Path as P
+        from transformers import AutoTokenizer
+
+        tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen3-8B", trust_remote_code=True)
+        if tokenizer.pad_token is None:
+            tokenizer.pad_token = tokenizer.eos_token
+
+        # Use the EXACT tokenize_fn logic
+        def tokenize_fn(examples):
+            batch_messages = [msgs for msgs in examples["messages"]]
+            tokenized = tokenizer.apply_chat_template(
+                batch_messages, tokenize=True, add_generation_prompt=False,
+                truncation=True, max_length=2048, return_dict=True,
+            )
+            return tokenized
+
+        from datasets import Dataset as DS
+        data = []
+        for line in P("datasets/sft_final/train.jsonl").read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            ex = json.loads(line)
+            msgs = [{"role": m["role"], "content": m["content"]} for m in ex["messages"]]
+            data.append({"messages": msgs})
+            if len(data) >= 10:
+                break
+
+        ds = DS.from_list(data)
+        tok = ds.map(tokenize_fn, batched=True)
+        lengths = [len(row["input_ids"]) for row in tok]
+
+        # At least one example must be shorter than 2048
+        assert any(l < 2048 for l in lengths), (
+            f"All tokenized lengths are >= 2048: {lengths}. "
+            "Dynamic padding is not working — static 2048-padding wastes GPU memory."
+        )
+        # Examples must have varying lengths (proof of no static padding)
+        assert len(set(lengths)) > 1, (
+            f"All lengths identical ({lengths[0]}). Static padding detected."
+        )

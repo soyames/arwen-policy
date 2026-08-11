@@ -18,7 +18,7 @@ from pathlib import Path
 
 import torch
 from datasets import Dataset
-from transformers import AutoTokenizer, DataCollatorWithPadding
+from transformers import AutoTokenizer, DataCollatorForSeq2Seq
 
 # ===================================================================
 # EXACT CONFIGURATION FROM train_qlora.py
@@ -39,7 +39,7 @@ def build_tokenize_fn(tokenizer):
 
         tokenized = tokenizer.apply_chat_template(
             batch_messages, tokenize=True, add_generation_prompt=False,
-            padding="max_length", truncation=True,
+            truncation=True,
             max_length=MAX_SEQ_LENGTH, return_dict=True,
         )
 
@@ -329,8 +329,8 @@ def main() -> int:
     print("=" * 70)
 
     # Use EXACT collator from training
-    data_collator = DataCollatorWithPadding(
-        tokenizer=tokenizer, padding="max_length", max_length=MAX_SEQ_LENGTH
+    data_collator = DataCollatorForSeq2Seq(
+        tokenizer=tokenizer, padding=True, label_pad_token_id=-100
     )
 
     # Pick a small subset for a batch
