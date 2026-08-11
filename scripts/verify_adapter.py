@@ -80,6 +80,7 @@ def main() -> int:
         )
         if torch.cuda.is_available():
             formatted = formatted.to("cuda")
+        prompt_len = formatted.shape[1]
         with torch.no_grad():
             out = model.generate(
                 formatted, max_new_tokens=200, do_sample=True,
@@ -87,11 +88,9 @@ def main() -> int:
                 pad_token_id=tokenizer.eos_token_id,
                 eos_token_id=tokenizer.eos_token_id,
             )
-        response = tokenizer.decode(out[0], skip_special_tokens=True)
-        # Extract only the assistant response (after the last chat marker)
-        assistant_marker = "assistant\n"
-        if assistant_marker in response:
-            response = response[response.rindex(assistant_marker) + len(assistant_marker):]
+        # Decode only the newly generated tokens (after the prompt)
+        new_tokens = out[0][prompt_len:]
+        response = tokenizer.decode(new_tokens, skip_special_tokens=True)
         results.append({"prompt": prompt, "response": response[:500]})
         print(f"  Q: {prompt[:80]}...")
         print(f"  A: {response[len(prompt):][:200]}...")

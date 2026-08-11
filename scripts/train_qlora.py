@@ -127,26 +127,52 @@ def main() -> int:
         tokenizer.pad_token = tokenizer.eos_token
 
     def tokenize_fn(examples: dict) -> dict:
-        """Tokenize chat messages using the model's chat template.
+        """Tokenize chat messages and create label masks.
 
-        Uses apply_chat_template which produces properly formatted
-        <|im_start|>role\ncontent<|im_end|> sequences with correct
-        label masking: assistant tokens are targets, user/system tokens
-        are masked with -100.
+        apply_chat_template() produces input_ids but no labels.
+        We create labels by masking system/user tokens with -100,
+        keeping only assistant content tokens as training targets.
         """
-        batch_messages = []
-        for msgs in examples["messages"]:
-            batch_messages.append(msgs)
+        batch_messages = [msgs for msgs in examples["messages"]]
 
         tokenized = tokenizer.apply_chat_template(
-            batch_messages,
-            tokenize=True,
-            add_generation_prompt=False,  # training: full sequence with assistant
-            padding="max_length",
-            truncation=True,
-            max_length=MAX_SEQ_LENGTH,
-            return_dict=True,
+            batch_messages, tokenize=True, add_generation_prompt=False,
+            padding="max_length", truncation=True,
+            max_length=MAX_SEQ_LENGTH, return_dict=True,
         )
+
+        # Build labels: mask everything except assistant content
+        im_start_id = 151644
+        im_end_id = 151645
+        assistant_tokens = tokenizer.encode("assistant\n", add_special_tokens=False)
+
+        labels_list = []
+        for ids in tokenized["input_ids"]:
+            labels = [-100] * len(ids)
+            i = 0
+            while i < len(ids):
+                if ids[i] == im_start_id:
+                    role_start = i + 1
+                    is_asst = all(
+                        role_start + j < len(ids)
+                        and ids[role_start + j] == assistant_tokens[j]
+                        for j in range(len(assistant_tokens))
+                    )
+                    if is_asst:
+                        content_start = role_start + len(assistant_tokens)
+                        content_end = content_start
+                        while content_end < len(ids) and ids[content_end] != im_end_id:
+                            content_end += 1
+                        for j in range(content_start, content_end):
+                            labels[j] = ids[j]
+                        i = content_end
+                    else:
+                        i += 1
+                else:
+                    i += 1
+            labels_list.append(labels)
+
+        tokenized["labels"] = labels_list
         return tokenized
 
     train_tokenized = train_dataset.map(tokenize_fn, batched=True)

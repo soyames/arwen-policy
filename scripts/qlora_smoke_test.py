@@ -253,11 +253,41 @@ def run_smoke_test(
 
     def tokenize_fn(examples):
         batch_msgs = [msgs for msgs in examples["messages"]]
-        return tokenizer.apply_chat_template(
+        tokenized = tokenizer.apply_chat_template(
             batch_msgs, tokenize=True, add_generation_prompt=False,
             padding="max_length", truncation=True, max_length=max_seq_length,
             return_dict=True,
         )
+
+        # Build labels: mask everything except assistant content
+        im_start_id = 151644
+        im_end_id = 151645
+        asst_tokens = tokenizer.encode("assistant\n", add_special_tokens=False)
+
+        labels_list = []
+        for ids in tokenized["input_ids"]:
+            labels = [-100] * len(ids)
+            i = 0
+            while i < len(ids):
+                if ids[i] == im_start_id:
+                    rs = i + 1
+                    is_asst = all(rs + j < len(ids) and ids[rs + j] == asst_tokens[j]
+                                  for j in range(len(asst_tokens)))
+                    if is_asst:
+                        cs = rs + len(asst_tokens)
+                        ce = cs
+                        while ce < len(ids) and ids[ce] != im_end_id:
+                            ce += 1
+                        for j in range(cs, ce):
+                            labels[j] = ids[j]
+                        i = ce
+                    else:
+                        i += 1
+                else:
+                    i += 1
+            labels_list.append(labels)
+        tokenized["labels"] = labels_list
+        return tokenized
 
     tokenized = train_dataset.map(tokenize_fn, batched=True)
     tokenized = tokenized.remove_columns(["messages"])
