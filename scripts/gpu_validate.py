@@ -232,8 +232,8 @@ def main() -> int:
     print("\n[2/9] Load dataset")
     train_data = load_split("train")
     print(f"  Training examples: {len(train_data)}")
-    if len(train_data) != 304:
-        print(f"  WARNING: expected 304, got {len(train_data)}")
+    if len(train_data) != 330:
+        print(f"  WARNING: expected 330, got {len(train_data)}")
 
     train_dataset = Dataset.from_list(train_data)
     results["phases"]["dataset_load"] = "PASS"

@@ -741,7 +741,7 @@ def main() -> int:
     n_violations = sys_user_violations
 
     checks = {
-        "304/304 examples have assistant target tokens": n_active_examples == total,
+        f"{n_active_examples}/{total} examples have assistant target tokens": n_active_examples == total,
         "0 examples train on system/user content": n_violations == 0,
         "Tokenization produces valid labels": n_zero == 0,
         "Collator preserves labels": True,  # Already validated above

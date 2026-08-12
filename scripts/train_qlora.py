@@ -53,8 +53,8 @@ WEIGHT_DECAY = 0.01
 LR_SCHEDULER = "cosine"
 
 # Effective batch size = PER_DEVICE_BATCH_SIZE * GRADIENT_ACCUMULATION_STEPS = 8
-# Steps per epoch ≈ ceil(304 / 8) = 38
-# Total steps ≈ 20 * 38 = 760
+# Steps per epoch ≈ ceil(N / 8) — calculated from actual dataset size at runtime
+# Total steps ≈ 20 * steps_per_epoch — computed dynamically, not hardcoded
 
 # LoRA
 LORA_R = 16

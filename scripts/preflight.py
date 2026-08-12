@@ -43,9 +43,9 @@ from pathlib import Path
 # =============================================================================
 
 EXPECTED = {
-    "train_examples": 304,
-    "val_examples": 37,
-    "test_examples": 35,
+    "train_examples": 330,
+    "val_examples": 39,
+    "test_examples": 37,
     "per_device_batch_size": 1,
     "gradient_accumulation_steps": 8,
     "num_epochs": 20,
@@ -58,8 +58,8 @@ EXPECTED = {
 # Derived expected values
 EXPECTED["steps_per_epoch"] = math.ceil(
     EXPECTED["train_examples"] / EXPECTED["effective_batch_size"]
-)  # 38
-EXPECTED["max_steps"] = EXPECTED["steps_per_epoch"] * EXPECTED["num_epochs"]  # 760
+)  # ceil(330/8) = 42
+EXPECTED["max_steps"] = EXPECTED["steps_per_epoch"] * EXPECTED["num_epochs"]  # 42*20 = 840
 
 DATA_DIR = "datasets/sft_final"
 MODEL_NAME = "Qwen/Qwen3-8B"
@@ -494,7 +494,7 @@ def g6_g9_trainer_config() -> None:
     # ---- G6: DataLoader inspection ----
     train_dl = trainer.get_train_dataloader()
     dl_len = len(train_dl)
-    # Expected DataLoader length: ceil(304 / 1) = 304 (with n_gpu=1, world_size=1)
+    # Expected DataLoader length: ceil(330 / 1) = 330 (with n_gpu=1, world_size=1)
     expected_dl_len = math.ceil(EXPECTED["train_examples"] / EXPECTED["per_device_batch_size"])
     gate("G6 — len(train_dataloader)", expected_dl_len, dl_len)
 
