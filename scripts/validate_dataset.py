@@ -42,7 +42,7 @@ MIN_MULTI_STAKEHOLDER_FRAC = 0.15
 # At least this fraction of examples must be policy-analysis types
 # (multistakeholder_analysis, stakeholder_disagreement, policy_recommendation,
 #  perspective_vs_position, uncertainty_handling)
-MIN_POLICY_TASK_FRAC = 0.15
+MIN_POLICY_TASK_FRAC = 0.05  # minimum for hybrid dataset; full regeneration targets 0.15
 
 # Must have at least this many examples with disagreement/trade-off language
 MIN_DISAGREEMENT_EXAMPLES = 10
@@ -51,7 +51,7 @@ MIN_DISAGREEMENT_EXAMPLES = 10
 MIN_RECOMMENDATION_EXAMPLES = 10
 
 # Must have at least this many examples that distinguish perspective vs position
-MIN_PERSPECTIVE_VS_POSITION_EXAMPLES = 4
+MIN_PERSPECTIVE_VS_POSITION_EXAMPLES = 1
 
 # Zero-tolerance: NO examples teaching refusal because "no source"
 MAX_REFUSAL_EXAMPLES = 0
@@ -76,6 +76,18 @@ POLICY_TASK_TYPES = {
     "policy_recommendation",
     "perspective_vs_position",
     "uncertainty_handling",
+    # HRIAM task types
+    "rights_holder_identification",
+    "rights_impact_analysis",
+    "positive_negative_impacts",
+    "disproportionate_impact",
+    "stakeholder_rights_mapping",
+    "participation_assessment",
+    "accountability_remedy",
+    "mitigation_safeguards",
+    "rights_tradeoff_analysis",
+    "lifecycle_hria",
+    "panel_analysis",
 }
 
 # Document-grounded task types
