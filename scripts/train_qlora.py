@@ -340,6 +340,10 @@ def main() -> int:
     # We implement a custom callback because HuggingFace's EarlyStoppingCallback
     # starts counting from epoch 0, which would violate the "no early stop
     # before epoch 10" requirement.
+    #
+    # IMPORTANT: the "best metric" is tracked GLOBALLY across the entire run
+    # (including epochs 1-9).  Patience counting only BEGINS at the start
+    # epoch, but comparisons always use the global best eval_loss.
     class LateEarlyStoppingCallback(TrainerCallback):
         def __init__(self, start_epoch, patience):
             self.start_epoch = start_epoch
@@ -349,23 +353,27 @@ def main() -> int:
             self.stopped_epoch = None
 
         def on_evaluate(self, args, state, control, metrics=None, **kwargs):
-            # Only consider early stopping after the start epoch
             current_epoch = int(state.epoch) if state.epoch else 0
-            if current_epoch < self.start_epoch:
-                return
             val_metric = metrics.get("eval_loss") if metrics else None
             if val_metric is None:
                 return
+
+            # Track the global best metric across ALL epochs.
             if val_metric < self.best_metric:
                 self.best_metric = val_metric
                 self.patience_counter = 0
-            else:
-                self.patience_counter += 1
-                print(f"  [early-stopping] no improvement ({self.patience_counter}/{self.patience})")
-                if self.patience_counter >= self.patience:
-                    self.stopped_epoch = current_epoch
-                    control.should_training_stop = True
-                    print(f"  [early-stopping] stopping after epoch {current_epoch}")
+                return
+
+            # No improvement.  Only count patience AFTER the start epoch.
+            if current_epoch < self.start_epoch:
+                return
+
+            self.patience_counter += 1
+            print(f"  [early-stopping] no improvement ({self.patience_counter}/{self.patience})")
+            if self.patience_counter >= self.patience:
+                self.stopped_epoch = current_epoch
+                control.should_training_stop = True
+                print(f"  [early-stopping] stopping after epoch {current_epoch}")
 
     class EpochLoggerCallback(TrainerCallback):
         def on_epoch_end(self, trainer_args, state, control, **kwargs):
@@ -610,9 +618,31 @@ def main() -> int:
     import shutil as _shutil
     import tarfile as _tarfile
     import hashlib as _hashlib
+    import subprocess as _subprocess
+
+    # Obtain the actual git commit SHA from the repository (not env).
+    git_sha = None
+    git_sha_error = None
+    try:
+        git_sha = _subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            capture_output=True, text=True, check=False, cwd=".",
+        ).stdout.strip()
+        if not git_sha:
+            git_sha_error = "git rev-parse returned empty output"
+    except FileNotFoundError:
+        git_sha_error = "git executable not found"
+    except Exception as e:
+        git_sha_error = str(e)
+
+    if git_sha is None:
+        print(f"\n  WARNING: could not determine git SHA ({git_sha_error}).")
+        print(f"  Reproducibility metadata will record this as a failure.")
+        git_sha = "REPRODUCIBILITY_FAILURE"
 
     artifact_preserved = False
     archive_path = None
+    archive_sha256 = None
     try:
         output_root = Path("/kaggle/working/arwen_policy_output")
         output_root.mkdir(parents=True, exist_ok=True)
@@ -624,19 +654,34 @@ def main() -> int:
         src = Path(best_checkpoint) if Path(best_checkpoint).exists() else adapter_path
         _shutil.copytree(src, best_adapter_dir)
 
-        # Write metadata
+        # Write per-epoch metrics
+        (output_root / "per_epoch_metrics.json").write_text(
+            json.dumps(epoch_log, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+
+        # Write training summary
         meta = {
-            "git_commit_sha": os.environ.get("GIT_COMMIT_SHA", "unknown"),
+            "git_commit_sha": git_sha,
             "best_checkpoint": str(best_checkpoint),
             "best_eval_loss": float(trainer.state.best_metric) if trainer.state.best_metric else None,
             "best_epoch": best_epoch,
             "epochs_completed": epochs_completed,
             "early_stopped": early_stopped,
+            "early_stopped_epoch": early_stop_callback.stopped_epoch,
             "dataset": {"train": len(train_data), "validation": len(val_data), "test": len(test_data)},
-            "training_report": {k: v for k, v in metrics.items() if not isinstance(v, list)},
         }
         (output_root / "training_summary.json").write_text(
             json.dumps(meta, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+
+        # Write full training report
+        (output_root / "training_report.json").write_text(
+            json.dumps({
+                "metrics": metrics,
+                "per_epoch": epoch_log,
+                "best_checkpoint": best_checkpoint,
+                "git_commit_sha": git_sha,
+            }, indent=2, ensure_ascii=False), encoding="utf-8"
         )
 
         # Create archive
@@ -644,18 +689,26 @@ def main() -> int:
         with _tarfile.open(archive_path, "w:gz") as tar:
             tar.add(output_root, arcname="arwen_policy_output")
 
-        # Verify archive
-        archive_ok = (
-            archive_path.exists()
-            and archive_path.stat().st_size > 0
-            and (best_adapter_dir / "adapter_model.safetensors").exists()
-        )
+        # VERIFY by re-opening the archive and checking contents.
+        archive_ok = False
+        with _tarfile.open(archive_path, "r:gz") as tar:
+            names = set(tar.getnames())
+            has_adapter = any(n.endswith("adapter_model.safetensors") for n in names)
+            has_config = any(n.endswith("adapter_config.json") for n in names)
+            has_summary = any(n.endswith("training_summary.json") for n in names)
+            has_report = any(n.endswith("training_report.json") for n in names)
+            archive_ok = has_adapter and has_config and has_summary and has_report
+
         archive_sha256 = _hashlib.sha256(archive_path.read_bytes()).hexdigest()
         print(f"\n=== Artifact preservation ===")
         print(f"  Archive: {archive_path}")
         print(f"  Size:    {archive_path.stat().st_size / 1e6:.1f} MB")
         print(f"  SHA256:  {archive_sha256}")
-        print(f"  Contains adapter_model.safetensors: {archive_ok}")
+        print(f"  Contains adapter_model.safetensors: {has_adapter}")
+        print(f"  Contains adapter_config.json:        {has_config}")
+        print(f"  Contains training_summary.json:      {has_summary}")
+        print(f"  Contains training_report.json:       {has_report}")
+        print(f"  Verification:                        {'PASS' if archive_ok else 'FAIL'}")
         artifact_preserved = archive_ok
     except Exception as e:
         print(f"\n  WARNING: artifact preservation failed: {e}")
@@ -667,6 +720,8 @@ def main() -> int:
     del model, trainer, train_result
     gc.collect()
     torch.cuda.empty_cache()
+    if hasattr(torch.cuda, "ipc_collect"):
+        torch.cuda.ipc_collect()
     torch.cuda.reset_peak_memory_stats(0)
     print(f"  GPU allocated after release: {torch.cuda.memory_allocated(0) / 1e9:.2f} GB")
     print(f"  GPU reserved after release:  {torch.cuda.memory_reserved(0) / 1e9:.2f} GB")
