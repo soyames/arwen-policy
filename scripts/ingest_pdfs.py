@@ -211,7 +211,7 @@ def run(dry_run: bool = False):
     for src in PDF_SOURCES:
         print(f"\n  [{src['source']}] {src['title'][:70]}")
         if dry_run:
-            print(f"    [DRY RUN]")
+            print("    [DRY RUN]")
             continue
 
         result = fetch_url(src["url"])

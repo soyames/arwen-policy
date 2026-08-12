@@ -14,13 +14,10 @@ from __future__ import annotations
 
 import argparse
 import json
-import math
-import os
 import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
 
 import torch
 from datasets import Dataset
@@ -186,7 +183,7 @@ def main() -> int:
     n_train = len(train_data)
     print(f"Effective batch size: {effective_batch}")
     print(f"Training examples:    {n_train}")
-    print(f"Trainer will compute actual steps/epoch and max_steps at runtime")
+    print("Trainer will compute actual steps/epoch and max_steps at runtime")
 
     train_dataset = Dataset.from_list(train_data)
     val_dataset = Dataset.from_list(val_data) if val_data else None
@@ -328,7 +325,7 @@ def main() -> int:
         dataloader_num_workers=0,
     )
 
-    from transformers import DataCollatorForSeq2Seq, TrainerCallback, EarlyStoppingCallback
+    from transformers import DataCollatorForSeq2Seq, TrainerCallback
     data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, padding=True, label_pad_token_id=-100)
 
     # Per-epoch logging callback
@@ -396,7 +393,7 @@ def main() -> int:
 
             # VRAM
             vram_alloc = torch.cuda.memory_allocated(0) / 1e9
-            vram_reserved = torch.cuda.memory_reserved(0) / 1e9
+            torch.cuda.memory_reserved(0) / 1e9
             vram_peak = torch.cuda.max_memory_allocated(0) / 1e9
 
             # Disk
@@ -433,7 +430,7 @@ def main() -> int:
             print(f"  Time:       {elapsed:.1f}s")
 
     # ---- 7. Construct Trainer ----
-    print(f"\n=== Constructing Trainer ===")
+    print("\n=== Constructing Trainer ===")
     early_stop_callback = LateEarlyStoppingCallback(
         EARLY_STOPPING_START_EPOCH, EARLY_STOPPING_PATIENCE
     )
@@ -453,7 +450,7 @@ def main() -> int:
     # The HuggingFace Trainer is the authoritative source for steps/epoch
     # and max_steps.  We validate n_gpu and world_size, then trust the
     # Trainer's internal calculation.
-    print(f"\n=== Trainer Configuration Validation ===")
+    print("\n=== Trainer Configuration Validation ===")
     train_dl = trainer.get_train_dataloader()
     dl_len = len(train_dl)
     actual_steps_per_epoch = dl_len // GRADIENT_ACCUMULATION_STEPS
@@ -496,13 +493,13 @@ def main() -> int:
         print("=" * 60)
         return 1
 
-    print(f"  Configuration validation: PASS")
+    print("  Configuration validation: PASS")
     print(f"  Trainer steps/epoch:    {actual_steps_per_epoch}")
     print(f"  Trainer max_steps:      {actual_max_steps}")
 
     # ---- 8. Train ----
     print(f"\n=== Starting training ({num_epochs} epochs, {len(train_tokenized)} examples) ===")
-    print(f"TRAINING PLAN")
+    print("TRAINING PLAN")
     print(f"  Dataset:     train={len(train_tokenized)} val={len(val_tokenized) if val_tokenized else 0} test={len(test_data)}")
     print(f"  Epochs:      {num_epochs}")
     print(f"  Micro batch: {PER_DEVICE_BATCH_SIZE}")
@@ -513,7 +510,7 @@ def main() -> int:
     print(f"  GPU:         {gpu_name} ({vram:.1f} GB)")
     print(f"  GPU count:   {n_gpu_visible}")
     print(f"  World size:  {trainer.args.world_size}")
-    print(f"  Distributed: False (single-GPU)")
+    print("  Distributed: False (single-GPU)")
 
     train_result = trainer.train(resume_from_checkpoint=resume_from_checkpoint)
     elapsed = time.time() - start_time
@@ -575,21 +572,21 @@ def main() -> int:
 
     if training_completed_fully:
         print(f"\n{'='*60}")
-        print(f"TRAINING COMPLETE")
+        print("TRAINING COMPLETE")
         print(f"{'='*60}")
     else:
         print(f"\n{'='*60}")
-        print(f"TRAINING INCOMPLETE")
+        print("TRAINING INCOMPLETE")
         print(f"  Configured epochs: {num_epochs}")
         print(f"  Completed epochs:  {epochs_completed}")
-        print(f"  Reason: Trainer exited before completing all epochs.")
+        print("  Reason: Trainer exited before completing all epochs.")
         print(f"{'='*60}")
 
     for k, v in metrics.items():
         print(f"  {k}: {v}")
 
     # Per-epoch summary
-    print(f"\n=== Per-epoch summary ===")
+    print("\n=== Per-epoch summary ===")
     print(f"  {'Epoch':<7} {'Step':<7} {'Train':<12} {'Val':<12} {'LR':<12} {'VRAM':<10} {'Disk':<10}")
     for entry in epoch_log:
         tl = f"{entry['train_loss']:.6f}" if entry["train_loss"] is not None else "N/A"
@@ -637,7 +634,7 @@ def main() -> int:
 
     if git_sha is None:
         print(f"\n  WARNING: could not determine git SHA ({git_sha_error}).")
-        print(f"  Reproducibility metadata will record this as a failure.")
+        print("  Reproducibility metadata will record this as a failure.")
         git_sha = "REPRODUCIBILITY_FAILURE"
 
     artifact_preserved = False
@@ -700,7 +697,7 @@ def main() -> int:
             archive_ok = has_adapter and has_config and has_summary and has_report
 
         archive_sha256 = _hashlib.sha256(archive_path.read_bytes()).hexdigest()
-        print(f"\n=== Artifact preservation ===")
+        print("\n=== Artifact preservation ===")
         print(f"  Archive: {archive_path}")
         print(f"  Size:    {archive_path.stat().st_size / 1e6:.1f} MB")
         print(f"  SHA256:  {archive_sha256}")
@@ -786,11 +783,11 @@ def main() -> int:
     except torch.cuda.OutOfMemoryError as e:
         qual_failed = True
         print(f"\n  WARNING: qualitative generation OOM: {e}")
-        print(f"  Training artifact is preserved. Qualitative eval skipped.")
+        print("  Training artifact is preserved. Qualitative eval skipped.")
     except Exception as e:
         qual_failed = True
         print(f"\n  WARNING: qualitative generation failed: {e}")
-        print(f"  Training artifact is preserved.")
+        print("  Training artifact is preserved.")
 
     # ---- 12. Save complete report ----
     report = {

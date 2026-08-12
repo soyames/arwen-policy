@@ -179,7 +179,7 @@ class TestCollation:
         }
 
         collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
-        result = collator([{k: v for k, v in zip(batch.keys(), vals)} for vals in zip(*batch.values())])
+        result = collator([{k: v for k, v in zip(batch.keys(), vals, strict=False)} for vals in zip(*batch.values(), strict=False)])
 
         assert "input_ids" in result
         assert "labels" in result
@@ -425,7 +425,6 @@ class TestDynamicPadding:
 
     def test_dynamic_padding_produces_variable_lengths(self):
         """Tokenized examples must have different lengths (not all 2048)."""
-        import json
         from pathlib import Path as P
         from transformers import AutoTokenizer
 

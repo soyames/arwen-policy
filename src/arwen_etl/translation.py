@@ -37,7 +37,7 @@ class Translator:
             self.tokenizers[f"{src_lang}-{tgt_lang}"] = tokenizer
             return model, tokenizer
         except Exception as e:
-            raise ValueError(f"No translation model for {src_lang} to {tgt_lang}: {str(e)}")
+            raise ValueError(f"No translation model for {src_lang} to {tgt_lang}: {str(e)}") from e
 
     def translate(self, text: str, src_lang: str, tgt_lang: str = "eng") -> str:
         """Translate text using MarianMT"""

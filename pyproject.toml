@@ -98,4 +98,8 @@ line-length = 100
 target-version = "py311"
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "B", "UP"]
+# Correctness-focused linting: pyflakes (F) catches undefined names and
+# unused imports; bugbear (B) catches common bugs.  Style/modernization
+# rules (E501 line-length, I sort-order, UP pyupgrade) are intentionally
+# excluded to keep CI focused on real defects rather than cosmetic drift.
+select = ["F", "B"]

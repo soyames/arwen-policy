@@ -185,8 +185,8 @@ def main() -> int:
     print(f"  GPUs visible: {n_gpus}")
     if n_gpus > 1:
         print(f"  FAIL: {n_gpus} GPUs visible. Expected exactly 1 GPU.")
-        print(f"  Set CUDA_VISIBLE_DEVICES=0 before running this script.")
-        print(f"  Multiple visible GPUs cause Trainer to silently halve steps.")
+        print("  Set CUDA_VISIBLE_DEVICES=0 before running this script.")
+        print("  Multiple visible GPUs cause Trainer to silently halve steps.")
         return 1
 
     # Lock to GPU 0
@@ -223,7 +223,7 @@ def main() -> int:
 
     if vram_total < 14.5:
         print(f"  WARNING: VRAM < 15 GB ({vram_total:.1f} GB). Full training may OOM.")
-        print(f"  Gradient accumulation is already configured (batch=1, accum=8).")
+        print("  Gradient accumulation is already configured (batch=1, accum=8).")
 
     torch.cuda.reset_peak_memory_stats(0)
     results["phases"]["gpu_check"] = "PASS"
@@ -264,7 +264,7 @@ def main() -> int:
             zero_asst += 1
 
         in_non_asst = False
-        for i, (tid, lbl) in enumerate(zip(ids, labels)):
+        for i, (tid, lbl) in enumerate(zip(ids, labels, strict=False)):
             if tid == im_start_id:
                 role_start = i + 1
                 is_asst = all(
@@ -418,7 +418,7 @@ def main() -> int:
     }
 
     # ---- 7. BACKWARD PASS ----
-    print(f"\n[7/9] Backward pass")
+    print("\n[7/9] Backward pass")
     vram_before_bwd = _vram_report()
     print(f"  VRAM before backward: {_vram_summary_str()}")
 
@@ -470,7 +470,7 @@ def main() -> int:
         return 1
 
     # ---- 8. VRAM SUMMARY ----
-    print(f"\n[8/9] VRAM summary (GPU 0)")
+    print("\n[8/9] VRAM summary (GPU 0)")
     peak_alloc = torch.cuda.max_memory_allocated(0) / 1e9
     peak_reserved = torch.cuda.max_memory_reserved(0) / 1e9
     print(f"  Peak allocated: {peak_alloc:.2f} GB")
@@ -481,7 +481,7 @@ def main() -> int:
     if vram_total < 14.5:
         print(f"  FAIL: VRAM < 15 GB ({vram_total:.1f} GB). Insufficient for full training.")
         print(f"  Peak reserved during validation: {peak_reserved:.2f} GB")
-        print(f"  STOP: Do NOT launch full training on this GPU.")
+        print("  STOP: Do NOT launch full training on this GPU.")
         results["phases"]["vram_summary"] = "FAIL"
     else:
         print("  VRAM adequate for full training.")
@@ -495,7 +495,7 @@ def main() -> int:
     }
 
     # ---- 9. LOGITS MEMORY ESTIMATE ----
-    print(f"\n[9/9] Logits memory estimate (for documentation)")
+    print("\n[9/9] Logits memory estimate (for documentation)")
     # Qwen3-8B vocab size; compute theoretical float32 logits tensor size
     vocab_size = model.config.vocab_size if hasattr(model.config, "vocab_size") else 151936
     logits_elements = batch_size * MAX_SEQ_LENGTH * vocab_size

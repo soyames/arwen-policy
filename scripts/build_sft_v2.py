@@ -12,7 +12,7 @@ import json
 import os
 import sys
 import time
-from collections import Counter, defaultdict
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -127,7 +127,7 @@ def build_teacher_messages(doc: dict[str, Any], task_type: str, v1_example: dict
     title = meta.get("title", "Untitled")
     source_url = doc.get("source_url", "") or doc.get("final_url", "")
     doc_id = doc.get("document_id", "")
-    doc_hash = doc.get("artifact_sha256", "")
+    doc.get("artifact_sha256", "")
     pub_date = str(meta.get("published_at", "unknown"))
     lang = meta.get("language", "en")
     text = doc.get("text", "")[:6000]
@@ -391,7 +391,7 @@ def build_v2(
         # Assign to splits proportionally
         split_docs = {"train": all_sample, "validation": [], "test": []}
 
-    stats = {
+    {
         "schema_version": SCHEMA_VERSION,
         "corpus_revision": CORPUS_REVISION,
         "tasks_per_doc": tasks_per_doc,

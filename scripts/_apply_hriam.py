@@ -1,5 +1,4 @@
 """Apply all HRIAM changes to build_sft_v2.py cleanly."""
-import re
 
 content = open('scripts/build_sft_v2.py', encoding='utf-8').read()
 

@@ -3,6 +3,8 @@ from __future__ import annotations
 from typing import List, Dict, Any
 from dataclasses import dataclass
 
+from arwen_deliberation.models import DeliberationResult
+
 @dataclass
 class DeliberationMetrics:
     consensus_score: float

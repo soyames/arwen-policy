@@ -1,6 +1,5 @@
 """Quick test of the OpenRouter teacher model with .env loading."""
 import os
-import json
 from pathlib import Path
 
 # Load .env

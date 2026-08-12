@@ -62,7 +62,6 @@ def discover_and_process(config: dict = None) -> dict:
     Returns:
         Dict mapping source_id -> list of ingested document IDs.
     """
-    from .sources.generic import discover_from_sitemap, discover_links_from_html
     from ..arwen_etl.cli import ingest_url
 
     results = {}

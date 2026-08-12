@@ -1,7 +1,9 @@
 from __future__ import annotations
 
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any
 from dataclasses import dataclass
+
+from arwen_deliberation.models import DeliberationResult
 
 @dataclass
 class Recommendation:

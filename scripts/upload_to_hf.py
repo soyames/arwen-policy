@@ -31,7 +31,7 @@ for fname in files_to_upload:
         repo_type=REPO_TYPE,
         commit_message=f"Update {fname} — canonical corpus v2, 192 docs",
     )
-    print(f"  Done.")
+    print("  Done.")
 
 print("\nAll uploads complete.")
 print(f"Dataset: https://huggingface.co/datasets/{REPO}")

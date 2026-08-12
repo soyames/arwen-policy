@@ -179,7 +179,7 @@ def run_evaluation(
 
     # Try to use the real retrieval engine if available.
     try:
-        from arwen_retrieval.models import CorpusRecord, RetrievalQuery
+        from arwen_retrieval.models import RetrievalQuery
         from arwen_retrieval.retriever import InMemoryRetriever
         from arwen_retrieval.service import RetrievalService
 

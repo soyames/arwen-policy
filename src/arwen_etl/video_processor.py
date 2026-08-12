@@ -1,10 +1,9 @@
 from __future__ import annotations
 
 import json
-import os
 import subprocess
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional
 
 try:
     import cv2
@@ -168,9 +167,13 @@ class FFmpegVideoProcessor:
         Returns:
             List of OCR results with frame index and text
         """
+        from arwen_etl.ocr import ocr_processor
+
         results = []
         for i, frame_path in enumerate(frame_paths):
             try:
+                if ocr_processor is None:
+                    raise RuntimeError("OCR processor unavailable (pytesseract not installed)")
                 ocr_result = ocr_processor.process_image(frame_path)
                 results.append({
                     "frame_index": i,

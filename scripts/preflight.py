@@ -32,7 +32,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import math
 import os
 import shutil
 import sys
@@ -89,7 +88,7 @@ def gate(name: str, expected, actual) -> bool:
     print(f"         Expected: {expected!r}")
     print(f"         Actual:   {actual!r}")
     if not match:
-        print(f"         *** MISMATCH — this will cause training problems ***")
+        print("         *** MISMATCH — this will cause training problems ***")
     return match
 
 
@@ -128,7 +127,7 @@ def g1_environment() -> None:
     cuda_vis = os.environ.get("CUDA_VISIBLE_DEVICES", "(unset)")
     print(f"  CUDA_VISIBLE_DEVICES = {cuda_vis}")
     if cuda_vis != "0":
-        print(f"  [WARN] CUDA_VISIBLE_DEVICES should be '0' for single-GPU training.")
+        print("  [WARN] CUDA_VISIBLE_DEVICES should be '0' for single-GPU training.")
         print(f"         Current value: {cuda_vis}")
     print(f"  Working directory: {os.getcwd()}")
     pyproject = Path("pyproject.toml")
@@ -182,7 +181,7 @@ def g3_gpu_memory() -> None:
     gate("VRAM >= 14.5 GB (Tesla T4)", True, adequate)
     print(f"         Total VRAM: {vram:.1f} GB")
     if not adequate:
-        print(f"         WARNING: Training may OOM on this GPU.")
+        print("         WARNING: Training may OOM on this GPU.")
 
 
 # =============================================================================
@@ -300,8 +299,7 @@ def g5_label_masking() -> None:
     for idx in range(min(50, len(tokenized))):
         ids = tokenized[idx]["input_ids"]
         labels = tokenized[idx]["labels"]
-        in_non_asst = False
-        for tid, lbl in zip(ids, labels):
+        for tid, _lbl in zip(ids, labels, strict=False):
             if tid == im_start_id:
                 role_start = ids.index(tid) + 1 if tid in ids else -1
                 # simpler check — scan for im_start tokens
@@ -521,7 +519,7 @@ def g6_g9_trainer_config() -> None:
             actual_max_steps = actual_steps_per_epoch * EXPECTED["num_epochs"]
             gate("G9 - derived max_steps", EXPECTED["max_steps"], actual_max_steps)
 
-        print(f"\n  Trainer config validation summary:")
+        print("\n  Trainer config validation summary:")
         print(f"    DataLoader length:   {dl_len}")
         print(f"    n_gpu:               {trainer.args.n_gpu}")
         print(f"    world_size:          {trainer.args.world_size}")
@@ -530,8 +528,8 @@ def g6_g9_trainer_config() -> None:
 
     except Exception as e:
         print(f"\n  G6-G9 FAILED: {e}")
-        print(f"  The preflight could not construct or validate the Trainer.")
-        print(f"  This is a HARD BLOCKER - do not proceed to training.")
+        print("  The preflight could not construct or validate the Trainer.")
+        print("  This is a HARD BLOCKER - do not proceed to training.")
         gate("G6-G9 - Trainer validation", "PASS", f"EXCEPTION: {e}")
 
     finally:
@@ -566,7 +564,7 @@ def g10_disk_space() -> None:
     adequate = free_gb >= min_free
     gate(f"Free space >= {min_free:.0f} GB", True, adequate)
     if not adequate:
-        print(f"  WARNING: Insufficient disk space.")
+        print("  WARNING: Insufficient disk space.")
         print(f"  Training artifacts need approximately {min_free:.0f} GB.")
 
 

@@ -157,7 +157,6 @@ def run_smoke_test(
         BitsAndBytesConfig,
         TrainingArguments,
         Trainer,
-        DataCollatorForLanguageModeling,
     )
     from peft import LoraConfig, get_peft_model, TaskType
 
@@ -329,7 +328,7 @@ def run_smoke_test(
     result["steps_completed"] = True
 
     # ---- Memory ----
-    mem = torch.cuda.memory_stats()
+    torch.cuda.memory_stats()
     result["peak_allocated_gb"] = round(torch.cuda.max_memory_allocated() / 1e9, 2)
     result["peak_reserved_gb"] = round(torch.cuda.max_memory_reserved() / 1e9, 2)
 

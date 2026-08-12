@@ -17,12 +17,10 @@ The document corpus and later annotation layers remain conceptually separate.
 from __future__ import annotations
 
 import json
-from datetime import date, datetime
 from pathlib import Path
 from typing import Any
 
 from arwen_etl.date_provenance import (
-    DateConfidence,
     extract_year_safe,
 )
 

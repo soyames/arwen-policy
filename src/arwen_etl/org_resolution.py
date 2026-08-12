@@ -1,7 +1,6 @@
 from __future__ import annotations
 
-from typing import Any, Dict, List, Set, Optional, Tuple
-import re
+from typing import Any, Dict, List, Set, Optional
 from collections import Counter, defaultdict
 
 try:
@@ -90,7 +89,7 @@ class OrganizationResolver:
 
         for doc_text in documents:
             resolved = self.resolve_organization(doc_text)
-            for org, info in resolved.items():
+            for _org, info in resolved.items():
                 canonical = info["canonical"]
                 org_counts[canonical] += 1
 

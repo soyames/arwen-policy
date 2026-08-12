@@ -6,9 +6,7 @@ Usage: uv run python scripts/verify_adapter.py [--adapter-path artifacts/qlora_a
 from __future__ import annotations
 
 import argparse
-import json
 import sys
-import time
 from pathlib import Path
 
 import torch

@@ -11,7 +11,6 @@ Verifies:
 """
 
 import json
-import os
 from pathlib import Path
 from typing import Dict, List, Any
 
@@ -98,7 +97,7 @@ def run_verification():
     print("=== Running Provenance Verification ===")
 
     # Load all extracted records
-    extracted_dir = Path("datasets/extracted")
+    Path("datasets/extracted")
     candidate_dir = Path("datasets/candidates")
     candidate_files = list(candidate_dir.rglob("*.json"))
     print(f"Found {len(candidate_files)} candidate JSON files")
@@ -112,10 +111,9 @@ def run_verification():
             print(f"Failed to load {cand_path}: {e}")
 
     # Verify each record
-    total_errors = 0
-    for i, rec in enumerate(all_records):
-        rec_id = rec.get("candidate_id", "unknown")
-        rec_type = rec.get("candidate_type", "unknown")
+    for _i, rec in enumerate(all_records):
+        rec.get("candidate_id", "unknown")
+        rec.get("candidate_type", "unknown")
         # print(f"[{i}] Candidate {rec_id} type={rec_type}")
 
         # Verify required fields exist

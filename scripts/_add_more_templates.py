@@ -2,7 +2,6 @@
 import json, hashlib
 from pathlib import Path
 from datetime import datetime, timezone
-from collections import Counter
 
 PROMPT = (
     "You are Arwen Policy, a multistakeholder policy-analysis AI. "

@@ -134,7 +134,7 @@ def main() -> int:
 
     # Verify adapter files
     safetensors = adapter_path / "adapter_model.safetensors"
-    config = adapter_path / "adapter_config.json"
+    adapter_path / "adapter_config.json"
     if not safetensors.exists():
         print(f"ERROR: adapter_model.safetensors not found in {adapter_path}")
         return 1
@@ -151,7 +151,7 @@ def main() -> int:
     print(f"GPU: {gpu_name} ({vram:.1f} GB)")
 
     # ---- Load test set ----
-    print(f"\n=== Loading test set ===")
+    print("\n=== Loading test set ===")
     test_data = load_split("test")
     print(f"Test examples: {len(test_data)}")
     assert len(test_data) == 35, f"Expected 35 test examples, got {len(test_data)}"
@@ -248,7 +248,7 @@ def main() -> int:
         sorted_losses = sorted(losses)
         median_loss = sorted_losses[n_evaluated // 2]
 
-        print(f"\n=== Test-set Results ===")
+        print("\n=== Test-set Results ===")
         print(f"  Examples evaluated:  {n_evaluated}")
         print(f"  Average loss:        {avg_loss:.6f}")
         print(f"  Average perplexity:  {avg_perplexity:.2f}")
@@ -260,13 +260,13 @@ def main() -> int:
         indexed = list(enumerate(losses))
         indexed.sort(key=lambda x: x[1])
 
-        print(f"\n  Best 5 (lowest loss):")
+        print("\n  Best 5 (lowest loss):")
         for idx, loss_val in indexed[:5]:
             msgs = test_data[idx]["messages"]
             q = next((m["content"][:80] for m in msgs if m["role"] == "user"), "?")
             print(f"    [{idx}] loss={loss_val:.4f}  Q: {q}...")
 
-        print(f"\n  Worst 5 (highest loss):")
+        print("\n  Worst 5 (highest loss):")
         for idx, loss_val in indexed[-5:]:
             msgs = test_data[idx]["messages"]
             q = next((m["content"][:80] for m in msgs if m["role"] == "user"), "?")
@@ -274,7 +274,7 @@ def main() -> int:
 
     # Qualitative sample (skip if --loss-only)
     if run_qual:
-        print(f"\n=== Qualitative sample ===")
+        print("\n=== Qualitative sample ===")
         from arwen_etl.engine.arwen_prompt import ARWEN_SYSTEM_PROMPT
         for idx in range(min(3, len(test_data))):
             msgs = test_data[idx]["messages"]

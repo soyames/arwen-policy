@@ -1,9 +1,8 @@
 from __future__ import annotations
 
 import json
-import os
 from pathlib import Path
-from typing import Dict, List, Any, Tuple
+from typing import Dict, List, Any
 import time
 import sys
 
@@ -16,7 +15,6 @@ from arwen_etl.diarization import SpeakerDiarizer
 from arwen_etl.multilingual import language_detector, translator
 from arwen_etl.video_processor import FFmpegVideoProcessor
 from arwen_etl.policy_inference import PolicyExtractor
-from arwen_etl.org_resolution import org_resolver
 from arwen_benchmark.benchmark_cases import (
     OCRBenchmarkCase,
     ASRBenchmarkCase,
@@ -28,7 +26,6 @@ from arwen_benchmark.benchmark_cases import (
     EvidenceLinkingBenchmarkCase,
     TemporalTrackingBenchmarkCase,
 )
-from arwen_benchmark.metrics import reciprocal_rank, evidence_recall, coverage_score
 
 
 class BenchmarkRunner:

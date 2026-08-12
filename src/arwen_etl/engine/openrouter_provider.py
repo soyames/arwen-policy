@@ -149,7 +149,6 @@ def build_teacher_prompt(
     source = document_meta.get("source", "Unknown")
     source_url = document_meta.get("source_url", "")
     doc_id = document_meta.get("document_id", "")
-    doc_hash = document_meta.get("artifact_sha256", "")
     pub_date = document_meta.get("published_at", "unknown")
     language = document_meta.get("language", "en")
 

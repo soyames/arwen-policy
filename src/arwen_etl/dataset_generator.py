@@ -1,16 +1,12 @@
 from __future__ import annotations
 
 import json
-import os
 from pathlib import Path
 from typing import Dict, List, Any, Optional
-import hashlib
 from datetime import datetime
 
-from .storage import read_json, write_json
+from .storage import write_json
 from .models import SourceRecord, ExtractedDocument
-from .provenance import provenance_event
-from .hashing import compute_hash
 
 
 class DatasetGenerator:

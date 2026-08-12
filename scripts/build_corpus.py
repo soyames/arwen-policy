@@ -17,15 +17,12 @@ from __future__ import annotations
 import argparse
 import json
 from collections import Counter
-from datetime import date, datetime, timezone
+from datetime import date
 from pathlib import Path
 from typing import Any
 
 from arwen_etl.date_provenance import (
     DateConfidence,
-    DateRecord,
-    DateSource,
-    DateType,
     EARLIEST_YEAR,
     extract_year_safe,
 )
@@ -146,7 +143,7 @@ def resolve_duplicates(
     if not groups:
         return {"status": "no_duplicates"}
 
-    canonical_dir = Path(corpus_dir) / "canonical"
+    Path(corpus_dir) / "canonical"
     aliases_dir = Path(corpus_dir) / "aliases"
     removed = []
     kept = []

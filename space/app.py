@@ -8,7 +8,6 @@ Qwen/Ollama model synthesis.  ZeroGPU compatible.
 from __future__ import annotations
 
 import json
-import os
 import sys
 from pathlib import Path
 from typing import Any
@@ -192,7 +191,7 @@ def analyse(question: str, top_k: int) -> str:
         lines.append("*No relevant evidence found in the corpus.*")
     else:
         for i, ev in enumerate(answer.evidence, 1):
-            rid = ev.get("record_id", "?")
+            ev.get("record_id", "?")
             score = ev.get("retrieval_score", 0)
             url = ev.get("url", "")
             doc_id = ev.get("document_id", "?")

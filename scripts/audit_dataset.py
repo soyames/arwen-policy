@@ -191,17 +191,17 @@ def main():
         print(f"  Validation: {results['validation'].get('count', 0)}")
         print(f"  Test:       {results['test'].get('count', 0)}")
 
-        print(f"\n=== System Prompt Distribution ===")
+        print("\n=== System Prompt Distribution ===")
         for ptype, count in prompt_summary.most_common():
             pct = 100 * count / total if total > 0 else 0
             print(f"  {ptype}: {count} ({pct:.1f}%)")
 
-        print(f"\n=== Task Type Distribution ===")
+        print("\n=== Task Type Distribution ===")
         for task, count in task_summary.most_common():
             pct = 100 * count / total if total > 0 else 0
             print(f"  {task}: {count} ({pct:.1f}%)")
 
-        print(f"\n=== Behavioral Coverage ===")
+        print("\n=== Behavioral Coverage ===")
         defs = summary["deficiencies"]
         print(f"  Multistakeholder analysis mentions:  {defs['multistakeholder_analysis_examples']}")
         print(f"  Disagreement/conflict/trade-off:     {defs['disagreement_examples']}")
@@ -209,7 +209,7 @@ def main():
         print(f"  General policy (not doc-grounded):   {defs['general_policy_examples']}")
         print(f"  Zero stakeholders mentioned:         {defs['zero_stakeholder_examples']}")
 
-        print(f"\n=== Assessment ===")
+        print("\n=== Assessment ===")
         if prompt_summary.get("multistakeholder_v3", 0) == 0:
             print("  WARNING: No examples use the V3 multistakeholder prompt.")
             print("  The dataset teaches source-only behavior.")

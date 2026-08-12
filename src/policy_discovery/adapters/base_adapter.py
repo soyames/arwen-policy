@@ -8,16 +8,11 @@ All specific adapters must implement:
 - provenance() -> dict
 """
 
-from abc import ABC, ABCMeta, abstractmethod
+from abc import ABC, abstractmethod
 from typing import List, Dict
 from dataclasses import dataclass
-from pathlib import Path
 
-from ...models import Segment, Candidate, SourceSegment
 from ...models import Segment as SegmentModel
-from ...models import Candidate as CandidateModel
-from ...models import SourceSegment as SourceSegmentModel
-from ...storage import get_storage as storage
 
 
 @dataclass

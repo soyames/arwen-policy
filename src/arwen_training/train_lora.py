@@ -41,7 +41,7 @@ def _prepare_dataset(examples: list[dict[str, Any]]) -> Any:
     try:
         from datasets import Dataset
     except ImportError:
-        raise RuntimeError("Install with: uv sync --extra dev")
+        raise RuntimeError("Install with: uv sync --extra dev") from None
 
     formatted: list[dict[str, str]] = []
     for ex in examples:

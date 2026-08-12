@@ -4,11 +4,9 @@
 import hashlib
 import json
 import os
-import sys
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
 
 # Load .env
 _env = Path(".env")
@@ -108,7 +106,7 @@ def inspect_v2(v2_dir: str = "datasets/sft_v2") -> dict:
             if len(a) < 50:
                 short_answers += 1
 
-    print(f"\n=== V2 SUMMARY ===")
+    print("\n=== V2 SUMMARY ===")
     print(f"With reasoning: {has_reasoning}/{len(all_examples)}")
     print(f"With uncertainty: {has_uncertainty}/{len(all_examples)}")
     print(f"Short answers (<50 chars): {short_answers}")
@@ -186,7 +184,7 @@ def remove_private_cot(v2_dir: str = "datasets/sft_v2") -> list[dict]:
     for ex in all_examples:
         reasoning = ex.pop("reasoning", "")
         uncertainty = ex.pop("uncertainty", "")
-        teacher_confidence = ex.pop("teacher_confidence", "")
+        ex.pop("teacher_confidence", "")
 
         if reasoning:
             transformed = transform_reasoning(reasoning)
@@ -200,7 +198,7 @@ def remove_private_cot(v2_dir: str = "datasets/sft_v2") -> list[dict]:
         ex["schema_version"] = SCHEMA_VERSION
         cleaned.append(ex)
 
-    print(f"\n=== COT CLEANUP ===")
+    print("\n=== COT CLEANUP ===")
     print(f"Total: {len(cleaned)}, private reasoning removed: {cot_removed}")
     return cleaned
 
@@ -351,7 +349,7 @@ def audit_source_coverage(corpus_dir: str = "corpus", v2_dir: str = "datasets/sf
 
     # Missing doc IDs
     if missing:
-        print(f"\n=== MISSING SOURCE FAMILIES ===")
+        print("\n=== MISSING SOURCE FAMILIES ===")
         for src in missing:
             print(f"\n{src}:")
             missing_docs = []
@@ -405,11 +403,10 @@ def build_final(v1_dir: str = "datasets/sft", v2_dir: str = "datasets/sft_v2",
     # Filter V1: keep only examples with substantive answers
     def is_substantive(ex):
         a = next((m["content"] for m in ex.get("messages", []) if m["role"] == "assistant"), "")
-        q = next((m["content"] for m in ex.get("messages", []) if m["role"] == "user"), "")
+        next((m["content"] for m in ex.get("messages", []) if m["role"] == "user"), "")
         # Must have specific question and non-generic answer
         has_source = any(w in a.lower() for w in ["source:", "document", "evidence", "[", "http"])
         has_detail = len(a) > 100
-        not_duplicate = "[Source:" not in q  # Question shouldn't just be an answer prefix
         return has_source or has_detail
 
     final_splits = {}
@@ -551,7 +548,7 @@ def validate_final(splits: dict, corpus_docs: dict, v1_doc_per_split: dict) -> d
 
     # Check provenance
     missing_provenance = 0
-    for split_name, examples in splits.items():
+    for examples in splits.values():
         for ex in examples:
             if not ex.get("source_document_ids"):
                 missing_provenance += 1
@@ -561,7 +558,7 @@ def validate_final(splits: dict, corpus_docs: dict, v1_doc_per_split: dict) -> d
     # Check duplicate content
     seen_content = set()
     duplicates = 0
-    for split_name, examples in splits.items():
+    for examples in splits.values():
         for ex in examples:
             content = hashlib.sha256(
                 (str(ex.get("messages", ""))).encode()
@@ -571,7 +568,7 @@ def validate_final(splits: dict, corpus_docs: dict, v1_doc_per_split: dict) -> d
             seen_content.add(content)
 
     has_cot = 0
-    for split_name, examples in splits.items():
+    for examples in splits.values():
         for ex in examples:
             if "chain_of_thought" in ex or "private_reasoning" in ex:
                 has_cot += 1

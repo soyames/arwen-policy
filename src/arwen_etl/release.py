@@ -1,18 +1,16 @@
 import os
 import json
-import pathlib
 import hashlib
-import shutil
 import smtplib
 import time
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from pathlib import Path
-from typing import List, Dict, Any, Tuple, Optional
+from typing import List, Dict, Any
 from datetime import UTC, datetime as dt_utc
 from importlib.metadata import version as package_version
 
-from .storage import write_json, read_json
+from .storage import write_json
 from .dataset_generator import DatasetGenerator
 
 # ---------------------------------------------------------------------------
@@ -185,11 +183,10 @@ def upload_manifest_to_hf(
         if token is None:
             raise EnvironmentError("HF_TOKEN environment variable not set")
 
-    api = HfApi()
+    HfApi()
     if "/" in repo_id:
         repo_name, branch = repo_id.split("/", 1)
     else:
-        repo_name = repo_id
         branch = "main"
 
     # ----- 3��️��⃣  Upload with exponential back‑off -------------------------------
@@ -218,7 +215,6 @@ def upload_manifest_to_hf(
             wait_time *= backoff_factor
 
     # ----- 4��️��⃣  Final failure – send email if configured -----------------------
-    error_msg = f"Upload failed after {max_retries} attempts: {last_error}"
     # Optional email alert
     try:
         from .utils import load_config

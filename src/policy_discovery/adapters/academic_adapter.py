@@ -1,5 +1,8 @@
-from typing import List, Dict
+from typing import Any, Dict, List, Optional
 from datetime import datetime, timezone
+
+import httpx
+
 from .base_adapter import BaseAdapter, DiscoveredURL
 
 class AcademicAdapter(BaseAdapter):

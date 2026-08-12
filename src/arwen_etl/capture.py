@@ -425,7 +425,7 @@ def _capture_via_curl(
         write_artifact(artifact, output_dir)
         return artifact
     except subprocess.TimeoutExpired:
-        raise CaptureError("TIMEOUT", {"url": url})
+        raise CaptureError("TIMEOUT", {"url": url}) from None
     finally:
         try:
             import os

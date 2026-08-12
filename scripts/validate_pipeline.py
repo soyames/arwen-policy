@@ -13,7 +13,6 @@ from __future__ import annotations
 import json
 import math
 import sys
-import time
 from pathlib import Path
 
 import torch
@@ -123,7 +122,7 @@ def find_assistant_spans(ids, labels, tokenizer):
     spans = []
     in_span = False
     start = 0
-    for i, (tid, lbl) in enumerate(zip(ids, labels)):
+    for i, (_tid, lbl) in enumerate(zip(ids, labels, strict=False)):
         if lbl != -100 and not in_span:
             start = i
             in_span = True
@@ -195,16 +194,16 @@ def main() -> int:
 
         # Trim padding for display (find last non-pad position)
         # Pad token is eos_token; trim to last real token
-        last_real = len(ids)
+        len(ids)
         for j in range(len(ids) - 1, -1, -1):
             if ids[j] != tokenizer.eos_token_id or labels[j] != -100:
                 # Keep going back until we find the real end
                 pass
         # Simple: find first position where everything after is pad
-        pad_start = len(ids)
+        len(ids)
         for j in range(len(ids) - 1, -1, -1):
             if labels[j] != -100 or (j > 0 and labels[j-1] != -100):
-                pad_start = j + 1
+                j + 1
                 break
 
         n_minus100 = sum(1 for l in labels if l == -100)
@@ -225,13 +224,13 @@ def main() -> int:
             print(f"    Span {si}: tokens[{s}:{e}] ({e-s} tokens)")
             print(f"    Decoded: {preview!r}")
         if n_active == 0:
-            print(f"  *** WARNING: NO assistant target tokens! ***")
+            print("  *** WARNING: NO assistant target tokens! ***")
             all_ok = False
 
         # Verify system/user tokens are masked
         system_user_active = 0
         in_sys_user = False
-        for i, (tid, lbl) in enumerate(zip(ids, labels)):
+        for i, (tid, lbl) in enumerate(zip(ids, labels, strict=False)):
             if tid == im_start_id:
                 role_start = i + 1
                 is_asst = all(
@@ -250,7 +249,7 @@ def main() -> int:
 
         print(f"  System/user positions with non--100 labels: {system_user_active}")
         if system_user_active > 0:
-            print(f"  *** VIOLATION: system/user content has active labels! ***")
+            print("  *** VIOLATION: system/user content has active labels! ***")
             all_ok = False
 
     # =================================================================
@@ -279,7 +278,7 @@ def main() -> int:
 
         # Check for system/user violations
         in_non_asst = False
-        for i, (tid, lbl) in enumerate(zip(ids, labels)):
+        for i, (tid, lbl) in enumerate(zip(ids, labels, strict=False)):
             if tid == im_start_id:
                 role_start = i + 1
                 is_asst = all(
@@ -319,7 +318,7 @@ def main() -> int:
         print(f"  *** FAIL: {sys_user_violations} examples train on system/user content! ***")
         all_ok = False
     else:
-        print(f"  OK: 0 examples train on system/user content")
+        print("  OK: 0 examples train on system/user content")
 
     # =================================================================
     # PHASE 3: REAL COLLATOR BATCH
@@ -366,7 +365,7 @@ def main() -> int:
             for j in range(len(orig_labels))
         )
         # After original length, everything should be -100 (padding)
-        padding_ok = all(
+        all(
             collated_labels[j] == -100
             for j in range(len(orig_labels), len(collated_labels))
         )
@@ -387,7 +386,6 @@ def main() -> int:
         print("  SKIP: CUDA not available. Cannot run forward pass.")
         print("  *** This validation requires a GPU. Run on T4 for full check. ***")
         # Don't set all_ok=False — GPU check is environment-dependent, not a pipeline bug
-        gpu_skip = True
     else:
         gpu_name = torch.cuda.get_device_name(0)
         vram = torch.cuda.get_device_properties(0).total_memory / 1e9
@@ -438,8 +436,8 @@ def main() -> int:
         # Move batch to GPU
         batch_gpu = {k: v.to("cuda") for k, v in batch.items()}
 
-        alloc_before = torch.cuda.memory_allocated() / 1e9
-        reserved_before = torch.cuda.memory_reserved() / 1e9
+        torch.cuda.memory_allocated() / 1e9
+        torch.cuda.memory_reserved() / 1e9
 
         # Forward pass
         print("\n  Running forward pass...")
@@ -597,9 +595,9 @@ def main() -> int:
         new_tokens = out[0][prompt_len:]
         response = tokenizer.decode(new_tokens, skip_special_tokens=True)
 
-        print(f"\n  --- Base model response (new tokens only) ---")
+        print("\n  --- Base model response (new tokens only) ---")
         print(f"  {response[:400]}")
-        print(f"  --- end ---")
+        print("  --- end ---")
 
         # Verify: the response should NOT contain the prompt
         if test_prompt.lower() in response.lower():

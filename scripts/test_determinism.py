@@ -59,4 +59,4 @@ for r in t2.to_pylist():
     label = "PDF" if "pdf" in ct else "HTML"
     cts[label] += 1
 print(f"Content types in parquet: {dict(cts)}")
-print(f"\nDETERMINISTIC: OK" if len(docs) == 192 else "DETERMINISTIC: FAIL")
+print("\nDETERMINISTIC: OK" if len(docs) == 192 else "DETERMINISTIC: FAIL")

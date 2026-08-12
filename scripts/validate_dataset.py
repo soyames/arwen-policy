@@ -405,12 +405,12 @@ def main() -> int:
         print("=" * 60)
         print(f"\nTotal examples: {result['total_examples']}")
         print(f"Splits: {result['split_counts']}")
-        print(f"\nPrompt distribution:")
+        print("\nPrompt distribution:")
         for ptype, count in result['prompt_distribution'].items():
             pct = 100 * count / max(result['total_examples'], 1)
             print(f"  {ptype}: {count} ({pct:.1f}%)")
 
-        print(f"\nTask distribution:")
+        print("\nTask distribution:")
         for task, count in result['task_distribution'].items():
             pct = 100 * count / max(result['total_examples'], 1)
             print(f"  {task}: {count} ({pct:.1f}%)")
@@ -423,7 +423,7 @@ def main() -> int:
               f"({result['multi_stakeholder_fraction']:.1%})")
         print(f"Zero-stakeholder examples: {result['zero_stakeholder_count']}")
 
-        print(f"\nBehavioral content:")
+        print("\nBehavioral content:")
         for k, v in result['behavioral_content'].items():
             print(f"  {k}: {v}")
 
@@ -440,7 +440,7 @@ def main() -> int:
             if args.strict and result['warnings']:
                 print(f"\nRESULT: FAIL (strict mode — {len(result['warnings'])} warnings)")
                 return 1
-            print(f"\nRESULT: PASS — dataset meets minimum quality standards")
+            print("\nRESULT: PASS — dataset meets minimum quality standards")
         else:
             print(f"\nRESULT: FAIL — {len(result['errors'])} errors found")
             return 1

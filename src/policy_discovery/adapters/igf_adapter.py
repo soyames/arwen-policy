@@ -1,4 +1,4 @@
-from typing import List, Dict
+from typing import Any, Dict, List, Optional
 from datetime import datetime, timezone
 from .base_adapter import BaseAdapter, DiscoveredURL
 import httpx

@@ -1,5 +1,4 @@
 """Verify remote HF dataset state independently."""
-import json
 from collections import Counter
 
 from huggingface_hub import hf_hub_download, dataset_info
@@ -46,7 +45,7 @@ print(f"Unique hashes: {len(set(hashes))}")
 print(f"ID duplicates: {len(ids) - len(set(ids))}")
 
 # Check sample
-print(f"\nSample rows (first 3):")
+print("\nSample rows (first 3):")
 for r in table.to_pylist()[:3]:
     print(f"  {r['document_id'][:20]} | {r.get('source','?')} | {str(r.get('title',''))[:60]} | ct={r.get('content_type','')[:20]} | method={r.get('extraction_method','')}")
 

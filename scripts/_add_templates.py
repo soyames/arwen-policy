@@ -1,5 +1,5 @@
 """Add deterministic policy templates to SFT train split."""
-import json, hashlib, random
+import json, hashlib
 from pathlib import Path
 from datetime import datetime, timezone
 from collections import Counter

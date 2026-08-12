@@ -5,15 +5,12 @@ metadata extraction, normalization, hashing, and provenance.
 """
 
 import hashlib
-import io
 import json
-import tempfile
 from pathlib import Path
 
-import pytest
 
-from arwen_etl.extraction import extract, extract_pdf, ExtractedContent
-from arwen_etl.hashing import compute_hash, sha256_bytes
+from arwen_etl.extraction import extract, extract_pdf
+from arwen_etl.hashing import sha256_bytes
 
 
 # A minimal valid PDF for testing (hand-crafted)

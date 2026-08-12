@@ -20,8 +20,7 @@ import json
 import logging
 import os
 import time
-import uuid
-from collections import Counter, defaultdict
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -258,11 +257,11 @@ def generate_example_for_doc(
     generation that preserves provenance but doesn't use a teacher model.
     """
     meta = extract_doc_meta(doc)
-    text = doc.get("text", "")
-    doc_id = meta["document_id"]
-    doc_hash = meta["artifact_sha256"]
-    source_url = meta["source_url"]
-    title = meta["title"]
+    doc.get("text", "")
+    meta["document_id"]
+    meta["artifact_sha256"]
+    meta["source_url"]
+    meta["title"]
 
     if openrouter_available:
         return _generate_with_teacher(doc, meta, task_type)

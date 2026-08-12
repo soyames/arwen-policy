@@ -1,10 +1,7 @@
 """Tests for date provenance extraction and validation."""
 
-import json
 from datetime import date
-from pathlib import Path
 
-import pytest
 
 from arwen_etl.date_provenance import (
     DateConfidence,

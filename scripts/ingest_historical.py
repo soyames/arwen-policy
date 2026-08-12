@@ -14,7 +14,6 @@ from __future__ import annotations
 
 import hashlib
 import json
-import re
 import sys
 import time
 from datetime import date, datetime, timezone
@@ -284,7 +283,7 @@ def ingest_generic(url: str, year: int | None, source: str, title: str,
         try:
             existing = json.loads(f.read_text(encoding="utf-8"))
             if existing.get("artifact_sha256") == content_hash:
-                print(f"  SKIP: already in corpus")
+                print("  SKIP: already in corpus")
                 return None
         except Exception:
             continue
@@ -354,7 +353,7 @@ def ingest_pdf(url: str, source: str, title: str, pub_year: int | None,
         try:
             existing = json.loads(f.read_text(encoding="utf-8"))
             if existing.get("artifact_sha256") == content_hash:
-                print(f"  SKIP: already in corpus")
+                print("  SKIP: already in corpus")
                 return None
         except Exception:
             continue
@@ -390,7 +389,7 @@ def ingest_pdf(url: str, source: str, title: str, pub_year: int | None,
         print(f"  SKIP: PDF text too short ({len(text)} chars)")
         # Still save PDF if it seems like it could be OCRed later
         if extraction_method == "pypdf":
-            print(f"  Saving PDF metadata record (extractable text insufficient)")
+            print("  Saving PDF metadata record (extractable text insufficient)")
 
     doc_id = str(uuid4())
 

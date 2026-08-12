@@ -6,7 +6,6 @@ Development fallback: local Ollama (Qwen3 8.2B, NOT 27B).
 
 from __future__ import annotations
 
-import json
 import logging
 import os
 import time

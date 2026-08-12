@@ -1,7 +1,6 @@
 """Deterministic unit tests for the late-training early stopping callback."""
 from __future__ import annotations
 
-import pytest
 
 
 def _make_callback():
@@ -104,7 +103,7 @@ class TestEarlyStopping:
         assert control.should_training_stop
 
     def test_no_more_than_20_epochs(self):
-        cb = _make_callback()(start_epoch=10, patience=2)
+        _make_callback()(start_epoch=10, patience=2)
         # The callback itself never forces more than the configured epochs;
         # it only stops early. This test verifies the script's max epochs.
         src = open("scripts/train_qlora.py", encoding="utf-8").read()

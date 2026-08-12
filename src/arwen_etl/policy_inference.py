@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from typing import Dict, List, Tuple, Optional, Set
-from collections import defaultdict, Counter
+from typing import Dict, List, Set
+from collections import defaultdict
 import re
 import spacy
 
@@ -107,7 +107,7 @@ class PolicyExtractor:
         sent_list = sent_tokenize(text)  # Simple sentence split
 
         for sent in sent_list:
-            sent_doc = nlp(sent)
+            nlp(sent)
             # Basic argument pattern: claim + justification
             if any(word in sent.lower() for word in ['because', 'therefore', 'thus', 'hence']):
                 claim_parts = sent.split('because')
@@ -154,12 +154,16 @@ class PolicyExtractor:
         prev_position = None
 
         for sent in doc.sents:
-            if any(tok.text.lower() in temporal_markers for tok in sent):
+            matched = next(
+                (tok.text.lower() for tok in sent if tok.text.lower() in temporal_markers),
+                None,
+            )
+            if matched:
                 current_position = sent.text.strip()
                 temporal_positions.append({
                     'position': current_position,
                     'reference_to': prev_position,
-                    'temporal_marker': ship
+                    'temporal_marker': matched,
                 })
                 prev_position = current_position
 
