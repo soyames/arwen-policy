@@ -158,9 +158,9 @@ def validate_dataset(data_dir: str = "datasets/sft_final") -> dict[str, Any]:
         return {"valid": False, "errors": errors, "warnings": warnings}
 
     # 1. Split counts
-    if split_counts.get("test", 0) != 35:
+    if split_counts.get("test", 0) != 37:
         warnings.append(
-            f"Test split has {split_counts.get('test', 0)} examples (expected 35)"
+            f"Test split has {split_counts.get('test', 0)} examples (expected 37)"
         )
     if split_counts.get("train", 0) < 100:
         errors.append(f"Train split too small: {split_counts.get('train', 0)}")

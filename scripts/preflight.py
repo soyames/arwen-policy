@@ -55,11 +55,13 @@ EXPECTED = {
     "max_seq_length": 2048,
 }
 
-# Derived expected values
-EXPECTED["steps_per_epoch"] = math.ceil(
-    EXPECTED["train_examples"] / EXPECTED["effective_batch_size"]
-)  # ceil(330/8) = 42
-EXPECTED["max_steps"] = EXPECTED["steps_per_epoch"] * EXPECTED["num_epochs"]  # 42*20 = 840
+# Derived expected values — must use integer division (//) to match
+# HuggingFace Trainer's internal calculation:
+#   num_update_steps_per_epoch = len(train_dataloader) // gradient_accumulation_steps
+EXPECTED["steps_per_epoch"] = (
+    EXPECTED["train_examples"] // EXPECTED["effective_batch_size"]
+)  # 330 // 8 = 41
+EXPECTED["max_steps"] = EXPECTED["steps_per_epoch"] * EXPECTED["num_epochs"]  # 41*20 = 820
 
 DATA_DIR = "datasets/sft_final"
 MODEL_NAME = "Qwen/Qwen3-8B"
@@ -358,6 +360,9 @@ def g6_g9_trainer_config() -> None:
     """
     section("G6-G9 — Trainer configuration validation")
 
+    # Wrapped in try/except to prevent UnboundLocalError on any failure
+    _trainer = None
+    _model = None
     try:
         import torch
         from transformers import (
@@ -484,56 +489,59 @@ def g6_g9_trainer_config() -> None:
         tokenizer=tokenizer, padding=True, label_pad_token_id=-100,
     )
 
-    trainer = Trainer(
-        model=model,
-        args=training_args,
-        train_dataset=tokenized,
-        data_collator=data_collator,
-    )
+    trainer = None
+    model_ref = model  # keep reference for cleanup
+    try:
+        trainer = Trainer(
+            model=model,
+            args=training_args,
+            train_dataset=tokenized,
+            data_collator=data_collator,
+        )
 
-    # ---- G6: DataLoader inspection ----
-    train_dl = trainer.get_train_dataloader()
-    dl_len = len(train_dl)
-    # Expected DataLoader length: ceil(330 / 1) = 330 (with n_gpu=1, world_size=1)
-    expected_dl_len = math.ceil(EXPECTED["train_examples"] / EXPECTED["per_device_batch_size"])
-    gate("G6 — len(train_dataloader)", expected_dl_len, dl_len)
+        # ---- G6: DataLoader inspection ----
+        train_dl = trainer.get_train_dataloader()
+        dl_len = len(train_dl)
+        expected_dl_len = EXPECTED["train_examples"] // EXPECTED["per_device_batch_size"]
+        gate("G6 - len(train_dataloader)", expected_dl_len, dl_len)
 
-    # ---- G7: world_size and n_gpu ----
-    gate("G7 — trainer.args.n_gpu", EXPECTED["n_gpu"], trainer.args.n_gpu)
-    gate("G7 — trainer.args.world_size", EXPECTED["world_size"], trainer.args.world_size)
+        # ---- G7: world_size and n_gpu ----
+        gate("G7 - trainer.args.n_gpu", EXPECTED["n_gpu"], trainer.args.n_gpu)
+        gate("G7 - trainer.args.world_size", EXPECTED["world_size"], trainer.args.world_size)
 
-    # ---- G8: optimizer steps per epoch ----
-    actual_steps_per_epoch = dl_len // EXPECTED["gradient_accumulation_steps"]
-    gate("G8 — optimizer steps/epoch", EXPECTED["steps_per_epoch"], actual_steps_per_epoch)
+        # ---- G8: optimizer steps per epoch (uses // like Trainer) ----
+        actual_steps_per_epoch = dl_len // EXPECTED["gradient_accumulation_steps"]
+        gate("G8 - optimizer steps/epoch", EXPECTED["steps_per_epoch"], actual_steps_per_epoch)
 
-    # ---- G9: max_steps ----
-    # Trainer computes max_steps from num_train_epochs * steps_per_epoch
-    actual_max_steps = trainer.state.max_steps
-    # max_steps might be negative (meaning "use epochs") or set by Trainer
-    if actual_max_steps is not None and actual_max_steps > 0:
-        gate("G9 — trainer.state.max_steps", EXPECTED["max_steps"], actual_max_steps)
-    else:
-        # Trainer didn't set max_steps explicitly; derive from steps_per_epoch
-        expected_max = EXPECTED["max_steps"]
-        actual_dl_based = actual_steps_per_epoch * EXPECTED["num_epochs"]
-        gate("G9 — derived max_steps (steps/epoch × epochs)", expected_max, actual_dl_based)
+        # ---- G9: max_steps ----
+        actual_max_steps = trainer.state.max_steps
+        if actual_max_steps is not None and actual_max_steps > 0:
+            gate("G9 - trainer.state.max_steps", EXPECTED["max_steps"], actual_max_steps)
+        else:
+            actual_max_steps = actual_steps_per_epoch * EXPECTED["num_epochs"]
+            gate("G9 - derived max_steps", EXPECTED["max_steps"], actual_max_steps)
 
-    # ---- Cleanup ----
-    del model, trainer
-    import shutil as _shutil
-    _shutil.rmtree("artifacts/preflight_test", ignore_errors=True)
-    if torch.cuda.is_available():
-        torch.cuda.empty_cache()
+        print(f"\n  Trainer config validation summary:")
+        print(f"    DataLoader length:   {dl_len}")
+        print(f"    n_gpu:               {trainer.args.n_gpu}")
+        print(f"    world_size:          {trainer.args.world_size}")
+        print(f"    steps/epoch:         {actual_steps_per_epoch}")
+        print(f"    max_steps:           {actual_max_steps}")
 
-    print(f"\n  Trainer config validation summary:")
-    print(f"    DataLoader length:   {dl_len}")
-    print(f"    n_gpu:               {trainer.args.n_gpu}")
-    print(f"    world_size:          {trainer.args.world_size}")
-    print(f"    steps/epoch:         {actual_steps_per_epoch}")
-    print(f"    max_steps:           {actual_max_steps}")
-    print(f"    If any of these had differed from expected, training")
-    print(f"    would have proceeded with a silently wrong config.")
-    print(f"    This gate prevents that.")
+    except Exception as e:
+        print(f"\n  G6-G9 FAILED: {e}")
+        print(f"  The preflight could not construct or validate the Trainer.")
+        print(f"  This is a HARD BLOCKER - do not proceed to training.")
+        gate("G6-G9 - Trainer validation", "PASS", f"EXCEPTION: {e}")
+
+    finally:
+        del model_ref
+        if trainer is not None:
+            del trainer
+        import shutil as _shutil
+        _shutil.rmtree("artifacts/preflight_test", ignore_errors=True)
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
 
 
 # =============================================================================

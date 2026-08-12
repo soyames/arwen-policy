@@ -196,7 +196,7 @@ def run_smoke_test(
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         quantization_config=bnb_config,
-        device_map="auto",
+        device_map={"": "cuda:0"},
         trust_remote_code=True,
         torch_dtype=compute_dtype,
     )
@@ -347,7 +347,7 @@ def run_smoke_test(
     base_model = AutoModelForCausalLM.from_pretrained(
         model_name,
         quantization_config=bnb_config,
-        device_map="auto",
+        device_map={"": "cuda:0"},
         trust_remote_code=True,
         torch_dtype=compute_dtype,
     )
