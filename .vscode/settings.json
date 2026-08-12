@@ -1,0 +1,4 @@
+{
+    "kaggle.defaultInternet": true,
+    "kaggle.defaultAccelerator": "tpu"
+}

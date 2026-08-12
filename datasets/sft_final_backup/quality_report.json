@@ -1,0 +1,8 @@
+{
+  "avg_grounding": 4.9,
+  "avg_evidence": 2.2,
+  "avg_policy_relevance": 3.8,
+  "avg_specificity": 3.4,
+  "avg_reasoning": 1.2,
+  "avg_provenance": 5.0
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "task_type": "multistakeholder_analysis",
+    "hriam_state": "HRIAM_NOT_MATERIAL",
+    "question": "What are the technical and governance implications of IPv6 adoption for Regional Internet Registries and network operators?",
+    "answer": "IPv6 adoption has significant technical and governance implications. For RIRs, IPv6 changes address management from conservation to registration and routing aggregation. For operators, adoption requires dual-stack transition, equipment investment, and training. Governance implications include RIR community policy development and capacity building. This is fundamentally a technical and operational challenge — not a human-rights issue.",
+    "stakeholders_mentioned": [
+      "technical_community",
+      "private_sector",
+      "government"
+    ],
+    "policy_topics": [
+      "ipv6",
+      "internet-infrastructure",
+      "rir"
+    ]
+  },
+  {
+    "task_type": "multistakeholder_analysis",
+    "hriam_state": "HRIAM_NOT_MATERIAL",
+    "question": "What are the main operational and policy challenges of DNSSEC deployment, and how do different stakeholders view these challenges?",
+    "answer": "DNSSEC deployment presents operational challenges including key management, zone signing, and risks of misconfiguration. For registrars and domain owners, managing DS records during transfers is complex. Policy challenges include encouraging adoption across TLDs and coordinating between registries and registrars. Governments have an interest in DNSSEC as a DNS integrity measure. This is a technical and operational governance question — DNSSEC challenges are about key management, coordination, and adoption incentives, not human rights.",
+    "stakeholders_mentioned": [
+      "technical_community",
+      "private_sector",
+      "government"
+    ],
+    "policy_topics": [
+      "dnssec",
+      "dns",
+      "internet-infrastructure"
+    ]
+  },
+  {
+    "task_type": "policy_recommendation",
+    "hriam_state": "HRIAM_NOT_MATERIAL",
+    "question": "What policy role does a Regional Internet Registry perform in Internet number resource management, and how does community-driven policy development work?",
+    "answer": "RIRs manage IP address and ASN allocation under community-developed policies through open, bottom-up, consensus-based processes. This is a distinctive governance model where policy is made by those affected by it. RIRs maintain registration databases supporting network operations and routing security, and contribute to global governance through the NRO. The RIR policy role is fundamentally about resource stewardship and community governance through multistakeholder processes — not human-rights assessment.",
+    "stakeholders_mentioned": [
+      "technical_community",
+      "private_sector",
+      "government"
+    ],
+    "policy_topics": [
+      "rir",
+      "internet-governance",
+      "resource-allocation"
+    ]
+  },
+  {
+    "task_type": "stakeholder_disagreement",
+    "hriam_state": "HRIAM_RELEVANT",
+    "question": "What are the governance implications of mandatory DNS filtering, and which stakeholders are most affected?",
+    "answer": "Governments implementing DNS filtering cite cybersecurity, consumer protection, and law enforcement objectives. DNS operators bear the operational burden of blocklist management and face conflicting jurisdictional obligations. The technical community raises fragmentation concerns. From a human-rights perspective, DNS filtering engages freedom of expression and access to information rights — particularly if filtering extends beyond technical objectives. However, the primary governance challenge is maintaining DNS integrity and interoperability across jurisdictions with different filtering policies.",
+    "stakeholders_mentioned": [
+      "government",
+      "private_sector",
+      "technical_community",
+      "users"
+    ],
+    "policy_topics": [
+      "dns",
+      "content-regulation",
+      "internet-governance"
+    ]
+  },
+  {
+    "task_type": "tradeoff_analysis",
+    "hriam_state": "HRIAM_RELEVANT",
+    "question": "What are the policy trade-offs of platform content moderation between automated filtering and human review?",
+    "answer": "Automated moderation scales efficiently but struggles with context, satire, cultural nuance, and minority languages. Human review provides contextual judgment but is slower, more expensive, and exposes reviewers to harmful content. Both approaches have documented limitations — automated systems can systematically disadvantage linguistic minorities, while human review introduces its own inconsistencies. The trade-off engages freedom of expression — over-removal of legitimate speech is a rights concern — but the primary challenge is designing moderation that is accurate, scalable, transparent, and accountable.",
+    "stakeholders_mentioned": [
+      "private_sector",
+      "government",
+      "civil_society",
+      "users"
+    ],
+    "policy_topics": [
+      "content-moderation",
+      "platform-governance"
+    ]
+  }
+]
