@@ -108,7 +108,7 @@ class TestStakeholderConfig:
 
 
 class TestDatasetStructure:
-    @pytest.mark.parametrize("split,expected", [("train", 330), ("validation", 37), ("test", 35)])
+    @pytest.mark.parametrize("split,expected", [("train", 330), ("validation", 39), ("test", 37)])
     def test_split_counts(self, split, expected):
         path = DATA_DIR / f"{split}.jsonl"
         assert path.exists()
