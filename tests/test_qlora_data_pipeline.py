@@ -483,3 +483,76 @@ class TestEvalTestSetCLI:
         assert "--qualitative-only" in result.stdout, (
             "eval_test_set.py must accept --qualitative-only flag."
         )
+
+
+class TestEarlyStoppingAndSafety:
+    """Regression: late-training early stopping + post-training memory safety."""
+
+    def test_early_stopping_start_epoch_is_10(self):
+        """Early stopping must not start before epoch 10."""
+        script = Path("scripts/train_qlora.py").read_text(encoding="utf-8")
+        assert "EARLY_STOPPING_START_EPOCH = 10" in script
+
+    def test_early_stopping_patience_is_2(self):
+        """Patience must be 2 completed validation evaluations."""
+        script = Path("scripts/train_qlora.py").read_text(encoding="utf-8")
+        assert "EARLY_STOPPING_PATIENCE = 2" in script
+
+    def test_late_early_stopping_callback_exists(self):
+        """The custom LateEarlyStoppingCallback must be defined."""
+        script = Path("scripts/train_qlora.py").read_text(encoding="utf-8")
+        assert "class LateEarlyStoppingCallback" in script
+        assert "should_training_stop" in script
+
+    def test_early_stopping_resets_patience_on_improvement(self):
+        """Improvement must reset the patience counter."""
+        script = Path("scripts/train_qlora.py").read_text(encoding="utf-8")
+        assert "self.patience_counter = 0" in script
+
+    def test_no_stale_step_calculation(self):
+        """No ceil() or // step pre-calculation must remain."""
+        script = Path("scripts/train_qlora.py").read_text(encoding="utf-8")
+        assert "math.ceil(n_train" not in script
+        assert "steps_per_epoch = math.ceil" not in script
+
+    def test_trainer_is_authoritative_for_steps(self):
+        """The Trainer's own values must be used, not independent calc."""
+        script = Path("scripts/train_qlora.py").read_text(encoding="utf-8")
+        assert "trainer.get_train_dataloader()" in script
+        assert "Trainer steps/epoch" in script
+
+    def test_model_released_before_qualitative_eval(self):
+        """Training model must be released before qualitative generation."""
+        script = Path("scripts/train_qlora.py").read_text(encoding="utf-8")
+        assert "del model, trainer" in script
+        assert "gc.collect()" in script
+        assert "torch.cuda.empty_cache()" in script
+
+    def test_qualitative_eval_has_oom_guard(self):
+        """Qualitative eval failure must not fail training."""
+        script = Path("scripts/train_qlora.py").read_text(encoding="utf-8")
+        assert "torch.cuda.OutOfMemoryError" in script
+        assert "qual_failed" in script
+
+    def test_artifact_preservation_guard(self):
+        """Artifact must be preserved before qualitative generation."""
+        script = Path("scripts/train_qlora.py").read_text(encoding="utf-8")
+        assert "arwen_policy_training_output.tar.gz" in script
+        assert "artifact_preserved" in script
+
+    def test_no_multi_gpu(self):
+        """No DDP, torchrun, deepspeed, or DataParallel."""
+        script = Path("scripts/train_qlora.py").read_text(encoding="utf-8")
+        assert "torchrun" not in script
+        assert "deepspeed" not in script
+        assert "DataParallel" not in script
+
+    def test_save_total_limit_is_two(self):
+        """Checkpoint retention must be 2."""
+        script = Path("scripts/train_qlora.py").read_text(encoding="utf-8")
+        assert "SAVE_TOTAL_LIMIT = 2" in script
+
+    def test_save_only_model(self):
+        """save_only_model must be configured."""
+        script = Path("scripts/train_qlora.py").read_text(encoding="utf-8")
+        assert "save_only_model" in script

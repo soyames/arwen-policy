@@ -69,6 +69,10 @@ TARGET_MODULES = [
 LOGGING_STEPS = 10
 SAVE_TOTAL_LIMIT = 2  # keep only best + latest; no optimizer accumulation needed
 
+# Early stopping — late-training only
+EARLY_STOPPING_START_EPOCH = 10  # no early stopping before this epoch
+EARLY_STOPPING_PATIENCE = 2      # stop after this many non-improving evals
+
 
 # ===================================================================
 # MAIN
@@ -324,13 +328,44 @@ def main() -> int:
         dataloader_num_workers=0,
     )
 
-    from transformers import DataCollatorForSeq2Seq, TrainerCallback
+    from transformers import DataCollatorForSeq2Seq, TrainerCallback, EarlyStoppingCallback
     data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, padding=True, label_pad_token_id=-100)
 
     # Per-epoch logging callback
     epoch_log: list[dict] = []
     epoch_start_time = [time.time()]
     best_val_so_far = [float("inf")]
+
+    # Late-training early stopping — only eligible after EARLY_STOPPING_START_EPOCH.
+    # We implement a custom callback because HuggingFace's EarlyStoppingCallback
+    # starts counting from epoch 0, which would violate the "no early stop
+    # before epoch 10" requirement.
+    class LateEarlyStoppingCallback(TrainerCallback):
+        def __init__(self, start_epoch, patience):
+            self.start_epoch = start_epoch
+            self.patience = patience
+            self.best_metric = float("inf")
+            self.patience_counter = 0
+            self.stopped_epoch = None
+
+        def on_evaluate(self, args, state, control, metrics=None, **kwargs):
+            # Only consider early stopping after the start epoch
+            current_epoch = int(state.epoch) if state.epoch else 0
+            if current_epoch < self.start_epoch:
+                return
+            val_metric = metrics.get("eval_loss") if metrics else None
+            if val_metric is None:
+                return
+            if val_metric < self.best_metric:
+                self.best_metric = val_metric
+                self.patience_counter = 0
+            else:
+                self.patience_counter += 1
+                print(f"  [early-stopping] no improvement ({self.patience_counter}/{self.patience})")
+                if self.patience_counter >= self.patience:
+                    self.stopped_epoch = current_epoch
+                    control.should_training_stop = True
+                    print(f"  [early-stopping] stopping after epoch {current_epoch}")
 
     class EpochLoggerCallback(TrainerCallback):
         def on_epoch_end(self, trainer_args, state, control, **kwargs):
@@ -391,13 +426,19 @@ def main() -> int:
 
     # ---- 7. Construct Trainer ----
     print(f"\n=== Constructing Trainer ===")
+    early_stop_callback = LateEarlyStoppingCallback(
+        EARLY_STOPPING_START_EPOCH, EARLY_STOPPING_PATIENCE
+    )
     trainer = Trainer(
         model=model,
         args=training_args,
         train_dataset=train_tokenized,
         eval_dataset=val_tokenized,
         data_collator=data_collator,
-        callbacks=[EpochLoggerCallback()],
+        callbacks=[
+            EpochLoggerCallback(),
+            early_stop_callback,
+        ],
     )
 
     # ---- 7b. VALIDATE Trainer configuration BEFORE training ----
@@ -485,7 +526,10 @@ def main() -> int:
 
     steps_actual = trainer.state.global_step
     epochs_completed = len(epoch_log)
-    training_completed_fully = (epochs_completed >= num_epochs)
+    # Training is "complete" if it reached the full epoch count, OR if it
+    # was early-stopped by the late early-stopping callback (successful stop).
+    early_stopped = early_stop_callback.stopped_epoch is not None
+    training_completed_fully = (epochs_completed >= num_epochs) or early_stopped
 
     # Checkpoint count and artifact size
     checkpoint_dirs = sorted(out.glob("checkpoint-*"))
@@ -555,68 +599,143 @@ def main() -> int:
     tokenizer.save_pretrained(str(adapter_path))
     print(f"Adapter saved to {adapter_path}")
 
-    # ---- 10. Reload and test ----
-    # Capture best checkpoint before freeing trainer
+    # Capture best checkpoint BEFORE freeing trainer
     best_checkpoint = trainer.state.best_model_checkpoint or str(adapter_path)
-    print(f"\n=== Reloading best adapter: {best_checkpoint} ===")
-    del model, trainer
-    torch.cuda.empty_cache()
+    print(f"Best checkpoint: {best_checkpoint}")
+    print(f"Best metric (eval_loss): {trainer.state.best_metric}")
 
-    base_model = AutoModelForCausalLM.from_pretrained(
-        MODEL_NAME,
-        quantization_config=bnb_config,
-        device_map={"": "cuda:0"},
-        trust_remote_code=True,
-        torch_dtype=compute_dtype,
-    )
-    loaded = PeftModel.from_pretrained(base_model, best_checkpoint)
-    print("Adapter reloaded successfully")
+    # ---- 9b. Artifact preservation ----
+    # Create a portable output directory + archive BEFORE qualitative
+    # generation, so a later OOM cannot invalidate the trained artifact.
+    import shutil as _shutil
+    import tarfile as _tarfile
+    import hashlib as _hashlib
 
-    # ---- 11. Qualitative evaluation ----
-    print("\n=== Qualitative evaluation ===")
-    eval_prompts = [
-        "What is Internet governance and what institutions are involved in it?",
-        "How does ICANN's multistakeholder model address DNS policy?",
-        "What was the role of RFC 1591 in the domain name system?",
-        "How do different stakeholders view digital sovereignty?",
-        "What trade-offs exist between security and openness in Internet policy?",
-    ]
+    artifact_preserved = False
+    archive_path = None
+    try:
+        output_root = Path("/kaggle/working/arwen_policy_output")
+        output_root.mkdir(parents=True, exist_ok=True)
+        best_adapter_dir = output_root / "best_adapter"
+        if best_adapter_dir.exists():
+            _shutil.rmtree(best_adapter_dir)
 
-    # Import canonical system prompt
-    from arwen_etl.engine.arwen_prompt import ARWEN_SYSTEM_PROMPT as SYSTEM_PROMPT
+        # Copy the best checkpoint (or final adapter) into best_adapter/
+        src = Path(best_checkpoint) if Path(best_checkpoint).exists() else adapter_path
+        _shutil.copytree(src, best_adapter_dir)
 
-    comparisons = []
-    for prompt in eval_prompts:
-        messages = [
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": prompt},
-        ]
-        # Explicit tensor path — NEVER pass BatchEncoding to generate()
-        formatted = tokenizer.apply_chat_template(
-            messages, tokenize=True, add_generation_prompt=True,
-            return_tensors="pt", return_dict=True,
+        # Write metadata
+        meta = {
+            "git_commit_sha": os.environ.get("GIT_COMMIT_SHA", "unknown"),
+            "best_checkpoint": str(best_checkpoint),
+            "best_eval_loss": float(trainer.state.best_metric) if trainer.state.best_metric else None,
+            "best_epoch": best_epoch,
+            "epochs_completed": epochs_completed,
+            "early_stopped": early_stopped,
+            "dataset": {"train": len(train_data), "validation": len(val_data), "test": len(test_data)},
+            "training_report": {k: v for k, v in metrics.items() if not isinstance(v, list)},
+        }
+        (output_root / "training_summary.json").write_text(
+            json.dumps(meta, indent=2, ensure_ascii=False), encoding="utf-8"
         )
-        input_ids = formatted["input_ids"].to("cuda")
-        attention_mask = formatted.get("attention_mask")
-        if attention_mask is not None:
-            attention_mask = attention_mask.to("cuda")
-        prompt_len = input_ids.shape[1]
-        with torch.no_grad():
-            out_tokens = loaded.generate(
-                input_ids=input_ids,
-                attention_mask=attention_mask,
-                max_new_tokens=200, do_sample=True,
-                temperature=0.7, top_p=0.9,
-                pad_token_id=tokenizer.eos_token_id,
-                eos_token_id=tokenizer.eos_token_id,
+
+        # Create archive
+        archive_path = Path("/kaggle/working/arwen_policy_training_output.tar.gz")
+        with _tarfile.open(archive_path, "w:gz") as tar:
+            tar.add(output_root, arcname="arwen_policy_output")
+
+        # Verify archive
+        archive_ok = (
+            archive_path.exists()
+            and archive_path.stat().st_size > 0
+            and (best_adapter_dir / "adapter_model.safetensors").exists()
+        )
+        archive_sha256 = _hashlib.sha256(archive_path.read_bytes()).hexdigest()
+        print(f"\n=== Artifact preservation ===")
+        print(f"  Archive: {archive_path}")
+        print(f"  Size:    {archive_path.stat().st_size / 1e6:.1f} MB")
+        print(f"  SHA256:  {archive_sha256}")
+        print(f"  Contains adapter_model.safetensors: {archive_ok}")
+        artifact_preserved = archive_ok
+    except Exception as e:
+        print(f"\n  WARNING: artifact preservation failed: {e}")
+        artifact_preserved = False
+
+    # ---- 10. Release training model & free GPU memory BEFORE qualitative eval ----
+    print("\n=== Releasing training model for qualitative eval ===")
+    import gc
+    del model, trainer, train_result
+    gc.collect()
+    torch.cuda.empty_cache()
+    torch.cuda.reset_peak_memory_stats(0)
+    print(f"  GPU allocated after release: {torch.cuda.memory_allocated(0) / 1e9:.2f} GB")
+    print(f"  GPU reserved after release:  {torch.cuda.memory_reserved(0) / 1e9:.2f} GB")
+
+    # ---- 11. Qualitative evaluation (isolated; failure must NOT fail training) ----
+    comparisons = []
+    qual_failed = False
+    try:
+        print("\n=== Qualitative evaluation ===")
+        eval_prompts = [
+            "What is Internet governance and what institutions are involved in it?",
+            "How does ICANN's multistakeholder model address DNS policy?",
+            "What was the role of RFC 1591 in the domain name system?",
+            "How do different stakeholders view digital sovereignty?",
+            "What trade-offs exist between security and openness in Internet policy?",
+        ]
+
+        from arwen_etl.engine.arwen_prompt import ARWEN_SYSTEM_PROMPT as SYSTEM_PROMPT
+
+        base_model = AutoModelForCausalLM.from_pretrained(
+            MODEL_NAME,
+            quantization_config=bnb_config,
+            device_map={"": "cuda:0"},
+            trust_remote_code=True,
+            torch_dtype=compute_dtype,
+        )
+        loaded = PeftModel.from_pretrained(base_model, best_checkpoint)
+        print("Adapter reloaded for qualitative eval")
+
+        for prompt in eval_prompts:
+            messages = [
+                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user", "content": prompt},
+            ]
+            formatted = tokenizer.apply_chat_template(
+                messages, tokenize=True, add_generation_prompt=True,
+                return_tensors="pt", return_dict=True,
             )
-        # Decode only newly generated tokens (after the prompt)
-        new_tokens = out_tokens[0][prompt_len:]
-        response = tokenizer.decode(new_tokens, skip_special_tokens=True)
-        comparisons.append({"prompt": prompt, "response": response[:500]})
-        print(f"  Q: {prompt[:80]}...")
-        print(f"  A: {response[:200]}...")
-        print()
+            input_ids = formatted["input_ids"].to("cuda")
+            attention_mask = formatted.get("attention_mask")
+            if attention_mask is not None:
+                attention_mask = attention_mask.to("cuda")
+            prompt_len = input_ids.shape[1]
+            with torch.no_grad():
+                out_tokens = loaded.generate(
+                    input_ids=input_ids,
+                    attention_mask=attention_mask,
+                    max_new_tokens=200, do_sample=True,
+                    temperature=0.7, top_p=0.9,
+                    pad_token_id=tokenizer.eos_token_id,
+                    eos_token_id=tokenizer.eos_token_id,
+                )
+            new_tokens = out_tokens[0][prompt_len:]
+            response = tokenizer.decode(new_tokens, skip_special_tokens=True)
+            comparisons.append({"prompt": prompt, "response": response[:500]})
+            print(f"  Q: {prompt[:80]}...")
+            print(f"  A: {response[:200]}...")
+            print()
+        del loaded, base_model
+        gc.collect()
+        torch.cuda.empty_cache()
+    except torch.cuda.OutOfMemoryError as e:
+        qual_failed = True
+        print(f"\n  WARNING: qualitative generation OOM: {e}")
+        print(f"  Training artifact is preserved. Qualitative eval skipped.")
+    except Exception as e:
+        qual_failed = True
+        print(f"\n  WARNING: qualitative generation failed: {e}")
+        print(f"  Training artifact is preserved.")
 
     # ---- 12. Save complete report ----
     report = {
@@ -644,18 +763,29 @@ def main() -> int:
         "per_epoch": epoch_log,
         "metrics": metrics,
         "qualitative_eval": comparisons,
+        "qualitative_eval_failed": qual_failed,
         "adapter_path": str(adapter_path),
         "best_checkpoint": best_checkpoint,
+        "artifact_preserved": artifact_preserved,
+        "archive_path": str(archive_path) if archive_path else None,
+        "early_stopped": early_stopped,
+        "early_stopped_epoch": early_stop_callback.stopped_epoch,
     }
 
     report_path = out / "training_report.json"
     report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False))
     print(f"\nReport saved to {report_path}")
 
+    print(f"\n{'='*60}")
     if training_completed_fully:
-        print("TRAINING COMPLETE — all epochs finished.")
+        if early_stopped:
+            print(f"TRAINING COMPLETE — early stopped after epoch {early_stop_callback.stopped_epoch}")
+        else:
+            print("TRAINING COMPLETE — all epochs finished.")
     else:
         print("TRAINING INCOMPLETE — not all epochs completed.")
+    print(f"TRAINING ARTIFACT PRESERVED: {'TRUE' if artifact_preserved else 'FALSE'}")
+    print(f"{'='*60}")
     return 0
 
 
