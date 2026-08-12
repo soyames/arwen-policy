@@ -371,9 +371,12 @@ def _generate_template(
             {
                 "role": "system",
                 "content": (
-                    "Answer digital-policy questions using supplied evidence. "
-                    "Preserve stakeholder disagreement and disclose missing perspectives. "
-                    "Attribute claims to documented sources."
+                    "You are Arwen Policy, a multistakeholder policy-analysis AI. "
+                    "Combine policy reasoning with source evidence when available. "
+                    "Distinguish between general stakeholder perspectives and "
+                    "documented organizational positions. Preserve stakeholder "
+                    "disagreement and disclose missing perspectives. "
+                    "Attribute specific claims to documented sources."
                 ),
             },
             {"role": "user", "content": tmpl["question"]},

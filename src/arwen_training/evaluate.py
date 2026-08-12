@@ -100,20 +100,48 @@ def hallucination_test(
     synthesis: str | None,
     acceptable_answer: str = "Insufficient evidence",
 ) -> dict[str, Any]:
-    """Verify that the system refuses to answer when evidence is insufficient."""
+    """Verify that the system discloses uncertainty rather than fabricating claims.
+
+    When evidence is insufficient for a specific factual claim, the system should
+    disclose that uncertainty rather than invent evidence. For policy questions,
+    the system may still provide general multistakeholder analysis while clearly
+    identifying what cannot be verified from the available evidence.
+
+    The test flags cases where the system fabricates claims when evidence is lacking.
+    It does NOT penalize substantive policy analysis that properly discloses
+    uncertainty about unverifiable factual claims.
+    """
     has_evidence = evidence_count > 0
+    synthesis_lower = (synthesis or "").lower()
     mentions_insufficient = (
-        "insufficient" in (synthesis or "").lower()
-        or "no evidence" in (synthesis or "").lower()
-        or "not enough" in (synthesis or "").lower()
+        "insufficient" in synthesis_lower
+        or "no evidence" in synthesis_lower
+        or "not enough" in synthesis_lower
+    )
+    # Also accept disclosed uncertainty as valid handling of missing evidence
+    discloses_uncertainty = (
+        "cannot be verified" in synthesis_lower
+        or "cannot establish" in synthesis_lower
+        or "no retrieved source" in synthesis_lower
+        or "not established" in synthesis_lower
+        or "available evidence does not" in synthesis_lower
+        or "unclear" in synthesis_lower
+        or mentions_insufficient
+    )
+    # Check for fabrication markers (confident factual claims without evidence)
+    fabricated = (
+        not has_evidence
+        and not discloses_uncertainty
+        and len((synthesis or "").strip()) > 0
     )
 
     return {
         "question": question,
         "evidence_count": evidence_count,
-        "passed": not has_evidence or mentions_insufficient,
-        "hallucinated": has_evidence and not mentions_insufficient,
+        "passed": not fabricated,
+        "hallucinated": fabricated,
         "synthesis_mentions_insufficient_evidence": mentions_insufficient,
+        "synthesis_discloses_uncertainty": discloses_uncertainty,
     }
 
 

@@ -176,10 +176,11 @@ def build_teacher_prompt(
     system_prompt = """You are a policy-analysis teacher model generating supervised training data.
 
 CRITICAL RULES:
-- Use ONLY the supplied source material. Do not use outside knowledge.
-- Do not invent stakeholder positions, quotations, dates, or institutional roles.
-- Every claim must identify its supporting source evidence.
-- If the document provides insufficient evidence for the task, respond with {"skip": true, "reason": "..."}.
+- Ground answers in the supplied document content as your primary source.
+- You may use general policy knowledge to contextualize the document within broader Internet governance and digital policy frameworks, but clearly distinguish document content from broader context.
+- Do not invent stakeholder positions, quotations, dates, or institutional roles that are not in the document.
+- Every factual claim about the document must identify its supporting source evidence from the document text.
+- If the document provides insufficient evidence for the specific task, respond with {"skip": true, "reason": "..."}.
 - Return VALID JSON only, with no additional text.
 
 Output format:
@@ -294,9 +295,13 @@ def parse_teacher_response(
             {
                 "role": "system",
                 "content": (
-                    "Answer digital-policy questions using the supplied evidence. "
-                    "Preserve stakeholder disagreement and disclose missing perspectives. "
-                    "Never fabricate claims, dates, or sources."
+                    "You are Arwen Policy, a multistakeholder policy-analysis AI. "
+                    "Combine policy reasoning with source evidence when available. "
+                    "Distinguish between general stakeholder perspectives and "
+                    "documented organizational positions. Preserve stakeholder "
+                    "disagreement and disclose missing perspectives. "
+                    "Attribute specific claims to documented sources. "
+                    "Do not fabricate facts, dates, or organizational positions."
                 ),
             },
             {"role": "user", "content": question},

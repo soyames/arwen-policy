@@ -511,11 +511,8 @@ def main() -> int:
     print("=" * 70)
 
     # Verify the inference template matches training
-    system_msg = (
-        "You are a policy analysis AI. Answer questions using only the supplied source "
-        "evidence. Attribute claims to documented sources. Disclose uncertainty. "
-        "Do not invent facts, dates, stakeholders, or positions."
-    )
+    from arwen_etl.engine.arwen_prompt import ARWEN_SYSTEM_PROMPT
+    system_msg = ARWEN_SYSTEM_PROMPT
 
     test_prompt = "What is Internet governance?"
 
@@ -538,7 +535,7 @@ def main() -> int:
     ]
     infer_formatted = tokenizer.apply_chat_template(
         messages_infer, tokenize=True, add_generation_prompt=True,
-        return_tensors="pt",
+        return_tensors="pt", return_dict=True,
     )
     infer_text = tokenizer.apply_chat_template(
         messages_infer, tokenize=False, add_generation_prompt=True,
@@ -574,18 +571,23 @@ def main() -> int:
         base_model = AMC.from_pretrained(
             MODEL_NAME,
             quantization_config=bnb_cfg,
-            device_map="auto",
+            device_map={"": "cuda:0"},
             trust_remote_code=True,
             torch_dtype=torch.float16,
         )
 
-        infer_gpu = infer_formatted.to("cuda")
-        prompt_len = infer_gpu.shape[1]
+        gpu_ids = infer_formatted["input_ids"].to("cuda")
+        gpu_mask = infer_formatted.get("attention_mask")
+        if gpu_mask is not None:
+            gpu_mask = gpu_mask.to("cuda")
+        prompt_len = gpu_ids.shape[1]
         print(f"  Prompt token length: {prompt_len}")
 
         with torch.no_grad():
             out = base_model.generate(
-                infer_gpu, max_new_tokens=100, do_sample=True,
+                input_ids=gpu_ids,
+                attention_mask=gpu_mask,
+                max_new_tokens=100, do_sample=True,
                 temperature=0.2, top_p=0.9,
                 pad_token_id=tokenizer.eos_token_id,
                 eos_token_id=tokenizer.eos_token_id,
@@ -685,14 +687,20 @@ def main() -> int:
             ]
             formatted = tokenizer.apply_chat_template(
                 messages, tokenize=True, add_generation_prompt=True,
-                return_tensors="pt",
-            ).to("cuda")
-            prompt_len = formatted.shape[1]
+                return_tensors="pt", return_dict=True,
+            )
+            gen_ids = formatted["input_ids"].to("cuda")
+            gen_mask = formatted.get("attention_mask")
+            if gen_mask is not None:
+                gen_mask = gen_mask.to("cuda")
+            prompt_len = gen_ids.shape[1]
 
             # A. Base model
             with torch.no_grad():
                 out_base = base_clean.generate(
-                    formatted, max_new_tokens=200, do_sample=True,
+                    input_ids=gen_ids,
+                    attention_mask=gen_mask,
+                    max_new_tokens=200, do_sample=True,
                     temperature=0.2, top_p=0.9,
                     pad_token_id=tokenizer.eos_token_id,
                     eos_token_id=tokenizer.eos_token_id,
@@ -704,7 +712,9 @@ def main() -> int:
             # B. Old adapter
             with torch.no_grad():
                 out_adp = loaded_adp.generate(
-                    formatted, max_new_tokens=200, do_sample=True,
+                    input_ids=gen_ids,
+                    attention_mask=gen_mask,
+                    max_new_tokens=200, do_sample=True,
                     temperature=0.2, top_p=0.9,
                     pad_token_id=tokenizer.eos_token_id,
                     eos_token_id=tokenizer.eos_token_id,

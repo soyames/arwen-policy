@@ -113,7 +113,19 @@ def main() -> int:
         "--qualitative-only", action="store_true",
         help="Skip 35-example loss evaluation; run only the qualitative generation sample.",
     )
+    parser.add_argument(
+        "--loss-only", action="store_true",
+        help="Run only the 35-example loss evaluation; skip qualitative generation.",
+    )
+    parser.add_argument(
+        "--full", action="store_true",
+        help="Run both loss evaluation and qualitative generation (default behavior).",
+    )
     args = parser.parse_args()
+
+    # Resolve mode: --full or no flag = do both; --loss-only = loss only; --qualitative-only = qual only
+    run_loss = not args.qualitative_only
+    run_qual = not args.loss_only
 
     adapter_path = Path(args.adapter_path)
     if not adapter_path.exists():
@@ -192,7 +204,7 @@ def main() -> int:
     skipped = 0
     n_evaluated = 0
 
-    if not args.qualitative_only:
+    if run_loss:
         print(f"\n=== Test-set evaluation ({len(test_tokenized)} examples) ===")
         collator = DataCollatorForSeq2Seq(
             tokenizer=tokenizer, padding=True, label_pad_token_id=-100,
@@ -260,39 +272,43 @@ def main() -> int:
             q = next((m["content"][:80] for m in msgs if m["role"] == "user"), "?")
             print(f"    [{idx}] loss={loss_val:.4f}  Q: {q}...")
 
-    # Qualitative sample
-    print(f"\n=== Qualitative sample ===")
-    system_msg = (
-        "You are a policy analysis AI. Answer questions using only the supplied source "
-        "evidence. Attribute claims to documented sources. Disclose uncertainty. "
-        "Do not invent facts, dates, stakeholders, or positions."
-    )
-    for idx in range(min(3, len(test_data))):
-        msgs = test_data[idx]["messages"]
-        q = next((m["content"] for m in msgs if m["role"] == "user"), "?")
-        messages = [
-            {"role": "system", "content": system_msg},
-            {"role": "user", "content": q},
-        ]
-        formatted = tokenizer.apply_chat_template(
-            messages, tokenize=True, add_generation_prompt=True,
-            return_tensors="pt",
-        ).to("cuda:0")
-        prompt_len = formatted["input_ids"].shape[1]
-        with torch.no_grad():
-            out = model.generate(
-                formatted, max_new_tokens=200, do_sample=True,
-                temperature=0.2, top_p=0.9,
-                pad_token_id=tokenizer.eos_token_id,
-                eos_token_id=tokenizer.eos_token_id,
+    # Qualitative sample (skip if --loss-only)
+    if run_qual:
+        print(f"\n=== Qualitative sample ===")
+        from arwen_etl.engine.arwen_prompt import ARWEN_SYSTEM_PROMPT
+        for idx in range(min(3, len(test_data))):
+            msgs = test_data[idx]["messages"]
+            q = next((m["content"] for m in msgs if m["role"] == "user"), "?")
+            messages = [
+                {"role": "system", "content": ARWEN_SYSTEM_PROMPT},
+                {"role": "user", "content": q},
+            ]
+            # Explicit tensor path — NEVER pass BatchEncoding to generate()
+            formatted = tokenizer.apply_chat_template(
+                messages, tokenize=True, add_generation_prompt=True,
+                return_tensors="pt", return_dict=True,
             )
-        new_tokens = out[0][prompt_len:]
-        response = tokenizer.decode(new_tokens, skip_special_tokens=True)
-        print(f"\n  Q{idx}: {q[:120]}...")
-        print(f"  A{idx}: {response[:300]}")
+            input_ids = formatted["input_ids"].to("cuda:0")
+            attention_mask = formatted.get("attention_mask")
+            if attention_mask is not None:
+                attention_mask = attention_mask.to("cuda:0")
+            prompt_len = input_ids.shape[1]
+            with torch.no_grad():
+                out = model.generate(
+                    input_ids=input_ids,
+                    attention_mask=attention_mask,
+                    max_new_tokens=200, do_sample=True,
+                    temperature=0.2, top_p=0.9,
+                    pad_token_id=tokenizer.eos_token_id,
+                    eos_token_id=tokenizer.eos_token_id,
+                )
+            new_tokens = out[0][prompt_len:]
+            response = tokenizer.decode(new_tokens, skip_special_tokens=True)
+            print(f"\n  Q{idx}: {q[:120]}...")
+            print(f"  A{idx}: {response[:300]}")
 
     # Write report (skip if qualitative-only — no loss data)
-    if not args.qualitative_only and n_evaluated > 0:
+    if run_loss and n_evaluated > 0:
         avg_loss = sum(losses) / n_evaluated
         avg_perplexity = sum(perplexities) / n_evaluated
         report = {

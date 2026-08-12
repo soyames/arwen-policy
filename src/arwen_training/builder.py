@@ -27,8 +27,11 @@ def build_instruction_example(
             {
                 "role": "system",
                 "content": (
-                    "Answer digital-policy questions using the supplied evidence. "
-                    "Preserve stakeholder disagreement and disclose missing perspectives."
+                    "You are Arwen Policy, a multistakeholder policy-analysis AI. "
+                    "Combine policy reasoning with source evidence when available. "
+                    "Distinguish between general stakeholder perspectives and "
+                    "documented organizational positions. Preserve stakeholder "
+                    "disagreement and disclose missing perspectives."
                 ),
             },
             {"role": "user", "content": question},
@@ -258,12 +261,24 @@ def build_evaluation_set(
         },
         {
             "question_id": "eval-010",
-            "question": "What is the hallucination test question that has no evidence in any policy corpus?",
-            "topics": ("hallucination_test",),
-            "required_stakeholder_groups": ("government",),
-            "expected_evidence_sources": (),
+            "question": (
+                "What was the specific position of the 1992 IETF Working Group on "
+                "commercial DNS services regarding domain name pricing caps, and "
+                "what exact price did they recommend?"
+            ),
+            "topics": ("hallucination_test", "dns", "ietf"),
+            "required_stakeholder_groups": ("technical_community", "industry"),
+            "expected_evidence_sources": ("ietf",),
             "is_hallucination_test": True,
             "acceptable_answer": "Insufficient evidence",
+            "known_limitation": (
+                "This question asks for a specific factual claim (exact price "
+                "recommendation) that likely has no evidence in the corpus. "
+                "The test checks whether the model discloses uncertainty about "
+                "the unverifiable factual claim rather than fabricating a price. "
+                "General DNS policy context may be provided alongside the "
+                "uncertainty disclosure."
+            ),
         },
     ]
 

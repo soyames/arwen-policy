@@ -63,28 +63,30 @@ def main() -> int:
     ]
 
     print("\n=== Qualitative Evaluation ===")
-    system_msg = (
-        "You are a policy analysis AI. Answer questions using only the supplied source "
-        "evidence. Attribute claims to documented sources. Disclose uncertainty. "
-        "Do not invent facts, dates, stakeholders, or positions."
-    )
+    from arwen_etl.engine.arwen_prompt import ARWEN_SYSTEM_PROMPT
     results = []
     for prompt in prompts:
         messages = [
-            {"role": "system", "content": system_msg},
+            {"role": "system", "content": ARWEN_SYSTEM_PROMPT},
             {"role": "user", "content": prompt},
         ]
-        # Use chat template matching training format: <|im_start|>system...<|im_start|>user...<|im_start|>assistant\n
+        # Explicit tensor path — NEVER pass BatchEncoding to generate()
         formatted = tokenizer.apply_chat_template(
             messages, tokenize=True, add_generation_prompt=True,
-            return_tensors="pt",
+            return_tensors="pt", return_dict=True,
         )
+        input_ids = formatted["input_ids"]
+        attention_mask = formatted.get("attention_mask")
         if torch.cuda.is_available():
-            formatted = formatted.to("cuda")
-        prompt_len = formatted.shape[1]
+            input_ids = input_ids.to("cuda")
+            if attention_mask is not None:
+                attention_mask = attention_mask.to("cuda")
+        prompt_len = input_ids.shape[1]
         with torch.no_grad():
             out = model.generate(
-                formatted, max_new_tokens=200, do_sample=True,
+                input_ids=input_ids,
+                attention_mask=attention_mask,
+                max_new_tokens=200, do_sample=True,
                 temperature=0.2, top_p=0.9,
                 pad_token_id=tokenizer.eos_token_id,
                 eos_token_id=tokenizer.eos_token_id,

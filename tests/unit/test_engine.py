@@ -31,4 +31,5 @@ def test_engine_carries_evidence_and_missing_groups():
     assert answer.status == "ready_for_model_synthesis"
     assert answer.evidence[0]["record_id"] == "r1"
     assert answer.stakeholder_coverage["missing"] == ["government"]
-    assert "Do not manufacture consensus" in answer.synthesis_prompt
+    assert "never manufacture consensus" in answer.synthesis_prompt
+    assert "human-rights-aware policy synthesis" in answer.synthesis_prompt

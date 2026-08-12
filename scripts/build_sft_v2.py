@@ -31,7 +31,8 @@ SCHEMA_VERSION = "2.0.0"
 CORPUS_REVISION = "911c82f"
 
 # Task types
-TASK_TYPES = [
+# Document-grounded tasks (require a corpus document)
+DOCUMENT_TASK_TYPES = [
     "document_understanding",
     "evidence_extraction",
     "policy_question",
@@ -42,6 +43,34 @@ TASK_TYPES = [
     "policy_comparison",
     "tradeoff_analysis",
 ]
+
+# Policy-analysis tasks (do NOT require a source document)
+POLICY_TASK_TYPES = [
+    "multistakeholder_analysis",
+    "stakeholder_disagreement",
+    "policy_recommendation",
+    "perspective_vs_position",
+    "uncertainty_handling",
+]
+
+# HRIAM tasks - human rights impact assessment & management
+HRIAM_TASK_TYPES = [
+    "rights_holder_identification",
+    "rights_impact_analysis",
+    "positive_negative_impacts",
+    "disproportionate_impact",
+    "stakeholder_rights_mapping",
+    "participation_assessment",
+    "accountability_remedy",
+    "mitigation_safeguards",
+    "rights_tradeoff_analysis",
+    "lifecycle_hria",
+    "panel_analysis",
+]
+
+POLICY_TASK_TYPES = POLICY_TASK_TYPES + HRIAM_TASK_TYPES
+
+TASK_TYPES = DOCUMENT_TASK_TYPES + POLICY_TASK_TYPES
 
 # ---------------------------------------------------------------------------
 # .env loading already done above
@@ -133,7 +162,32 @@ RULES:
 - Use ONLY the supplied document text. No outside knowledge.
 - Never invent facts, dates, organizations, stakeholder positions, or quotations.
 - Every claim must reference specific content from the document.
-- If the document lacks sufficient evidence for the task, return {"skip": true}.
+- If the document has NO policy relevance whatsoever, return {"skip": true}.
+  But nearly all documents from policy institutions have some policy relevance -
+  do not skip just because the document does not directly answer the question.
+
+HRIAM STATE - for every example, determine whether human-rights analysis is
+materially relevant and add an "hriam_state" field:
+
+  "HRIAM_NOT_MATERIAL" - No meaningful human-rights dimension. Answer as a
+  normal policy/technical/governance question. Do NOT manufacture a
+  human-rights analysis. Example: "What are the technical advantages of IPv6?"
+
+  "HRIAM_RELEVANT" - Human-rights implications exist. Briefly identify
+  relevant rights, rights-holders, or potential impacts while maintaining
+  the broader multistakeholder policy analysis. Do NOT perform a full HRIA.
+  Example: "What are the governance implications of DNS filtering?"
+
+  "HRIAM_CENTRAL" - Human-rights impacts are central. Perform substantive
+  HRIAM reasoning: affected rights, rights-holders, stakeholders,
+  duty-bearers where applicable, impacts (positive and adverse), trade-offs,
+  safeguards, accountability, remedy, and uncertainty.
+  Example: "How could DNS filtering affect freedom of expression?"
+
+CRITICAL: Do NOT over-trigger HRIAM. Most policy questions are
+HRIAM_NOT_MATERIAL or HRIAM_RELEVANT. Reserve HRIAM_CENTRAL for questions
+where human-rights impacts are explicitly the focus.
+
 - Return VALID JSON only. No markdown, no explanation outside the JSON.
 
 Output format:
@@ -145,9 +199,10 @@ Output format:
   "evidence": [
     {"quote_or_excerpt": "exact text from document", "relevance": "why this supports the answer"}
   ],
-  "stakeholders_mentioned": ["from text only"],
-  "policy_topics": ["from text only"],
-  "uncertainty": "what the document does NOT establish",
+  "stakeholders_mentioned": ["stakeholders relevant to this policy issue"],
+  "policy_topics": ["relevant policy domains"],
+  "hriam_state": "HRIAM_NOT_MATERIAL | HRIAM_RELEVANT | HRIAM_CENTRAL",
+  "uncertainty": "what the document does NOT establish and what remains contested",
   "confidence": "high|medium|low"
 }"""
 
@@ -268,6 +323,7 @@ def parse_teacher_response(content: str, task_type: str, doc: dict[str, Any]) ->
         "evidence": evidence,
         "stakeholders_mentioned": parsed.get("stakeholders_mentioned", []),
         "policy_topics": parsed.get("policy_topics", []),
+        "hriam_state": parsed.get("hriam_state", "HRIAM_RELEVANT"),
         "uncertainty": str(parsed.get("uncertainty", "")),
         "teacher_confidence": str(parsed.get("confidence", "unknown")),
         "language": doc.get("metadata", {}).get("language", "en"),
@@ -289,10 +345,14 @@ def validate_example(example: dict[str, Any]) -> list[str]:
         errors.append("missing user")
     if "assistant" not in roles:
         errors.append("missing assistant")
-    if not example.get("source_document_ids"):
-        errors.append("missing source_document_ids")
-    if not example.get("evidence"):
-        errors.append("missing evidence")
+    task_type = example.get("task_type", "")
+    # Policy-analysis and HRIAM tasks do not require source documents or evidence
+    is_policy_task = task_type in POLICY_TASK_TYPES
+    if not is_policy_task:
+        if not example.get("source_document_ids"):
+            errors.append("missing source_document_ids")
+        if not example.get("evidence"):
+            errors.append("missing evidence")
     return errors
 
 

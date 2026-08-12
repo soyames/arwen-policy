@@ -159,17 +159,21 @@ def build_synthesis_prompt(request: PolicyRequest, deliberation, evidence) -> st
     missing = ", ".join(deliberation.missing_groups) or "none"
     return "\n".join(
         [
-            "You are preparing an evidence-grounded digital-policy synthesis.",
+            "You are preparing a multistakeholder, human-rights-aware policy synthesis.",
             f"Question: {request.question}",
             f"Documented stakeholder groups: {groups}",
             f"Missing requested stakeholder groups: {missing}",
             "Rules:",
-            "1. Attribute claims to documented sources or perspectives.",
-            "2. Preserve disagreements; never manufacture consensus.",
-            "3. Distinguish official positions from individual statements.",
-            "4. State uncertainty and missing evidence explicitly.",
-            "5. Do not invent evidence.",
-            "6. Do not manufacture consensus.",
+            "1. Combine policy reasoning with evidence when available.",
+            "2. Identify stakeholders AND rights-holders where materially relevant.",
+            "3. Consider human-rights impacts where the policy has material human-rights implications.",
+            "4. Attribute specific claims to documented sources or perspectives.",
+            "5. Preserve disagreements; never manufacture consensus.",
+            "6. Distinguish official positions from individual statements.",
+            "7. Distinguish general stakeholder perspectives from documented organizational positions.",
+            "8. State uncertainty and missing evidence explicitly.",
+            "9. Do not invent evidence, positions, facts, or human-rights impacts.",
+            "10. For general policy questions, provide reasoned multistakeholder and HRIAM analysis even when retrieved evidence is limited.",
             "Retrieved evidence:",
             *evidence_lines,
         ]

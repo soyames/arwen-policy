@@ -1,4 +1,4 @@
-version: 1
+version: 2
 stakeholder_groups:
   - id: government
     label: Government and public authorities
@@ -17,8 +17,73 @@ stakeholder_groups:
   - id: media
     label: Media and public-interest journalism
 
+# Rights-holders are persons or groups whose internationally recognized
+# human rights may be affected by a policy.  They are distinct from
+# stakeholders (who may have institutional interests without being
+# rights-holders).  A person can be both a stakeholder AND a
+# rights-holder — the categories are complementary, not exclusive.
+rights_holder_categories:
+  - id: users
+    label: Users of digital services and infrastructure
+  - id: children
+    label: Children and young people
+  - id: journalists
+    label: Journalists and media workers
+  - id: human_rights_defenders
+    label: Human rights defenders
+  - id: minorities
+    label: Ethnic, religious, and linguistic minorities
+  - id: migrants
+    label: Migrants and refugees
+  - id: persons_with_disabilities
+    label: Persons with disabilities
+  - id: women_girls
+    label: Women and girls
+  - id: lgbtq
+    label: LGBTQ+ persons
+  - id: indigenous
+    label: Indigenous peoples
+  - id: older_persons
+    label: Older persons
+  - id: workers
+    label: Workers in affected sectors
+  - id: communities
+    label: Residents of affected communities
+  - id: detained
+    label: Persons in detention or state custody
+  - id: disadvantaged
+    label: Socioeconomically disadvantaged groups
+
+# Duty-bearers are actors with human-rights obligations or responsibilities.
+# States and public authorities are the primary duty-bearers under
+# international human rights law. Under the UN Guiding Principles on
+# Business and Human Rights, businesses have a responsibility to respect
+# human rights — distinct from, and not equivalent to, the legal
+# obligations of states. Identify duty-bearers only when materially
+# relevant to the question.
+duty_bearer_categories:
+  - id: states
+    label: States and government authorities
+  - id: public_authorities
+    label: Public authorities and agencies
+  - id: regulators
+    label: Independent regulators
+  - id: courts
+    label: Courts and judicial bodies
+  - id: international_orgs
+    label: International and intergovernmental organizations
+  - id: businesses
+    label: Business enterprises (responsibility to respect human rights per UNGPs)
+
 rules:
   - Never infer representation from silence.
   - Never treat one individual's statement as an organization's official position without evidence.
   - Preserve minority and dissenting positions.
   - Record missing stakeholder evidence explicitly.
+  - Distinguish stakeholders (institutional interests) from rights-holders (persons whose rights may be affected) from duty-bearers (actors with obligations or responsibilities).
+  - Apply HRIAM proportionally using the explicit trigger states: HRIAM_NOT_MATERIAL, HRIAM_RELEVANT, HRIAM_CENTRAL.
+  - Never fabricate human-rights impacts, organizational positions, legal conclusions, or violations.
+  - Use qualitative severity assessment (Low/Medium/High/Critical) grounded in magnitude, scope, duration, reversibility, vulnerability, and remedy availability; never invent numerical scores.
+  - Distinguish impact from violation: potential impact, adverse impact, actual impact (requires evidence), and violation (requires legal determination) are not interchangeable.
+  - Security and cybersecurity are legitimate policy objectives that support rights enjoyment; they are not standalone human rights equivalent to freedom of expression or privacy.
+  - HRIAM is policy analysis, not legal advice.

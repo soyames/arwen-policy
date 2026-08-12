@@ -184,7 +184,10 @@ def main() -> int:
     n_gpus = torch.cuda.device_count()
     print(f"  GPUs visible: {n_gpus}")
     if n_gpus > 1:
-        print(f"  Multi-GPU detected. Forcing GPU 0 only (not using GPU 1..{n_gpus-1}).")
+        print(f"  FAIL: {n_gpus} GPUs visible. Expected exactly 1 GPU.")
+        print(f"  Set CUDA_VISIBLE_DEVICES=0 before running this script.")
+        print(f"  Multiple visible GPUs cause Trainer to silently halve steps.")
+        return 1
 
     # Lock to GPU 0
     torch.cuda.set_device(0)
