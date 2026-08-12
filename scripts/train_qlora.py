@@ -177,13 +177,12 @@ def main() -> int:
     if len(train_data) < 300:
         print(f"WARNING: Expected >=300 train examples, got {len(train_data)}")
 
-    # Compute expected steps from actual dataset size
+    # Do NOT pre-calculate steps — the HuggingFace Trainer is authoritative.
+    # Steps will be read from the actual Trainer after construction.
     n_train = len(train_data)
-    steps_per_epoch = math.ceil(n_train / effective_batch)
-    total_steps_expected = steps_per_epoch * num_epochs
     print(f"Effective batch size: {effective_batch}")
-    print(f"Steps per epoch:      {steps_per_epoch} (ceil({n_train} / {effective_batch}))")
-    print(f"Expected total steps: {total_steps_expected} ({num_epochs} epochs × {steps_per_epoch} steps)")
+    print(f"Training examples:    {n_train}")
+    print(f"Trainer will compute actual steps/epoch and max_steps at runtime")
 
     train_dataset = Dataset.from_list(train_data)
     val_dataset = Dataset.from_list(val_data) if val_data else None
@@ -402,6 +401,9 @@ def main() -> int:
     )
 
     # ---- 7b. VALIDATE Trainer configuration BEFORE training ----
+    # The HuggingFace Trainer is the authoritative source for steps/epoch
+    # and max_steps.  We validate n_gpu and world_size, then trust the
+    # Trainer's internal calculation.
     print(f"\n=== Trainer Configuration Validation ===")
     train_dl = trainer.get_train_dataloader()
     dl_len = len(train_dl)
@@ -417,34 +419,28 @@ def main() -> int:
     print(f"  num_train_epochs:              {trainer.args.num_train_epochs}")
     print(f"  n_gpu:                         {trainer.args.n_gpu}")
     print(f"  world_size:                    {trainer.args.world_size}")
-    print(f"  max_steps:                     {actual_max_steps}")
+    print(f"  Trainer steps/epoch:           {actual_steps_per_epoch}")
+    print(f"  Trainer max_steps:             {actual_max_steps}")
 
-    # Validate each critical value
+    # Validate only configuration invariants — not derived step counts
     config_errors = []
     if trainer.args.n_gpu != 1:
         config_errors.append(
-            f"n_gpu={trainer.args.n_gpu} (expected 1). "
-            "Trainer sees multiple GPUs. Steps will be halved. "
-            "Set CUDA_VISIBLE_DEVICES=0."
+            f"n_gpu={trainer.args.n_gpu} (must be 1). "
+            "Trainer sees multiple GPUs. Set CUDA_VISIBLE_DEVICES=0."
         )
     if trainer.args.world_size != 1:
         config_errors.append(
-            f"world_size={trainer.args.world_size} (expected 1)"
+            f"world_size={trainer.args.world_size} (must be 1)"
         )
-    if actual_steps_per_epoch != steps_per_epoch:
+    if trainer.args.num_train_epochs != num_epochs:
         config_errors.append(
-            f"Actual steps/epoch={actual_steps_per_epoch} != "
-            f"expected {steps_per_epoch}"
-        )
-    if actual_max_steps != total_steps_expected:
-        config_errors.append(
-            f"Actual max_steps={actual_max_steps} != "
-            f"expected {total_steps_expected}"
+            f"num_train_epochs={trainer.args.num_train_epochs} != {num_epochs}"
         )
 
     if config_errors:
         print("\n" + "=" * 60)
-        print("TRAINER CONFIGURATION MISMATCH — ABORTING")
+        print("TRAINER CONFIGURATION ERROR — ABORTING")
         print("=" * 60)
         for err in config_errors:
             print(f"  ERROR: {err}")
@@ -452,10 +448,8 @@ def main() -> int:
         return 1
 
     print(f"  Configuration validation: PASS")
-    print(f"  Expected steps/epoch:     {steps_per_epoch}")
-    print(f"  Actual steps/epoch:       {actual_steps_per_epoch}")
-    print(f"  Expected total steps:     {total_steps_expected}")
-    print(f"  Actual max_steps:         {actual_max_steps}")
+    print(f"  Trainer steps/epoch:    {actual_steps_per_epoch}")
+    print(f"  Trainer max_steps:      {actual_max_steps}")
 
     # ---- 8. Train ----
     print(f"\n=== Starting training ({num_epochs} epochs, {len(train_tokenized)} examples) ===")
@@ -511,7 +505,6 @@ def main() -> int:
         "epochs_configured": num_epochs,
         "epochs_completed": epochs_completed,
         "total_optimizer_steps": steps_actual,
-        "steps_per_epoch_configured": steps_per_epoch,
         "steps_per_epoch_actual": round(steps_actual / max(1, epochs_completed), 1),
         "final_train_loss": float(train_result.training_loss),
         "best_validation_loss": float(trainer.state.best_metric) if trainer.state.best_metric else None,
@@ -644,8 +637,8 @@ def main() -> int:
             "scheduler": LR_SCHEDULER,
             "warmup_ratio": WARMUP_RATIO,
             "max_seq_length": MAX_SEQ_LENGTH,
-            "steps_per_epoch_expected": steps_per_epoch,
-            "total_steps_expected": total_steps_expected,
+            "steps_per_epoch_trainer": actual_steps_per_epoch,
+            "max_steps_trainer": actual_max_steps,
         },
         "dataset": {"train": len(train_data), "validation": len(val_data), "test": len(test_data)},
         "per_epoch": epoch_log,
